@@ -1,0 +1,2806 @@
+{
+  "snapshot": "2026-11-09",
+  "source_file_count": 259,
+  "files": [
+    {
+      "path": "Assets/ChapelPioneer/Editor/ChapelCursorRecovery.cs",
+      "bytes": 866,
+      "sha256": "7f55e0abd220594a4adbaaa9ade2b0a581f2dd5b7e2ec3db55076c42902b1def"
+    },
+    {
+      "path": "Assets/ChapelPioneer/Editor/ChapelCursorRecovery.cs.meta",
+      "bytes": 59,
+      "sha256": "e1f419ddd17cce299a8c2ab677d0d470c0962d47276b86fdbee9ad83df546edc"
+    },
+    {
+      "path": "Assets/ChapelPioneer/Editor/ChapelPreviewAutoOpen.cs",
+      "bytes": 2495,
+      "sha256": "e7ea1bd6c11cdab1671cdc079930eb8342b115d7a1c4e739ba201de17c02466d"
+    },
+    {
+      "path": "Assets/ChapelPioneer/Editor/ChapelPreviewAutoOpen.cs.meta",
+      "bytes": 59,
+      "sha256": "58e57749a4d892e12680f67c9e6bcf0f605f11af4b477b47784a40f591aead0d"
+    },
+    {
+      "path": "Assets/ChapelPioneer/Editor/PioneerChapelChecks.cs",
+      "bytes": 27113,
+      "sha256": "11e093a59a9200334bf05509b583f6a34bb1134a4a68374d8fea63cd8fec894e"
+    },
+    {
+      "path": "Assets/ChapelPioneer/Editor/PioneerChapelChecks.cs.meta",
+      "bytes": 59,
+      "sha256": "f6450452e2eca2bf59f26fd684d2d6658d3379babf0567d00940e75539d4cbfe"
+    },
+    {
+      "path": "Assets/ChapelPioneer/Editor/PioneerChapelImporter.cs",
+      "bytes": 12539,
+      "sha256": "8c280f959f87fdab73b6aceeff1475f7787837f747c7754361658b6a89c02f5e"
+    },
+    {
+      "path": "Assets/ChapelPioneer/Editor/PioneerChapelImporter.cs.meta",
+      "bytes": 59,
+      "sha256": "1d1997d11130d59bc110cee8ab5fb7551ef12e75b6a03b1df1f558cd46320250"
+    },
+    {
+      "path": "Assets/ChapelPioneer/Editor.meta",
+      "bytes": 172,
+      "sha256": "c4eba6432e9697323d13056440c45eed7650aaf73b9db6a1125874b82693417d"
+    },
+    {
+      "path": "Assets/ChapelPioneer/PioneerChapelView.cs",
+      "bytes": 1055,
+      "sha256": "2df5a02a57e6cf2607c166d066f5910d26024d6f276e3aea845adca8926d14c4"
+    },
+    {
+      "path": "Assets/ChapelPioneer/PioneerChapelView.cs.meta",
+      "bytes": 59,
+      "sha256": "b80cf818a5c4481f67b5838d5435c5b7c54f5a5c0cae7ece1e1ec1e1f2ba86d4"
+    },
+    {
+      "path": "Assets/ChapelPioneer.meta",
+      "bytes": 217,
+      "sha256": "3d37e704a94fb66d812eb7dc37ecea782bc0c1afc6c82821f86c9a2ea00e49bd"
+    },
+    {
+      "path": "Assets/Chapter1Preview/SiluetCahayaLaptop.shader",
+      "bytes": 1085,
+      "sha256": "5049f3d71af9629319d7a6bdc10c19dd6bb09d2aea94d94dad34cc327009f2fc"
+    },
+    {
+      "path": "Assets/Chapter1Preview/SiluetCahayaLaptop.shader.meta",
+      "bytes": 204,
+      "sha256": "4a41f4fc5995d6aa17634a4e284d5854fdf7a1706c684dfd83d129b4d58c4339"
+    },
+    {
+      "path": "Assets/Chapter1Preview.meta",
+      "bytes": 172,
+      "sha256": "6713dfd8af9c5a113a63facda96ebbc83838e11e2560d7563b8ac58ce2a7d084"
+    },
+    {
+      "path": "Assets/HewanKampus/BayanganHewan.shader",
+      "bytes": 830,
+      "sha256": "ef409f3ffecacdc1f4cfcb6f4458866177f0eb819a2acc18a49360095c475a5b"
+    },
+    {
+      "path": "Assets/HewanKampus/BayanganHewan.shader.meta",
+      "bytes": 204,
+      "sha256": "fef2fa679030d110835df56c8ca43bb6590ac4458f13e20d820ad42806e0d4d9"
+    },
+    {
+      "path": "Assets/HewanKampus/TintaPotongan.shader",
+      "bytes": 1632,
+      "sha256": "e99c52adbbfae7edd0b5eb4f24c9a96d45e910c3201f44458a204e7b1e14d7d0"
+    },
+    {
+      "path": "Assets/HewanKampus/TintaPotongan.shader.meta",
+      "bytes": 204,
+      "sha256": "5041daf604d0d50c40ee7c4d9d35a7f5435e8957221fb0bcf7f22ccdf97b0670"
+    },
+    {
+      "path": "Assets/HewanKampus.meta",
+      "bytes": 172,
+      "sha256": "b9373dab1ffb96a6b70450ff5b645a23ff7b773f0382871b2313ca85d03c034f"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AlatPenataan/AlatNpcArthur.cs",
+      "bytes": 8878,
+      "sha256": "50b62833835302a41417bd261dcc3a854e3c09da46985e95b5c1f77483c76835"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AlatPenataan/AlatNpcArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "a71b50ee677b43146f3de6f4ede6e6f0323dec288d009262036e02f1c006e8c2"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AlatPenataan/AlatWorldArthur.cs",
+      "bytes": 10645,
+      "sha256": "70f6c3f3e2292f1b4f4bf34d9b6e2783cd1eac714a8e026fef63a64f3b580e1d"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AlatPenataan/AlatWorldArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "c769053bb9a9321018bf24dffd148326c8f86f7b8e2885e2623836af6852c1f7"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AlatPenataan/BubbleArthurScene.cs",
+      "bytes": 5778,
+      "sha256": "14a715cf9a8c5a2244c09e579d4c7f39bb64a6111fb4bd00f9529ba4e15bcd6e"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AlatPenataan/BubbleArthurScene.cs.meta",
+      "bytes": 59,
+      "sha256": "395393c261d40a2075ef2a5eedb020ee8faf8e90342bcfb31a489faacb38b548"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AlatPenataan/DaftarJalurArthur.cs",
+      "bytes": 1295,
+      "sha256": "30a5fb47729718d2ccb6e613e637f7b6f358276e41cd877561af9764fc3f0af9"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AlatPenataan/DaftarJalurArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "79cd0d6e0eb50c6ad0e9a64453f48f7bb3c1f2e06cfdc56b5ee3d24babb437ff"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AlatPenataan/PanelWorldKampus.cs",
+      "bytes": 8767,
+      "sha256": "4f679fdd2cf2019d5ff2ed61589c7033cc9c09c1f17515d6edc31afec64c86c8"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AlatPenataan/PanelWorldKampus.cs.meta",
+      "bytes": 59,
+      "sha256": "106e955c8b359c870c7d1431ee06fd6daaca47b45855331353a72fb22386708d"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AlatPenataan/PertemuanHewanEditor.cs",
+      "bytes": 1690,
+      "sha256": "05b90ff8a036f7b50646e87fbc045ec3768c048090251fc7f8c935fb05920aa5"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AlatPenataan/PertemuanHewanEditor.cs.meta",
+      "bytes": 59,
+      "sha256": "929ab0d91054b10de0126a4335129118677ce762636ee5369781346705b1c2cb"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AlatPenataan/TambahTempatArthur.cs",
+      "bytes": 6919,
+      "sha256": "5882cd28819b0cbde517e2b66db6c8f2afc656e30c350ac6829219b136b723c4"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AlatPenataan/TambahTempatArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "ad51d8a96fce444b42b38fcdc3c8e9256040ae34793ed9ec397761410ba30d67"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AlatPenataan/TempatArthurEditor.cs",
+      "bytes": 13544,
+      "sha256": "33d4dc9d3dc601e475b434b2f28063e2a7b8b010dc4f28fabe69b7398f8938e2"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AlatPenataan/TempatArthurEditor.cs.meta",
+      "bytes": 59,
+      "sha256": "c4c708f7d494afd68c9dec44488d840d3c22511e84b230185f28864e86bb7f67"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AlatPenataan.meta",
+      "bytes": 172,
+      "sha256": "ff1054a1090f6b46cae865d25afb622ef27edd5ce71bf4a16afe8a8fe4b10b22"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AturMalamGAMenu.cs",
+      "bytes": 4062,
+      "sha256": "0f2f90d4fd43d43ceef724e497df5ee9a56ec4d791cbd33ce09edce2e52a3147"
+    },
+    {
+      "path": "Assets/Scripts/Editor/AturMalamGAMenu.cs.meta",
+      "bytes": 59,
+      "sha256": "1b3c3ccf7fc51519b47b0e6c349ce0d1179106781bf3998e65ad0ba1ecca43ee"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint10.cs",
+      "bytes": 2509,
+      "sha256": "513a1847566f187db590b8ec39c0585badb914554bc3eb8a767ca05d39d4684b"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint10.cs.meta",
+      "bytes": 59,
+      "sha256": "f229b05722c2ae00e74ba839d1298b280fb202d0946b3a83a125aaa811c98bf1"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint11.cs",
+      "bytes": 17824,
+      "sha256": "3a07d444c2af7120263f20eb7ae6c99fef6bafe6cc4cd529c3c1af129e80cc75"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint11.cs.meta",
+      "bytes": 59,
+      "sha256": "21a48c725e2b4b1ee090009d2b0efe8f66435bc974172b8fc3c4d95a673291e0"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint12.cs",
+      "bytes": 13201,
+      "sha256": "7111a8ed0ca4f09ba5dd099bc2d0a2131bf3791e239ab5c864cc401e110b595e"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint12.cs.meta",
+      "bytes": 59,
+      "sha256": "9be8631de480e35dd2b5bca72c37b8d123f06382e4b30c3cab2afe3cd4c04242"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint13.cs",
+      "bytes": 11592,
+      "sha256": "613bc0670ca15d7535ee323c4f9a3cd5ce091e132df585cdba89a5e5048ceb0a"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint13.cs.meta",
+      "bytes": 59,
+      "sha256": "40fff8eccb318136d134dd0bdfd86732ea7e7fe01f7a168c0798a179c468e73d"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint14.cs",
+      "bytes": 7353,
+      "sha256": "18f293f3949ef433d789c08c46f42a3901b1513f7fb09e098714d9f29cf2b89d"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint14.cs.meta",
+      "bytes": 59,
+      "sha256": "23651f063bae5d5fa2135d4d3f9ee973cedd916133cf1f726ecde28f711162c6"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint15.cs",
+      "bytes": 3371,
+      "sha256": "b9756f980819f8bba860f563604ba56f70dc8d8e5de5fa5c73e46dc3b8c13976"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint15.cs.meta",
+      "bytes": 59,
+      "sha256": "5c35d9c69cada300e6c2ba78b32bbb33a129b65b8349621dae586b35a755437a"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint16.cs",
+      "bytes": 2890,
+      "sha256": "3a8017999e08f7af673638ffb39efe9930db2431f9cd47c249f21809241b01ac"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint16.cs.meta",
+      "bytes": 59,
+      "sha256": "8fad524f837d785e4ab57afefb9b7ec88527917ec691d6099f4e3b2db37a7d3e"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint17.cs",
+      "bytes": 4851,
+      "sha256": "09437906c3c3cbedd7628de2e83a1a515f937320ba4cae7be56105672266e9e9"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint17.cs.meta",
+      "bytes": 59,
+      "sha256": "7f6f196049bb440467807243a99693da01a3484bdd1b76d7fd5d832b621cf749"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint18.cs",
+      "bytes": 4078,
+      "sha256": "a2f05639fba3733cd485d12bbd7d70be3c1c760dac42188f8ce154d60efc86e5"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint18.cs.meta",
+      "bytes": 59,
+      "sha256": "6a22c51ef68c7822b23592f74e9a9a4c2a2ef4d864c2e0e60180c2f476d33c33"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint19.cs",
+      "bytes": 6056,
+      "sha256": "9027ae62882d12bfb706c0614ce1740e34f2cdeb31a6a8a157fecabef5dbb97d"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint19.cs.meta",
+      "bytes": 59,
+      "sha256": "1f7d258a73a0ed75a051ee55982eb7d5a4240be4f377d2bcf986ff4520276e19"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint20.cs",
+      "bytes": 3489,
+      "sha256": "607fa4ef3ead6cf65924c27f21aa1b3979b1bed39cb6d44b61dae3570ce23f33"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint20.cs.meta",
+      "bytes": 59,
+      "sha256": "c085360dd8c2e44157e60a3977d90c91ec4f53cdebc91800ba321c1c982e292a"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint22.cs",
+      "bytes": 2141,
+      "sha256": "bbc11ecf33b559893edb76a4d4eed5c151a338f6eea6a989953d99205854e98c"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint22.cs.meta",
+      "bytes": 59,
+      "sha256": "31c82d25f01e9e98e3d5930dd0b9be092487ca3df14de57f39bed52d6b87a7a7"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint5Revision.cs",
+      "bytes": 7790,
+      "sha256": "8051cc34316d5305fc21dda21eba318b1d09a192057fcf3b2f7811ba627e4974"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint5Revision.cs.meta",
+      "bytes": 59,
+      "sha256": "8e2b005851f7d81f4fcaa34b08d27421c35f8ec250380881aeb0901ae24ef1b4"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint7.cs",
+      "bytes": 12950,
+      "sha256": "5f637048060a5d5279385e60f817a35827743d908e2679beb4fe650e9dc8de97"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint7.cs.meta",
+      "bytes": 59,
+      "sha256": "8a7b4d660eaaf33a585b6b6a978f166834fb7ef914c3575fdd11b52349e6bc2c"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint7Preview.cs",
+      "bytes": 4753,
+      "sha256": "757d75bafd7376076dd45f226d71a3579254f297deb2d7fcf013ac6281d98da8"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint7Preview.cs.meta",
+      "bytes": 59,
+      "sha256": "20410e05e7e783c61b20ecda38e94d4ebba1e1c527b091bbcfddfa89bfb3f5ef"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint8.cs",
+      "bytes": 9746,
+      "sha256": "128aa053153ae06d9186859fdd782cb52169b50981873a3697392598b12a215e"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint8.cs.meta",
+      "bytes": 59,
+      "sha256": "399dd56e26a0686c4129a05200898519ab8e5246078553407d266debda2e1eba"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint9.cs",
+      "bytes": 3349,
+      "sha256": "4f6b6a06677b585e0d8d4123e6c5e4d44e0dad57e13a00de9a1ae52db2f5ce4c"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusCheckpoint9.cs.meta",
+      "bytes": 59,
+      "sha256": "24a0ceac988835a938355dc3e324c826df77ec99b737cf9f1bdafee7bcb7b4e7"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusRevision26.cs",
+      "bytes": 682,
+      "sha256": "d8b7cc9f2770d765c28f2d94d0bc57afc8558cc93a2d8c00d9f4a19d9d3cb34d"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint/CampusRevision26.cs.meta",
+      "bytes": 59,
+      "sha256": "a686be99a9958ac6a82172c284a00d5cdb49f908869205bf8f186fe9da355aef"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Checkpoint.meta",
+      "bytes": 172,
+      "sha256": "e9b804a204126a44d4b7e2c1ce2e4ae779dde40a16496fa3c11ecf79ff46562d"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint10Checks.cs",
+      "bytes": 21522,
+      "sha256": "2e68e36551f061ba4cce714f2d3f0cc14c0e375ac86df34bdede5d501a885044"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint10Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "7868353e57d9d5f65195e59ddfb58689f0f04ff33d49e155a7cca505e05c8392"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint11Checks.cs",
+      "bytes": 14527,
+      "sha256": "7dde13476ca2622cc3201a9673837c05b333747feee78cdcc28ffaa7e27a118d"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint11Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "7bf7d659da7a1283ef39632fb1336104870f5fa58c5b0967d8f1b7d12e21f39f"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint12Checks.cs",
+      "bytes": 18775,
+      "sha256": "14f0eee235867101437a4b44ec775454fc4aab0e374e6698dc50fa34e727e867"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint12Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "1891bffbb6dfd538c8654e82d7038ce076f5f5556784eb75fb3988b371f34ed6"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint13Checks.cs",
+      "bytes": 27913,
+      "sha256": "ca27689932228270ef02c4d832fd6a1c85c39b040d3a6c1a2ab9645997b0425b"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint13Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "65836d1645e5bdcf2ab46633313075bb3c76081cba70cfcfdfb57291e384ec60"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint14Checks.cs",
+      "bytes": 13346,
+      "sha256": "bbd725896b122ded68cbda1982588e2ea4c9956d2e7fc267147399bf9e0e077c"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint14Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "4d0b626fce36ebfa4318abaf56d94a3d281f9d04c9250e07688c060cac205963"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint15Checks.cs",
+      "bytes": 11460,
+      "sha256": "57944f593580775c93fcaf1114ae3e5a58b38714c0dd5a4cf301071f1c0766c5"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint15Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "0ccbcdaa90499f71bb0c3035b00a385fcb45501304393b3b8e7fd4f1c41f0882"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint17Checks.cs",
+      "bytes": 13635,
+      "sha256": "546ede021f00a5a084b38be8b361d358bb2ae254a6ba7a133c4a10d201bfb1e8"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint17Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "a588af6191eca35ca562e8a3017cc15772ada7d4321c5e46ce88e164b2b34981"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint18Checks.cs",
+      "bytes": 10842,
+      "sha256": "6efb6a9084aea32ecca12f196d34044e2146f1af37cf92e55e91f4bf3bee8a45"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint18Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "fffb491ce78310b23d7d6a71186bf1b577ab19ab97c3ad68269f953bc29b51cc"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint19Checks.cs",
+      "bytes": 14230,
+      "sha256": "af450d6dbc0666a1a95cc8da217bbb3a5b868e6c965576d967e6411510babd5f"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint19Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "1ed1f91b9b01032fd55b90ec6817996f953bd1e7ff8c7c8019744e873559116a"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint20Checks.cs",
+      "bytes": 13068,
+      "sha256": "e953d8f74bcf0c53b53839701e4e7ca0608685d129848f497e865b99a60c4165"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint20Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "b85b2244e058da0ffa69cf213260f8025b86acdea367d41b08ad6f6723551d2c"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint21Checks.cs",
+      "bytes": 10189,
+      "sha256": "43a192bcceab603f747f1061b1f9f2b1c1342bee91ef07ceb74ba8e185e268b4"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint21Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "d672ca2a0e39d0fe5d7d84bc3828960f8f24be16eb965aadd3234492ddeb57dd"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint22Checks.cs",
+      "bytes": 12406,
+      "sha256": "fcaa358f7e6cc17d882acf9f7937b48d1490126d1499e78e78a4848a28f2854d"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint22Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "723887ac9bd75d90b4f2190ce5df3c510ddf2f989305152a864e8d6760c36a84"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint23Checks.cs",
+      "bytes": 9821,
+      "sha256": "24faff3e014a27f399079b7ecc70028df99dd3582c950f324b8ccc906420c3d7"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint23Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "0916f251dd5d93cf13375b187804d40a080c254e683e2b7f80dd888bd346a50b"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint7Checks.cs",
+      "bytes": 12484,
+      "sha256": "dbdcf61204a22fcd80489de6c6894febf86f00f84e2535c6cd278c00d069cd4e"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint7Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "78924479a9b5ab6984d54731c27e4f49ce50658eba676104d31faf446038d0f5"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint8Checks.cs",
+      "bytes": 17072,
+      "sha256": "1aba7cdc5c9b86cc5b6682464f4a15a02734cf9d6852bc4a92525a29cfa3dfe7"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint8Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "912cb5e0185f5d2059810593469d5614947fb5ce45f2acc631c1a0a5b05e4854"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint9Checks.cs",
+      "bytes": 19683,
+      "sha256": "a345809d5b0bf1869962b53deb82c95bd1b4f8e64e7524d5b8ee019dd39cec41"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusCheckpoint9Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "de965077a5f32ef5cdb5414659c30cba2e3dc052386d6818fe3633dce3aed33c"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusExplorerChecks.cs",
+      "bytes": 8279,
+      "sha256": "b84013f42b9e5f725d8ca64092a592a3194af85186b2762c46b7b4fa60c59659"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusExplorerChecks.cs.meta",
+      "bytes": 59,
+      "sha256": "2a295c0285dcae92269854b0ec8d113b476007af9ee71be82f7655455d94c48f"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusGAChecks.cs",
+      "bytes": 16288,
+      "sha256": "a7f7468f519486bf429bfb05caf59b228add35c65c0d863cf700720a6531c4f8"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusGAChecks.cs.meta",
+      "bytes": 59,
+      "sha256": "6c5ba09fd019c4d141d566971f9fdff2620945ed6d75c668a96e9b8c4aa0d1af"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusGAHorizontalChecks.cs",
+      "bytes": 17774,
+      "sha256": "521fa75922d3c47a9624c6873c0fd01cf223058cb1d7cf962686cbd3d589d382"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusGAHorizontalChecks.cs.meta",
+      "bytes": 59,
+      "sha256": "838f5f799ee6335f581d05f575fd64f6bfeced20813a1d4c71af019befe3df87"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusGALobbyChecks.cs",
+      "bytes": 17298,
+      "sha256": "8d4c4446e46ea4e442a4bcbc7e448746823d6a287262a7d40d24e3dacfd7cf5d"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusGALobbyChecks.cs.meta",
+      "bytes": 59,
+      "sha256": "a48e260c3644cba8ab20189575fd1f41812bf4d5fabe3959919ceb09dadbceba"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusGameplayChecks.cs",
+      "bytes": 21226,
+      "sha256": "542d7b27d49b4eefbeaba9605486810fd5ad2a61ec0d720e5106124863bf77f0"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusGameplayChecks.cs.meta",
+      "bytes": 59,
+      "sha256": "766553b386d01db44b96ed3442569a802e6fcc1df31f5491e77715c7cac88ff6"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusGAUpperLobbyChecks.cs",
+      "bytes": 16216,
+      "sha256": "1d9091429db39092b3444e94f05b02a3920402a10aca1307c8e3f22617dc47b8"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusGAUpperLobbyChecks.cs.meta",
+      "bytes": 59,
+      "sha256": "1f1a13f988b94112ab4718280a59a1bcf9ee736401f08ce28ad7e8cd898ba714"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusGlitchChecks.cs",
+      "bytes": 5844,
+      "sha256": "b0ea5375e4fd6abecea99fc2976f7adc2b01a079fb1c036d777f43b76ac1fa5c"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusGlitchChecks.cs.meta",
+      "bytes": 59,
+      "sha256": "a58e4f317fcb0cc5ee403fe4ddbd3aefddc8a5d857ee7ac1edd2cc8b2363183f"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusLatarTeksRegressionChecks.cs",
+      "bytes": 5614,
+      "sha256": "dba9d7f3547404019c9e7ca1e6b79a9aec286d3c70b8862ee9b1aaa55a9ec7c4"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusLatarTeksRegressionChecks.cs.meta",
+      "bytes": 59,
+      "sha256": "c16228bdcb1e34924f8a8197f0eb0113edb2633e9d857ab92ec0504794f05acb"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusMinorChecks.cs",
+      "bytes": 8531,
+      "sha256": "4add66f95e09331d2f9887cc458c10d319928f84158d1b904c6255f670216de3"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusMinorChecks.cs.meta",
+      "bytes": 59,
+      "sha256": "eeeeb7794707328a12fcc4a3ab182d4652ce481aa7ab2578c8e1c25fe0543c7a"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusPhoneAppsChecks.cs",
+      "bytes": 10438,
+      "sha256": "5e32e4859b9c42b1308a3a5649f29b3b732d71b8e61f1b9c3ebb555b868196a0"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusPhoneAppsChecks.cs.meta",
+      "bytes": 59,
+      "sha256": "54c2b957225db6a359e9f865ffa86631084afcd4df3fafd0f052ba04f47bcf2c"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusRapidTapChecks.cs",
+      "bytes": 10018,
+      "sha256": "2948a94a76e3c129e9972a59bfa5f1bb6f724214314fff008910fc1b7d3f979c"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusRapidTapChecks.cs.meta",
+      "bytes": 59,
+      "sha256": "76cf5a4b48d22cfe25e2029989c80e3986758c94516e72ebc0793335d2626c2d"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusRevisi13Checks.cs",
+      "bytes": 15607,
+      "sha256": "620b3abe253d98dbdb38bad5365a2c640599e05d788b2e607530cde6c51f82bc"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusRevisi13Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "e7b1960602c03166208a586295ffea034fa32990a716918fc65571fd44294601"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusRevision26Checks.cs",
+      "bytes": 12236,
+      "sha256": "7b7c7e2106b6a516d1fe1654ae9c17a9dc2a146ade0007b00c1b21eab358328d"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusRevision26Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "2fdeee0dbcc27667b3034df5f2d1615e1623d23cf8db596bcefd7ece46faf57f"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusRevision27Checks.cs",
+      "bytes": 9627,
+      "sha256": "0c648dc389bcec30de23060a6562d664950734f8e4872f7860fd5cac3f336ffd"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusRevision27Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "b97830dbf927ef3881e8c9b10a4ac38667bcf696440931e294441f519ea383e6"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusRhythmChecks.cs",
+      "bytes": 11769,
+      "sha256": "c144c50487b074d16b29c8756a16d52e9e39f9f96292341447ab578213eb4ea8"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusRhythmChecks.cs.meta",
+      "bytes": 59,
+      "sha256": "a93d7a3e4fffe8e077f1ff5313cbb7fae52d1851cefeb28ba624d5e3d3ebbba6"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusRitsletingOpeningChecks.cs",
+      "bytes": 5939,
+      "sha256": "18039d3ae4a0cb3b67ebc5e9157294b1e2b5704f9ecf1d8969320592fccacd26"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusRitsletingOpeningChecks.cs.meta",
+      "bytes": 59,
+      "sha256": "1708ad34cacd7bfe47bea06863e74509af0ced1ac2558c7ebea2f83a771c04b4"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusRuteKampusAudit.cs",
+      "bytes": 4572,
+      "sha256": "5a90f342c7368f9c70d3853bfedb8a1c1cdae954e9844a92e56f866fc948d859"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusRuteKampusAudit.cs.meta",
+      "bytes": 59,
+      "sha256": "94e78e18c2443c124d5a939023caab23d9f29131342074035cbb98015bd6d821"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusRuteKampusChecks.cs",
+      "bytes": 84087,
+      "sha256": "91e95dbe4330953bfc84215af536cfb98e224f31a8932ecf5dbdb9b8ca362f56"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/CampusRuteKampusChecks.cs.meta",
+      "bytes": 59,
+      "sha256": "1a789fc2d3ec6bf4046db9b213444074f807268d3d5c8e63ba155369cd259b5d"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/JedaEditorSaatTidakAktif.cs",
+      "bytes": 1563,
+      "sha256": "309c51e1712b8f17fdd75900fc78f1b715f07fc3696b863d1c8ab19b56ee8627"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/JedaEditorSaatTidakAktif.cs.meta",
+      "bytes": 59,
+      "sha256": "27227350caad306bda7d024232bae50546fdb1f982f5dec1c8bb409830559ff2"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/JejakGerakKamera.cs",
+      "bytes": 3625,
+      "sha256": "624b6fe6337e0af3bb5f706ce99128ba3d57d3397394616a7bf63bffab9f537b"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/JejakGerakKamera.cs.meta",
+      "bytes": 59,
+      "sha256": "7eb6b87e9aef1f1d6ee6f4628a4722df9e8accfb02815a6a32ad1a42d0dd5cf4"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/ManifestLandscapeAndroid.cs",
+      "bytes": 784,
+      "sha256": "2663e00ff4e1df72fe3efb4f07e8ae406dbbd33aeb86eb8f9894863b0e1011ec"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/ManifestLandscapeAndroid.cs.meta",
+      "bytes": 59,
+      "sha256": "8ba9fd9e6fd95147fa7cbff8ee27763ba7f79e75dc27f05cef13841bc8177750"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/SambunganExplorerSementara.cs",
+      "bytes": 1144,
+      "sha256": "f865bb4908794657fd22a4b744a0e51e59ec3e5a069c03ee884cb2c8810b777d"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/SambunganExplorerSementara.cs.meta",
+      "bytes": 59,
+      "sha256": "c1b3897e81942ed2eaef6cb9a61a7670bb36dcbd5efa32397956402d63916733"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/ValidasiBuildChapter1.cs",
+      "bytes": 1111,
+      "sha256": "ca831cc827127cc99606b2095b649192523373653dac5651380d1bcae7df1978"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan/ValidasiBuildChapter1.cs.meta",
+      "bytes": 59,
+      "sha256": "0d462dcf73673e62cd883c9169534ac4886b3b5123a92702e784102d1a864e56"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Pemeriksaan.meta",
+      "bytes": 172,
+      "sha256": "0196cff807723ccca89f15b731c9a9e85d7ff01093d5db98566a9ba4c7f831cd"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Penutup/AturPenutupArthurWindow.cs",
+      "bytes": 6875,
+      "sha256": "adaee3e6af606f0734edb039ea61f3d0621fe42ff41dd38f9c7e23aeb93b54ae"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Penutup/AturPenutupArthurWindow.cs.meta",
+      "bytes": 59,
+      "sha256": "6e9a3180bbd2ae6931328ee9f5a58ee42faaac256b607855b5385d0e1be17466"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Penutup.meta",
+      "bytes": 172,
+      "sha256": "aaa420428b27a6f109e5003b90179010565ab231402906649769a6bbb43a938c"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Profiling/CampusPerformance9.cs",
+      "bytes": 3375,
+      "sha256": "d13c0a4a09379f20c1f3b2e42a8c380c7dfe32b7c73d3c639470b4f13e64179b"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Profiling/CampusPerformance9.cs.meta",
+      "bytes": 59,
+      "sha256": "43663e9129baf9049c236b3eae83204194edf0c5152346e9a3e7d310e275ba43"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Profiling/Revision60Checks.cs",
+      "bytes": 5268,
+      "sha256": "da2758a8f9b89673e52ffffa86e6a5a5f0e95c0fb10bdd14a210bb28d40430ac"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Profiling/Revision60Checks.cs.meta",
+      "bytes": 59,
+      "sha256": "81d73a63071d59ee98e695e45d7acf5a8ef1a9ff74ea03e555d71b4de850ef83"
+    },
+    {
+      "path": "Assets/Scripts/Editor/Profiling.meta",
+      "bytes": 172,
+      "sha256": "8d7568039da54659a9919db6cd253f17cef537c725fdfa1e72298e6436371de2"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/BoFinanceRevision.cs",
+      "bytes": 6413,
+      "sha256": "f8ff13d49ee9977ba418318f3f830ebe3d241865bc7309a6da21aad275ba5b54"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/BoFinanceRevision.cs.meta",
+      "bytes": 59,
+      "sha256": "c8fe869d20c846f2a22edf790a30e41f5a047915d772b0bcd1af92845a4d4e65"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusArthurWalkStyle.cs",
+      "bytes": 5891,
+      "sha256": "870f70a4e97a9d0f6203a5ba471bcbf89fe0d3d061cedd37b9e9b1752457b729"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusArthurWalkStyle.cs.meta",
+      "bytes": 59,
+      "sha256": "97e4f8701fe523c33315912929f5d1ac898624e097f4125e4c002cd8959e3e40"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusBubbleRevision.cs",
+      "bytes": 11039,
+      "sha256": "6c53fb43586b9f930a0e199cf5ca3edf3e2f10699a533c56f64875fbb1e9141f"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusBubbleRevision.cs.meta",
+      "bytes": 59,
+      "sha256": "24104ea19732230020091ff6b6d3aea6afb4bec54f49065e96d5767f38109653"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusCharacterLifeRevision.cs",
+      "bytes": 15764,
+      "sha256": "66c9cb85fd2f42375569f81734ba037f2353efd0267d67f81dbeddc142bece55"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusCharacterLifeRevision.cs.meta",
+      "bytes": 59,
+      "sha256": "d45936dd028763220868b428a3febe5e3f1067f46d0055ed8e385c1ccb9f44ce"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusExplorerSetup.cs",
+      "bytes": 5099,
+      "sha256": "a6f680878d61360525f470485b5e995aa365b7f5b00a0bac7413cdd7a14125e1"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusExplorerSetup.cs.meta",
+      "bytes": 59,
+      "sha256": "c4fc9e2077c374c2779c84afa04030b8257c648c2552a1aa3d63aabb46827da3"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusGameplayRevision.cs",
+      "bytes": 19466,
+      "sha256": "e4d2551fc4990d273ba03815037d30f76daf1cdd34bc93402d80a16f2932710c"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusGameplayRevision.cs.meta",
+      "bytes": 59,
+      "sha256": "8cab19f33953fd442b4c4ce1ba07ee6d46e1552c9d76471242ff7236e9de0f55"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusKampus3Import.cs",
+      "bytes": 8548,
+      "sha256": "01af526e55f45ac09ba133b0657d1d904456f3030ffefe2194de25015935eb6e"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusKampus3Import.cs.meta",
+      "bytes": 59,
+      "sha256": "bc17499c4418cbbcb91af7d236d2a6d02eebe30ca27f6b794967cb5537082540"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusNPCFacingRevision.cs",
+      "bytes": 7494,
+      "sha256": "34d2e271d12ab84a23974d8497f8070be0692fdd47646ae9382875172041fb37"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusNPCFacingRevision.cs.meta",
+      "bytes": 59,
+      "sha256": "9fc99b1e10803f023638db73241ced85f731c4bd5baa259383bb755ddbe2eae7"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusPhoneAppsRevision.cs",
+      "bytes": 11363,
+      "sha256": "f97a8a3a35cdeeb68c1d77301fcec0b4d81bf939d21e2b4e849052e018c97d80"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusPhoneAppsRevision.cs.meta",
+      "bytes": 59,
+      "sha256": "6969ac4d1593bd554d36fea3ef232f46f85301ad7e5239bab84eb09c661e4118"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusRapidTapSetup.cs",
+      "bytes": 11140,
+      "sha256": "e308536a790cbd01ea3e058e9e9db0cce297321565d9905390d05026c33ec16a"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusRapidTapSetup.cs.meta",
+      "bytes": 59,
+      "sha256": "2809d1bc783ecb62c427171cd8d3dd16a1bca266eab0e0ed5829d6a28b71fa7a"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusRhythmRevision.cs",
+      "bytes": 6681,
+      "sha256": "f6676e0a689b9d44fc5f2cc2527f524531aa08320a41a7e448d04c72cfe71df4"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusRhythmRevision.cs.meta",
+      "bytes": 59,
+      "sha256": "69891d47ad4599debf3876ff8ac2e480a368acfd52eff6a9deed279f47134f29"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusRitsletingOpening.cs",
+      "bytes": 1662,
+      "sha256": "b12b51c43d559e5ccbc0601ab9f9e7cc1c167bf38165ad3a01647ef0617f5d24"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusRitsletingOpening.cs.meta",
+      "bytes": 59,
+      "sha256": "091f60e12a854d6eaa733ec393e2a4d07fdc9b4d2b2011f91f84c9d90f7b0ad6"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusSettingsRevision.cs",
+      "bytes": 31601,
+      "sha256": "0b6b48c06a2eef018983775c5f284273f475aa9c21fe13a0daf2b34fe1400710"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusSettingsRevision.cs.meta",
+      "bytes": 59,
+      "sha256": "2152c8e8d708792517d25c9839f006e3e028eade4a049fc3066e8d9102cff940"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusWalkRevision.cs",
+      "bytes": 15096,
+      "sha256": "521727e8941100fe5d9ed57dcf4afe59eb116ac67e4804d8a965be0544190a21"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi/CampusWalkRevision.cs.meta",
+      "bytes": 59,
+      "sha256": "a3217602edf8f1d78e50bfac9a297b4147a3838a9ab7adb5c2c39286a9fbe500"
+    },
+    {
+      "path": "Assets/Scripts/Editor/SetupDanRevisi.meta",
+      "bytes": 172,
+      "sha256": "d78370d86cacd800f1e1dd3c27a8c832ead95367ddaca877fa68e96415e3cf89"
+    },
+    {
+      "path": "Assets/Scripts/Editor.meta",
+      "bytes": 172,
+      "sha256": "8885b12db06d2eba0902434adae56f2795cdd980c00cc1dc59ec8b9b32b05ba7"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/AdeganMakanDiningArthur.cs",
+      "bytes": 6801,
+      "sha256": "7b2bf7713dca046db6be8b233434e08ce15cbda87536f521ffc32eb6a70432d9"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/AdeganMakanDiningArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "0db98ead8fc7bda6deb24f6317a7c80fd0314378f1af6862418c594b649e5c99"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/AdeganRhythmPembukaArthur.cs",
+      "bytes": 8180,
+      "sha256": "e309016d00513856a10b33edec4c55e60b5658b27334171a4d899c4c34968c5e"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/AdeganRhythmPembukaArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "638b74ed45952499fc124089db4baa97d8670b408dd015e506e8fffcd097955f"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/AnimasiLoading.cs",
+      "bytes": 1169,
+      "sha256": "10791f92c9b967d1808b68b4f60b2e69cd3ebb152ccb8589aca783ab5113410b"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/AnimasiLoading.cs.meta",
+      "bytes": 59,
+      "sha256": "0e3635116451a7db522543c2c03106f9614489817f12f9db9ee43324d235c68d"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/BatasMalamChapter1.cs",
+      "bytes": 1047,
+      "sha256": "b2a2d6e74c55fd44de24750ff0e9696779b34164e171b2bcab60828bd40cceb8"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/BatasMalamChapter1.cs.meta",
+      "bytes": 59,
+      "sha256": "df24946551ca5d141aa47206e079ba980bf624cdac029ccd04b40223af0c80eb"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/BubbleWorshipPembukaArthur.cs",
+      "bytes": 3512,
+      "sha256": "22e3078844382dab7627697c699cfeb0273583c2d493a504e4d6eeee486f20ca"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/BubbleWorshipPembukaArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "427912dee3a13bef66e3836672d99007cf1884836709aae4417d9dd3ed6bc85a"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/CascadeTransiton.cs",
+      "bytes": 4970,
+      "sha256": "ffb4957a91976447d3f0cf5d3de90d69fb0e59dffb5f67fd353f9de9b1c348ea"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/CascadeTransiton.cs.meta",
+      "bytes": 59,
+      "sha256": "ee02dc8a5dbdf7bee17dca20ad97cd62245bf2d11795e0b09334be2aa1b4bc62"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/CelahHardiskKamar201.cs",
+      "bytes": 293,
+      "sha256": "42320ab832d48f8d5a56d5d2562c8c280b68b4d14783b36e6ee1c20850bf692e"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/CelahHardiskKamar201.cs.meta",
+      "bytes": 59,
+      "sha256": "054a06f6b32be07992df018293d8d8108e3e9c6800d35355b39a5ec4763ff883"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/CeritaKamar201Arthur.cs",
+      "bytes": 7501,
+      "sha256": "2a90f788c8c4be0ebd7b30b650a6f4d1d356ff5eb8ec14f1f0f9949833c71bb8"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/CeritaKamar201Arthur.cs.meta",
+      "bytes": 59,
+      "sha256": "95092ea477459bc08c373a16ba97fd26ad5ff7470eddb2fc0a2d2a9e83c13d61"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/FigurChapelCerita.cs",
+      "bytes": 1354,
+      "sha256": "dbb60643cbb573925599adfed6a9393cae2ca1876800bc05c93def2c2044c515"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/FigurChapelCerita.cs.meta",
+      "bytes": 59,
+      "sha256": "75b2c08a667adc74645403b39bdd190f9f681ae2848f761c87823093dc3d8704"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/IntroTitle.cs",
+      "bytes": 2871,
+      "sha256": "06b07cf8b9f4c63f614e50e1b1df9ba848ce3ecfb967c4dfa21ceb9870a734a6"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/IntroTitle.cs.meta",
+      "bytes": 59,
+      "sha256": "876b2830fbf082b8260cc66c11a30e602e186102d58dc31d2ecfabc3a163f569"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/IntroVideo.cs",
+      "bytes": 1459,
+      "sha256": "dacead9f07028afcde98eaed26f3cc4a6289445f77a9750f660a5a2320d18108"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/IntroVideo.cs.meta",
+      "bytes": 59,
+      "sha256": "69038f84c56260532d25ca83d346f1856afe14d7ecf474801235be4b32add880"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/JariMengetikLaptop.cs",
+      "bytes": 731,
+      "sha256": "a0e82bbd37650352a4c429e0233978acaa75a528d06ef4f17ec31d45889760d3"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/JariMengetikLaptop.cs.meta",
+      "bytes": 59,
+      "sha256": "0a2d636c3659b2a69c4b3b4e74074909e6313d793af2aae74ac263bc2c9d07d1"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/JedaSaatTidakAktif.cs",
+      "bytes": 2028,
+      "sha256": "02b29af67b978a38a231d6cc04047300a58ad173b28301a8b1111011b09cb012"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/JedaSaatTidakAktif.cs.meta",
+      "bytes": 59,
+      "sha256": "28b7bd5fea3caaadf04e8f572fc30beb4a2643125fdfaefee05fa06bf73618bc"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/JemaatChapelCerita.cs",
+      "bytes": 1232,
+      "sha256": "82bf9c44a4f11b961ab11c4e1b1401d16bff648cedc9a35ed118de1039db171f"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/JemaatChapelCerita.cs.meta",
+      "bytes": 59,
+      "sha256": "657f0b0251e6d97a3f69e672858ef24c8d6597918a7c09cb7dcfaaa42ae4b3bf"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/KepergianDandi.cs",
+      "bytes": 3719,
+      "sha256": "a689704c5f16b140949bbe8e9ec6290f6f697d781b1d7660bf0ce5b13efc52fb"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/KepergianDandi.cs.meta",
+      "bytes": 59,
+      "sha256": "c80017f4394f4b322cbe4283c6a135ee76b30080fbd18c73332e9291ec7b77ae"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/LampuMalamChapter1.cs",
+      "bytes": 852,
+      "sha256": "282e6f7538a03d0b40b90a66c49520d3b2ff58537319ffcf245dee4269c0edde"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/LampuMalamChapter1.cs.meta",
+      "bytes": 59,
+      "sha256": "4e3aeb5e81af57d67c5128e564261c0e4551173961013646fb8f88dada5ca35e"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/LanjutKeKamar201.cs",
+      "bytes": 490,
+      "sha256": "4451f448b5e3f3ef019f252fbbbc584d7344f4c4c82da0a4780c2ee8e3eefe43"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/LanjutKeKamar201.cs.meta",
+      "bytes": 59,
+      "sha256": "2eb3b42254ca03d2cbcce19a9611d05b20df11d84ba7bbe0fcb59692905a45e0"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/LoadingManager.cs",
+      "bytes": 1399,
+      "sha256": "790c225aa0ba6a750d34b23496e2503be08b99eba6c5dff025bfae2f959aa0f1"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/LoadingManager.cs.meta",
+      "bytes": 59,
+      "sha256": "28625d732d46b1a7b1f861e0a199a60e66e81bfe70dc26591d9c580e2d6cfa77"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/MalamGAChapter1.cs",
+      "bytes": 3146,
+      "sha256": "622a9192307539a3afd98e59f842978373aa3d71d0b41346aab85c989136b269"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/MalamGAChapter1.cs.meta",
+      "bytes": 59,
+      "sha256": "74c25118596569b988c9651888fc4e07fe489a461966a147a894a35a6b659653"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/NotifikasiMomenTerekam.cs",
+      "bytes": 1937,
+      "sha256": "5744911e4afd2392346eb0e0f00d370c152e1d454ac3a432ed5d6bdabff1f6fc"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/NotifikasiMomenTerekam.cs.meta",
+      "bytes": 59,
+      "sha256": "c863893a8d02563e695c009c20e60e6c62fb974b231afb570714370c70ff3f56"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/OrientasiAndroidArthur.cs",
+      "bytes": 2424,
+      "sha256": "8c50aa18d0ad3d953b75e7bb0c22c8bddc532b58dc09c8c7738a24eac8b80428"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/OrientasiAndroidArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "55bbdc0b0427d13b3fbf368e5129f40bedda22a24b3d0a641e623f6a8903e3bc"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/PenghargaanDemoArthur.cs",
+      "bytes": 1277,
+      "sha256": "61b181291ffcba52def6fb8cd2aa3426407409056e4d538747a0513d0a0cb620"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/PenghargaanDemoArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "f582ad5bba2a5145d74674d80f1a5454b743aa6af9f9d91747c143965210c7c2"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/PenutupChapter1Arthur.cs",
+      "bytes": 12461,
+      "sha256": "72022ce3daff9526d6e49984f3f6af6151d5b4ea9ffe520d4c55492bdc41f727"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/PenutupChapter1Arthur.cs.meta",
+      "bytes": 59,
+      "sha256": "631c90039b2cc30e54f141481f46e938f203d8340c5ae7109a87ff919e960a10"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/PerformaAndroidArthur.cs",
+      "bytes": 3892,
+      "sha256": "40601d2af4ed45ebd3d4d48d58a98419fa737f35eda67e2032e9370fd3795744"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/PerformaAndroidArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "5e4bb47ed02a22a1017ae5f7c2bcf3920d436806a61e19f53a3a4ee628e3d9c6"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/PerjalananChapelChapter1.cs",
+      "bytes": 15440,
+      "sha256": "42aa57a640d04c933afbdf440f9693e865f36199584c54ab211e4381723474b1"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/PerjalananChapelChapter1.cs.meta",
+      "bytes": 59,
+      "sha256": "7add5c701dec8b921dc7c67ca0bf61604db9f7a9f66712fb8384159391eccd65"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/PerjalananDandiChapter1.cs",
+      "bytes": 2324,
+      "sha256": "053f9c95cd16e96f8af35750457773f57e5b0610d1e754e908933bcf0871715a"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/PerjalananDandiChapter1.cs.meta",
+      "bytes": 59,
+      "sha256": "02135bea266ce208f2f03087d1bc8a77fee42702e04505b616d5945391e9c552"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/PerjalananDiningChapter1.cs",
+      "bytes": 4914,
+      "sha256": "399bb31166a0232afce3fc20b2d41d7674e43495eab26eef9fd1a6e88a03d746"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/PerjalananDiningChapter1.cs.meta",
+      "bytes": 59,
+      "sha256": "573ac9dd99aa0339ae32c34da1db0c4b69bcdf2b2d6ccebe1eb73de8c22c8fd2"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/PratinjauArthurMengetik.cs",
+      "bytes": 4900,
+      "sha256": "2c577eafcd7137b1c67168cadcfa3571e436dc70f005502e0bbd0bbd7823f998"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/PratinjauArthurMengetik.cs.meta",
+      "bytes": 59,
+      "sha256": "137c25a6b7dcf8031b661e3f29654bbdf84757cc2c9e30e701eed691d6b99195"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/SuasanaIbadahChapel.cs",
+      "bytes": 860,
+      "sha256": "18621964d10b7a5a8cc8e421c2cd533a69b92674200069f4d5a668917d1149f9"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/SuasanaIbadahChapel.cs.meta",
+      "bytes": 59,
+      "sha256": "80a69f7fd20619ec44f73e32ba936f4135aaa506158b31b99074a1049d837eb1"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/Sutradara Transisi.cs",
+      "bytes": 2503,
+      "sha256": "d331ccdef691ab68c19a23369adf64af7a5096304df1436b42775591a43356db"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/Sutradara Transisi.cs.meta",
+      "bytes": 59,
+      "sha256": "251420b769c9d4d58c6c6f8caf0c43b2f338d7f9fcccce03c5ed57f8f3c744b1"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/TeksAmanLayarArthur.cs",
+      "bytes": 1690,
+      "sha256": "bb318a5c5fa9aa4256845529dec2e684d31b628c53a0aff7f9a9aacee24de5e7"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/TeksAmanLayarArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "9ea68390fc75fc2ca2b359b3926d69412ed524ae4c10f1de1d7e93823fb02173"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/TemanSekamarChapter1.cs",
+      "bytes": 1685,
+      "sha256": "0e8ec1cb1a1551d7265f6f41011cb18ac5d3effc14ccc1c0225b8196913186eb"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/TemanSekamarChapter1.cs.meta",
+      "bytes": 59,
+      "sha256": "b03ba6d0d2e04e95820bafa25b9513e9987bb870bc5c37996b4d1ae91391a58f"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/TitleMenuManager.cs",
+      "bytes": 9689,
+      "sha256": "e1a139dda4acbe304f9304c697b38ec900e4efd61536fafb256933393b0c2e52"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu/TitleMenuManager.cs.meta",
+      "bytes": 59,
+      "sha256": "a25cced53bf30f396d7a202d67eb26d282c830905b60aaebe37afbc82d7defbc"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/AlurDanMenu.meta",
+      "bytes": 172,
+      "sha256": "828eb6f12d422bfcf76bb1c6f88d49a5ae6e2499c98a0bffea62addf02aa3db2"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/AdeganNpcTaman.cs",
+      "bytes": 2444,
+      "sha256": "c2a1f27dfe620f8dd1bb27562f578f45976aca4d4f4404be517713c9cde46241"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/AdeganNpcTaman.cs.meta",
+      "bytes": 59,
+      "sha256": "b5701ac5259e63f33b77301563672b8435ddfda68bf899a940623a29c4b917bb"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/AwanKampus.cs",
+      "bytes": 966,
+      "sha256": "b2223f29da472ca4c487e8b794b38cd6a79b18836d9555bb6eb7290e929866db"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/AwanKampus.cs.meta",
+      "bytes": 59,
+      "sha256": "0d99457195c09018cf1224c03238549e4f65f5cb934b7152c2d186371cd0894b"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/AwanLembut.shader",
+      "bytes": 1864,
+      "sha256": "e459001f50066f651b79eb8319cc34e8fe126e91b0d5f956c75572e5ec17a4e5"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/AwanLembut.shader.meta",
+      "bytes": 204,
+      "sha256": "f520174eec9353355870566771dcfd71856121d66fc8857b21634507b327bb94"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/BarangLepasArthur.cs",
+      "bytes": 995,
+      "sha256": "0ba64d91b94bdb2bb1d550d5dddb8d0880cedf7597b4ec3b57e0ce44adeb81b0"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/BarangLepasArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "3bd3a6b3cb4e92b90f5c94029284b1ea5cf472c0d8f0e95a5989c37369533ff4"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/BurungTerbang.cs",
+      "bytes": 1460,
+      "sha256": "7e17532b93247997959224d4a06c1be6b8ed241d5ba111fe23bd007219141185"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/BurungTerbang.cs.meta",
+      "bytes": 59,
+      "sha256": "86c698940dc8fc9068c4f81a97c25677013e8d42ef67c0ff764e39880f09b064"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/EmoteBergantianNpc.cs",
+      "bytes": 939,
+      "sha256": "faeb30f2214ad88f78d390324565feb0183d65d06470c733ba79c1d47d3fd4b2"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/EmoteBergantianNpc.cs.meta",
+      "bytes": 59,
+      "sha256": "97bce9d950d5bea8d84dd38837aad286d5f34455d618089d32e819b2d5cd5f34"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/GerbangSatuArahJalur.cs",
+      "bytes": 1517,
+      "sha256": "40192b46e55ee468a5be51e10d39d27a70769a30c7179317ea09860c8663d6b5"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/GerbangSatuArahJalur.cs.meta",
+      "bytes": 59,
+      "sha256": "f3020649d66af992087afd012e304367cb9e24e23145e46376695e090492f883"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/HewanKampus.cs",
+      "bytes": 9253,
+      "sha256": "34ff7862d53454f6f7f4b4f66524c156b7f2343f06594576ec85e6afa9916989"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/HewanKampus.cs.meta",
+      "bytes": 59,
+      "sha256": "dd7430ffbec8cb61fd0c4874b94fe0d98399fcb5c116f5f50d680cc8d5139c12"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/InteraksiJalurKampus.cs",
+      "bytes": 7167,
+      "sha256": "89556340d6c2daa8ef3cc8d872c85bbce0c73a93f4115a321165ee32ddfeb1d3"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/InteraksiJalurKampus.cs.meta",
+      "bytes": 59,
+      "sha256": "a44bccae123e2192ab5d6dcdea4bc4524a82035e7c94cc7504e45be34d8c5406"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/JalurKampus.cs",
+      "bytes": 8754,
+      "sha256": "c515c5da240336011f9efae45ea49ce6a25619080a7c30de15ec20e4d1ce3013"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/JalurKampus.cs.meta",
+      "bytes": 59,
+      "sha256": "3ccb88fbf76638fa65ada2f9554a6a904868cad5fb7214171e93ee74fc23256b"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/KameraGK1Bertahap.cs",
+      "bytes": 5355,
+      "sha256": "e976dbf6a92a22989c7e58cca6c7b7cbb796ed2faa55c431a4828cb4f8082a2a"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/KameraGK1Bertahap.cs.meta",
+      "bytes": 59,
+      "sha256": "d5925dc4d9c297e376f08ef1d9349adfc48f7a9ec26bb9062be18767969cbd1f"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/KawasanKampus.cs",
+      "bytes": 6694,
+      "sha256": "b12eb5a142d712c9c85ca88e28adc75d516e8cf1c4d2da2336d6209c5f0c757b"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/KawasanKampus.cs.meta",
+      "bytes": 59,
+      "sha256": "432f482f5afc6a4cb34968acb364f63bed05eeab8120ecd663e968b41908f951"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/KelompokNpcManual.cs",
+      "bytes": 208,
+      "sha256": "7ca67ffc23ea46cf21224ef5cc784d03b5568f7b203c62bab2d36a699f043446"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/KelompokNpcManual.cs.meta",
+      "bytes": 59,
+      "sha256": "59e885909627bc7e55ca4b7a2d56c90e1630a184e466c469c12132f158e04588"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/KodokTaman.cs",
+      "bytes": 480,
+      "sha256": "2164e017e0cc680f8458fd627ff4e45aef8cc1183b4e7ec9ee4cfbaa9bf2e6f1"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/KodokTaman.cs.meta",
+      "bytes": 59,
+      "sha256": "71ac631ab689081098aa7374f156555d440d26a53873c1deb687656fe0d830a3"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/KupuKupuKampus.cs",
+      "bytes": 1368,
+      "sha256": "36f2b7a246f8bba596b72a4c15ebceeac0f0f32b782d3e4a3bc3cf98914e2119"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/KupuKupuKampus.cs.meta",
+      "bytes": 59,
+      "sha256": "195c3a6f4ea8017c95c3ca010b9dba2cc7d44b82e3152263accb2fdf1431d797"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/LangitBiruGunung.shader",
+      "bytes": 2741,
+      "sha256": "d861cfac346339bb47a5ac4e470a83720fbeb2f25a05f81457a5d14f95bf40c8"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/LangitBiruGunung.shader.meta",
+      "bytes": 204,
+      "sha256": "9b0e2d481763f550cb92b869aa3891affbf7c5654c412d3ef96e7b731099db9c"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/LintasanKameraKampus.cs",
+      "bytes": 4667,
+      "sha256": "7718e68994a4e54ee25281a2081dd65668dc4bc2125ef4035560fec49f1c68d8"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/LintasanKameraKampus.cs.meta",
+      "bytes": 59,
+      "sha256": "431625d99aed8ed0589988a905462c4bd3863db3c1b44ed9e06cdc0d3ce750eb"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/MalamEksplorasiArthur.cs",
+      "bytes": 5230,
+      "sha256": "a7c77f0de379aa12fc514a0240f7927d2c92e51e8eff4bbc14b31f5591873082"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/MalamEksplorasiArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "9d8e60894cce2e510870df3baee8a7c5c1f476163f3d68a5887c77f339fdaa62"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/MateriKuliahNpc.cs",
+      "bytes": 987,
+      "sha256": "d12b67dec56f0445689bf2cff98999f27f7ffc7f3ac25de829ea66636a0f76ac"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/MateriKuliahNpc.cs.meta",
+      "bytes": 59,
+      "sha256": "4de35222041cf0df05e94f0d4f103507f5849ad7153267f7218b99aac4e1c722"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/MobilCampus.cs",
+      "bytes": 9164,
+      "sha256": "5afc1ee421529e244bcae97d546da1365f12951a39141f5e997f1109336630fd"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/MobilCampus.cs.meta",
+      "bytes": 59,
+      "sha256": "50c211aa92e8fd6c30e3a7d074bd4dbdb23df29ab1884925a15fcafba1d51757"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/NpcKampusHidup.cs",
+      "bytes": 3452,
+      "sha256": "930b653c05048e93b389c71d1a9196f1bbb8e402eb5bd4b45193d189dae6bacc"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/NpcKampusHidup.cs.meta",
+      "bytes": 59,
+      "sha256": "dd7dfd17338e44a42306ca482162916cecd4b6b1f379a13111a28a4c3cca6cb7"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/NpcKunciMotor.cs",
+      "bytes": 4192,
+      "sha256": "0b33eeac3a4c8a24d5be7af438bac805024b8b6f6e9fa9bf93472db60f4055ee"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/NpcKunciMotor.cs.meta",
+      "bytes": 59,
+      "sha256": "90c49ebdc74c358a92c17e0cc170e4f312d9b0537d04ec261b25710656c42e2d"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/NpcYangBisaDiatur.cs",
+      "bytes": 3238,
+      "sha256": "bf808b6af84dbccfa1d2c89ff04a4657d2748151d444e3984a6008a0b698dd6d"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/NpcYangBisaDiatur.cs.meta",
+      "bytes": 59,
+      "sha256": "e2ecfb7dea20a48c2c97b2637e5692d360344d8090c4b434ffe17fb16104832a"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/PeganganWorldKampus.cs",
+      "bytes": 846,
+      "sha256": "f221434009c3154c3e02255969b8eeedd4689750a70e78b86490853f668502c9"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/PeganganWorldKampus.cs.meta",
+      "bytes": 59,
+      "sha256": "b85233b6b5c3070c2bb5a1e578b3a3dd81a18457ae2b0b324c0122d2e1635d9e"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/PelariSekilasNpc.cs",
+      "bytes": 6931,
+      "sha256": "8ec570242cccd4ac27022637eae0591fb76797030047b9bbd6c06d55710d99ae"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/PelariSekilasNpc.cs.meta",
+      "bytes": 59,
+      "sha256": "3656067a1f437a84d2e2cf17de6e56eb69ea8e6697af2bd2550717e73e9f06d9"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/PenandaBatasKampus.cs",
+      "bytes": 234,
+      "sha256": "d84ab555abc444bf6694ad1a0036fd50621573416ede2ed4ef13910f02925e08"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/PenandaBatasKampus.cs.meta",
+      "bytes": 59,
+      "sha256": "89462d006b3b482b948eb906c86bed47c427cba57a6bb4987217da1d068c2154"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/PengaturCabangKampus.cs",
+      "bytes": 3403,
+      "sha256": "4e13930a45101b62af7c8efa6c7549b2e7685d19d407c7e5e756a648f5dc0fae"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/PengaturCabangKampus.cs.meta",
+      "bytes": 59,
+      "sha256": "037dd691005d5053afbf3cdbb36986db1d39ad9bef7983f20f9e2a53bed33ac5"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/PenghuniKampus.cs",
+      "bytes": 1261,
+      "sha256": "ba65f3429bbc3520ccca7bf07d07650010dcaadda1dc9bfa04811191bdd8705e"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/PenghuniKampus.cs.meta",
+      "bytes": 59,
+      "sha256": "e9ca1afe3d1d334aa04a0f1386900223c2ac942494ced1369e952b69a5217af1"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/PertemuanHewanKampus.cs",
+      "bytes": 6199,
+      "sha256": "a0def61de46c1f335b6ad4214b5f9281c473a8958f9079e46b63855357bb3258"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/PertemuanHewanKampus.cs.meta",
+      "bytes": 59,
+      "sha256": "df6175bca4c706ad0557ca25eb46b095ab7c1f1043cba0c9c5861a98dc29373c"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/PolaIdleArthurNpc.cs",
+      "bytes": 661,
+      "sha256": "b400e3a9e5667bc1d46d2aaf55d584745f7f99660d90e7dbd9cd85007be1b0a4"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/PolaIdleArthurNpc.cs.meta",
+      "bytes": 59,
+      "sha256": "545548335431458b34fb9e64e04ee6fb4ab9ed9fa08991962adedcfa7eb749b4"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/QuestTitipanArthur.cs",
+      "bytes": 2872,
+      "sha256": "2817e15668740f4fd0014a52d2de74503d99ea215a09a2f087dfadba577626b0"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/QuestTitipanArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "677333f97b650884adac03110023ec422fa9b7023b0a04601f170f7bc2dcd7de"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/SiklusWaktuKampus.cs",
+      "bytes": 6778,
+      "sha256": "b1f87c245de43934ba3d5e2a3d582b49739af3450d1f4b5322216d0f0fb31ef6"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/SiklusWaktuKampus.cs.meta",
+      "bytes": 59,
+      "sha256": "5d1185ecc6f167e98cbd871d63ff4e1ac16b60e81d1b428dd73f49abc99b3c68"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/SimpananEksplorasiArthur.cs",
+      "bytes": 5141,
+      "sha256": "e55b85bf8a7a96459926464d0bd2f78fc03925d7a0d061905957854ee38ba3a0"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/SimpananEksplorasiArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "a3822f418ebb06cbfa180e2fdf14d05434b0b5c0d0c50d896179686a2487e244"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/SuasanaKampus.cs",
+      "bytes": 3208,
+      "sha256": "14a5bf089cfd0371da942ba8313ca37f8262e8fed7241bd41673214f80194993"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/SuasanaKampus.cs.meta",
+      "bytes": 59,
+      "sha256": "4d3134e5570c03117bf837aaebcf8ec922a766f2e65ceb71a4cfa85b53523aac"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/TitikQuestTitipanArthur.cs",
+      "bytes": 1243,
+      "sha256": "f2372449ccc047e2d77d3a854b9cd697db4acafda097f4df551f94e554afc187"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/TitikQuestTitipanArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "271dadbed757147b75f21e5df92f9bbf4c290ac651e7ec49f0a178d7392b1122"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/TujuanJalurKampus.cs",
+      "bytes": 544,
+      "sha256": "18d4f86acb2eebea86a469f13e9f34c3a20205f64a80811513115f87b2b2ce89"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/TujuanJalurKampus.cs.meta",
+      "bytes": 59,
+      "sha256": "eb074a34b5b162f23dd25648f37525a15b5a9f4cf003bed370078d048a21fec6"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/WigglyBubbleInteraksi.cs",
+      "bytes": 1588,
+      "sha256": "e36d840b6b0eed331f7ab4baac5058c42912a9c62969af912cc799d80e07b821"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia/WigglyBubbleInteraksi.cs.meta",
+      "bytes": 59,
+      "sha256": "056dc0087dfad85fc5c034b08dbfd84eba31130ae3cc04df8b76ae01bc56e2d5"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Dunia.meta",
+      "bytes": 172,
+      "sha256": "be9811624dd83f3b41d43c7b297c386323d420cdfdab0d3137eaa4f32b5b8c8f"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/EfekUI/BunyiTombolUI.cs",
+      "bytes": 5715,
+      "sha256": "69fa79113788bec9ac3c90a3cdd47c5f1f4bcbe0339834836fb3edd44aafc6ec"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/EfekUI/BunyiTombolUI.cs.meta",
+      "bytes": 59,
+      "sha256": "898f3a98dcea628401992d3ce086344df589f8cee1ce3daffea2da4195e832db"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/EfekUI/EfekPilihanUI.cs",
+      "bytes": 3893,
+      "sha256": "f61825f6b6b26b0eae788b53eec1bf061fb38fac1e6e1ed776b5621babd4ea4b"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/EfekUI/EfekPilihanUI.cs.meta",
+      "bytes": 59,
+      "sha256": "1d2487e4eb6938f46dc7d686cf3febe114976762562d3af62fec72fe5f6aefdb"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/EfekUI/FramePlayer.cs",
+      "bytes": 972,
+      "sha256": "b3023e80d0973f826ba2052ec80eda815caa02eddbdf28bd97534734b339e0d2"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/EfekUI/FramePlayer.cs.meta",
+      "bytes": 59,
+      "sha256": "3492cfb44c850ecf1b311f993f7bdca998b9938e84d9b7c686d98e86e21f7593"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/EfekUI/WigglyBox.cs",
+      "bytes": 2018,
+      "sha256": "d01c4be6f45e76dde52f5be257ef0651154fa6a0f299eef3279b079f90ddf889"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/EfekUI/WigglyBox.cs.meta",
+      "bytes": 59,
+      "sha256": "4ed9e01a5e015e198941f9b1e21ffbc0fa749ec6cee4c5c4ec73012086af52a6"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/EfekUI/WigglyContainer.cs",
+      "bytes": 1311,
+      "sha256": "703c5a8c64130bee52f7e318486aa0345625145f5b16975f4dddfdfb54b39be0"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/EfekUI/WigglyContainer.cs.meta",
+      "bytes": 59,
+      "sha256": "b0bd4c3ccf101efaeb96240d78a6dd5cce42098a4075e33811e1f07befab47b8"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/EfekUI/WigglyText.cs",
+      "bytes": 2421,
+      "sha256": "795200ec5e08eabfcc87b79f1f4c5c12f62b315cb54c7d63a603b359bc5865a4"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/EfekUI/WigglyText.cs.meta",
+      "bytes": 59,
+      "sha256": "e9367220100c6f6b95a51aa6046dfec6f11dd9b8a258b28ce3d12536890dfc01"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/EfekUI/WigglyTMP.cs",
+      "bytes": 1774,
+      "sha256": "7a832b5937e5257b3f3357be73cd56be34c05028077841c52455410473518807"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/EfekUI/WigglyTMP.cs.meta",
+      "bytes": 59,
+      "sha256": "fcc31c946852252a63d488df3f34964bf7901ebfdd5d2e9033f57a322b725bb3"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/EfekUI.meta",
+      "bytes": 172,
+      "sha256": "15619750d077c1aef31ac8cae71751cae99857edd1c5c56a45e4c9f55efbc95a"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Kamera/BingkaiKameraTetap.cs",
+      "bytes": 841,
+      "sha256": "298c632da0f566ff926cd33baf3ecf6f5242ffdc11c51c99aacfc2f7134b16eb"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Kamera/BingkaiKameraTetap.cs.meta",
+      "bytes": 59,
+      "sha256": "9d74cd18c820907c41529b2b4c9e14d32c4056684642c786f03431cbefa1771c"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Kamera/KameraGoyang.cs",
+      "bytes": 2514,
+      "sha256": "b4944c6876dc1846bb0cb4a9f687210e0f4ed54e9230a6014bd4e971f0928e51"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Kamera/KameraGoyang.cs.meta",
+      "bytes": 59,
+      "sha256": "c700ad7e39aae8a6add1fb7d84806e7c01353e172192cc9cec684605af50b3d0"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Kamera/KameraNgekor.cs",
+      "bytes": 932,
+      "sha256": "27ca2d480c358210ac303eb472978fc565f2447a48d91fe623c98dae12e6ff95"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Kamera/KameraNgekor.cs.meta",
+      "bytes": 59,
+      "sha256": "8c7f4a8a93c3bd6b8ca453b25a3cef747c21b3ab94915f48c8c5975280ff2312"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Kamera.meta",
+      "bytes": 172,
+      "sha256": "8d7ce9a87678d34f24b1368928521b74770c9a30ed99d0e7ca727e93f7838099"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/AksesoriDadaSejajar.cs",
+      "bytes": 2937,
+      "sha256": "e6698e3ac4e6a6c990000679c572d640151490c88b763de621a6d87217d4da6a"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/AksesoriDadaSejajar.cs.meta",
+      "bytes": 59,
+      "sha256": "9eb8557d32333145c584fcb624de72f55463bdc7cbd92c592e5be0bcf9211711"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/ArthurJalanVertikal.cs",
+      "bytes": 5715,
+      "sha256": "d296cbdaace5ccc728491d14d98b9483c00c2e821873d9f8657b79cb03daa494"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/ArthurJalanVertikal.cs.meta",
+      "bytes": 59,
+      "sha256": "1a96ab8d17d30d178eb69d7ee8ba5dbf71c2146664b64258b3031e658b233954"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/ArthurJalurKampus.cs",
+      "bytes": 18129,
+      "sha256": "160e4a727d38a32ef601613ff1c6008105088a4aff368dc2985324275abdd588"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/ArthurJalurKampus.cs.meta",
+      "bytes": 59,
+      "sha256": "6095620c36832fb866f81a38b3c4b5491a1bdc38376ffb0fafa6f070200c365e"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/BayanganKontakArthur.cs",
+      "bytes": 698,
+      "sha256": "a4c0966eec066e4c52868f8c2824f40aebadea078e21b83ec211ead294bc7477"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/BayanganKontakArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "794c5fbab85c13dcb0a2df33eaaf898064df7b5212994df8f25379421bfa2acd"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/EkspresiWajah2D.cs",
+      "bytes": 15719,
+      "sha256": "e38bef71bfb39cede8eb548647917511b9784f9816ae35a9fb6c8e4647bb3a7b"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/EkspresiWajah2D.cs.meta",
+      "bytes": 59,
+      "sha256": "745a128e0a14d1cccb59e687b39f568988cb118b192833ff2b2decad2d330e64"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/KarakterController.cs",
+      "bytes": 8358,
+      "sha256": "b0051d0182dfa51c2e780e8d52392c8dcc8b8057f9f4918b5da187be68281f5b"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/KarakterController.cs.meta",
+      "bytes": 59,
+      "sha256": "ef605101aa01d730a5dcc4431d59dc4c66fb2ec0fabc59f26b62f520d2ba3c19"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/KetukKepalaArthur.cs",
+      "bytes": 4060,
+      "sha256": "4a86d20bf5c4e6ca53d30b61d5b5192df552c6668e8afbb70bd8f24566f4ead4"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/KetukKepalaArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "45be4e9ba5f903d16b61b4fb250d97c8f751cfbf60fe9685cbb53282aeec1058"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/PijakanAnimasiArthur.cs",
+      "bytes": 274,
+      "sha256": "d654667377ef532ded41012724cd39da4b3158990a8b501a8df0169ebdc86068"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/PijakanAnimasiArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "80a9f2358d5ddd8298c8a2d2d1cc1de6d2f4459dc06f54c7619864167e502c3f"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/PijakanTanggaArthur.cs",
+      "bytes": 3526,
+      "sha256": "6ed5adb2f7dfdb437a88309d970a954c635b502f934c8b2ec84dfb04195042c8"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/PijakanTanggaArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "44dc5fed2e988df1ba591b24e789bd7be04079836a1865a0dc10728f02272e0b"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/PoseMemegangHP.cs",
+      "bytes": 4247,
+      "sha256": "cb0e4786b12ede846e9e6cf94ef88cf033d21d3149b92b142c8751ee59f7ee67"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter/PoseMemegangHP.cs.meta",
+      "bytes": 59,
+      "sha256": "bc73dc19d7aef50a6eff991ceaf5bdaf015f89f290cd5d25929013c186e21ae6"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Karakter.meta",
+      "bytes": 172,
+      "sha256": "71dd45eea255d1360f43fcb4f86b8d2977ac610477d495150a4b4d17d356255d"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/RapidTap/BulatanKataMekar.cs",
+      "bytes": 3582,
+      "sha256": "ff1b0cfc942d66d5c04f9f867db785b00b77b78cbe972f928ffc9f75559bc891"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/RapidTap/BulatanKataMekar.cs.meta",
+      "bytes": 59,
+      "sha256": "421bed39fdedb91c25a348103a795cf10c0a49149d63be2d0aa37db4e3b38a11"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/RapidTap/BungaMekarArthur.cs",
+      "bytes": 1655,
+      "sha256": "ab9f4a9e3476ca9b1024c1de719bda9365afb8b2b3a4c5d3cb9e3ab1fd273e1e"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/RapidTap/BungaMekarArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "6feb0b576317f1fe4979aa02c1e0dacd94989f95d526e2a6f9c4582f139aaabb"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/RapidTap/EfekFearMekar.cs",
+      "bytes": 4656,
+      "sha256": "a485ec7f5d060faed7f4df6278e41a000299ff4bb7571871c24b676fd3f71bb5"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/RapidTap/EfekFearMekar.cs.meta",
+      "bytes": 59,
+      "sha256": "2598abccc0f90f2f25aa390e01173808826b96f50ff7b430bb2fa4afc9e8e88a"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/RapidTap/RapidTapArthur.cs",
+      "bytes": 7156,
+      "sha256": "88ea562a7640762acfdd3105680e3822625078f41eeb14324d00641bfbe307d9"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/RapidTap/RapidTapArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "09bd24fffc66dca7e5eecd0acb1256768633ea8d0cad82878544924ec4014035"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/RapidTap/TapTapMekarArthur.cs",
+      "bytes": 7389,
+      "sha256": "95ea041798b8895c67690ac13ddca6b215b2836e6bcb8a2c35ec781d9cca15f5"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/RapidTap/TapTapMekarArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "60d6b0dac426e294dbdb03674f86f54a24e1a9a9d1720092749a50a9a7c37f61"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/RapidTap/TapTapPembukaArthur.cs",
+      "bytes": 5319,
+      "sha256": "211cf483bf518cb3cffbd7af97a366045636c27b744079d553aa96cea5152c97"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/RapidTap/TapTapPembukaArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "75db606cf55ea18dcb0e1db35aaf3d4cdea6bb2d3e10a0ee867f88b52bbf9512"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/RapidTap.meta",
+      "bytes": 172,
+      "sha256": "e6d6f598c2c517a49b722318fa6bce0d1c5d2d47768c54185d59242893d1ff63"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/Rhythm/ArthurRhythmAudio.cs",
+      "bytes": 2420,
+      "sha256": "721d43032635d53afcfda1ba6527ad73f3649bd2053a926a439951fb20ec98b5"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/Rhythm/ArthurRhythmAudio.cs.meta",
+      "bytes": 59,
+      "sha256": "1b1fcbe061266aaf1f2d542ff0e0091a6a068e9f4a2977505bd26689191ab4e4"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/Rhythm/ArthurRhythmRound.cs",
+      "bytes": 3171,
+      "sha256": "537e602c590ef91221924e32640b72c39cd47cc4f60f751a773a6387399ae3f3"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/Rhythm/ArthurRhythmRound.cs.meta",
+      "bytes": 59,
+      "sha256": "a704c8b443230b18f30abb52892858dbb2ef0a6fb12ccb25bce90549806b9688"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/Rhythm/PapanRhythmArthur.cs",
+      "bytes": 3934,
+      "sha256": "fff1c54d56aa18255c8fefbb5a65934ac2858378dd323d383ae91f3b5cf86230"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/Rhythm/PapanRhythmArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "65e252f838f951c812d2c1d7ddb0b3a00b961e6a271ba6a92684cad3c7c9d038"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/Rhythm/RhythmArthur.cs",
+      "bytes": 17112,
+      "sha256": "52bb1a9be01d2b461a49d4b935c3d7f5e6ff16690e84637047211e0801436fc8"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/Rhythm/RhythmArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "df8d4c3a1e24085815e0cd227cd46fd7f08de1415f45876641598a1350b560e8"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/Rhythm/RhythmJalurInput.cs",
+      "bytes": 512,
+      "sha256": "0c537d71afbead10d61051bd4da0aaf78f91f59fd3e20d813d227a5a50bc6bc6"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/Rhythm/RhythmJalurInput.cs.meta",
+      "bytes": 59,
+      "sha256": "172b4a7afac283158f3b20d704d24e4d8d321857df045219bb20098e3d174653"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame/Rhythm.meta",
+      "bytes": 172,
+      "sha256": "165c436e65b05e83f49095265e15105942eceb666885f0f3a2b7145196f9556e"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/MiniGame.meta",
+      "bytes": 172,
+      "sha256": "7a0bd7f694df24c4e15fa9dec6a7107a3a6d3f766bf1f04dacdd7e886a2cf088"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/AreaIInteraksi.cs",
+      "bytes": 1925,
+      "sha256": "ccb0333d4d8f20fc95f654fb384726f023aad6867529f922d328fa2997227188"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/AreaIInteraksi.cs.meta",
+      "bytes": 59,
+      "sha256": "941727b464fd1e55b74d9202ff73a4b95656edb6a5fecc1755adc8b66a3f94aa"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/DialogManager.cs",
+      "bytes": 4274,
+      "sha256": "a5e0ae74594510679120ff7e7e57cdf8cdf49b5b01ed6cda6db8ddc976650692"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/DialogManager.cs.meta",
+      "bytes": 59,
+      "sha256": "84813f92b6425a21c13fc4a1c3ce8eb73e61411e648643effb0ca20254b38352"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/DialogTeriakGoofy.cs",
+      "bytes": 2588,
+      "sha256": "c6d47218da65fee7b4467522d7a68ce0a83e2e8ba18b05089caa01ddc6770045"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/DialogTeriakGoofy.cs.meta",
+      "bytes": 59,
+      "sha256": "6ec4899dc35554a392006c19b84ca18893b03b7e0d9fb8ea9279521dc6cf74e3"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/EfekMunculDialog.cs",
+      "bytes": 3362,
+      "sha256": "9803a1d8766c5a17b8ed83d169c967e379b9bb22f8caf708f7916644777915f5"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/EfekMunculDialog.cs.meta",
+      "bytes": 59,
+      "sha256": "d0ce7a75571ac280400483dec42cfb973c45f6f14e7d2c80108a6ce5d70b3772"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/NPCBubbleTrigger.cs",
+      "bytes": 16721,
+      "sha256": "ff8fee485dd4662d4ed24ed194d17f533015b336a6a638b361fa19d7cc28479f"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/NPCBubbleTrigger.cs.meta",
+      "bytes": 59,
+      "sha256": "bffb1ab25f3ab23623c1e829d47943d6e8a857369f8e63a2b24a54b241bddfa7"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/NPCJogetGoofy.cs",
+      "bytes": 2972,
+      "sha256": "2a4b36ff2d1186eb7d936030da939c0b3d47dbb2c3d398199a6d981b2bfda9ed"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/NPCJogetGoofy.cs.meta",
+      "bytes": 59,
+      "sha256": "782f9297d171b008044fd4a54c86c988c6a3be614a48cf586ea712992708a9d8"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/NPCMenghadapArthur.cs",
+      "bytes": 2514,
+      "sha256": "0da264552c1b515b43d7c84778d36a7ab568f27d7b564b2fe8497416fd65243d"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/NPCMenghadapArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "124c63886386a3a53c21bccd9f8e1eb014fe2e0b8f8702a6d3ab0593ae00ef89"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/OpsiInteraksi.cs",
+      "bytes": 2466,
+      "sha256": "d1f31f8e76222bfacac6aa9e0fb342ce655c50f7c8dace9405eab7a1b735222f"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/OpsiInteraksi.cs.meta",
+      "bytes": 59,
+      "sha256": "d76cdc6c1d5acc0bed895a29222f8a998f96acc0324c9794352c67a8c881e160"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/ProfilSuaraKertas.cs",
+      "bytes": 621,
+      "sha256": "ae4f8c1273ba9d3c8d1528e96967d19a069e09562b6b3cd2a3e2f50efb21eda8"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/ProfilSuaraKertas.cs.meta",
+      "bytes": 59,
+      "sha256": "4e39a719a12abc8eafef2bfc865c55bec5363d09acb84512df19494f2ded0b23"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/SistemPilihan.cs",
+      "bytes": 36206,
+      "sha256": "66b76368f2ee29ec7acaa7950d5635f72b273cc61e72703401186fdacd8271db"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/SistemPilihan.cs.meta",
+      "bytes": 59,
+      "sha256": "a15e1ec1053a7d730d3eeeb7a67e2a2d3f168c8ecba846660fe29cee045b14d0"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/SuaraDialogKertas.cs",
+      "bytes": 1469,
+      "sha256": "71e37bde601f405cd944d183951f9250dcfa6918e79c478222344d7285c820a1"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/SuaraDialogKertas.cs.meta",
+      "bytes": 59,
+      "sha256": "ac161ce03245589a08f4dfb0a532131c37dd37c53e01d8b177703b9e24bbea0a"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/TempatBubbleTrigger.cs",
+      "bytes": 7710,
+      "sha256": "d035f02e39cc1696a9b32fa02f4475874e255597d8572f353261b4ab89ce8d08"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog/TempatBubbleTrigger.cs.meta",
+      "bytes": 59,
+      "sha256": "26ad932d75ac2f89a6049375f233e57950f795a35a4a9138c753c821f77dc23b"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/NPCDanDialog.meta",
+      "bytes": 172,
+      "sha256": "ce80c15d6f770418c2cb2f0696235236a1e02bd40baccc4bf1d9965d5e9f998b"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/ParameterDanGlitch/EfekGlitchLayar.cs",
+      "bytes": 6170,
+      "sha256": "6f93e2de6d95dae17378f206ebceaf4073cf5d87165885202a053cf3c49db928"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/ParameterDanGlitch/EfekGlitchLayar.cs.meta",
+      "bytes": 59,
+      "sha256": "253540b5c96980afa3d59aab6c7a8d2e48f48fdec978aafcf73e808752150591"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/ParameterDanGlitch/KotakGlitchUI.cs",
+      "bytes": 2898,
+      "sha256": "e658eb4c346ba263ec7e0b643608148227a48df772dbd2565bf82052a8ee839d"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/ParameterDanGlitch/KotakGlitchUI.cs.meta",
+      "bytes": 59,
+      "sha256": "e035c9d4eb3966a09c1d139bf911d1e22649fbf0453e111a0a9e6bb7c4a172df"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/ParameterDanGlitch/LazyBarParameterArthur.cs",
+      "bytes": 13609,
+      "sha256": "a0da7bf930fed8c5dae908ab794b290aa08d3530bad2953658de2889c8f64662"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/ParameterDanGlitch/LazyBarParameterArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "5bce2465b96fe92f717766687deee3490541aaf79081267d5de4193f69736f3c"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/ParameterDanGlitch.meta",
+      "bytes": 172,
+      "sha256": "c8cdaf2443c1373e3e554955652c25c2bdc580807d1490ff123a579b7e2cde82"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Pengaturan/FilterKecerahan.cs",
+      "bytes": 554,
+      "sha256": "133a60b41e9d1b54df4b21ec108e66c0ff2a27eac3a8d9c7adf5c21e14f985ff"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Pengaturan/FilterKecerahan.cs.meta",
+      "bytes": 59,
+      "sha256": "0280bca79c15fd31e0800e2b54f28a7f2d63d57b0a00890db63af8596bd08580"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Pengaturan/PengaturanGameplay.cs",
+      "bytes": 1906,
+      "sha256": "c0b143f3c49c27ef0f5380f98eb3f9af8193e8ad399ea9f0614e65bd650d1960"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Pengaturan/PengaturanGameplay.cs.meta",
+      "bytes": 59,
+      "sha256": "2470514f90a17676746d32d93c13dc597d422990b4372314cf0326bd2c22033a"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Pengaturan/PengaturanManager.cs",
+      "bytes": 2327,
+      "sha256": "90216720ef845cd63b0d535beeb8242dc78781c816ce3e5a7a5afb1b063c1921"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Pengaturan/PengaturanManager.cs.meta",
+      "bytes": 59,
+      "sha256": "933d566e1721d60a34cfb89133283b6c045f6abeb2f882aeb0b30b8d1a8fcbf1"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Pengaturan.meta",
+      "bytes": 172,
+      "sha256": "0af4f395b4b50bf2d7055527cf4fb2138bb5ac814a70a91bb8657c65ca1a5dd3"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/CatatanDanPesan/AplikasiCatatanHP.cs",
+      "bytes": 6385,
+      "sha256": "117c7f27384196a8a4966fa03c817be18238e24dc95c0a29ebe57e741d2f0128"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/CatatanDanPesan/AplikasiCatatanHP.cs.meta",
+      "bytes": 59,
+      "sha256": "3c202c704a6c07d2449b9a144ce22f98b77760d1bd35e07af99b1cb5a8b74867"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/CatatanDanPesan/AvatarKontakUI.cs",
+      "bytes": 1286,
+      "sha256": "53633defb097f2df71555701679fb3e9de7708a1fee1432355e5674cede36ba5"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/CatatanDanPesan/AvatarKontakUI.cs.meta",
+      "bytes": 59,
+      "sha256": "cb9e0ae98e3dd922fe73323d3887bcbba175995628d6c97ac46b957f7a9c15f5"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/CatatanDanPesan/BukuArthur.cs",
+      "bytes": 2444,
+      "sha256": "b97d34dede4fdc52812f7ec3227fb029ae83d7d09cccf85b0476127114edc0d9"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/CatatanDanPesan/BukuArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "2613e901e1fd2132e079b63562fa51f2e5c84e5bfdf2fa63c62d86e4855b9649"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/CatatanDanPesan/NotifikasiBukuHP.cs",
+      "bytes": 737,
+      "sha256": "d82abe4959c8df987db15d6de5ec86e898be1d229f3288f64803bc0a8a5451e1"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/CatatanDanPesan/NotifikasiBukuHP.cs.meta",
+      "bytes": 59,
+      "sha256": "df4af7c69cc2dd1570a5d625d179a65ebebef20504eccfeff39d2120ac4c4296"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/CatatanDanPesan.meta",
+      "bytes": 172,
+      "sha256": "a9d904a6fdfc618f97249e8f751b7c6521bced8c1e6d491e160d95920de03386"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Musik/AplikasiMusikHP.cs",
+      "bytes": 3407,
+      "sha256": "eac3209c06d53f5851d35b212b75994aa0fb1e5ba62e75b9666e8788d05d65f5"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Musik/AplikasiMusikHP.cs.meta",
+      "bytes": 59,
+      "sha256": "4eeee8c7bcb03fa69e5c29378c376ebf7e07d1769d0b585124465534041c88eb"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Musik/KasetCoretanUI.cs",
+      "bytes": 2142,
+      "sha256": "19ad65f95e6e4d7639358ba4c944fd378734ac47a48e9df7964d2ffbeed5ea88"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Musik/KasetCoretanUI.cs.meta",
+      "bytes": 59,
+      "sha256": "67ee18d0d671f923f1c848e3d486fbcc2035c5a258ee5587e27c1592696c301c"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Musik/MusikArthur.cs",
+      "bytes": 5833,
+      "sha256": "423a8f0a1c9ff4b8f9111d179125d289e67d18789253db63dfa7ee3b37c875da"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Musik/MusikArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "e40086e9514682c21b127d6a581f178b318937593b5e019f838a76c97d18d173"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Musik/PemutarMusikUI.cs",
+      "bytes": 2325,
+      "sha256": "fba9427de6e3c2c26ceabc8deffadbecf653578a35e212b8f583f8b7fd6371db"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Musik/PemutarMusikUI.cs.meta",
+      "bytes": 59,
+      "sha256": "0506771bceafa215bcb15b40c67844158945418017bfe3e82c341052fddbcec8"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Musik/PlaylistArthur.cs",
+      "bytes": 540,
+      "sha256": "abd53f51df8cdf5977739795070ef39e7e310530df7e8fc0c5a90f75276c04a5"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Musik/PlaylistArthur.cs.meta",
+      "bytes": 59,
+      "sha256": "5bee809f754e28d192704fd1e99cffbd886f8fce9704b1d98abec77bec939d14"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Musik.meta",
+      "bytes": 172,
+      "sha256": "b6bb3b3fd04a8097ad087ba1f393e79a3784265f6206bb3caed101b2b50bcf08"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Peta/GeserPetaHP.cs",
+      "bytes": 963,
+      "sha256": "1efcf01aaa4308c817c39d5328880d2604357e281f4ef24763ef98ab5a561562"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Peta/GeserPetaHP.cs.meta",
+      "bytes": 59,
+      "sha256": "ef99cc1ce90d86afb7f0dd0d2fcdc3b878b02bea95bf7ad7c0515ac7d694640b"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Peta/LingkaranPeta.cs",
+      "bytes": 2108,
+      "sha256": "dcfead02fc46acd94802435c834a42cad8e4be9c7482b7fa9f54633f579c4aba"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Peta/LingkaranPeta.cs.meta",
+      "bytes": 59,
+      "sha256": "c9b36f3b8d5028d3436ffae6fd9571aa74337c0d0164dfe75d86807699ad0f9f"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Peta/PanahYouPeta.cs",
+      "bytes": 1112,
+      "sha256": "0a8cf22ad52dd97011f59280012605eb42080544108c56d0c4132444c8437e75"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Peta/PanahYouPeta.cs.meta",
+      "bytes": 59,
+      "sha256": "86361fe6e5bbf8d0b33ea1dda65b2222bf2f69560ee5a213eceb582e0ee5f077"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Peta/PetaKampusHP.cs",
+      "bytes": 7652,
+      "sha256": "27ba7668910130a9319942b779ad730e0ac1cfbb630813d46950e363901cfc9a"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Peta/PetaKampusHP.cs.meta",
+      "bytes": 59,
+      "sha256": "aa60137bc5cb9ff60be3712fac5538fbed3f7bffec5171c334eb626d8a18ea34"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Peta/PosisiArthurDiPeta.cs",
+      "bytes": 3597,
+      "sha256": "b436df75a8c435ca603553420885d238b7b8df3c60dd1deaa9ddb681c95040fc"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Peta/PosisiArthurDiPeta.cs.meta",
+      "bytes": 59,
+      "sha256": "109cfdc59f44563ace8c33f28a9648d517587dbd97764b19e1dacfb7fd917de6"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Peta.meta",
+      "bytes": 172,
+      "sha256": "3adb1c6465d8992bbc9dd71744c8b5563a2fe1022a6cd3e66dbc2ceb186b71e5"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Sistem/SistemHP.cs",
+      "bytes": 15922,
+      "sha256": "5fa2980fcffb95fc9e064081090d98271365d393586561efdef0b67845226730"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Sistem/SistemHP.cs.meta",
+      "bytes": 59,
+      "sha256": "c9d7a9e38c2c6cc0c95ccebca7db64cc905272147f5032e1468bb739800d7ea7"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Sistem.meta",
+      "bytes": 172,
+      "sha256": "424ba6502176934289ad434044e13757a0ef83333f67b30c5f11013c49a4b98a"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tampilan/BingkaiAplikasiHP.cs",
+      "bytes": 499,
+      "sha256": "18b5743c0700d74fb68db3faa0049c18ffad95141f7cd37fd9455d6a4e72050e"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tampilan/BingkaiAplikasiHP.cs.meta",
+      "bytes": 59,
+      "sha256": "0af670cd44c0594892b97ef87cddc8fb2903c01eef08668f30b67540851d296f"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tampilan/BingkaiPonselUI.cs",
+      "bytes": 1594,
+      "sha256": "9ca6a37d6f082013217fdd31f0c556e3954aceaa4e394864361c520f24e39efd"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tampilan/BingkaiPonselUI.cs.meta",
+      "bytes": 59,
+      "sha256": "7b4a7294e869e03a5e44e655adff3acb8c8fca29a33d874304490be904063e64"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tampilan/IkonGameCoretan.cs",
+      "bytes": 2560,
+      "sha256": "cc53b1da12cedb88b3c98fa31e5875fbc3b28d4249456554c2291247d4ffaec2"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tampilan/IkonGameCoretan.cs.meta",
+      "bytes": 59,
+      "sha256": "3d793b229bd10fee1421d780e29450c0464e2850222233841573e77e0f394a37"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tampilan/LatarTeksPasHP.cs",
+      "bytes": 1639,
+      "sha256": "ccaf5985c4c3420d691eb66758df76ea05b1acb63f5cf2ddfc634a72a2fc493f"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tampilan/LatarTeksPasHP.cs.meta",
+      "bytes": 59,
+      "sha256": "5c5d2e882fcbe3f17905ea8d27c372a38a431ba17cc40c91aa08ee7e2543652f"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tampilan/PonselAplikasiBersama.cs",
+      "bytes": 1508,
+      "sha256": "1fda444eee0f520d8ee41f431759be74a9a3a8dd98e2cfc4ce1af479062db843"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tampilan/PonselAplikasiBersama.cs.meta",
+      "bytes": 59,
+      "sha256": "5eda0cedc66454ca3bd55406c9b766cc7e89fc6d6d5f978e1f47ec2d7a902c56"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tampilan/TransformasiLayarHP.cs",
+      "bytes": 4918,
+      "sha256": "8941270c997565928b48ea7162895eba9a6703a852d32aa8405a9576e3b79362"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tampilan/TransformasiLayarHP.cs.meta",
+      "bytes": 59,
+      "sha256": "81f37bc4c1c34c123782a95fe4f7448102b7de4db26d35a1306b1fa5e58f313c"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tampilan/TransisiAplikasiTV.cs",
+      "bytes": 5216,
+      "sha256": "84bd06f942a66cc4b8282e542a1e17bcedd6fa714285e24555d7eca573078550"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tampilan/TransisiAplikasiTV.cs.meta",
+      "bytes": 59,
+      "sha256": "e52133e94e8c2def4db79f59c79dc7ca4201f8b801ab1f1814235e43e91ed743"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tampilan.meta",
+      "bytes": 172,
+      "sha256": "b177bf289ad682ccd67980e5bd5743367a708aa6f2fd4d53339e927b7e5efa08"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tas/BentukTasUI.cs",
+      "bytes": 1807,
+      "sha256": "a852227126df357d2d17dcb13df72bf80a5a7eaff440951546d6cdda25692e2f"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tas/BentukTasUI.cs.meta",
+      "bytes": 59,
+      "sha256": "ab7e34480809f2b53aac0a5615c4b738ff33d2db92c2347c6d5375c105d25c21"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tas/BukaanRitsletingUI.cs",
+      "bytes": 2506,
+      "sha256": "a48015939175ea21033f0f53be73932f60d177b1370fc60f243b9c670fff150d"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tas/BukaanRitsletingUI.cs.meta",
+      "bytes": 59,
+      "sha256": "3cdddc898d3268c218c47f5ad70688c37227194e42fc4680d8ea080cb29fda58"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tas/ContohIsiTasHP.cs",
+      "bytes": 868,
+      "sha256": "cbebcb2cb545928d014b5e1d77b1f40dfe46b3d67c1a1e4d559e0dbf40dd02ca"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tas/ContohIsiTasHP.cs.meta",
+      "bytes": 59,
+      "sha256": "5fa6b4757b430333615f82e06fd7aa34bd1da12945913b856bff0c13891f1f7e"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tas/RitsletingTasUI.cs",
+      "bytes": 1847,
+      "sha256": "b9e704964c2501197195bf396a7f137c664d0cdd0135b60775ac3a6b5865231e"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tas/RitsletingTasUI.cs.meta",
+      "bytes": 59,
+      "sha256": "59ccb26c3035dc17b0e9bc827e5986c41927e0014b8145955104cf269657a00c"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel/Tas.meta",
+      "bytes": 172,
+      "sha256": "fff157aff181738899b1ab298a77bebb7903b763b977671ecf8690fb4d274af6"
+    },
+    {
+      "path": "Assets/Scripts/Runtime/Ponsel.meta",
+      "bytes": 172,
+      "sha256": "cd8181ab602e9b933f5ca0bb07980be5008ffe72a702642c0b25a4bfbc4d6843"
+    },
+    {
+      "path": "Assets/Scripts/Runtime.meta",
+      "bytes": 172,
+      "sha256": "66a82a7eb6f906842def5b9c952726e5f6584e4a1f07b8190e82b7b6d895e49e"
+    },
+    {
+      "path": "Assets/Scripts.meta",
+      "bytes": 172,
+      "sha256": "0b70b2828042d345a1faec968460043b6e0cd32861da8c1ecbdb1449fa0b0d00"
+    },
+    {
+      "path": "Assets/Shaders/JemaatChapel.shader",
+      "bytes": 1007,
+      "sha256": "ca8a2a56d3418384251a4fb5a741068ab9e964da681bf71766988bb4833a21e4"
+    },
+    {
+      "path": "Assets/Shaders/JemaatChapel.shader.meta",
+      "bytes": 204,
+      "sha256": "7362111fa4cd946ad3f893d37c04cc56f8748c611a1979cc5fbff06b3ec8665c"
+    },
+    {
+      "path": "Assets/Shaders.meta",
+      "bytes": 172,
+      "sha256": "5e850ee5300fd65806e609c68e61467cb1b305e3b9c7fba4b414a73477440edb"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl",
+      "bytes": 6021,
+      "sha256": "88cf0f62e4000b71750c059d0886b19504cd1cf10f39bb61ddc11b77a882d417"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl.meta",
+      "bytes": 230,
+      "sha256": "e1d0c5347b3c55930759f5bc0985e11611a4b2ff22eef24523eb108687bd1642"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader",
+      "bytes": 3836,
+      "sha256": "42892a52f22bdde6d482cf2da5f35e4b813063fc6fe42189eee5562080079494"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta",
+      "bytes": 204,
+      "sha256": "91be1d5618a7da33c878e20cf2be3e13b897d4976c70bde0cda7a67dbd502cd2"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader",
+      "bytes": 4071,
+      "sha256": "b50afc7edc8a710f8b4159149b2391e7238b5e4076cc0ea2119090ed29e13b4a"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta",
+      "bytes": 204,
+      "sha256": "7430f3e97ae1b46f34e1ca75508705bb7b944307c41dc568ea728011f327086d"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader",
+      "bytes": 3839,
+      "sha256": "1d32f34c71276c1321aa0540a2410e15808743a38b2026923045a4dec4a79b58"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta",
+      "bytes": 204,
+      "sha256": "3d462e6f8ba57f45dc5e6000020db066c36ed5a1a24f74f749727812373c2325"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader",
+      "bytes": 11054,
+      "sha256": "a0d318756cba0f95a7052c387e629d0add3e9a4125c8333f1d1ed591af5f17cb"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta",
+      "bytes": 204,
+      "sha256": "fb8fc84b612e19c169cdf3596195b416e68d227a8987a0eaa90d8c137fb69797"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader",
+      "bytes": 12438,
+      "sha256": "2a991951b00b0c052363a1025f655450054325437b3d13c2623a987c8ec77c30"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta",
+      "bytes": 204,
+      "sha256": "bea74d576f181a8bb04b8cf02eedd0136540325ecb2824928a3aa52c75adcb13"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader",
+      "bytes": 8273,
+      "sha256": "41cff58473557bf760d03513a8c098f43a24e4eeb4c8ccd7d828c045a338a9ed"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta",
+      "bytes": 204,
+      "sha256": "3744d078f9a8b6d3c5d9bca51e43f9223544fcafaf9396e121f49ea84a0609d3"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader",
+      "bytes": 8081,
+      "sha256": "fb286386d0592ce6d63eb736f180b4b0f638ec538b0855aa54767a438ebd1173"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta",
+      "bytes": 204,
+      "sha256": "1eeca1536c7506f79d4d877b866a5fb88db8f402634e091b6d78aa9d21c9d18b"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader",
+      "bytes": 3064,
+      "sha256": "8b30c140f6af9134392fe6ecf4c0676db73f873489ac52adfb47bbd288cb51b8"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta",
+      "bytes": 204,
+      "sha256": "e3412891b9306b017e60cba4ae4f6d258ee8b161d986dcde9cefb3d60345514d"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader",
+      "bytes": 11795,
+      "sha256": "4bc2db64befbd0e37e23539f21096ad2fcd9d61b36d2174d208a7d831a0883f7"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader.meta",
+      "bytes": 204,
+      "sha256": "65ecbce6f1621f2d7ddc5e6004dda5e55e1f58ec6e01178f3691e1e81e01de55"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader",
+      "bytes": 8074,
+      "sha256": "44c39aabc7e88e7e1feffc1880df754f4adf86b62e9512aa89e9d2d65171aff4"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta",
+      "bytes": 204,
+      "sha256": "f2112f50c72762d4e6731391495ea11f76975d677b698e9bcfdd38275ea18f9d"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader",
+      "bytes": 3523,
+      "sha256": "f9fae5906dd37d89298338953294459975de58a5421e68dd9e82a79794b95509"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta",
+      "bytes": 204,
+      "sha256": "95aa060f371ee503a22c0a0b018e029c0328bd82b9317feaa784432b0a787343"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader",
+      "bytes": 4353,
+      "sha256": "5dadb68b56429547918b392626e9af8fd5173936d20bb43cfca58dfa00947257"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta",
+      "bytes": 204,
+      "sha256": "42439f5ac7491998f562e8ede73d64c3512953eb99fb1b49e833f5d9999a7660"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+      "bytes": 11027,
+      "sha256": "10efe6d4728474a09970b857faf37913793e168dc13dbd4d7316b54b37615d97"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta",
+      "bytes": 204,
+      "sha256": "0897fb06d170043fffa2d28783b347bbaee87a3f09f08374ca44b2c3848697d6"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_Sprite.shader",
+      "bytes": 3446,
+      "sha256": "af669bb9ae136c8099f8e0a94a6933fd2f1e1fb0a6842129939a319fab4b8dbb"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta",
+      "bytes": 204,
+      "sha256": "9609584c5249687f3765f0018a93dfd6445c7e35d5aee4e87556f111c8852819"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMPro.cginc",
+      "bytes": 2277,
+      "sha256": "14edb7d7b88caf2b82cae68200abe895e5b5b3474c3fffbf0e9b4b09a4e2467e"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMPro.cginc.meta",
+      "bytes": 215,
+      "sha256": "a9cf9d5431b809e36b8ffff4377b5ebda7d386a36d48838cd134bc09f3caec6c"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc",
+      "bytes": 5453,
+      "sha256": "d9d43ddd9810476162f21b42477d9ce2cdc4e6cc7571d354c3253aafc6673ead"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta",
+      "bytes": 204,
+      "sha256": "2e16fa15ef884a60a402d8b696f8b09e5315cbb468ba223d256030c7fe2b0667"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc",
+      "bytes": 2707,
+      "sha256": "66db1f03e8d7a413eba79bcb6602fdb2de710b586f34a6f2584ed6f68f028e90"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta",
+      "bytes": 204,
+      "sha256": "edace33591894d86d9a4144466fb3606e538d3341030fe22f908551755120ea5"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc",
+      "bytes": 3515,
+      "sha256": "244b442520282a66363d121c8d2aeeb30bb1e72cbbadbf41ce68d9100322ade5"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta",
+      "bytes": 204,
+      "sha256": "247746f3a4e39dd24d1ad99e4fae03ae8976586307948b2846529a876dcb0a63"
+    },
+    {
+      "path": "Assets/TextMesh Pro/Shaders.meta",
+      "bytes": 172,
+      "sha256": "c109eb7e331affedb377f7051df3d4881f8529b65f9593234585713e6e94ed30"
+    },
+    {
+      "path": "Assets/TextMesh Pro.meta",
+      "bytes": 172,
+      "sha256": "8529d84d190a68aeb1a16e0a90308081bd30a738dbcc63c63b2a93c53b9a11b3"
+    },
+    {
+      "path": "Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs",
+      "bytes": 6677,
+      "sha256": "d2023934bc2be23af69cd930ade85eff41c5db0a6f6666b05324b975befdb5b5"
+    },
+    {
+      "path": "Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta",
+      "bytes": 264,
+      "sha256": "f59080b424c16fa13edd105bf006fdbad98c11fce0c921043e63c8877f144cd9"
+    },
+    {
+      "path": "Assets/TutorialInfo/Scripts/Editor.meta",
+      "bytes": 193,
+      "sha256": "7036bdbc8af05799b5fd508484343b35c28a68b390198da4673d34357d7d667f"
+    },
+    {
+      "path": "Assets/TutorialInfo/Scripts/Readme.cs",
+      "bytes": 302,
+      "sha256": "c09c93844f93eb252a6fb39c222d169c63a63e96008fd040b9e7628c3e7ccc2e"
+    },
+    {
+      "path": "Assets/TutorialInfo/Scripts/Readme.cs.meta",
+      "bytes": 317,
+      "sha256": "80a3df9969fab6e656583ee9bbca884d0507e2b7de3417f6ea3118fba901cd60"
+    },
+    {
+      "path": "Assets/TutorialInfo/Scripts.meta",
+      "bytes": 193,
+      "sha256": "930d0c8276cea1559a3e315f8500ea6ca8b58d980eee3b44aaa1d461742c47e0"
+    },
+    {
+      "path": "Assets/TutorialInfo.meta",
+      "bytes": 172,
+      "sha256": "07f022e5932c833d026e020b27d73452ebd781993b616d76003494af1e140946"
+    },
+    {
+      "path": "Assets/WorldExplorer/GuestHouse/BubbleDepanAtap.shader",
+      "bytes": 1056,
+      "sha256": "cd488b2849b6177d8fff002ce477f647928a390e532026976151cd2c24cf3071"
+    },
+    {
+      "path": "Assets/WorldExplorer/GuestHouse/BubbleDepanAtap.shader.meta",
+      "bytes": 204,
+      "sha256": "c4e5304c95837fb9178f0cd7762c9070cf63319d99330e197736ca053da7d553"
+    },
+    {
+      "path": "Assets/WorldExplorer/GuestHouse.meta",
+      "bytes": 172,
+      "sha256": "d45beabbe8bea06aa513e5df67933d792abcd7717ef0ed91a3ad18857a865658"
+    },
+    {
+      "path": "Assets/WorldExplorer.meta",
+      "bytes": 172,
+      "sha256": "ac4c22cfa679c35f34c5d84435415fd894f7ffa116df88062f097d876379fead"
+    },
+    {
+      "path": "Packages/manifest.json",
+      "bytes": 2140,
+      "sha256": "ccf6b4dba80ab9a0183c126cfcb1ecc7058b70dbd396b585eb062735b92ef9ad"
+    },
+    {
+      "path": "Packages/packages-lock.json",
+      "bytes": 15036,
+      "sha256": "6cc556ace3ef2af79828cc3725fff5b365684dc059b0728cb293a0671eec7239"
+    },
+    {
+      "path": "ProjectSettings/ProjectVersion.txt",
+      "bytes": 85,
+      "sha256": "a717ed4b946e370ce6e6af9dd000b8acf89495b44c84bf8f768159924cfa66c3"
+    }
+  ]
+}
