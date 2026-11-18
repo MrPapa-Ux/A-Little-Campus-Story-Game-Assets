@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bca0554914a0744a7c896aa969f9ef, type: 3}
+  m_Name: Profil_Arthur
+  m_EditorClassIdentifier: Assembly-CSharp::ProfilSuaraKertas
+  namaKarakter: Arthur
+  potongan:
+  - {fileID: 8300000, guid: 9e365f20da52da641b769e9bcc57b2fe, type: 3}
+  - {fileID: 8300000, guid: 2c891894e182a3744b401b87ac750a3d, type: 3}
+  - {fileID: 8300000, guid: 95c5728c18aed4c4bb8110c0b7fb7bb2, type: 3}
+  nada: 1
+  variasiNada: 0.035
+  volume: 0.32
+  jeda: 0.045
+  hurufPerBunyi: 1

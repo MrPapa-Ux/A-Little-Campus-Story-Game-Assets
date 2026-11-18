@@ -5,6 +5,8 @@ public sealed class JalurKampus : MonoBehaviour
 {
     [Tooltip("Centang untuk ruangan tertutup. Variasi langit hijau dan latar gunung luar tidak digunakan di jalur ini.")]
     public bool diDalamRuangan;
+    [Tooltip("Ukuran tampilan Arthur khusus jalur ini. 1 memakai ukuran normal; kaki tetap menapak. Tidak mengecilkan kamera atau UI.")]
+    [Range(.4f,1.2f)] public float ukuranVisualArthur = 1f;
     public Transform[] titik;
     public float[] arahKamera;
     [Tooltip("Putaran tambahan badan Arthur terhadap kamera pada setiap titik. Kosong mempertahankan pose biasa; berguna saat melewati sudut sempit.")]

@@ -46,6 +46,11 @@ public class DialogManager : MonoBehaviour
     public void TawarkanInteraksi(AreaInteraksi area)
     {
         if(area==null||PercakapanAktif)return;
+        MuatInteraksi(area);
+    }
+    public void MuatInteraksi(AreaInteraksi area)
+    {
+        if(area==null)return;
         PemilikInteraksi=area;bisaInteraksi=true;idInteraksiAktif=area.idTempat;
         skenarioAktif=area.skenarioDialog;opsiInteraksiAktif=MalamGAChapter1.Saring(area);
         statusTombolKeluar=area.tampilkanTombolKeluar;

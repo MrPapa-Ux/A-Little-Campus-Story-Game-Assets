@@ -1,0 +1,139 @@
+newmtl DindingPutih
+Kd 0.96 0.99 1
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/DindingPutih.png
+
+newmtl LantaiAbu
+Kd 0.58 0.66 0.7
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/LantaiAbu.png
+
+newmtl PanelPutih
+Kd 0.95 0.98 1
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/PanelPutih.png
+
+newmtl RangkaHitam
+Kd 0.52 0.52 0.52
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/RangkaHitam.png
+
+newmtl KacaPartisi
+Kd 0.65 0.82 0.77
+d 0.34
+Ks 0 0 0
+Ns 1
+map_Kd Textures/KacaPartisi.png
+
+newmtl KacaMeja
+Kd 0.75 0.85 0.83
+d 0.3
+Ks 0 0 0
+Ns 1
+map_Kd Textures/KacaMeja.png
+
+newmtl KayuMeja
+Kd 0.8 0.76 0.63
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/KayuMeja.png
+
+newmtl KayuPintu
+Kd 0.9 0.73 0.48
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/KayuPintu.png
+
+newmtl SofaCokelat
+Kd 0.64 0.52 0.36
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/SofaCokelat.png
+
+newmtl KursiBiru
+Kd 0.37 0.66 1
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/KursiBiru.png
+
+newmtl Logam
+Kd 0.95 0.98 1
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/Logam.png
+
+newmtl RakKrem
+Kd 1 1 0.93
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/RakKrem.png
+
+newmtl KainTirai
+Kd 1 0.98 0.84
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/KainTirai.png
+
+newmtl LayarMonitor
+Kd 1 1 1
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/LayarMonitor.png
+
+newmtl BerkasHijau
+Kd 0.86 1 0.88
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/BerkasHijau.png
+
+newmtl Kertas
+Kd 1 1 1
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/Kertas.png
+
+newmtl BungaKuning
+Kd 1 1 0.86
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/BungaKuning.png
+
+newmtl BungaMerah
+Kd 1 1 1
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/BungaMerah.png
+
+newmtl Daun
+Kd 1 1 1
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/Daun.png
+
+newmtl Lampu
+Kd 1 1 0.82
+d 1
+Ks 0 0 0
+Ns 1
+map_Kd Textures/Lampu.png

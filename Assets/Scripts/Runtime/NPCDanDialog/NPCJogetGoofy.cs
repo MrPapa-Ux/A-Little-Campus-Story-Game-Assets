@@ -15,6 +15,76 @@ public class NPCJogetGoofy : MonoBehaviour
     Transform[] parts;
     Vector3[] posisi;
     Quaternion[] rotasi;
+    bool ikutiAba, aktifSebelumAba, salahAba;
+    float mulaiAba, arahAba;
+    const float DurasiGerakAba = .32f;
+    const float DurasiGerakSalah = .56f;
+
+    public void MulaiIkutiAba()
+    {
+        if (ikutiAba) return;
+        aktifSebelumAba = enabled;
+        if (enabled) ResetPose();
+        SimpanPoseDasar();
+        mulaiAba = float.NegativeInfinity;
+        ikutiAba = true;
+        enabled = true;
+    }
+
+    public void GerakAba(int arah, bool salah, float waktu, Vector3 kananLayar)
+    {
+        if (!ikutiAba) return;
+        var induk = badan != null && badan.parent != null ? badan.parent : transform;
+        float orientasi = Vector3.Dot(induk.TransformVector(Vector3.right), kananLayar) < 0f ? -1f : 1f;
+        arahAba = (arah == 0 ? -1f : 1f) * orientasi;
+        salahAba = salah;
+        mulaiAba = waktu;
+    }
+
+    public void SelesaiIkutiAba()
+    {
+        if (!ikutiAba) return;
+        ikutiAba = false;
+        ResetPose();
+        enabled = aktifSebelumAba;
+    }
+
+    void PoseAba()
+    {
+        float t = Mathf.Clamp01((Time.unscaledTime - mulaiAba) / (salahAba ? DurasiGerakSalah : DurasiGerakAba));
+        if (t >= 1f) { ResetPose(); return; }
+
+        float tekan = Mathf.Sin(t * Mathf.PI);
+        float geser = arahAba * tekan;
+        if (salahAba) geser *= Mathf.Cos(t * Mathf.PI * 2f);
+        float naik = tekan * (salahAba ? .17f : .045f);
+        Vector3 pinggul = new Vector3(geser * .17f, naik, 0f);
+        Quaternion miringKepala = Quaternion.Euler(0f, 0f, -geser * (salahAba ? 23f : 15f));
+        for (int i = 0; i < parts.Length; i++)
+        {
+            if (parts[i] == null) continue;
+            Vector3 pindah = pinggul;
+            Quaternion putar = Quaternion.Euler(0f, 0f, -geser * 15f);
+            if (i == 1 || i >= 6)
+            {
+                pindah += posisi[1] + miringKepala * (posisi[i] - posisi[1]) - posisi[i];
+                putar = miringKepala;
+            }
+            else if (i == 2 || i == 3)
+            {
+                float sisi = i == 2 ? -1f : 1f;
+                pindah += new Vector3((salahAba ? sisi * tekan : geser) * .09f, tekan * (salahAba ? .17f : .07f), 0f);
+                putar = Quaternion.Euler(0f, 0f, salahAba ? sisi * tekan * 46f : -geser * 37f);
+            }
+            else if (i == 4 || i == 5)
+            {
+                pindah = new Vector3(geser * .09f, salahAba ? naik : 0f, 0f);
+                putar = Quaternion.identity;
+            }
+            parts[i].localPosition = posisi[i] + pindah;
+            parts[i].localRotation = putar * rotasi[i];
+        }
+    }
     void Awake(){SimpanPoseDasar();}
     public void SimpanPoseDasar()
     {
@@ -24,6 +94,7 @@ public class NPCJogetGoofy : MonoBehaviour
     }
     void LateUpdate()
     {
+        if (ikutiAba) { PoseAba(); return; }
         if (!sedangJoget) { ResetPose(); return; }
         float phase = Time.time * kecepatan * Mathf.PI * 2f;
         float sway = Mathf.Sin(phase);

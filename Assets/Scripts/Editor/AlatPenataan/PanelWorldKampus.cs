@@ -8,9 +8,9 @@ using UnityEngine.SceneManagement;
 // Pratinjau hanya untuk editor: tidak menyimpan semua kawasan sebagai aktif di build.
 public sealed class PanelWorldKampus : EditorWindow
 {
-    static readonly string[] Label = { "Jasmine, Guest House, GK2 dan Kantin", "GA", "Taman UNKLAB, Crystal, Edel dan Dining", "GK1", "Pioneer Chapel", "Kamar 201" };
-    static readonly string[] Id = { "JasmineGK2", "GA", "TamanUNKLAB", "GK1", "Pioneer", "GHRoom" };
-    static readonly string[] File = { "JasmineGK2", "GA", "TamanUNKLAB", "GK1", "Pioneer", "GH_Kamar201" };
+    static readonly string[] Label = { "Jasmine, Guest House, GK2 dan Kantin", "GA", "Taman UNKLAB, Crystal, Edel dan Dining", "GK1", "Pioneer Chapel", "Kamar 201", "Dalam Asrama Crystal - Lantai 1 dan 2", "Dalam kelas Dandi - GK1 lantai 3" };
+    static readonly string[] Id = { "JasmineGK2", "GA", "TamanUNKLAB", "GK1", "Pioneer", "GHRoom", "CrystalInterior", "KelasDandi" };
+    static readonly string[] File = { "JasmineGK2", "GA", "TamanUNKLAB", "GK1", "Pioneer", "GH_Kamar201", "CrystalInterior", "KelasDandi" };
     static GameObject prefab;
     static string pesan;
     static Vector2 scroll;
@@ -24,6 +24,17 @@ public sealed class PanelWorldKampus : EditorWindow
         EditorGUILayout.HelpBox("Bangunan berada dalam scene kawasan terpisah. Klik TAMPILKAN agar bangunan terlihat bersama NPC. Tidak perlu Play. Perubahan posisi NPC disimpan dengan Ctrl+S.", MessageType.Info);
         using (new EditorGUI.DisabledScope(EditorApplication.isPlayingOrWillChangePlaymode))
         {
+            if(GUILayout.Button("ATUR KAMERA SEMUA JALUR",GUILayout.Height(34))) KameraSemuaJalurArthur.Buka();
+            using(new EditorGUILayout.HorizontalScope())
+            {
+                if(GUILayout.Button("LIHAT PINTU DEKAN",GUILayout.Height(30)))KameraSemuaJalurArthur.Pintu(false);
+                if(GUILayout.Button("LIHAT PINTU DOSEN",GUILayout.Height(30)))KameraSemuaJalurArthur.Pintu(true);
+            }
+            using(new EditorGUILayout.HorizontalScope())
+            {
+                if(GUILayout.Button("LIHAT DALAM DEKAN",GUILayout.Height(28)))AturRuanganGK1.BukaRuangan(false);
+                if(GUILayout.Button("LIHAT DALAM DOSEN",GUILayout.Height(28)))AturRuanganGK1.BukaRuangan(true);
+            }
             if (GUILayout.Button("Tampilkan world sesuai NPC / jalur terpilih", GUILayout.Height(30))) TampilkanPilihan();
             scroll = EditorGUILayout.BeginScrollView(scroll, GUILayout.MaxHeight(300));
             for (int i = 0; i < File.Length; i++)

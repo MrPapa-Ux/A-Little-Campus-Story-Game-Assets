@@ -1,0 +1,160 @@
+# Pioneer Chapel revision 9 materials
+newmtl KayuBangku
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/KayuBangku.png
+
+newmtl KayuTepi
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/KayuTepi.png
+
+newmtl KayuLangit
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/KayuLangit.png
+
+newmtl KayuPanel
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/KayuPanel.png
+
+newmtl Plester
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/Plester.png
+
+newmtl Ubin
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/Ubin.png
+
+newmtl Batu
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/Batu.png
+
+newmtl Besi
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/Besi.png
+
+newmtl Kaca
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/Kaca.png
+
+newmtl KacaBiru
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/KacaBiru.png
+
+newmtl Merah
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/Merah.png
+
+newmtl Kuning
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/Kuning.png
+
+newmtl KacaTerang
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/KacaTerang.png
+
+newmtl KainHijau
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/KainHijau.png
+
+newmtl Daun
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/Daun.png
+
+newmtl Bunga
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/Bunga.png
+
+newmtl LayarPutih
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/LayarPutih.png
+
+newmtl KacaGelap
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/KacaGelap.png
+
+newmtl LayarHitam
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/LayarHitam.png
+
+newmtl LogamPerak
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.000
+illum 1
+map_Kd Textures/LogamPerak.png

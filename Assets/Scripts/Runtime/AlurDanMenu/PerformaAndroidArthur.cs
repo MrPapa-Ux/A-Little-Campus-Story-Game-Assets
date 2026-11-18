@@ -6,20 +6,20 @@ using UnityEngine.Rendering.Universal;
 public sealed class PerformaAndroidArthur : MonoBehaviour
 {
     public const int TargetFPS = 60;
-    public const int BatasSisiPendekDunia = 720;
-    public const int SisiPendekAwal = 600;
-    public const int SisiPendekMinimum = 540;
+    public const int BatasSisiPendekDunia = 1080;
+    public const int SisiPendekAwal = 960;
+    public const int SisiPendekMinimum = 720;
     public static float HitungSkala(int lebar, int tinggi) => SkalaUntuk(lebar, tinggi, BatasSisiPendekDunia);
     public static float SkalaUntuk(int lebar, int tinggi, int sisiPendek)
     {
         int pendek = Mathf.Min(lebar, tinggi);
-        return pendek > 0 ? Mathf.Clamp((float)sisiPendek / pendek, .25f, .8f) : .8f;
+        return pendek > 0 ? Mathf.Clamp((float)sisiPendek / pendek, .1f, 1f) : 1f;
     }
-    // Turun ketika lambat berkelanjutan, pulih setelah empat jendela stabil.
+    // Headroom sebelum 16.67 ms; naik perlahan agar kualitas tidak bolak-balik.
     public static float SesuaikanSkala(float skala, float minimum, float maksimum, float rataMs, ref int stabil)
     {
-        if (rataMs > 19.5f) { stabil = 0; return Mathf.Max(minimum, skala - .05f); }
-        if (rataMs < 17.2f) { if (++stabil >= 4) { stabil = 0; return Mathf.Min(maksimum, skala + .025f); } }
+        if (rataMs > 18f) { stabil = 0; return Mathf.Clamp(skala - .075f, minimum, maksimum); }
+        if (rataMs < 16.9f) { if (++stabil >= 6) { stabil = 0; return Mathf.Clamp(skala + .025f, minimum, maksimum); } }
         else stabil = 0;
         return Mathf.Clamp(skala, minimum, maksimum);
     }
@@ -41,10 +41,23 @@ public sealed class PerformaAndroidArthur : MonoBehaviour
     void Awake()
     {
         if (instance != null) { Destroy(gameObject); return; }
-        instance = this; Application.targetFrameRate = TargetFPS;
+        instance = this;
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = TargetFPS;
         pipeline = GraphicsSettings.currentRenderPipeline as UniversalRenderPipelineAsset;
         if (pipeline != null) skalaSemula = pipeline.renderScale;
+        RenderPipelineManager.beginCameraRendering += SebelumKamera;
         AturResolusiDunia();
+    }
+    static void SebelumKamera(ScriptableRenderContext context, Camera kamera)
+    {
+        if (kamera.TryGetComponent<UniversalAdditionalCameraData>(out var data))
+        {
+            data.renderPostProcessing = false;
+            data.antialiasing = AntialiasingMode.None;
+            data.renderShadows = false;
+        }
     }
     void AturResolusiDunia()
     {
@@ -63,15 +76,23 @@ public sealed class PerformaAndroidArthur : MonoBehaviour
         if (pipeline == null || Time.unscaledTime < lewatiSampai) return;
         var kawasan = KawasanKampus.Instance;
         // Loading dan resume tidak dianggap beban render yang berkelanjutan.
-        if ((kawasan != null && kawasan.SedangMemuat) || Time.unscaledDeltaTime > .1f)
+        if (JedaSaatTidakAktif.Dijeda || (kawasan != null && kawasan.SedangMemuat))
         { jumlahDetik = 0; bingkai = stabil = 0; lewatiSampai = Time.unscaledTime + 2f; return; }
         jumlahDetik += Time.unscaledDeltaTime; bingkai++;
         if (jumlahDetik < 2f || bingkai < 20) return;
-        float skala = SesuaikanSkala(pipeline.renderScale, minimum, maksimum, jumlahDetik * 1000f / bingkai, ref stabil);
+        float rataMs = jumlahDetik * 1000f / bingkai;
+        // Target tetap 60 saat berpindah dari area berat ke area yang lebih ringan.
+        float skala = SesuaikanSkala(pipeline.renderScale, minimum, maksimum, rataMs, ref stabil);
         if (!Mathf.Approximately(skala, pipeline.renderScale)) pipeline.renderScale = skala;
         jumlahDetik = 0; bingkai = 0;
     }
-    void OnApplicationFocus(bool fokus) { if (fokus) { Application.targetFrameRate = TargetFPS; AturResolusiDunia(); } }
-    void OnDestroy() { if (instance != this) return; if (pipeline != null) pipeline.renderScale = skalaSemula; instance = null; }
+    void OnApplicationFocus(bool fokus)
+    {
+        if (!fokus) return;
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+        Application.targetFrameRate = TargetFPS;
+        AturResolusiDunia();
+    }
+    void OnDestroy() { if (instance != this) return; Screen.sleepTimeout = SleepTimeout.SystemSetting; RenderPipelineManager.beginCameraRendering -= SebelumKamera; if (pipeline != null) pipeline.renderScale = skalaSemula; instance = null; }
 #endif
 }

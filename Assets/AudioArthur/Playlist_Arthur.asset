@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292cecdbc31b9464796c576c5136f02d, type: 3}
+  m_Name: Playlist_Arthur
+  m_EditorClassIdentifier: Assembly-CSharp::PlaylistArthur
+  pemilik: Arthur
+  lagu:
+  - judul: Cloudny
+    audio: {fileID: 8300000, guid: 92d6d2214a38aa448886e9ee0e5cde12, type: 3}
+    catatan: 'Komposisi baru: soul-pop instrumental, 112 BPM. Melodi dan aransemen
+      baru; tanpa sampel lagu referensi.'
+  - judul: Pozy Mozy
+    audio: {fileID: 8300000, guid: 50d20181aa90f47439dcc31b4dfdd425, type: 3}
+    catatan: 'Neon Loop: 8 bar, 84 BPM, F# minor, 22,86 detik. Piano lembut, harpa
+      rendah, pad synth gelap, bass dan beat elektronik sedang. Instrumental melankolis;
+      aktifkan ULANG untuk menyambung loop.'
+  - judul: Blue Neon
+    audio: {fileID: 8300000, guid: 35a7cc3d59b732c48afcacf7a2edddbe, type: 3}
+    catatan: "B minor, 155 BPM, 32 bar / 0:50. Transisi 36\u201338 detik direnggangkan
+      dan dilembutkan; lapisan vokal sintetis aaah bernuansa perempuan, chorus, ping-pong
+      delay, dan gerakan stereo pelan. Piano, harpa, hook synth dan beat tetap. Aktifkan
+      ULANG untuk loop."
+  - judul: Jou Castle
+    audio: {fileID: 8300000, guid: 160245d8d3b9651469be46ed6f6f791c, type: 3}
+    catatan: Melankolis band C minor, 155 BPM / 37,16 detik. Piano, gitar bersih,
+      bass melodis, biola dan pasangan bass rendah dam-dam. Instrumental; aktifkan
+      ULANG.
+  - judul: GigglyMagicPow
+    audio: {fileID: 8300000, guid: 29c5531876b474941bcc503ea8e959d9, type: 3}
+    catatan: Lagu tambahan dari folder TambahanLagu milik pembuat game.
+  - judul: HappySugarMorningPaw
+    audio: {fileID: 8300000, guid: d6c5d687a599f844f978f92f7dfddfed, type: 3}
+    catatan: Lagu tambahan dari folder TambahanLagu milik pembuat game.
+  - judul: KingdomOfTutoas
+    audio: {fileID: 8300000, guid: d0c4866794858b843b5e0d3d653f14de, type: 3}
+    catatan: Lagu tambahan dari folder TambahanLagu milik pembuat game.
+  - judul: MisterAndTheBall
+    audio: {fileID: 8300000, guid: 56b1b6a44e1581c48bfebc4baa4d33df, type: 3}
+    catatan: Lagu tambahan dari folder TambahanLagu milik pembuat game.

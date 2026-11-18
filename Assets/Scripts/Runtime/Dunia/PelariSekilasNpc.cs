@@ -17,6 +17,8 @@ public sealed class PelariSekilasNpc : MonoBehaviour
     [Tooltip("Bagian dari seluruh kemunculan. Termasuk kelompok berjalan.")]
     [Range(0,1)] public float peluangJalanUnik=.05f;
     public float durasiJalan=20f,durasiLari=15f,jedaAwal=3.5f;
+    [Min(0)] public float jedaMinimum=24f,jedaMaksimum=38f;
+    public bool bolakBalik;
     [Range(.2f,2)] public float tempoAnimasiArthur=.85f;
     public GayaPelintasNpc GayaAktif {get;private set;}
     public bool SedangBerlari {get;private set;}
@@ -53,7 +55,7 @@ public sealed class PelariSekilasNpc : MonoBehaviour
             float alpha=Mathf.Min(Mathf.Clamp01(waktu/.25f),1-Mathf.SmoothStep(0,1,Mathf.InverseLerp(durasi-1.25f,durasi,waktu)));
             for(int i=0;i<gambar.Length;i++){var c=warna[i];c.a*=alpha;gambar[i].color=c;}
             foreach(var r in lainnya)r.enabled=alpha>.3f;
-            if(t>=1){SedangBerlari=false;pelari.gameObject.SetActive(false);berikut=Time.time+Random.Range(24,38);}
+            if(t>=1){SedangBerlari=false;pelari.gameObject.SetActive(false);berikut=Time.time+Random.Range(jedaMinimum,Mathf.Max(jedaMinimum,jedaMaksimum));}
             return;
         }
         if(Time.time<berikut||jeda)return;berikut=Time.time+2;
@@ -78,8 +80,8 @@ public sealed class PelariSekilasNpc : MonoBehaviour
         if(!unik&&(animatorArthur==null||animatorArthur.runtimeAnimatorController==null))return;
         if(animatorArthur!=null)animatorArthur.enabled=false;
         foreach(var s in gambar)s.enabled=true;
-        if(gerakUnik!=null){gerakUnik.enabled=unik;if(gerakUnik.visual!=null){var scale=gerakUnik.visual.localScale;scale.x=Mathf.Abs(scale.x)*(Vector3.Dot(Akhir-Awal,arthur.kamera.transform.right)>=0?1:-1);gerakUnik.visual.localScale=scale;}}
-        awalLintasan=Awal;akhirLintasan=Akhir;durasiAktif=Mathf.Max(2,GayaAktif==GayaPelintasNpc.LariArthur?durasiLari:durasiJalan);
+        if(gerakUnik!=null){gerakUnik.enabled=unik;if(gerakUnik.visual!=null){var scale=gerakUnik.visual.localScale;scale.x=Mathf.Abs(scale.x)*(Vector3.Dot(bolakBalik&&JumlahLintasan%2==1?Awal-Akhir:Akhir-Awal,arthur.kamera.transform.right)>=0?1:-1);gerakUnik.visual.localScale=scale;}}
+        bool balik=bolakBalik&&JumlahLintasan%2==1;awalLintasan=balik?Akhir:Awal;akhirLintasan=balik?Awal:Akhir;durasiAktif=Mathf.Max(2,GayaAktif==GayaPelintasNpc.LariArthur?durasiLari:durasiJalan);
         if(samakanKecepatanArthur && arthur!=null)
         {
             var kontrol=arthur.GetComponent<KarakterController>();

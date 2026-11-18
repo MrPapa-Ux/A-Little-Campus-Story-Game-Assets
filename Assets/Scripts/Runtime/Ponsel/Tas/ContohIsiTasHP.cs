@@ -16,6 +16,6 @@ public class ContohIsiTasHP : MonoBehaviour
     void Start()
     {
         if(!aktifkanContoh || (hanyaDiEditor&&!Application.isEditor) || buku==null || buku.barang.Count!=0)return;
-        foreach(var item in contoh)buku.Tambah(JenisBukuArthur.Tas,item);
+        foreach(var item in contoh)buku.Tambah(JenisBukuArthur.Tas,item,tampilkanPenerimaan:false);
     }
 }

@@ -35,6 +35,7 @@ public class RapidTapArthur : MonoBehaviour
     bool kunciSebelumnya,kunciDimiliki;
     Vector3 posisiAman;
     Coroutine gagal;
+    readonly MusikMinigameArthur musik = new MusikMinigameArthur();
     GameObject glitchAktif;
     static readonly string[] Godaan={"NANTI AJA...","MASIH ADA WAKTU...","SEBENTAR LAGI...","MULAI DULU!"};
 
@@ -61,6 +62,7 @@ public class RapidTapArthur : MonoBehaviour
     public void MulaiRonde()
     {
         if(Status!=Fase.Siap&&Status!=Fase.Menang&&Status!=Fase.Gagal)return;
+        musik.Putar(gameObject, MusikMinigameArthur.LaguTapTipTup());
         targetRonde=Mathf.Max(1,targetKetukan);durasiRonde=Mathf.Max(.5f,durasiDetik);akhir=Time.unscaledTime+durasiRonde;
         Ketukan=0;frameKetuk=-1;tickTerakhir=-1;isiBar.fillAmount=0;Status=Fase.Bermain;
         judul.text="LAWAN RASA MENUNDA";status.text="Ketuk berulang sampai indikator penuh.";godaan.text=Godaan[0];
@@ -90,6 +92,7 @@ public class RapidTapArthur : MonoBehaviour
     }
     void Selesai(bool menang)
     {
+        musik.Hentikan();
         Status=menang?Fase.Menang:Fase.Gagal;tombolKetuk.interactable=false;
         judul.text=menang?"CLARITY!":"BELUM KALI INI";
         status.text=menang?"Raka: Tuh, kamu sudah mulai. Lanjutkan!":"Raka: Tarik napas. Kita coba lagi.";
@@ -122,6 +125,7 @@ public class RapidTapArthur : MonoBehaviour
     }
     public void Tutup()
     {
+        musik.Tutup();
         if(rhythm!=null)rhythm.Tutup();
         if(gagal!=null){StopCoroutine(gagal);gagal=null;}BersihkanGlitch();
         Status=Fase.Tutup;if(panel!=null)panel.SetActive(false);

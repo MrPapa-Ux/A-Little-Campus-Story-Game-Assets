@@ -96,6 +96,7 @@ public sealed class ArthurJalurKampus : MonoBehaviour
     }
     void AktifkanJalur(JalurKampus berikutnya)
     {
+        KameraPilihanPemilik.PulihkanLatar();
         if (JalurAktif != null && JalurAktif.pijakanKhususJalur != null) JalurAktif.pijakanKhususJalur.SetActive(false);
         JalurAktif = berikutnya;
         if (fisikJalur != null)
@@ -285,6 +286,13 @@ public sealed class ArthurJalurKampus : MonoBehaviour
             float closeFov=Mathf.Clamp(2*Mathf.Atan(2f/(2*kedalaman*lintasan.tinggiPemainSaatDekat))*Mathf.Rad2Deg,18,JalurAktif.sudutPandangan);
             float fov=Mathf.Lerp(JalurAktif.sudutPandangan,closeFov,lintasan.Kedekatan);
             kamera.fieldOfView=langsung?fov:Mathf.Lerp(kamera.fieldOfView,fov,1-Mathf.Exp(-3*Time.deltaTime));
+            if(bingkai!=null)bingkai.sudutAcuan=kamera.fieldOfView;
+        }
+        var kameraPemilik=JalurAktif.GetComponent<KameraPilihanPemilik>();
+        if(kameraPemilik!=null && kameraPemilik.gunakan)
+        {
+            kameraPemilik.Terapkan(kamera,acuan,langsung);
+            posisiKamera=kamera.transform.position;
             if(bingkai!=null)bingkai.sudutAcuan=kamera.fieldOfView;
         }
         posisiKameraHalus = posisiKamera;

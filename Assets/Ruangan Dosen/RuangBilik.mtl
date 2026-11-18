@@ -1,0 +1,90 @@
+newmtl DindingPutih
+Kd 0.96 0.99 1
+Ka 0.15 0.15 0.15
+Ks 0 0 0
+Ns 1
+map_Kd Textures/DindingPutih.png
+
+newmtl LantaiAbu
+Kd 0.58 0.66 0.7
+Ka 0.15 0.15 0.15
+Ks 0 0 0
+Ns 1
+map_Kd Textures/LantaiAbu.png
+
+newmtl MejaKrem
+Kd 1 1 1
+Ka 0.15 0.15 0.15
+Ks 0 0 0
+Ns 1
+map_Kd Textures/MejaKrem.png
+
+newmtl RangkaPerak
+Kd 0.9 0.94 0.94
+Ka 0.15 0.15 0.15
+Ks 0 0 0
+Ns 1
+map_Kd Textures/RangkaPerak.png
+
+newmtl PanelGelap
+Kd 0.55 0.57 0.58
+Ka 0.15 0.15 0.15
+Ks 0 0 0
+Ns 1
+map_Kd Textures/PanelGelap.png
+
+newmtl KacaBuram
+Kd 0.82 0.89 0.88
+Ka 0.15 0.15 0.15
+Ks 0 0 0
+Ns 1
+map_Kd Textures/KacaBuram.png
+
+newmtl KayuPintu
+Kd 0.88 0.7 0.48
+Ka 0.15 0.15 0.15
+Ks 0 0 0
+Ns 1
+map_Kd Textures/KayuPintu.png
+
+newmtl MejaMerahMuda
+Kd 1 0.6 0.64
+Ka 0.15 0.15 0.15
+Ks 0 0 0
+Ns 1
+map_Kd Textures/MejaMerahMuda.png
+
+newmtl Putih
+Kd 1 1 1
+Ka 0.15 0.15 0.15
+Ks 0 0 0
+Ns 1
+map_Kd Textures/Putih.png
+
+newmtl HijauBingkai
+Kd 0.9 1 0.85
+Ka 0.15 0.15 0.15
+Ks 0 0 0
+Ns 1
+map_Kd Textures/HijauBingkai.png
+
+newmtl Kertas
+Kd 1 1 1
+Ka 0.15 0.15 0.15
+Ks 0 0 0
+Ns 1
+map_Kd Textures/Kertas.png
+
+newmtl BukuBiru
+Kd 1 1 1
+Ka 0.15 0.15 0.15
+Ks 0 0 0
+Ns 1
+map_Kd Textures/BukuBiru.png
+
+newmtl Lampu
+Kd 1 1 0.82
+Ka 0.15 0.15 0.15
+Ks 0 0 0
+Ns 1
+map_Kd Textures/Lampu.png

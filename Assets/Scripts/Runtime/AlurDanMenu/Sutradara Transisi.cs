@@ -17,6 +17,8 @@ public class SutradaraTransisi : MonoBehaviour
     public float kecepatanFade = 1.5f;
     [Min(0)] public float durasiBacaChapter = 3f;
     [Min(0)] public float durasiBacaPertanyaan = 6f;
+    [Header("Kenangan Arthur sebelum adegan mengetik")]
+    public KenanganPembukaArthur kenanganPembuka;
 
     [Header("Tujuan Lemparan Scene")]
     [Tooltip("Ketik nama scene tujuan di sini (Contoh: CharacterLab atau Chapter1_Arthur)")]
@@ -52,6 +54,9 @@ public class SutradaraTransisi : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         // ✅ REVISI OPTIMASI: Titip nama tujuan, lalu lempar ke LoadingScene dulu!
+        // Delapan gambar dimainkan dalam scene ini, sebelum adegan mengetik.
+        if (kenanganPembuka != null)
+            yield return kenanganPembuka.Mainkan();
         sceneTujuanUtama = namaSceneTujuan;
         LoadingManager.sceneTujuan = namaSceneTujuan;
         SceneManager.LoadScene("LoadingScene");

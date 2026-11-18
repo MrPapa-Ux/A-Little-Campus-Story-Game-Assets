@@ -1,0 +1,236 @@
+{
+  "revision": 1,
+  "materials": [
+    "DindingPutih",
+    "LantaiAbu",
+    "MejaKrem",
+    "RangkaPerak",
+    "PanelGelap",
+    "KacaBuram",
+    "KayuPintu",
+    "MejaMerahMuda",
+    "Putih",
+    "HijauBingkai",
+    "Kertas",
+    "BukuBiru",
+    "Lampu"
+  ],
+  "material_tints": {
+    "DindingPutih": [
+      0.96,
+      0.99,
+      1
+    ],
+    "LantaiAbu": [
+      0.58,
+      0.66,
+      0.7
+    ],
+    "MejaKrem": [
+      1,
+      1,
+      1
+    ],
+    "RangkaPerak": [
+      0.9,
+      0.94,
+      0.94
+    ],
+    "PanelGelap": [
+      0.55,
+      0.57,
+      0.58
+    ],
+    "KacaBuram": [
+      0.82,
+      0.89,
+      0.88
+    ],
+    "KayuPintu": [
+      0.88,
+      0.7,
+      0.48
+    ],
+    "MejaMerahMuda": [
+      1,
+      0.6,
+      0.64
+    ],
+    "Putih": [
+      1,
+      1,
+      1
+    ],
+    "HijauBingkai": [
+      0.9,
+      1,
+      0.85
+    ],
+    "Kertas": [
+      1,
+      1,
+      1
+    ],
+    "BukuBiru": [
+      1,
+      1,
+      1
+    ],
+    "Lampu": [
+      1,
+      1,
+      0.82
+    ]
+  },
+  "dimensions": [
+    9.4,
+    3.65,
+    12.4
+  ],
+  "station_count": 14,
+  "meeting_chairs": 8,
+  "parts": 51,
+  "triangles": 18528,
+  "approximation": true,
+  "positions": [
+    {
+      "name": "Bilik_Kiri_01",
+      "center": [
+        -3.73,
+        -3.6
+      ],
+      "rotation": -1.5707963267948966
+    },
+    {
+      "name": "Bilik_Kiri_02",
+      "center": [
+        -3.73,
+        -1.9
+      ],
+      "rotation": -1.5707963267948966
+    },
+    {
+      "name": "Bilik_Kiri_03",
+      "center": [
+        -3.73,
+        -0.2
+      ],
+      "rotation": -1.5707963267948966
+    },
+    {
+      "name": "Bilik_Kiri_04",
+      "center": [
+        -3.73,
+        1.5
+      ],
+      "rotation": -1.5707963267948966
+    },
+    {
+      "name": "Bilik_Kiri_05",
+      "center": [
+        -3.73,
+        3.2
+      ],
+      "rotation": -1.5707963267948966
+    },
+    {
+      "name": "Bilik_Kanan_01",
+      "center": [
+        3.73,
+        -3.6
+      ],
+      "rotation": 1.5707963267948966
+    },
+    {
+      "name": "Bilik_Kanan_02",
+      "center": [
+        3.73,
+        -1.9
+      ],
+      "rotation": 1.5707963267948966
+    },
+    {
+      "name": "Bilik_Kanan_03",
+      "center": [
+        3.73,
+        -0.2
+      ],
+      "rotation": 1.5707963267948966
+    },
+    {
+      "name": "Bilik_Kanan_04",
+      "center": [
+        3.73,
+        1.5
+      ],
+      "rotation": 1.5707963267948966
+    },
+    {
+      "name": "Bilik_Kanan_05",
+      "center": [
+        3.73,
+        3.2
+      ],
+      "rotation": 1.5707963267948966
+    },
+    {
+      "name": "Bilik_Belakang_01",
+      "center": [
+        -3.55,
+        5.3
+      ],
+      "rotation": 3.141592653589793
+    },
+    {
+      "name": "Bilik_Belakang_02",
+      "center": [
+        -1.85,
+        5.3
+      ],
+      "rotation": 3.141592653589793
+    },
+    {
+      "name": "Bilik_Belakang_03",
+      "center": [
+        -0.15,
+        5.3
+      ],
+      "rotation": 3.141592653589793
+    },
+    {
+      "name": "Bilik_Belakang_04",
+      "center": [
+        3.55,
+        5.3
+      ],
+      "rotation": 3.141592653589793
+    }
+  ],
+  "cameras": [
+    {
+      "position": [
+        1.4,
+        2.45,
+        -5.2
+      ],
+      "target": [
+        -0.4,
+        1.15,
+        1.8
+      ]
+    },
+    {
+      "position": [
+        -2.2,
+        2.5,
+        5.6
+      ],
+      "target": [
+        0.3,
+        1.15,
+        -1.5
+      ]
+    }
+  ],
+  "display_name": "Ruangan Dosen"
+}

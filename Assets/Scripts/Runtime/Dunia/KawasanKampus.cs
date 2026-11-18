@@ -28,6 +28,7 @@ public sealed class KawasanKampus : MonoBehaviour
     void Awake() { Instance=this;SedangMemuat=true; }
     void Start()
     {
+        ProgresSampingArthur.Pulihkan(gameObject.scene);
         arthur=FindFirstObjectByType<ArthurJalurKampus>();
         suasana=FindFirstObjectByType<SuasanaKampus>();
         var pilihan=FindFirstObjectByType<SistemPilihan>();
@@ -72,6 +73,8 @@ public sealed class KawasanKampus : MonoBehaviour
     public static string IdUntuk(JalurKampus jalur)
     {
         string n=jalur!=null?jalur.name:"";
+        if(n.StartsWith("UNK_CrystalInterior_",StringComparison.Ordinal))return "CrystalInterior";
+        if(n.StartsWith("GK1_KelasDandi_",StringComparison.Ordinal))return "KelasDandi";
         if(n=="GH_Kamar201")return "GHRoom";
         if(n.StartsWith("UNK_",StringComparison.Ordinal))return "TamanUNKLAB";
         if(n.StartsWith("Pioneer_",StringComparison.Ordinal))return "Pioneer";

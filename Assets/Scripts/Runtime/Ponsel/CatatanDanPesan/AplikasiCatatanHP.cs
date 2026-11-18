@@ -45,6 +45,11 @@ public class AplikasiCatatanHP : MonoBehaviour
     public void Interaksi()
     {
         var list=buku.Daftar(jenis);if(list.Count==0 || jenis==JenisBukuArthur.Tas)return;
+        if (jenis == JenisBukuArthur.Pesan && list[Pilihan].lampiranFoto != null)
+        {
+            TantanganSampingArthur.BukaFoto(list[Pilihan].lampiranFoto);
+            return;
+        }
         if(list[Pilihan].dikendalikanQuest)return;
         list[Pilihan].selesai=!list[Pilihan].selesai;
         if(jenis==JenisBukuArthur.Pesan){if(list[Pilihan].selesai)buku.TandaiDilihat(jenis,list[Pilihan].id);else buku.TandaiBelumDilihat(jenis,list[Pilihan].id);}buku.Segarkan();
@@ -77,6 +82,11 @@ public class AplikasiCatatanHP : MonoBehaviour
         }
         if(jenis==JenisBukuArthur.Pesan)
         {
+            if (!empty && list[Pilihan].lampiranFoto != null)
+            {
+                aksi.interactable = true;
+                labelAksi.text = "LIHAT FOTO";
+            }
             bool photo=!empty&&!list[Pilihan].anonim&&list[Pilihan].ikon!=null;
             if(fotoKontak!=null){fotoKontak.sprite=photo?list[Pilihan].ikon:null;fotoKontak.gameObject.SetActive(photo);}
             if(avatarKontak!=null)avatarKontak.gameObject.SetActive(!photo);

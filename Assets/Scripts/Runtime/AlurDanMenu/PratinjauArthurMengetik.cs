@@ -16,18 +16,20 @@ public sealed class PratinjauArthurMengetik : MonoBehaviour
     [Range(.2f,1f)] public float kedipKursor = .48f;
     [Min(0)] public float tahanTeksSelesai = 1.5f;
     [Min(.1f)] public float durasiTeksMenghilang = 1f;
-    [Min(0)] public float jedaSetelahKoma = 1.5f;
+    [HideInInspector] public float jedaSetelahKoma = JedaTandaBacaArthur.TitikDanKoma;
     [Min(0)] public float jedaSetelahTandaTanya = 1.5f;
-    float JedaTanda(char huruf)=>huruf==','?jedaSetelahKoma:huruf=='?'?jedaSetelahTandaTanya:0;
+    float JedaTanda(char huruf)=>JedaTandaBacaArthur.Singkat(huruf)?JedaTandaBacaArthur.TitikDanKoma:huruf=='?'?jedaSetelahTandaTanya:0;
     public float DurasiPengetikan {
         get {float durasi=kalimat.Length/Mathf.Max(1,hurufPerDetik);foreach(char huruf in kalimat)durasi+=JedaTanda(huruf);return durasi;}
     }
     public float DurasiTeks => jedaTeks + DurasiPengetikan + tahanTeksSelesai + durasiTeksMenghilang;
-    public int HitungHurufTerlihat(float waktu){
-        float batas=0,langkah=1/Mathf.Max(1,hurufPerDetik);
+    public int HitungHurufTerlihat(float waktu) => HitungHurufTerlihat(kalimat, waktu, hurufPerDetik, jedaSetelahKoma, jedaSetelahTandaTanya);
+    public static int HitungHurufTerlihat(string kalimat, float waktu, float kecepatan, float jedaKoma, float jedaTanya){
+        float batas=0,langkah=1/Mathf.Max(1,kecepatan);
         for(int i=0;i<kalimat.Length;i++){
             batas+=langkah;if(waktu<batas)return i;
-            batas+=JedaTanda(kalimat[i]);if(waktu<batas)return i+1;
+            batas+=JedaTandaBacaArthur.Singkat(kalimat[i])?JedaTandaBacaArthur.TitikDanKoma:kalimat[i]=='?'?jedaTanya:0;
+            if(waktu<batas)return i+1;
         }
         return kalimat.Length;
     }

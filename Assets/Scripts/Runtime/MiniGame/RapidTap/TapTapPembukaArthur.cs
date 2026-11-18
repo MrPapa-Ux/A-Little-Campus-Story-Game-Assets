@@ -14,6 +14,7 @@ public sealed class TapTapPembukaArthur : MonoBehaviour
     public UnityEngine.UI.Image isiBar;
     public AudioSource sumberEfek;
     public AudioClip bunyiKetuk;
+    readonly MusikMinigameArthur musik = new MusikMinigameArthur();
     [Min(1)] public float durasiPertama=5, durasiKedua=6;
     [Min(1)] public int targetKetukan=15;
     public UnityEvent saatUrutanSelesai=new UnityEvent();
@@ -41,6 +42,7 @@ public sealed class TapTapPembukaArthur : MonoBehaviour
         if(Status==Tahap.Menang){SelesaikanUrutan();return;}
         if(Status!=Tahap.SiapPertama&&Status!=Tahap.KalahPertama)return;
         bool kedua=Status==Tahap.KalahPertama;Status=kedua?Tahap.RondeKedua:Tahap.RondePertama;
+        musik.Putar(gameObject, MusikMinigameArthur.LaguTapTipTup());
         mulai=Time.unscaledTime;Ketukan=0;frameTerakhir=-1;isiBar.fillAmount=0;
         judul.text="TAP-TAP";status.text=kedua?"Sekali lagi. Aku bisa.":"Ayo, sedikit lagi...";
         godaan.text=kedua?"Mulai dari satu ketukan.":"Pikiranku malah ke mana-mana...";
@@ -64,6 +66,8 @@ public sealed class TapTapPembukaArthur : MonoBehaviour
         if(SisaDetik<=0)Hasil(Status==Tahap.RondeKedua);
     }
     void Hasil(bool menang){
+        if (menang) musik.Tutup();
+        else musik.Hentikan();
         Status=menang?Tahap.Menang:Tahap.KalahPertama;
         if(menang)JumlahHasilMenang++;else JumlahHasilKalah++;
         judul.text=menang?"BERHASIL!":"BELUM KALI INI";
@@ -78,6 +82,7 @@ public sealed class TapTapPembukaArthur : MonoBehaviour
     }
     [ContextMenu("Ulangi contoh Tap-Tap")]
     public void Ulangi(){
+        musik.Tutup();
         Status=Tahap.Mengetik;Ketukan=JumlahHasilKalah=JumlahHasilMenang=0;denyut=0;
         ponsel.SetActive(false);bukaPonsel.gameObject.SetActive(true);pembukaan.enabled=true;
         if(sumberEfek!=null)sumberEfek.Stop();
@@ -86,5 +91,5 @@ public sealed class TapTapPembukaArthur : MonoBehaviour
         if(Status!=Tahap.Menang)return;
         Status=Tahap.Selesai;ponsel.SetActive(false);pembukaan.enabled=true;saatUrutanSelesai.Invoke();
     }
-    void OnDisable(){if(sumberEfek!=null)sumberEfek.Stop();}
+    void OnDisable(){musik.Tutup();if(sumberEfek!=null)sumberEfek.Stop();}
 }

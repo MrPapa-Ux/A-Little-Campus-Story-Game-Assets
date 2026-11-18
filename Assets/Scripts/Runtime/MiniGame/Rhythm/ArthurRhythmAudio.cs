@@ -11,7 +11,7 @@ public static class ArthurRhythmAudio
     public static AudioClip Buat(float bpm,int beats,float awal)
     {
         const int rate=22050;double beat=60.0/bpm;int count=(int)((awal+beats*beat+1)*rate);var data=new float[count];
-        var campus=Resources.Load<AudioClip>("ArthurSfx/RhythmCampus");
+        var campus=MusikMinigameArthur.LaguTapTipTup();
         if(campus!=null&&campus.LoadAudioData())
         {
             var src=new float[campus.samples*campus.channels];campus.GetData(src,0);

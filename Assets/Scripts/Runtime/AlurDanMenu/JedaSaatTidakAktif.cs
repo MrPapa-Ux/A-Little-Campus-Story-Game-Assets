@@ -6,6 +6,8 @@ public sealed class JedaSaatTidakAktif : MonoBehaviour
     public static bool Dijeda {get;private set;}
 #if UNITY_EDITOR
     public static bool PengujianLatarBelakang {get;set;}
+    public static bool MenggunakanRemote => !string.IsNullOrEmpty(UnityEditor.EditorSettings.unityRemoteDevice)
+        && UnityEditor.EditorSettings.unityRemoteDevice != "None";
 #endif
     float skalaSebelumnya;bool audioSebelumnya;
     readonly System.Collections.Generic.List<AudioSource> sumberDijeda=new System.Collections.Generic.List<AudioSource>();
@@ -20,9 +22,18 @@ public sealed class JedaSaatTidakAktif : MonoBehaviour
     static void Buat(){var go=new GameObject("Jeda saat tidak aktif");DontDestroyOnLoad(go);go.AddComponent<JedaSaatTidakAktif>();Application.runInBackground=false;}
     void OnApplicationFocus(bool value){fokus=value;Terapkan();}
     void OnApplicationPause(bool value){ditangguhkan=value;Terapkan();}
+#if UNITY_EDITOR
+    // Remote menerima input HP ketika jendela Editor sedang tidak berfokus.
+    void Update()
+    {
+        if (!MenggunakanRemote) return;
+        Application.runInBackground = true;
+        if (Dijeda) AturJeda(false);
+    }
+#endif
     void Terapkan(){
 #if UNITY_EDITOR
-        if(PengujianLatarBelakang){AturJeda(false);return;}
+        if(PengujianLatarBelakang || MenggunakanRemote){Application.runInBackground=true;AturJeda(false);return;}
 #endif
         AturJeda(!fokus||ditangguhkan);
     }

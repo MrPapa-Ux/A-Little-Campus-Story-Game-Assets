@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/IntroTeksScene.unity
+    guid: f5c028e3f9b4f6c46a33c221c418f2da
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Transisi_Arthur.unity
+    guid: 4619a790aaa080d4091359f4b06ce3f7
+  - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity
+    guid: 6a23b9fb8973ff249ae8a60fc4b6d0b1
+  - enabled: 1
+    path: Assets/Scenes/CharacterLab.unity
+    guid: 66db6a989d37e4c479e4f27c523a52ca
+  - enabled: 1
+    path: Assets/Scenes/Chapter1_Arthur.unity
+    guid: ecf08ff7583c0264883b6443fa616a10
+  - enabled: 1
+    path: Assets/Scenes/Explorer.unity
+    guid: 54886517325d40c4e822c25be4d92f95
+  - enabled: 1
+    path: Assets/WorldStreaming/Kawasan_JasmineGK2.unity
+    guid: 293ad2d105afabf4d80f4c55f1d0158a
+  - enabled: 1
+    path: Assets/WorldStreaming/Kawasan_GA.unity
+    guid: 1908ca97498ed77459dc95f7ece39e72
+  - enabled: 1
+    path: Assets/WorldStreaming/Kawasan_Pioneer.unity
+    guid: ed307fd05fd26a04faf42dafbb63122b
+  - enabled: 1
+    path: Assets/WorldStreaming/Kawasan_TamanUNKLAB.unity
+    guid: 15c8d43d4b837f8408da9368ab43eb79
+  - enabled: 1
+    path: Assets/WorldStreaming/Kawasan_GK1.unity
+    guid: c4c02bfe68bbf044cbb85266e110f39c
+  - enabled: 1
+    path: Assets/WorldStreaming/Kawasan_GH_Kamar201.unity
+    guid: 0410f9c9d3c10ca47ab1e3cb5f08daef
+  - enabled: 1
+    path: Assets/Chapter1Preview/Contoh_Arthur_RhythmOtomatis.unity
+    guid: b52396077cd06aa41ba1c332b70e347d
+  - enabled: 1
+    path: Assets/Chapter1Preview/Chapter1_Kamar201.unity
+    guid: 7486a26fe2b85004b90771fcbcfc554d
+  - enabled: 1
+    path: Assets/WorldStreaming/Kawasan_CrystalInterior.unity
+    guid: 89de195f1b116404f80ff5f89e64d2d8
+  - enabled: 1
+    path: Assets/WorldStreaming/Kawasan_KelasDandi.unity
+    guid: ad1d84de6589dbe43ba60ebfee49044a
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_UseUCBPForAssetBundles: 0

@@ -11,6 +11,7 @@ public class CatatanArthur
 {
     public string id, judul;
     public Sprite ikon;
+    public Texture2D lampiranFoto;
     public string pengirim;
     public bool anonim;
     [TextArea(2,6)] public string isi;
@@ -26,6 +27,7 @@ public class BukuArthur : MonoBehaviour
     public List<CatatanArthur> pesan=new List<CatatanArthur>();
     public List<CatatanArthur> barang=new List<CatatanArthur>();
     public event Action Berubah;
+    readonly Queue<CatatanArthur> hadiahMenunggu = new Queue<CatatanArthur>();
     // Session-only knowledge: never save quest progress or read state in PlayerPrefs.
     readonly HashSet<string> sudahDilihat=new HashSet<string>();
     string Kunci(JenisBukuArthur jenis,string id)=>jenis+":"+id;
@@ -33,14 +35,26 @@ public class BukuArthur : MonoBehaviour
     public void TandaiDilihat(JenisBukuArthur jenis,string id){if(!string.IsNullOrWhiteSpace(id)&&sudahDilihat.Add(Kunci(jenis,id)))Segarkan();}
     public void TandaiBelumDilihat(JenisBukuArthur jenis,string id){if(sudahDilihat.Remove(Kunci(jenis,id)))Segarkan();}
     public List<CatatanArthur> Daftar(JenisBukuArthur jenis)=>jenis==JenisBukuArthur.Tugas?tugas:jenis==JenisBukuArthur.Pesan?pesan:barang;
-    public void Tambah(JenisBukuArthur jenis,CatatanArthur catatan)
+    public void Tambah(JenisBukuArthur jenis,CatatanArthur catatan,bool tampilkanPenerimaan = true)
     {
         if(catatan==null || string.IsNullOrWhiteSpace(catatan.id))return;
-        var list=Daftar(jenis);int found=list.FindIndex(x=>x.id==catatan.id);
+        var list=Daftar(jenis);int found=list.FindIndex(x=>x!=null && x.id==catatan.id);
         bool berubah=found<0||list[found].judul!=catatan.judul||list[found].isi!=catatan.isi||list[found].jumlah!=catatan.jumlah||list[found].pengirim!=catatan.pengirim;
+        if (jenis == JenisBukuArthur.Tas && tampilkanPenerimaan && (found < 0 || list[found].jumlah < catatan.jumlah))
+            hadiahMenunggu.Enqueue(catatan);
         if(berubah)sudahDilihat.Remove(Kunci(jenis,catatan.id));
         if(found>=0)list[found]=catatan;else list.Add(catatan);Segarkan();
     }
     public void SelesaikanTugas(string id){var item=tugas.Find(x=>x.id==id);if(item!=null){item.selesai=true;Segarkan();}}
     public void Segarkan(){Berubah?.Invoke();}
+
+    void LateUpdate()
+    {
+        if (hadiahMenunggu.Count == 0 || JedaSaatTidakAktif.Dijeda) return;
+        var dialog = DialogManager.Instance;
+        if (dialog == null || dialog.minigameAktif || dialog.PercakapanAktif ||
+            (dialog.arthurScript != null && dialog.arthurScript.kunciPergerakan)) return;
+        if (KawasanKampus.Instance != null && KawasanKampus.Instance.SedangMemuat) return;
+        new GameObject("Arthur mendapat item").AddComponent<LayarTantanganArthur>().BukaHadiah(hadiahMenunggu.Dequeue());
+    }
 }

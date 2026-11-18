@@ -33,6 +33,7 @@ public sealed class TapTapMekarArthur : MonoBehaviour
     int halaman,indeksRefleksi,frameKetuk=-1;float berjalan,denyut;bool siap;
     readonly float[] pudar=new float[20];
     readonly string[] refleksi={"Aku harus tenang.","Orang sabar disayang Tuhan.","Aku harus banyak berdoa."};
+    readonly MusikMinigameArthur musik = new MusikMinigameArthur();
     void Awake(){Siapkan();panel.SetActive(false);areaRefleksi.SetActive(false);Status=Fase.Tertutup;}
     void Start(){TandaiMasukDining();}
     void Siapkan(){if(siap)return;siap=true;ketuk.onClick.AddListener(Ketuk);lanjut.onClick.AddListener(Lanjut);kembali.onClick.AddListener(Sebelumnya);lanjutRefleksi.onClick.AddListener(LanjutRefleksi);if(adegan!=null){adegan.saatMakanSelesai.AddListener(BukaPetunjuk);adegan.saatPunchlineSelesai.AddListener(MulaiRefleksi);}}
@@ -48,6 +49,7 @@ public sealed class TapTapMekarArthur : MonoBehaviour
     }
     public void MulaiPercobaan(){
         if(Status!=Fase.Petunjuk&&Status!=Fase.Gagal)return;
+        musik.Putar(gameObject, MusikMinigameArthur.LaguTapTipTup());
         Percobaan++;KataTersisih=0;frameKetuk=-1;berjalan=0;Status=Fase.Bermain;denyut=0;
         areaPermainan.SetActive(true);lanjut.gameObject.SetActive(false);kembali.gameObject.SetActive(false);ketuk.interactable=true;
         petunjuk.rectTransform.anchoredPosition=new Vector2(0,290);petunjuk.rectTransform.sizeDelta=new Vector2(1300,80);petunjuk.fontSize=32;
@@ -75,6 +77,8 @@ public sealed class TapTapMekarArthur : MonoBehaviour
     }
     void Hasil(bool berhasil){
         if(Status!=Fase.Bermain)return;papan.Hentikan();papan.gameObject.SetActive(false);petunjuk.rectTransform.anchoredPosition=new Vector2(0,-330);ketuk.interactable=false;Status=berhasil?Fase.Menang:Fase.Gagal;
+        if (berhasil) musik.Tutup();
+        else musik.Hentikan();
         if(berhasil){judul.text="BERHASIL";petunjuk.text="Kata-kata telah tersisih.";labelLanjut.text="LANJUT";fear.Atur(0);Momen4Aktif=true;}
         else {JumlahGagal++;kemajuan.text="Kata-kata kembali muncul.";judul.text="BELUM BERHASIL";petunjuk.text="Kata-kata itu kembali memenuhi pikiran Arthur.";labelLanjut.text="COBA LAGI";fear.Atur(.85f);}
         waktu.text="";lanjut.gameObject.SetActive(true);
@@ -83,6 +87,7 @@ public sealed class TapTapMekarArthur : MonoBehaviour
     void MulaiRefleksi(){if(Status!=Fase.Punchline)return;Status=Fase.Refleksi;panel.SetActive(true);lembar.SetActive(false);areaRefleksi.SetActive(true);indeksRefleksi=0;teksRefleksi.text=refleksi[0];}
     public void LanjutRefleksi(){if(Status!=Fase.Refleksi)return;if(++indeksRefleksi<refleksi.Length){teksRefleksi.text=refleksi[indeksRefleksi];return;}Status=Fase.Selesai;panel.SetActive(false);fear.Atur(0);adegan.KembaliKePoseTenang();saatSelesai.Invoke();}
     [ContextMenu("Ulangi pratinjau Mekar (saat Play)")]
-    public void Ulangi(){if(!Application.isPlaying)return;StopAllCoroutines();Percobaan=JumlahGagal=KataTersisih=0;Momen3Aktif=Momen4Aktif=false;Status=Fase.Tertutup;fear.Atur(0);panel.SetActive(false);adegan.KembaliKePoseTenang();BukaPetunjuk();}
+    public void Ulangi(){if(!Application.isPlaying)return;musik.Tutup();StopAllCoroutines();Percobaan=JumlahGagal=KataTersisih=0;Momen3Aktif=Momen4Aktif=false;Status=Fase.Tertutup;fear.Atur(0);panel.SetActive(false);adegan.KembaliKePoseTenang();BukaPetunjuk();}
+    void OnDisable() => musik.Tutup();
     void OnDestroy(){if(adegan!=null){adegan.saatMakanSelesai.RemoveListener(BukaPetunjuk);adegan.saatPunchlineSelesai.RemoveListener(MulaiRefleksi);}}
 }

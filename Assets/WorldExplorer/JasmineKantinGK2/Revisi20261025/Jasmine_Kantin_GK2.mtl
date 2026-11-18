@@ -1,0 +1,3909 @@
+# Wavefront OBJ material file
+# Contains 292 materials
+
+newmtl Stone
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Granite
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Diorite
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Andesite
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Polished_Andesite
+Ns 216.75
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.255 0.255 0.255
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Blackstone
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Gilded_Blackstone
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Polished_Blackstone_Bricks
+Ns 216.75
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.255 0.255 0.255
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Cracked_Polished_Blackstone_Bricks
+Ns 216.75
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.255 0.255 0.255
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Grass_Block
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Dirt
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Podzol
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Cobblestone
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Oak_Planks
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Spruce_Wood_Planks
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Dark_Oak_Wood_Planks
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Oak_Sapling
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Spruce_Sapling
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Jungle_Sapling
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Acacia_Sapling
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Dark_Oak_Sapling
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Cherry_Sapling
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Bedrock
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Stationary_Water
+Ns 216.75
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.03 0.03 0.03
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 4
+# d 0.533333
+# Tr 0.466667
+Tf 0.466667 0.466667 0.466667
+
+newmtl Stationary_Lava
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+Ke 1 1 1
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+map_Ke Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Gravel
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Iron_Ore
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Coal_Ore
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Oak_Log
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Spruce_Log
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Birch_Log
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Oak_Wood
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Birch_Wood
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Jungle_Wood
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Oak_Leaves
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Spruce_Leaves
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Birch_Leaves
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Jungle_Leaves
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Glass
+Ns 242.25
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.03 0.03 0.03
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Tinted_Glass
+Ns 242.25
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.03 0.03 0.03
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Bed
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Dead_Bush
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Short_Grass
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Fern
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Piston
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl White_Wool
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Orange_Wool
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Light_Wool
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Yellow_Wool
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Lime_Wool
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Gray_Wool
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Blue_Wool
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Green_Wool
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Red_Wool
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Black_Wool
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Dandelion
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Torchflower
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Poppy
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Blue_Orchid
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Allium
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Azure_Bluet
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Red_Tulip
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Orange_Tulip
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl White_Tulip
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Oxeye_Daisy
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Cornflower
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Lily_of_the_Valley
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Wither_Rose
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Crimson_Fungus
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Warped_Fungus
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Brown_Mushroom
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+Ke 0.0172133 0.0172133 0.0172133
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+map_Ke Jasmine_Kantin_GK2-RGBA.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Double_Petrified_Oak_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Double_Stone_Brick_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Stone_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Petrified_Oak_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Brick_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Stone_Brick_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Quartz_Slab
+Ns 204
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.24 0.24 0.24
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Bricks
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Bookshelf
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Obsidian
+Ns 204
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.24 0.24 0.24
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Torch
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+Ke 0.901686 0.901686 0.901686
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+map_Ke Jasmine_Kantin_GK2-RGBA.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Oak_Stairs
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Chest
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Crafting_Table
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Cartography_Table
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Fletching_Table
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Wheat
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Farmland
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Furnace
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Smoker
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Blast_Furnace
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Birch_Sign
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Oak_Door
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Ladder
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Cobblestone_Stairs
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Oak_Wall_Sign
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Spruce_Wall_Sign
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Dark_Oak_Wall_Sign
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Crimson_Wall_Sign
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Warped_Wall_Sign
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Lever
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Stone_Pressure_Plate
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Spruce_Pressure_Plate
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Oak_Pressure_Plate
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Stone_Button
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Snow
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Jukebox
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Fence
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Glowstone
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+Ke 1 1 1
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+map_Ke Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Cake
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Orange_Stained_Glass
+Ns 242.25
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.03 0.03 0.03
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 4
+# d 0.498039
+# Tr 0.501961
+Tf 0.501961 0.501961 0.501961
+
+newmtl Light_Stained_Glass
+Ns 242.25
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.03 0.03 0.03
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 4
+# d 0.498039
+# Tr 0.501961
+Tf 0.501961 0.501961 0.501961
+
+newmtl Brown_Stained_Glass
+Ns 242.25
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.03 0.03 0.03
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 4
+# d 0.498039
+# Tr 0.501961
+Tf 0.501961 0.501961 0.501961
+
+newmtl Black_Stained_Glass
+Ns 242.25
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.03 0.03 0.03
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 4
+# d 0.498039
+# Tr 0.501961
+Tf 0.501961 0.501961 0.501961
+
+newmtl Oak_Trapdoor
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Stone_Bricks
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Cracked_Stone_Bricks
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Chiseled_Stone_Bricks
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Iron_Bars
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Glass_Pane
+Ns 242.25
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.03 0.03 0.03
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Fence_Gate
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Brick_Stairs
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Stone_Brick_Stairs
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Nether_Brick_Fence
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Brewing_Stand
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+Ke 0.0172133 0.0172133 0.0172133
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+map_Ke Jasmine_Kantin_GK2-RGBA.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Cauldron
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Double_Oak_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Oak_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Spruce_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Dark_Oak_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Cocoa
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Tripwire_Hook
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Spruce_Stairs
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Cobblestone_Wall
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Brick_Wall
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Stone_Brick_Wall
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Polished_Blackstone_Wall
+Ns 216.75
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.255 0.255 0.255
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Cobbled_Deepslate_Wall
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Mud_Brick_Wall
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Flower_Pot
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Poppy
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Blue_Orchid
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Allium
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Azure_Bluet
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Red_Tulip
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Orange_Tulip
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_White_Tulip
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Oxeye_Daisy
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Cornflower
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Lily_of_the_Valley
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Wither_Rose
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Crimson_Fungus
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Warped_Fungus
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Dandelion
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Torchflower
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Brown_Mushroom
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Oak_Sapling
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Spruce_Sapling
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Jungle_Sapling
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Acacia_Sapling
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Dark_Oak_Sapling
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Cherry_Sapling
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Dead_Bush
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potted_Fern
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Carrot
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Potato
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Skeleton_Wall_Skull
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Anvil
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Damaged_Anvil
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Hopper
+Ns 153
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.18 0.18 0.18
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Block_of_Quartz
+Ns 204
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.24 0.24 0.24
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Quartz_Stairs
+Ns 204
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.24 0.24 0.24
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl White_Terracotta
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Gray_Terracotta
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Light_Terracotta
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Cyan_Terracotta
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl White_Stained_Glass_Pane
+Ns 242.25
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.03 0.03 0.03
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 4
+# d 0.498039
+# Tr 0.501961
+Tf 0.501961 0.501961 0.501961
+
+newmtl Yellow_Stained_Glass_Pane
+Ns 242.25
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.03 0.03 0.03
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 4
+# d 0.498039
+# Tr 0.501961
+Tf 0.501961 0.501961 0.501961
+
+newmtl Gray_Stained_Glass_Pane
+Ns 242.25
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.03 0.03 0.03
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 4
+# d 0.498039
+# Tr 0.501961
+Tf 0.501961 0.501961 0.501961
+
+newmtl Blue_Stained_Glass_Pane
+Ns 242.25
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.03 0.03 0.03
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 4
+# d 0.498039
+# Tr 0.501961
+Tf 0.501961 0.501961 0.501961
+
+newmtl Red_Stained_Glass_Pane
+Ns 242.25
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.03 0.03 0.03
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 4
+# d 0.498039
+# Tr 0.501961
+Tf 0.501961 0.501961 0.501961
+
+newmtl Black_Stained_Glass_Pane
+Ns 242.25
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.03 0.03 0.03
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 4
+# d 0.498039
+# Tr 0.501961
+Tf 0.501961 0.501961 0.501961
+
+newmtl Acacia_Leaves
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Flowering_Azalea_Leaves
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Acacia_Log
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Acacia_Wood
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Dark_Oak_Stairs
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Slime_Block
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.03 0.03 0.03
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 4
+# d 0.698039
+# Tr 0.301961
+Tf 0.301961 0.301961 0.301961
+
+newmtl Iron_Trapdoor
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl White_Carpet
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Yellow_Carpet
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Gray_Carpet
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Blue_Carpet
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Brown_Carpet
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Green_Carpet
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Red_Carpet
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Black_Carpet
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Terracotta
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Block_of_Coal
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Sunflower
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Lilac
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Tall_Grass
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Large_Fern
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Rose_Bush
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Smooth_Quartz_Slab
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Smooth_Quartz_Slab
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Birch_Fence_Gate
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Dark_Oak_Fence_Gate
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Spruce_Fence
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Birch_Fence
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Dark_Oak_Fence
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Acacia_Fence
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Spruce_Door
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Birch_Door
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Dark_Oak_Door
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Beetroot_Seeds
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Dirt_Path
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Red_Shulker_Box
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Black_Shulker_Box
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl White_Concrete
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Gray_Concrete
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Light_Concrete
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Red_Concrete
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Black_Concrete
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Black_Concrete_Powder
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Spruce_Trapdoor
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Birch_Trapdoor
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Jungle_Trapdoor
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Dark_Oak_Trapdoor
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Stripped_Oak_Log
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Stripped_Spruce_Log
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Stripped_Dark_Oak_Log
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Stripped_Oak_Wood
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Stripped_Spruce_Wood
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Orange_Wall_Banner
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Light_Blue_Wall_Banner
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Yellow_Wall_Banner
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Gray_Wall_Banner
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Purple_Wall_Banner
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Brown_Wall_Banner
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Green_Wall_Banner
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Red_Wall_Banner
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Black_Wall_Banner
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Seagrass
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Smooth_Stone
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Quartz
+Ns 204
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.24 0.24 0.24
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Double_Diorite_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Double_Stone_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Polished_Andesite_Slab
+Ns 216.75
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.255 0.255 0.255
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Diorite_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Polished_Diorite_Slab
+Ns 216.75
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.255 0.255 0.255
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Stone_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Mangrove_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Mud_Brick_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Composter
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Barrel
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Grindstone
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Lectern
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Bell
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Lantern
+Ns 178.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.21 0.21 0.21
+Ke 1 1 1
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+map_Ke Jasmine_Kantin_GK2-RGBA.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Soul_Lantern
+Ns 178.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.21 0.21 0.21
+Ke 0.544331 0.544331 0.544331
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+map_Ke Jasmine_Kantin_GK2-RGBA.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Campfire
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Scaffolding
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Crimson_Trapdoor
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Crimson_Button
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Polished_Blackstone_Button
+Ns 216.75
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.255 0.255 0.255
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Crimson_Door
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Blackstone_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Polished_Blackstone_Slab
+Ns 216.75
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.255 0.255 0.255
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Polished_Blackstone_Brick_Slab
+Ns 216.75
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.255 0.255 0.255
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Iron_Chain
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Stone_Stairs
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Smooth_Quartz_Stairs
+Ns 127.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.15 0.15 0.15
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Diorite_Stairs
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Polished_Diorite_Stairs
+Ns 216.75
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.255 0.255 0.255
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Polished_Andesite_Stairs
+Ns 216.75
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.255 0.255 0.255
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Blackstone_Stairs
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Polished_Blackstone_Stairs
+Ns 216.75
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.255 0.255 0.255
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Tuff
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Copper_Ore
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Waxed_Cut_Copper
+Ns 204
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.24 0.24 0.24
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Moss_Block
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Rooted_Dirt
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Cobbled_Deepslate
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Deepslate_Brick_Slab
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Flowering_Azalea
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Mangrove_Stairs
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Mud_Brick_Stairs
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGB.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGB.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Cherry_Trapdoor
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Pink_Petals
+Ns 0
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0 0 0
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0
+
+newmtl Waxed_Exposed_Copper_Trapdoor
+Ns 178.5
+Ka 0.2 0.2 0.2
+Kd 1 1 1
+Ks 0.21 0.21 0.21
+map_Ka Jasmine_Kantin_GK2-RGBA.png
+# for G3D, to make textures look blocky:
+interpolateMode NEAREST_MAGNIFICATION_TRILINEAR_MIPMAP_MINIFICATION
+map_Kd Jasmine_Kantin_GK2-RGBA.png
+map_d Jasmine_Kantin_GK2-Alpha.png
+illum 2
+# d 1
+# Tr 0

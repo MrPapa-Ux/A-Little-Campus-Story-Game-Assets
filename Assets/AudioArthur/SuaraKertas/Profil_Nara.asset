@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bca0554914a0744a7c896aa969f9ef, type: 3}
+  m_Name: Profil_Nara
+  m_EditorClassIdentifier: Assembly-CSharp::ProfilSuaraKertas
+  namaKarakter: Nara
+  potongan:
+  - {fileID: 8300000, guid: 536ca7336c43b9b4b916552a9aac6346, type: 3}
+  - {fileID: 8300000, guid: 940fa7058d4848646adf2a0a77e131c7, type: 3}
+  - {fileID: 8300000, guid: f7c533a6add6ec24eb00e8293f4193ad, type: 3}
+  nada: 1
+  variasiNada: 0.035
+  volume: 0.32
+  jeda: 0.045
+  hurufPerBunyi: 1

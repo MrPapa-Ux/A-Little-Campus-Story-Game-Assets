@@ -10,6 +10,8 @@ public static class JedaEditorSaatTidakAktif
     static void Update()
     {
         if(!EditorApplication.isPlaying){if(SessionState.GetBool(Key,false))EditorApplication.isPaused=false;SessionState.SetBool(Key,false);return;}
+        // Remote perlu loop tetap berjalan, termasuk saat menunggu sambungan HP.
+        if(JedaSaatTidakAktif.MenggunakanRemote){Application.runInBackground=true;Terapkan(true);return;}
         if(SessionState.GetBool(CampusCheckpoint19Checks.Key,false)||SessionState.GetBool("Campus.Revision20.Check",false)||SessionState.GetBool("Campus.Revision21.Check",false)||SessionState.GetBool("Campus.Revision22.Check",false)||SessionState.GetBool("Campus.Revision23.Check",false)||SessionState.GetBool("Campus.Revision26.Check",false)||SessionState.GetBool("Campus.Revision27.Check",false)||JedaSaatTidakAktif.PengujianLatarBelakang)return;
         bool active=UnityEditorInternal.InternalEditorUtility.isApplicationActive&&Application.isFocused;
         Terapkan(active);

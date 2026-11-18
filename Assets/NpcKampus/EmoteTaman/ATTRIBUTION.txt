@@ -1,0 +1,6 @@
+Twemoji 16.0.1 — graphics by Twitter, Inc. and other contributors.
+Icons: 1f974 (woozy face), 1f92d (face with hand over mouth), 1f525 (fire).
+Source: https://github.com/jdecked/twemoji/tree/v16.0.1/assets/72x72
+License: Creative Commons Attribution 4.0 International (CC BY 4.0).
+https://creativecommons.org/licenses/by/4.0/
+Unmodified PNGs; full graphics license included in LICENSE-GRAPHICS.txt.

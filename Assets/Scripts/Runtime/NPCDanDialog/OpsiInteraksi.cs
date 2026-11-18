@@ -42,8 +42,13 @@ public class BarisDialog
 [System.Serializable]
 public class OpsiInteraksi
 {
+    [Header("Kuis Mr.Quizo (opsional)")]
+    public MrQuizoChapter1 mrQuizo;
+    public int aksiQuizo;
     [Header("Percobaan minigame (opsional)")]
     public RapidTapArthur rapidTap;
+    public TantanganSampingArthur tantanganArthur;
+    public int levelJigsaw;
     [Header("Pilihan arah berjalan (opsional, tanpa teleportasi)")]
     public PengaturCabangKampus cabangJalur;
     public bool pilihJalanDepan;

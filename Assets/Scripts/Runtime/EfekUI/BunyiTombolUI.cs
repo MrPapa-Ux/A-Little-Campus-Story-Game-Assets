@@ -23,7 +23,7 @@ public sealed class BunyiTombolUI : MonoBehaviour
     private AudioSource pemutar;
     private AudioSource pemutarHP;
     private AudioClip[] bunyi;
-    private AudioClip bukaHP, ketukHP;
+    private AudioClip bukaHP, ketukHP, itemDidapat;
     public static int JumlahBukaHP { get; private set; }
     public static int JumlahKetukHP { get; private set; }
     public static int JumlahUmum { get; private set; }
@@ -71,6 +71,7 @@ public sealed class BunyiTombolUI : MonoBehaviour
         };
         bukaHP = Resources.Load<AudioClip>("ArthurSfx/BukaHP");
         ketukHP = Resources.Load<AudioClip>("ArthurSfx/KetukHP");
+        itemDidapat = Resources.Load<AudioClip>("ArthurSfx/ItemDidapat");
         foreach(var clip in bunyi)if(clip!=null)clip.LoadAudioData();
         if(bukaHP!=null)bukaHP.LoadAudioData();
         if(ketukHP!=null)ketukHP.LoadAudioData();
@@ -140,6 +141,12 @@ public sealed class BunyiTombolUI : MonoBehaviour
     {
         if (instance != null && instance.ketukHP != null)
         { instance.pemutarHP.PlayOneShot(instance.ketukHP, .75f); JumlahKetukHP++; }
+    }
+
+    public static void MainkanItemDidapat()
+    {
+        if (instance != null && instance.itemDidapat != null)
+            instance.pemutarHP.PlayOneShot(instance.itemDidapat, 1f);
     }
 
     private void Mainkan()

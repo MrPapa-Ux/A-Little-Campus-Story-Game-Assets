@@ -33,22 +33,46 @@ public sealed class QuestTitipanArthur : MonoBehaviour
     public bool Terima()
     {
         if (Tahap != TahapTitipanArthur.BelumDiterima || buku == null) return false;
-        Tahap = TahapTitipanArthur.CariBarang; Catat(); Segarkan(); return true;
+        UbahTahap(TahapTitipanArthur.CariBarang);
+        return true;
     }
     public bool Ambil()
     {
         if (Tahap != TahapTitipanArthur.CariBarang || buku == null) return false;
-        buku.Tambah(JenisBukuArthur.Tas, new CatatanArthur {
-            id = idBarang, judul = namaBarang, ikon = ikon, jumlah = 1,
-            isi = "Titipan " + pemberi + ". Kembalikan kepada pemiliknya."
-        });
-        Tahap = TahapTitipanArthur.BawaKembali; Catat(); Segarkan(); return true;
+        CatatBarang(true);
+        UbahTahap(TahapTitipanArthur.BawaKembali);
+        return true;
     }
     public bool Serahkan()
     {
         if (Tahap != TahapTitipanArthur.BawaKembali || buku == null || !buku.barang.Exists(x => x != null && x.id == idBarang)) return false;
         buku.barang.RemoveAll(x => x != null && x.id == idBarang);
-        Tahap = TahapTitipanArthur.Selesai; Catat(); Segarkan(); return true;
+        UbahTahap(TahapTitipanArthur.Selesai);
+        return true;
+    }
+
+    void UbahTahap(TahapTitipanArthur tahap)
+    {
+        Tahap = tahap;
+        Catat();
+        Segarkan();
+        ProgresSampingArthur.SimpanJikaEksplorasi(gameObject.scene);
+    }
+
+    void CatatBarang(bool tampilkanPenerimaan) =>
+        buku.Tambah(JenisBukuArthur.Tas, new CatatanArthur {
+            id = idBarang, judul = namaBarang, ikon = ikon, jumlah = 1,
+            isi = "Titipan " + pemberi + ". Kembalikan kepada pemiliknya."
+        }, tampilkanPenerimaan);
+
+    public void Pulihkan(TahapTitipanArthur tahap)
+    {
+        if (buku == null || tahap < TahapTitipanArthur.CariBarang || tahap > TahapTitipanArthur.Selesai) return;
+        Tahap = tahap;
+        if (tahap == TahapTitipanArthur.BawaKembali) CatatBarang(false);
+        else buku.barang.RemoveAll(x => x != null && x.id == idBarang);
+        Catat();
+        Segarkan();
     }
     void Catat()
     {

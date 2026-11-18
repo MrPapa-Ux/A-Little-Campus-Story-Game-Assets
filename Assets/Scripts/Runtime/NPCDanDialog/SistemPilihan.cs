@@ -182,13 +182,13 @@ public class SistemPilihan : MonoBehaviour
             if (efekTeriak != null) efekTeriak.Huruf(huruf);
             
             // Logika jeda napas layaknya karakter sungguhan
-            if (huruf == '.' || huruf == '?' || huruf == '!')
+            if (huruf == '?' || huruf == '!')
             {
                 yield return new WaitForSeconds(1f); 
             }
-            else if (huruf == ',')
+            else if (JedaTandaBacaArthur.Singkat(huruf))
             {
-                yield return new WaitForSeconds(0.5f); 
+                yield return new WaitForSeconds(JedaTandaBacaArthur.TitikDanKoma);
             }
             else
             {
@@ -780,6 +780,8 @@ public class SistemPilihan : MonoBehaviour
         if (daftarOpsi != null && indeksPilihan < daftarOpsi.Length)
         {
             OpsiInteraksi opsiDipilih = daftarOpsi[indeksPilihan];
+            if(opsiDipilih.mrQuizo!=null){opsiDipilih.mrQuizo.Pilih(opsiDipilih.aksiQuizo);return;}
+            if(MrQuizoChapter1.Cegat(dialogManager.PemilikInteraksi,opsiDipilih))return;
             if(!BatasMalamChapter1.Boleh(opsiDipilih.titikTujuan,opsiDipilih.teksOpsi)){if(teksCeritaUtama!=null)teksCeritaUtama.text="Akses ke tempat ini ditutup pada malam hari. Kembali ke kamar 201 Guest House.";return;}
             if (opsiDipilih.cabangJalur != null)
             {
@@ -790,6 +792,11 @@ public class SistemPilihan : MonoBehaviour
             if(opsiDipilih.rapidTap!=null)
             {
                 StartCoroutine(BukaLatihanRapidTap(opsiDipilih.rapidTap));return;
+            }
+            if (opsiDipilih.tantanganArthur != null)
+            {
+                StartCoroutine(BukaTantanganArthur(opsiDipilih.tantanganArthur, opsiDipilih.levelJigsaw));
+                return;
             }
             
             if (opsiDipilih.titikTujuan != null)
@@ -841,6 +848,17 @@ public class SistemPilihan : MonoBehaviour
         }
     }
 
+    public void SegarkanPercakapan(AreaInteraksi pemilik)
+    {
+        if(dialogManager==null||pemilik==null)return;
+        if(coroutineKetik!=null)StopCoroutine(coroutineKetik);
+        dialogManager.MuatInteraksi(pemilik);dialogManager.BukaDialog();MulaiPercakapan();
+    }
+    public void TutupPercakapanTerarah()
+    {
+        if(dialogManager!=null&&!sedangMenutup)StartCoroutine(ProsesTutupDialogAnimasi());
+    }
+
     private void PindahPosisiArthur(Transform titikTujuan)
     {
         if (titikTujuan != null && dialogManager != null && dialogManager.arthurScript != null)
@@ -863,6 +881,12 @@ public class SistemPilihan : MonoBehaviour
         yield return ProsesTutupDialogAnimasi();
         latihan.Buka();
     }
+    private IEnumerator BukaTantanganArthur(TantanganSampingArthur tantangan, int levelJigsaw)
+    {
+        yield return ProsesTutupDialogAnimasi();
+        if (tantangan != null) tantangan.Mulai(levelJigsaw);
+    }
+
     private IEnumerator ProsesTutupDialogAnimasi()
     {
         HentikanMulut();

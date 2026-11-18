@@ -37,6 +37,11 @@ public class SistemHP : MonoBehaviour
     public bool AplikasiSedangBuka => sedangMembukaAplikasi || (transisiAplikasi != null && transisiAplikasi.SedangBerjalan) || (aplikasiAktif != null && aplikasiAktif.activeInHierarchy);
     // Tetap jeda hingga animasi penutupan HP benar-benar selesai.
     public bool MenjedaParameter => hpSedangBuka || (hpUtama != null && hpUtama.activeInHierarchy) || AplikasiSedangBuka;
+    public bool SiapNavigasiUtama => hpSedangBuka && bisaNavigasi && !AplikasiSedangBuka;
+    string ikonAplikasiAktif;
+    public string IkonAplikasiAktif =>
+        aplikasiAktif != null && aplikasiAktif.activeInHierarchy && !sedangMembukaAplikasi &&
+        (transisiAplikasi == null || !transisiAplikasi.SedangBerjalan) ? ikonAplikasiAktif : null;
 
     [Header("Pengaturan Tampilan & Animasi")]
     public Color warnaDefaultHP = new Color(1f, 0.5f, 0f, 1f); 
@@ -77,7 +82,7 @@ public class SistemHP : MonoBehaviour
 
     void Update()
     {
-        if (AplikasiSedangBuka) return;
+        if (AplikasiSedangBuka || (DialogManager.Instance != null && DialogManager.Instance.minigameAktif)) return;
         if (hpSedangBuka && bisaNavigasi)
         {
             if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) TekanTombolUIKanan();
@@ -211,6 +216,7 @@ public class SistemHP : MonoBehaviour
 
     public void BukaAplikasi(string namaIkon)
     {
+        if (DialogManager.Instance != null && DialogManager.Instance.minigameAktif) return;
         if (!hpSedangBuka || !bisaNavigasi || AplikasiSedangBuka) return;
         if (namaIkon == "IkonKeluar") { TutupHP(); return; }
         GameObject tujuan = namaIkon == "IkonMap" && petaKampus != null ? petaKampus.gameObject : namaIkon == "IkonSetting" ? panelPengaturan : panelSegeraHadir;
@@ -233,6 +239,7 @@ public class SistemHP : MonoBehaviour
         System.Action tampilkan = () =>
         {
             aplikasiAktif = tujuan;
+            ikonAplikasiAktif = namaIkon;
             tujuan.SetActive(true);
             if(gameRhythm!=null&&tujuan==gameRhythm.panel)gameRhythm.Buka();
             sedangMembukaAplikasi = false;
@@ -261,6 +268,7 @@ public class SistemHP : MonoBehaviour
             if(GameSedangBuka)gameRhythm.TutupDariHP();
             if (aplikasiAktif != null) aplikasiAktif.SetActive(false);
             aplikasiAktif = null;
+            ikonAplikasiAktif = null;
         };
         StartCoroutine(KembaliPortrait(tutup));
     }

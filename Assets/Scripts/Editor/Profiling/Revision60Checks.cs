@@ -20,17 +20,17 @@ public static class Revision60Checks
         try
         {
             Cek(PerformaAndroidArthur.TargetFPS == 60, "Target Android 60 FPS");
-            float min = PerformaAndroidArthur.SkalaUntuk(2400,1080,540), max = PerformaAndroidArthur.HitungSkala(2400,1080);
-            Cek(Mathf.Approximately(min,.5f) && Mathf.Approximately(max,2f/3f), "Batas resolusi 540-720p pada layar 1080p");
+            float min = PerformaAndroidArthur.SkalaUntuk(2400,1080,PerformaAndroidArthur.SisiPendekMinimum), max = PerformaAndroidArthur.HitungSkala(2400,1080);
+            Cek(Mathf.Approximately(min,720f/1080f) && Mathf.Approximately(max,1f), "Batas resolusi 720-1080p pada layar 1080p");
             Cek(Mathf.Approximately(PerformaAndroidArthur.HitungSkala(1080,2400),max), "Rotasi tidak mengubah ketajaman");
             int stabil = 0; float skala = .6f;
             for(int i=0;i<10;i++) skala = PerformaAndroidArthur.SesuaikanSkala(skala,min,max,26,ref stabil);
             Cek(Mathf.Approximately(skala,min), "Beban berat menurunkan skala sampai batas aman");
-            for(int i=0;i<40;i++) skala = PerformaAndroidArthur.SesuaikanSkala(skala,min,max,16.67f,ref stabil);
+            for(int i=0;i<200;i++) skala = PerformaAndroidArthur.SesuaikanSkala(skala,min,max,16.67f,ref stabil);
             Cek(Mathf.Approximately(skala,max), "Skala pulih bertahap saat stabil");
-            stabil=0;skala=.6f;
+            stabil=0;skala=.8f;
             for(int i=0;i<3;i++) skala=PerformaAndroidArthur.SesuaikanSkala(skala,min,max,16.67f,ref stabil);
-            Cek(Mathf.Approximately(skala,.6f), "Histeresis mencegah perubahan kualitas setiap frame");
+            Cek(Mathf.Approximately(skala,.8f), "Histeresis mencegah perubahan kualitas setiap frame");
             var rp=AssetDatabase.LoadAssetAtPath<UniversalRenderPipelineAsset>("Assets/Settings/Mobile_RPAsset.asset");
             Cek(rp!=null&&!rp.supportsHDR&&rp.shadowDistance==32&&rp.useSRPBatcher,"Profil mobile HDR off, bayangan 32m, SRP batcher aktif");
 

@@ -20,7 +20,7 @@ public sealed class PerjalananDandiChapter1 : MonoBehaviour
         if(!QuestAktif||Selesai)return;
         if(!MomenTerekam2Aktif&&kamar.arthur.JalurAktif==dandi.jalurInteraksi){MomenTerekam2Aktif=true;if(kamar.notifikasiMomen!=null)kamar.notifikasiMomen.Tampilkan(2);}
     }
-    void Catat(bool selesai){kamar.buku.Tambah(JenisBukuArthur.Tugas,new CatatanArthur{id=idQuest,judul="Temui Dandi di depan kelas GK1 lantai 3",dikendalikanQuest=true,selesai=selesai,isi=selesai?"Arthur telah berbicara dengan Dandi di depan kelas.":"Keluar dari kamar 201. Pergi melalui GA menuju GK1, naik ke lantai 3, lalu berbicara dengan Dandi di depan kelas. Tidak perlu masuk ke kelas."});}
+    void Catat(bool selesai){kamar.buku.Tambah(JenisBukuArthur.Tugas,new CatatanArthur{id=idQuest,judul="Temui Dandi di dalam kelas GK1 lantai 3",dikendalikanQuest=true,selesai=selesai,isi=selesai?"Arthur telah berbicara dengan Dandi di dalam kelas.":"Keluar dari kamar 201. Pergi melalui GA menuju GK1, naik ke lantai 3, masuk melalui pintu kelas, lalu berbicara dengan Dandi di dalam."});}
     void Tuntas(AreaInteraksi area,bool tuntas){if(!QuestAktif||!tuntas||area!=(monologSetelahDandi!=null?monologSetelahDandi:dandi.GetComponent<AreaInteraksi>()))return;Selesai=true;QuestAktif=false;MomenTerekam2Aktif=true;Catat(true);if(kamar.procrastination!=null)kamar.procrastination.tanpaBatasWaktu=true;}
     public void GagalPerjalanan(){StartCoroutine(Pulih());}
     IEnumerator Pulih(){

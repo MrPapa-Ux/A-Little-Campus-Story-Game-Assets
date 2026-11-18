@@ -22,7 +22,7 @@ public class TransformasiLayarHP : MonoBehaviour
     Vector3 offsetLayar, awalCenter;
     Quaternion awalRot;
 
-    public IEnumerator KeLandscape(RectTransform panel)
+    public IEnumerator KeLandscape(RectTransform panel, bool pertahankanProporsi = false)
     {
         SedangBerjalan = true;
         Canvas.ForceUpdateCanvases();
@@ -47,6 +47,11 @@ public class TransformasiLayarHP : MonoBehaviour
         }
         Quaternion rot=Quaternion.Euler(0,0,-90);
         Vector3 scale=new Vector3((max.y-min.y)/size.x,(max.x-min.x)/size.y,1);
+        if (pertahankanProporsi)
+        {
+            float seragam = Mathf.Min(scale.x, scale.y);
+            scale = new Vector3(seragam, seragam, 1);
+        }
         Vector3 pos=center-rot*Vector3.Scale(offset,scale);
         float elapsed=0;
         while(elapsed<durasi)

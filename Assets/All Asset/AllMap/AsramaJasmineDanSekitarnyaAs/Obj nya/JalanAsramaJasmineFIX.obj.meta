@@ -1,0 +1,1265 @@
+fileFormatVersion: 2
+guid: 6d5ac65a735132a4a8eee5a2ea096c97
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Acacia_FenceMat
+    second: {fileID: 2100000, guid: e65e269b598a89546b22a9105ab89c2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Acacia_SaplingMat
+    second: {fileID: 2100000, guid: 667158d64be795c48b9c640c470df7d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AlliumMat
+    second: {fileID: 2100000, guid: b410b9665ba78c94ab9238d387c59adf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AndesiteMat
+    second: {fileID: 2100000, guid: 10d377e43d9b52d49bb479dbb8bd709a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Azure_BluetMat
+    second: {fileID: 2100000, guid: 31aef0f676c08ea4daa0f179f9f497c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BarrelMat
+    second: {fileID: 2100000, guid: 9575a69f23be0814692b74e386ecbe7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BedMat
+    second: {fileID: 2100000, guid: 3fb62727cdf2d204096c1338c8854a56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BedrockMat
+    second: {fileID: 2100000, guid: 704b4dbfcfd86a244ae77393ab40f4ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Beetroot_SeedsMat
+    second: {fileID: 2100000, guid: 4fbfa1abac7bc4d46bfe5624c82ee1ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BellMat
+    second: {fileID: 2100000, guid: 92d73574da029634ca379fda9e21ca1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch_DoorMat
+    second: {fileID: 2100000, guid: 640e107cd5f07ff45958501525f4de0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch_Fence_GateMat
+    second: {fileID: 2100000, guid: 40a52728a67dd9a4fa275b604863b114, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch_LeavesMat
+    second: {fileID: 2100000, guid: e0565b13cdf4a5144af888b548d549db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch_LogMat
+    second: {fileID: 2100000, guid: fb39f8d023d29f849a783a8217c78dd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Birch_SignMat
+    second: {fileID: 2100000, guid: dd80ffbfd74473b4e820d56096d3611a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_CarpetMat
+    second: {fileID: 2100000, guid: e76a80f75228df34c93b3e4c6fa13a99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_ConcreteMat
+    second: {fileID: 2100000, guid: 79145aa154d37d94da16bfbac5a6efdd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_Concrete_PowderMat
+    second: {fileID: 2100000, guid: 1ef0d79c7c89a7948bc6477a587f3fa1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_Shulker_BoxMat
+    second: {fileID: 2100000, guid: f42329034f9f44e42ae471087800d695, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_Stained_GlassMat
+    second: {fileID: 2100000, guid: 4383520ee17b2c74782de947d3f86126, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_Stained_Glass_PaneMat
+    second: {fileID: 2100000, guid: f7b5d3e6ba216574bb418d2874e9b7da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_Wall_BannerMat
+    second: {fileID: 2100000, guid: 915f725ee45fe10469157f0ff032cc3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_WoolMat
+    second: {fileID: 2100000, guid: 0eb8e79471965b94b8f216e50fcb8ba7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlackstoneMat
+    second: {fileID: 2100000, guid: 37e04b25afba8c348a07414e36d54e56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blackstone_SlabMat
+    second: {fileID: 2100000, guid: a81d3b4d8dcb96a438792c1f1e16020a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blackstone_StairsMat
+    second: {fileID: 2100000, guid: 893d23fd73b9b204db9262d902afb312, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blast_FurnaceMat
+    second: {fileID: 2100000, guid: 96459644f8ed19f42bb98828d3da79a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Block_of_CoalMat
+    second: {fileID: 2100000, guid: c6832a7be4808694fb3f2134f0f3aef9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Block_of_QuartzMat
+    second: {fileID: 2100000, guid: 15d8ed1847fad0f4383577648e09f454, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blue_OrchidMat
+    second: {fileID: 2100000, guid: 7d3c92944555abe4d90caa3a2445a39d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blue_Stained_Glass_PaneMat
+    second: {fileID: 2100000, guid: 7b9014527e616fc4a9415693d3c5ed05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blue_WoolMat
+    second: {fileID: 2100000, guid: 32a43fdfeb53ece479584af93e036684, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BookshelfMat
+    second: {fileID: 2100000, guid: 44839cc1f1d29a043b3c45adc581422e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brewing_StandMat
+    second: {fileID: 2100000, guid: c93fe29008d46d24e9c0b73708a23262, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brick_SlabMat
+    second: {fileID: 2100000, guid: 972350ffb6319c34ea3862917f6495dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brick_StairsMat
+    second: {fileID: 2100000, guid: bd27300824678964696ae4a3f19bca6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brick_WallMat
+    second: {fileID: 2100000, guid: 50792d3d9b1bf74458c907fbbaae42ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BricksMat
+    second: {fileID: 2100000, guid: 9c564bccf3982674dbdf18e0def16007, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brown_CarpetMat
+    second: {fileID: 2100000, guid: 2a042fa750b696a468edefd8e7e80dd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brown_MushroomMat
+    second: {fileID: 2100000, guid: 5a41e48d93e416e4da653d2ece8adfc3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brown_Wall_BannerMat
+    second: {fileID: 2100000, guid: eaff0a40ae07a80438e38a48e4ba9b5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CampfireMat
+    second: {fileID: 2100000, guid: f4f7844f8ae5eac44bb8fc7127b0f59b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CarrotMat
+    second: {fileID: 2100000, guid: caa2cce9b52b6fa45a9423d0e89ebb9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cartography_TableMat
+    second: {fileID: 2100000, guid: 3536bea384e1e7a4ea415c05d2bf3dc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cherry_SaplingMat
+    second: {fileID: 2100000, guid: fb77077fb3015ce4399f0381f8bf4817, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ChestMat
+    second: {fileID: 2100000, guid: f60c5bf8ceee2ce4986583542e868172, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chiseled_Stone_BricksMat
+    second: {fileID: 2100000, guid: 9884135d2e6631e4095510e1fdd4fa2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Coal_OreMat
+    second: {fileID: 2100000, guid: 1fc3593e60b2fae4fa831fb8f260676f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CobblestoneMat
+    second: {fileID: 2100000, guid: baea46b217d196d468cee357e9715153, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cobblestone_StairsMat
+    second: {fileID: 2100000, guid: f1b0619974daa8a45a14b6e96349829e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cobblestone_WallMat
+    second: {fileID: 2100000, guid: 5f3fd76aaaf01284181af316fc0f8f00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ComposterMat
+    second: {fileID: 2100000, guid: 0f711bcb0ac373b4e98145d4693b9d05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Copper_OreMat
+    second: {fileID: 2100000, guid: e0263c3edb4d149478d3f04fc1247fe1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CornflowerMat
+    second: {fileID: 2100000, guid: 3873a4daa1f048c45bc5274f618e081a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cracked_Polished_Blackstone_BricksMat
+    second: {fileID: 2100000, guid: b21615f7f5160494b86b0ff96754b715, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cracked_Stone_BricksMat
+    second: {fileID: 2100000, guid: ad57e222dd0049149a97c93f27cddd44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crafting_TableMat
+    second: {fileID: 2100000, guid: 68bb14d8b29d497459484066042e8c47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crimson_FungusMat
+    second: {fileID: 2100000, guid: 9f6efc2d33f6fda40be9f8867b1691d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crimson_TrapdoorMat
+    second: {fileID: 2100000, guid: ec2349b4e82f71a48b3ab851cd2439b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crimson_Wall_SignMat
+    second: {fileID: 2100000, guid: 48afea9eee52cbe459448d154de99deb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DandelionMat
+    second: {fileID: 2100000, guid: f8bd6ff134e450e4da53a85a73aeb0ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dark_Oak_FenceMat
+    second: {fileID: 2100000, guid: 3c5650bd974394349b4d1c4d5618b2a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dark_Oak_Fence_GateMat
+    second: {fileID: 2100000, guid: 8caa92c3931b7b848894201056e3867f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dark_Oak_SaplingMat
+    second: {fileID: 2100000, guid: a76958979b74ef044bf568015ec721b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dark_Oak_StairsMat
+    second: {fileID: 2100000, guid: b7ad95af89275ee4c8c05f660ac22a55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dark_Oak_TrapdoorMat
+    second: {fileID: 2100000, guid: 10d5628de5ec20044a25beb31dce7c8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dark_Oak_Wall_SignMat
+    second: {fileID: 2100000, guid: f6cda9d9c8468cd4a902b74f9b857c2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dead_BushMat
+    second: {fileID: 2100000, guid: 15a96d2f813181b4d9782e48fb78ec11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Deepslate_Brick_SlabMat
+    second: {fileID: 2100000, guid: 5605ef7644872064ca04d93be4768689, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DioriteMat
+    second: {fileID: 2100000, guid: f55a34e3690269c4aa4e46b36e3f4810, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Diorite_SlabMat
+    second: {fileID: 2100000, guid: cf74d361ca810a041bfda071fe1c5257, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DirtMat
+    second: {fileID: 2100000, guid: 7d11a43147a730f4a9192de738fd23a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dirt_PathMat
+    second: {fileID: 2100000, guid: feba2a8377c65074e9105c2f97db5cf6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Double_Diorite_SlabMat
+    second: {fileID: 2100000, guid: f7cf626233f409a4ba732ef3da5bd8a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Double_Oak_SlabMat
+    second: {fileID: 2100000, guid: c043b7c6ba871634f92674fd04f55722, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Double_Petrified_Oak_SlabMat
+    second: {fileID: 2100000, guid: 4aa189e42e2266e44b80bbe3badf20a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Double_Stone_Brick_SlabMat
+    second: {fileID: 2100000, guid: 05efb14482476c944bf66bbda909d537, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Double_Stone_SlabMat
+    second: {fileID: 2100000, guid: 7957de833b7223f41b63df075e8ba3a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FarmlandMat
+    second: {fileID: 2100000, guid: 25a15a52d99ba3f41be6036ab042fcd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FenceMat
+    second: {fileID: 2100000, guid: 3af97ce16c5fa254dad2afb4f50ff2dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fence_GateMat
+    second: {fileID: 2100000, guid: 2f60d93bb71d7084586ec4efe611ac12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FernMat
+    second: {fileID: 2100000, guid: 3e0c8c0c95dac684489d95c68a2a8043, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fletching_TableMat
+    second: {fileID: 2100000, guid: d4a96c89235f0dd4194062d8b64903e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Flowering_AzaleaMat
+    second: {fileID: 2100000, guid: aec057383c7a46346a437e2378b6c129, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Flowering_Azalea_LeavesMat
+    second: {fileID: 2100000, guid: fc41075ee473c1445b607123ddaaa092, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FurnaceMat
+    second: {fileID: 2100000, guid: 6117952eeb6c46842813bb05966aaf20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GlassMat
+    second: {fileID: 2100000, guid: 0bddbb5d2e799e844a4e0dac38f77f3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass_PaneMat
+    second: {fileID: 2100000, guid: 207b00fd1d2a3cf48a5522ff1e33fbac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GlowstoneMat
+    second: {fileID: 2100000, guid: ee2c65630c8a89c4e979ed9d47f17c11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass_BlockMat
+    second: {fileID: 2100000, guid: 6a08d08dc0d0130498a0980043b6eb23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GravelMat
+    second: {fileID: 2100000, guid: 355d69bf8e154b04e8bf59d042e5cd5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gray_CarpetMat
+    second: {fileID: 2100000, guid: a14ef149cb630c5418b4d364d8f96a7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gray_ConcreteMat
+    second: {fileID: 2100000, guid: d569228badd5d1247abf842c720112ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gray_Stained_Glass_PaneMat
+    second: {fileID: 2100000, guid: c25d0be2924f8f4499a215afc7620c1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gray_Wall_BannerMat
+    second: {fileID: 2100000, guid: 191025dd699c2434fb9e3e6b0c1c6bba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green_CarpetMat
+    second: {fileID: 2100000, guid: f9132b0c5c2209045b4b036ada28b2fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green_Wall_BannerMat
+    second: {fileID: 2100000, guid: b5109344d4d582346b8788c6367a85b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green_WoolMat
+    second: {fileID: 2100000, guid: f5d190fd883f8234698c16190b022e8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GrindstoneMat
+    second: {fileID: 2100000, guid: b114ac5d934771145a2a2efbe1c8208c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HopperMat
+    second: {fileID: 2100000, guid: 28f033d061bbbff429916a562190b691, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Iron_BarsMat
+    second: {fileID: 2100000, guid: 2a7c80ffcb80b4d47a60073ecd3882cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Iron_ChainMat
+    second: {fileID: 2100000, guid: 5cc836a1237eafc4392fcfc17aba74aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Iron_OreMat
+    second: {fileID: 2100000, guid: d3004e79e08844643a305cb3ae599df1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Iron_TrapdoorMat
+    second: {fileID: 2100000, guid: f1e8d659133eccb4083469101af3bbe0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JukeboxMat
+    second: {fileID: 2100000, guid: a9d1853831e93984b81e2f1af9daa21b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jungle_LeavesMat
+    second: {fileID: 2100000, guid: e0a6584501629654fbe13e5138f6b409, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jungle_SaplingMat
+    second: {fileID: 2100000, guid: 989ea14865731c54b8700bb9ef8adfea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LadderMat
+    second: {fileID: 2100000, guid: e63e3556791a79748b59ad0a54cf5418, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LanternMat
+    second: {fileID: 2100000, guid: e45f25a58c4cf7a4093133c1f82dbc9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LecternMat
+    second: {fileID: 2100000, guid: 4de779ca827f159469cfbdfa593a5ff8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LeverMat
+    second: {fileID: 2100000, guid: 9bab8c7f7d21e654b9808869531bd139, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light_Blue_Wall_BannerMat
+    second: {fileID: 2100000, guid: 72de720b62bedc44c8b00393f08a1755, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light_Stained_GlassMat
+    second: {fileID: 2100000, guid: 4a54103286b478f498f348d2dc4625ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light_WoolMat
+    second: {fileID: 2100000, guid: e238c729322034b45ba46c276af53eb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LilacMat
+    second: {fileID: 2100000, guid: 547f72450288c574aab760de8eaba7b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lily_of_the_ValleyMat
+    second: {fileID: 2100000, guid: d9a6ee71c55eb664dad081154c0715c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lime_WoolMat
+    second: {fileID: 2100000, guid: 3a1a78e4ece7b5f4f93c48944be77662, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oak_DoorMat
+    second: {fileID: 2100000, guid: c0ee40991265c564c80cbae8609641fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oak_LeavesMat
+    second: {fileID: 2100000, guid: e1977a39d7181804ba52032bc009acaf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oak_LogMat
+    second: {fileID: 2100000, guid: 160da84315d113c4db7553292dcae818, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oak_PlanksMat
+    second: {fileID: 2100000, guid: e1910b6053a89a441acd90bddbdf043a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oak_Pressure_PlateMat
+    second: {fileID: 2100000, guid: 11c286ac122b39c49bb233bc023e4fe4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oak_SaplingMat
+    second: {fileID: 2100000, guid: fec7d6b2cdc995f4480767cbc63e99d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oak_SlabMat
+    second: {fileID: 2100000, guid: b9ddfaa7acb194046901f028646a64b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oak_StairsMat
+    second: {fileID: 2100000, guid: fe27ca07f2ed6a64f9f12693e44f456f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oak_TrapdoorMat
+    second: {fileID: 2100000, guid: 65eeefdbe092fcc449ef715bfc6d3fa8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oak_Wall_SignMat
+    second: {fileID: 2100000, guid: 6e8ed2d744d5b9a4098106dc04a26c94, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oak_WoodMat
+    second: {fileID: 2100000, guid: 8c02638966e4f0540b9e99cba9b597a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ObsidianMat
+    second: {fileID: 2100000, guid: a080b3e183d54144b8b9b37be0c7a3e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Orange_Stained_GlassMat
+    second: {fileID: 2100000, guid: 4b47e85d94d09a44db7e5408284d8ee2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Orange_TulipMat
+    second: {fileID: 2100000, guid: 199aec377b3ba7044bd0dffb108a018e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Orange_Wall_BannerMat
+    second: {fileID: 2100000, guid: 4adb6f4a897c0ec43a08c05f31798b1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Orange_WoolMat
+    second: {fileID: 2100000, guid: 47d94ac67400bbc40a1403bd975ad706, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Oxeye_DaisyMat
+    second: {fileID: 2100000, guid: 1606e84e8fd0e324ba269f99c1e2dffa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Petrified_Oak_SlabMat
+    second: {fileID: 2100000, guid: 20927e75c2181154187663c8c9f3ab37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PistonMat
+    second: {fileID: 2100000, guid: 08580e3bd688f5c49ad52bc2b448d2ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Polished_AndesiteMat
+    second: {fileID: 2100000, guid: 4cbd7051ae523084c98c23653fab9b03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Polished_Andesite_StairsMat
+    second: {fileID: 2100000, guid: c885169924f91fe4297361278b53ff31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Polished_Blackstone_Brick_SlabMat
+    second: {fileID: 2100000, guid: 9a4defff9c700c54b9862328f6a34cb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Polished_Blackstone_BricksMat
+    second: {fileID: 2100000, guid: f14bda8cfc8f0034db3bbd329b7f8a66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Polished_Blackstone_ButtonMat
+    second: {fileID: 2100000, guid: b1b206fdbb5a9df4496a20e2c1f30da7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Polished_Blackstone_SlabMat
+    second: {fileID: 2100000, guid: 83ac3afbeea6faf44b8e488aca9cb4d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Polished_Blackstone_StairsMat
+    second: {fileID: 2100000, guid: 0ba4aaeb1427d094ca1a0c55e4cc69f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Polished_Blackstone_WallMat
+    second: {fileID: 2100000, guid: 1a15ba16aff3e8c4cb68c52391dc1cd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Polished_Diorite_SlabMat
+    second: {fileID: 2100000, guid: f2da8aefc16476d4fb132d310761006e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Polished_Diorite_StairsMat
+    second: {fileID: 2100000, guid: 6658bb77e89f2b641b5f433cfbd4f3a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PoppyMat
+    second: {fileID: 2100000, guid: 7288ece00d87c5b4ca05554398a2dba9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PotatoMat
+    second: {fileID: 2100000, guid: 0bdb8004f6946314b8d0efb34cb200e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_Acacia_SaplingMat
+    second: {fileID: 2100000, guid: 3042218f5cabe4c40814fc6b13b803d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_AlliumMat
+    second: {fileID: 2100000, guid: d8399617dd3f5534c8d163fe097f7ecf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_Azure_BluetMat
+    second: {fileID: 2100000, guid: fc441ec8df1dfa94f9ab4155e1119005, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_Blue_OrchidMat
+    second: {fileID: 2100000, guid: 4df5a0ff94828144db73240feb7a5c77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_Brown_MushroomMat
+    second: {fileID: 2100000, guid: 3f8f0d7f981f2114d9bb60d8cce67269, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_Cherry_SaplingMat
+    second: {fileID: 2100000, guid: ec403a699389a2d4f9a2a73f8345edd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_CornflowerMat
+    second: {fileID: 2100000, guid: f2474d44b4680194c860bfecfdc857a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_Crimson_FungusMat
+    second: {fileID: 2100000, guid: f8f5a56c38bfcd6499d91c55fdb36d26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_DandelionMat
+    second: {fileID: 2100000, guid: e7719bb67aa5f944c9be8136e92fa132, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_Dark_Oak_SaplingMat
+    second: {fileID: 2100000, guid: cfc6c9f60c85ece4e9bcf0a5ed5cae91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_Dead_BushMat
+    second: {fileID: 2100000, guid: e421c61a45e636646ba0398da6c2cbcd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_FernMat
+    second: {fileID: 2100000, guid: 2f64795be0d4f1349a46808067e1455e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_Jungle_SaplingMat
+    second: {fileID: 2100000, guid: 69b5aca01861693489d328019ae5cfde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_Lily_of_the_ValleyMat
+    second: {fileID: 2100000, guid: 076fc653b7a70b7409fc50cc22700ce4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_Oak_SaplingMat
+    second: {fileID: 2100000, guid: bdb002bd22ee8c6489d49573c0c34712, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_Orange_TulipMat
+    second: {fileID: 2100000, guid: 2b0d16a4c0094774b95f8b98e72b3c11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_Oxeye_DaisyMat
+    second: {fileID: 2100000, guid: 92972fc45e0d37b4fa4a328a0f3e8c64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_PoppyMat
+    second: {fileID: 2100000, guid: bf25a39fddb0d404c9fb548caf64bf54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_Red_TulipMat
+    second: {fileID: 2100000, guid: 44e21612252047e46a4829dfd1723174, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_Spruce_SaplingMat
+    second: {fileID: 2100000, guid: 83c6dfc08c0564a439dcfd6c0a65e965, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_TorchflowerMat
+    second: {fileID: 2100000, guid: d2794ac4938bda84f8c8589954969f66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_Warped_FungusMat
+    second: {fileID: 2100000, guid: 6e976f40f3e239b42b159b5777304daa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_White_TulipMat
+    second: {fileID: 2100000, guid: 51d7447192d27e34eaf7c81a39a69f77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Potted_Wither_RoseMat
+    second: {fileID: 2100000, guid: bdabf1af12da0bc45b7bad86ba13198a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Purple_Wall_BannerMat
+    second: {fileID: 2100000, guid: 6cc3159c88dd4c24da9109c97e395f99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: QuartzMat
+    second: {fileID: 2100000, guid: 081984795bab00f4ebf5d5fb41b92e75, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Quartz_SlabMat
+    second: {fileID: 2100000, guid: 38f07c64fbf458b4f8f7d15e5a01ba25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Quartz_StairsMat
+    second: {fileID: 2100000, guid: 5c326c9cf5557c841bf838677d8aae06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red_ConcreteMat
+    second: {fileID: 2100000, guid: 379841e0f0847814d8b710ffbe459741, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red_Shulker_BoxMat
+    second: {fileID: 2100000, guid: dba3156980e6e07459dfa4b14c3603c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red_Stained_Glass_PaneMat
+    second: {fileID: 2100000, guid: bc8c2283dd1cd214c92f309772a21764, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red_TulipMat
+    second: {fileID: 2100000, guid: fb9516021263ea44d8427899e027c794, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red_Wall_BannerMat
+    second: {fileID: 2100000, guid: 78289b95984a7a647847c75564c05c1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red_WoolMat
+    second: {fileID: 2100000, guid: d81f88b49b8c50249b93d2ca9d34d569, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rooted_DirtMat
+    second: {fileID: 2100000, guid: e51256f015419834a8200b79e1e2d2fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rose_BushMat
+    second: {fileID: 2100000, guid: 92c325c62ce08604f97da3c83ba97219, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SeagrassMat
+    second: {fileID: 2100000, guid: afcba0dddaffc9c4a99ae516f4bbac93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Short_GrassMat
+    second: {fileID: 2100000, guid: 220d5da516540524ebee0910c90ef4df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skeleton_Wall_SkullMat
+    second: {fileID: 2100000, guid: d864866f4c7b3514b87d42aa5378e519, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Slime_BlockMat
+    second: {fileID: 2100000, guid: fa5584c416002d7468c3c33c93656d4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SmokerMat
+    second: {fileID: 2100000, guid: 1299a5cc885e54b41babaabdfdf154c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Smooth_Quartz_SlabMat
+    second: {fileID: 2100000, guid: 0acf39ea2bef8424585002f391f9cb95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Smooth_Quartz_StairsMat
+    second: {fileID: 2100000, guid: c5b5434390c2a39449f636e531fe5da3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Smooth_StoneMat
+    second: {fileID: 2100000, guid: 0cf776b50317c004fbcd632c8b06f002, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Spruce_FenceMat
+    second: {fileID: 2100000, guid: c8babf26b0593c9499d511a06c8a8366, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Spruce_Pressure_PlateMat
+    second: {fileID: 2100000, guid: 7f78bdaf77686444280c020d53a48bd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Spruce_SaplingMat
+    second: {fileID: 2100000, guid: ad777c1776657aa40aea2e187cf2d221, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Spruce_StairsMat
+    second: {fileID: 2100000, guid: 76747c479a4fd724181946b43ee3438a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Spruce_TrapdoorMat
+    second: {fileID: 2100000, guid: 237216ca483b0e146a74a0ef69eb2f65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Spruce_Wall_SignMat
+    second: {fileID: 2100000, guid: 33dd9b3a2945a034299c637a10233be8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stationary_LavaMat
+    second: {fileID: 2100000, guid: a30e8a0566be14d4e8b49d62d9c7904a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stationary_WaterMat
+    second: {fileID: 2100000, guid: 9d918fd951c3e914492686198daf3a81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StoneMat
+    second: {fileID: 2100000, guid: 1963f8a2ec883a5439ccdf43e4fbe2cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stone_Brick_SlabMat
+    second: {fileID: 2100000, guid: 34525b8f5e212774e87a839260e67c67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stone_Brick_StairsMat
+    second: {fileID: 2100000, guid: 0d58dc3d1f24c0e42a7d762c3eb81e8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stone_Brick_WallMat
+    second: {fileID: 2100000, guid: 20355cfae6c6a9e48b23a6dfa7ba8acd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stone_BricksMat
+    second: {fileID: 2100000, guid: 7ca44bcf797c9bf4494214b5ec7bce52, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stone_ButtonMat
+    second: {fileID: 2100000, guid: 9a26292bbb964524a8e1cc5934b47af3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stone_Pressure_PlateMat
+    second: {fileID: 2100000, guid: 2ee25775543eaa2488e13f75e8843bf3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stone_SlabMat
+    second: {fileID: 2100000, guid: f206db26eab20d6469d78721226f2c15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stripped_Oak_LogMat
+    second: {fileID: 2100000, guid: a239bb2efb27bc14783e589900e29e34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stripped_Oak_WoodMat
+    second: {fileID: 2100000, guid: 26cb050a6065bf046ae7888b4007abf5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stripped_Spruce_LogMat
+    second: {fileID: 2100000, guid: 6b5ae2bceda23b54c88290f3744e5fdf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SunflowerMat
+    second: {fileID: 2100000, guid: 523a2758d0d19b74bb9f36d9ba6c1f1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tall_GrassMat
+    second: {fileID: 2100000, guid: 0a6148f3429d55143a9465aba3f92097, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TerracottaMat
+    second: {fileID: 2100000, guid: 88725b252fd2b3a44bd75caf2cb9a017, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tinted_GlassMat
+    second: {fileID: 2100000, guid: 9168a40009429bd4e84c218bf65d3d6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TorchMat
+    second: {fileID: 2100000, guid: fecee3074164f8f4da70e4be8ac645b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TorchflowerMat
+    second: {fileID: 2100000, guid: 99660100c5bdd104c8976662eda7a2d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Warped_FungusMat
+    second: {fileID: 2100000, guid: 5ba5cffab9512cc46b714f9cc832dde4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Warped_Wall_SignMat
+    second: {fileID: 2100000, guid: 93d673c04e5cf8942bc1ab75548c49ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WheatMat
+    second: {fileID: 2100000, guid: 9c18855926803f243995077358f8cf4b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White_CarpetMat
+    second: {fileID: 2100000, guid: 8566cf5a76f25854fa7cec350197c32f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White_ConcreteMat
+    second: {fileID: 2100000, guid: 62c530292475fd94bad82c5b9ff46fe3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White_Stained_Glass_PaneMat
+    second: {fileID: 2100000, guid: 7a049d179456fd342a61ff6a3994c0c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White_TerracottaMat
+    second: {fileID: 2100000, guid: adf9765acfecb0040a47a4d678101b7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White_TulipMat
+    second: {fileID: 2100000, guid: ab4fd3f1d40e3254fb4698de3d6d96cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White_WoolMat
+    second: {fileID: 2100000, guid: 0c239c80f55c21c4eb558f945d4f030b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wither_RoseMat
+    second: {fileID: 2100000, guid: d6b4c6ea0ed853447a3e07c1a0f9dce2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Yellow_CarpetMat
+    second: {fileID: 2100000, guid: e73aab6cfa2a80849a3fba57a40837fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Yellow_Stained_Glass_PaneMat
+    second: {fileID: 2100000, guid: e97444b3f3982b14e83d15fa2036b517, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Yellow_Wall_BannerMat
+    second: {fileID: 2100000, guid: a9c4d738a855fdc4fb65441d7b4d236d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Yellow_WoolMat
+    second: {fileID: 2100000, guid: e82708afc2e21464184d7478a1598713, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

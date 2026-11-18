@@ -7,6 +7,8 @@ Shader "Campus/LangitBiruGunung"
   _MountainTint("Gunung jauh",Color)=(.32,.47,.64,1)
   _Mountains("Gunung luar",Range(0,1))=1
   _Exposure("Kecerahan",Range(0,2))=1
+  _Bulan("Bulan malam",Range(0,1))=0
+  _ArahBulan("Arah bulan",Vector)=(.242,.303,.922,0)
  }
  SubShader{
   Tags{"Queue"="Background" "RenderType"="Background" "PreviewType"="Skybox" "RenderPipeline"="UniversalPipeline"}
@@ -18,7 +20,8 @@ Shader "Campus/LangitBiruGunung"
    #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
    struct A{float4 vertex:POSITION;};struct V{float4 pos:SV_POSITION;float3 dir:TEXCOORD0;};
    CBUFFER_START(UnityPerMaterial)
-   half4 _SkyTint,_HorizonColor,_GroundColor,_MountainTint;float _Mountains,_Exposure;
+   half4 _SkyTint,_HorizonColor,_GroundColor,_MountainTint;float _Mountains,_Exposure,_Bulan;
+   float4 _ArahBulan;
    CBUFFER_END
    V vert(A v){V o;o.pos=TransformObjectToHClip(v.vertex.xyz);o.dir=v.vertex.xyz;return o;}
    float Hash(float n){return frac(sin(n*127.1+311.7)*43758.5453);}
@@ -45,7 +48,16 @@ Shader "Campus/LangitBiruGunung"
     col=lerp(col,nearLand,nearMask);
     // Lower directions blend into subdued foothills, never a flat blue fill.
     col=lerp(col,nearLand*.88,(1-smoothstep(-.35,-.02,d.y))*_Mountains);
-    return half4(col*_Exposure,1);
+    col *= _Exposure;
+    if (_Bulan > .001) {
+     float jarak = dot(d, _ArahBulan.xyz);
+     float cakram = smoothstep(.99960,.99972,jarak);
+     float halo = smoothstep(.995,.9997,jarak)*.16;
+     half3 warnaBulan = half3(.95,.94,.78) - half3(.10,.09,.04) *
+        smoothstep(0,.004,abs(d.x-_ArahBulan.x-.006)+abs(d.y-_ArahBulan.y-.006)*.5);
+     col = lerp(col, warnaBulan, _Bulan * max(cakram,halo));
+    }
+    return half4(col,1);
    }
    ENDHLSL
   }

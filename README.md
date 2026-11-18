@@ -1,28 +1,24 @@
-# A Little Campus Story — Kode Unity
+# A Little Campus Story — Arsip Proyek Unity
 
-Repositori kode game **A Little Campus Story**, terpisah dari repositori website.
+Arsip pengembangan untuk penelitian pengenalan lingkungan Universitas Klabat melalui permainan berbasis cerita. Snapshot ini mencakup kode permainan, scene, prefab, model, tekstur, audio, dan konfigurasi proyek yang tersedia untuk publikasi. [Website proyek](https://alittlecampusstorywebsite.vercel.app/) dikelola terpisah.
 
-## Isi unggahan 9 November 2026
+## Meninjau proyek
 
-- Seluruh 233 berkas C# yang berada di folder Assets, termasuk runtime, editor, alat penataan, dan pemeriksaan proyek.
-- 21 shader, 4 berkas CG include, dan 1 berkas HLSL: total **259 berkas sumber**.
-- Berkas `.meta` sumber dan folder terkait untuk mempertahankan GUID Unity.
-- `Packages/manifest.json`, `Packages/packages-lock.json`, dan identitas versi Unity di `ProjectSettings/ProjectVersion.txt`.
-- `SOURCE_MANIFEST.json` berisi daftar berkas, ukuran, dan SHA-256 untuk memeriksa kelengkapan snapshot.
+1. Pasang Git LFS dan jalankan `git lfs install` sebelum clone. Setelah clone, jalankan `git lfs pull` untuk memastikan aset besar tersedia.
+2. Buka folder repositori di Unity Hub menggunakan Unity **6000.3.11f1**. Unity akan memulihkan dependensi dalam `Packages/manifest.json`.
+3. Impor dependensi aset pihak ketiga yang diperlukan ke tempat asalnya. Scene yang memakai paket tersebut dapat menampilkan referensi kosong sebelum paket dipulihkan.
 
-## Lokasi utama
+`SOURCE_MANIFEST.json` mencatat tanggal snapshot, jalur, ukuran, dan SHA-256 file. Folder `Assets/Scripts` berisi logika permainan dan alat editor. Folder `Assets/WorldExplorer` dan `Assets/WorldStreaming` memuat model kawasan dan scene. Arsip publik mengecualikan cache Unity, pemulihan editor, hasil uji sementara, kredensial, dan dokumen penelitian yang terpisah.
 
-| Folder | Isi |
-|---|---|
-| `Assets/Scripts/Runtime` | Logika permainan, NPC dan dialog, ponsel, cerita, dunia, dan antarmuka |
-| `Assets/Scripts/Editor` | Alat penataan dan pemeriksaan dalam Unity Editor |
-| Folder lain dalam `Assets` | Kode pendukung dan shader yang memang tersimpan di proyek |
-| `Packages` | Daftar dan versi dependensi |
+## Dependensi aset yang diperoleh terpisah
 
-Unity proyek: **6000.3.11f1**. Distribusi aplikasi Android dilakukan melalui website dan tautan unduhan, bukan dari kode sumber ini.
+- [Ezereal Car Controller](https://assetstore.unity.com/packages/tools/physics/ezereal-car-controller-302577) pada `Assets/Ezereal Assets`.
+- [Bird oleh Zacxophone](https://assetstore.unity.com/packages/3d/characters/animals/birds/bird-330238) pada `Assets/Zacxophone`.
+- Paket ikon BTN's Gorpaki, CasualGameButtonsVol02, Garden cozy kit, Paper Keys Sprite Pack V2, dan Ui Pack Version 5 By Zxgly. Folder asalnya berada di `Assets/All Asset/Sprites/Icon`. Gunakan aset dan `.meta` dari salinan yang sesuai agar GUID referensi cocok.
 
-## Batas cakupan
+Ketentuan aset pihak ketiga mengikuti lisensi masing-masing. Atribusi yang ada dipertahankan dalam arsip.
 
-Unggahan ini adalah **arsip kode sumber**, bukan salinan lengkap proyek siap dijalankan. Model 3D, tekstur, gambar, audio, scene, prefab, serta seluruh konfigurasi proyek tidak diunggah dalam snapshot kode ini. Untuk membuka game secara utuh, diperlukan aset dan pengaturan dari proyek asli. Dependensi di Package Manager didokumentasikan melalui berkas manifest; cache paket hasil unduhan tidak disalin.
+## Aplikasi Android
 
-Folder `Library`, `Temp`, `Logs`, `Builds`, hasil pengujian sementara, kredensial, serta kode website tidak disertakan. Hak dan ketentuan kode pihak ketiga yang sudah ada tetap mengikuti pemilik asalnya.
+APK yang dapat dipasang tersedia di [GitHub Releases](https://github.com/MrPapa-Ux/A-Little-Campus-Story-Game-Assets/releases). Catat tanggal build dan SHA-256 pada halaman rilis ketika mendokumentasikan versi yang diuji. Cabang sumber terus berkembang setelah APK dibangun.
+
