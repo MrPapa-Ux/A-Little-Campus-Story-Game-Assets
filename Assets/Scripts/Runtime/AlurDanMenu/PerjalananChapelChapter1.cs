@@ -62,7 +62,7 @@ public sealed class PerjalananChapelChapter1 : MonoBehaviour
   if(Status==Tahap.MenujuChapel){
    var d=DialogManager.Instance;var hp=referensiHP;
    bool jeda=(d!=null&&(d.PercakapanAktif||d.minigameAktif))||(hp!=null&&hp.hpSedangBuka)||(KawasanKampus.Instance!=null&&KawasanKampus.Instance.SedangMemuat);
-   if(!jeda)SisaWaktu=Mathf.Max(0,SisaWaktu-Time.deltaTime);
+   if(!jeda&&!ModeUjiArthur.TimerDijeda)SisaWaktu=Mathf.Max(0,SisaWaktu-Time.deltaTime);
    petunjukWaktu.gameObject.SetActive(d==null||!d.PercakapanAktif);petunjukWaktu.text="Menuju Chapel  "+Mathf.FloorToInt(SisaWaktu/60).ToString("00")+":"+Mathf.FloorToInt(SisaWaktu%60).ToString("00");
    if(r=="Pioneer_LorongTengah"&&!jeda){MulaiIbadah();return;}
    if(SisaWaktu<=0&&!coroutineAktif)StartCoroutine(UlangPerjalanan());
@@ -71,7 +71,7 @@ public sealed class PerjalananChapelChapter1 : MonoBehaviour
    if(!tugasPulangDisiapkan)SiapkanTugasPulang();
    var d=DialogManager.Instance;var hp=referensiHP;
    bool jeda=(d!=null&&(d.PercakapanAktif||d.minigameAktif))||(hp!=null&&hp.hpSedangBuka)||(KawasanKampus.Instance!=null&&KawasanKampus.Instance.SedangMemuat)||r=="GH_Kamar201";
-   if(!jeda&&!coroutineAktif)SisaWaktu=Mathf.Max(0,SisaWaktu-Time.deltaTime);
+   if(!jeda&&!coroutineAktif&&!ModeUjiArthur.TimerDijeda)SisaWaktu=Mathf.Max(0,SisaWaktu-Time.deltaTime);
    petunjukWaktu.gameObject.SetActive(!jeda);
    int detik=Mathf.CeilToInt(SisaWaktu);petunjukWaktu.text="Waktu pulang  "+(detik/60).ToString("00")+":"+(detik%60).ToString("00");
    if(SisaWaktu<=0&&!jeda&&!coroutineAktif){coroutineAktif=true;kamar.procrastination.GagalKarenaBatasWaktuQuest();}

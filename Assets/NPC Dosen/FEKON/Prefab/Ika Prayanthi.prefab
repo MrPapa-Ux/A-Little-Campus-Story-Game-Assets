@@ -314,8 +314,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -208721368, guid: 1550e4d48747392499835ae702b8d5c3, type: 3}
-  m_Color: {r: 1, g: 0.75, b: 0.25, a: 1}
+  m_Sprite: {fileID: 21300000, guid: fe39084cdf06d544b8bbcdc3bf48440d, type: 3}
+  m_Color: {r: 0.4117647, g: 0.49411765, b: 0.69411767, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -341,6 +341,7 @@ GameObject:
   - component: {fileID: 8854172814131047228}
   - component: {fileID: 8165997921944980816}
   - component: {fileID: 5060321532695868975}
+  - component: {fileID: 3190028264590764344}
   m_Layer: 0
   m_Name: Ika Prayanthi
   m_TagString: Untagged
@@ -415,6 +416,7 @@ MonoBehaviour:
   skenarioDialog:
   - siapaYangBicara: 1
     namaKarakter: Ika Prayanthi
+    potretPembicara: {fileID: 0}
     teksDialog: Selamat datang. Saya Ika Prayanthi, Kaprodi Akuntansi.
     teksTombolLanjut: Selesai
     picuEmoteSetelahIni: 0
@@ -426,6 +428,7 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   daftarOpsi: []
+  batasJarakMendatar: 0
 --- !u!114 &4477422370576289871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -574,6 +577,9 @@ MonoBehaviour:
   fase: 2.1299999
   jarakAnimasi: 42
   idleArthur: {fileID: 11400000, guid: 3ae34a284fac2d1498e74f49ba0e1813, type: 2}
+  jalanArthur: {fileID: 0}
+  langkahMengikutiGerak: 0
+  waktuJalan: 0
 --- !u!58 &8165997921944980816
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -628,6 +634,24 @@ MonoBehaviour:
   jarakInteraksi: 2.1
   geserTitikInteraksi: {x: 0, y: 0, z: 0}
   jalurInteraksi: {fileID: 0}
+--- !u!114 &3190028264590764344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3468828358130915545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0908ff263e41994f84fe93611d37342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TampilanNpcPerempuan
+  perempuan: 1
+  badan: {fileID: 193854279865642528}
+  kemejaPerempuan: {fileID: 21300000, guid: fe39084cdf06d544b8bbcdc3bf48440d, type: 3}
+  badanSemula: {fileID: -208721368, guid: 1550e4d48747392499835ae702b8d5c3, type: 3}
+  warnaSemula: {r: 1, g: 0.75, b: 0.25, a: 1}
+  warnaPakaian: {r: 0.4117647, g: 0.49411765, b: 0.69411767, a: 1}
 --- !u!1 &4166814192742499788
 GameObject:
   m_ObjectHideFlags: 0

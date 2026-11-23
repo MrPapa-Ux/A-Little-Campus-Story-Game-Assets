@@ -22,3 +22,14 @@ Ketentuan aset pihak ketiga mengikuti lisensi masing-masing. Atribusi yang ada d
 
 APK yang dapat dipasang tersedia di [GitHub Releases](https://github.com/MrPapa-Ux/A-Little-Campus-Story-Game-Assets/releases). Catat tanggal build dan SHA-256 pada halaman rilis ketika mendokumentasikan versi yang diuji. Cabang sumber terus berkembang setelah APK dibangun.
 
+
+## Snapshot 23 November 2026
+
+Seluruh kode permainan terkini dan aset proyek yang dapat dipublikasikan disinkronkan pada snapshot ini. Termasuk revisi quest Kontak, lorong Jasmine, akses asrama, cutscene dan Skip, tampilan MISI UTAMA, serta tautan Wattpad https://www.wattpad.com/story/419725182-a-little-campus-story.
+
+Nama pengembang: Chipppz.
+
+- [APK MOD uji 22 November 2026](https://github.com/MrPapa-Ux/A-Little-Campus-Story-Game-Assets/releases/tag/mod-uji-2026-11-22): aplikasi Android terpisah dari versi utama. APK ini dibangun sebelum snapshot kode terbaru; tanggal build dicantumkan agar tidak disamakan dengan versi sumber.
+- APK utama untuk distribusi melalui Google Drive menggunakan nama **A Little Campus Story.apk**.
+
+Cache Library/Temp, build sementara, kredensial, dan paket pihak ketiga yang memerlukan impor/lisensi terpisah tidak ikut diunggah. Daftar dependensi di atas tetap berlaku.

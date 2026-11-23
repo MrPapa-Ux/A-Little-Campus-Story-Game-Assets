@@ -15,14 +15,23 @@ public class NPCMenghadapArthur : MonoBehaviour
 
     void Awake()
     {
-        if (wadahVisual == null) return;
+        Siapkan();
+    }
+    void Siapkan()
+    {
+        if(siap)return;
+        if(wadahVisual==null)wadahVisual=GetComponent<NpcKampusHidup>()?.visual;
+        if(wadahVisual==null){wadahVisual=transform.Find("Visual");if(wadahVisual==null)wadahVisual=transform.Find("WadahKosong");}
+        if (wadahVisual == null||wadahVisual==transform) return;
         skalaSemula = wadahVisual.localScale;
         siap = true;
     }
     public void HadapArthur(Transform arthur)
     {
+        Siapkan();
         if (!siap || arthur == null || !isActiveAndEnabled) return;
-        var kamera = Camera.main;
+        var jalur=arthur.GetComponent<ArthurJalurKampus>();
+        var kamera = jalur!=null&&jalur.kamera!=null?jalur.kamera:Camera.main;
         var selisihDunia = arthur.position - transform.position;
         float selisih = kamera != null ? Vector3.Dot(selisihDunia, kamera.transform.right) : selisihDunia.x;
         if (Mathf.Abs(selisih) < 0.02f) return;
@@ -46,7 +55,7 @@ public class NPCMenghadapArthur : MonoBehaviour
         bool balik = Mathf.Sign(awal) != Mathf.Sign(tujuan);
         while (waktu < durasiPutar)
         {
-            waktu += Time.deltaTime;
+            waktu += Time.unscaledDeltaTime;
             float t = Mathf.Clamp01(waktu / durasiPutar);
             float x = balik
                 ? (t < 0.5f ? Mathf.Lerp(awal, Mathf.Sign(awal) * 0.015f, Mathf.SmoothStep(0f, 1f, t * 2f)) : Mathf.Lerp(Mathf.Sign(tujuan) * 0.015f, tujuan, Mathf.SmoothStep(0f, 1f, (t - 0.5f) * 2f)))

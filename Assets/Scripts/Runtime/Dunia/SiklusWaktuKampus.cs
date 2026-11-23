@@ -10,12 +10,23 @@ public sealed class SiklusWaktuKampus : MonoBehaviour
     public static SiklusWaktuKampus Instance { get; private set; }
     public WaktuKampus waktu = WaktuKampus.Pagi;
     public bool berjalanOtomatis = true;
+    [Min(60)] public float detikSatuHari=720;
+    public float Jam {get;private set;}=6;
+    float jamTujuan=-1;
     [Min(30)] public float durasiPagi = 480, durasiSore = 300, durasiMalam = 420;
     [Min(.1f)] public float durasiPeralihan = 6;
     public Light matahari;
     [Range(0,1)] public float peluangLangitHijau=.01f;
     public bool LangitHijau {get;private set;}
     public bool Hujan {get;private set;}
+    [Header("Langit hujan")]
+    [Min(.1f)] public float durasiAwanReda = 5, jedaMendungReda = 4, durasiCerahKembali = 6;
+    [SerializeField, Range(0,4)] int tingkatPeluangHujan;
+    public float PeluangHujanBerikutnya => PeluangHujanUntuk(tingkatPeluangHujan);
+    public float KepadatanAwan {get;private set;}
+    public float KadarMendung {get;private set;}
+    bool hujanVisualTerakhir;
+    float detikReda, awanSaatReda, mendungSaatReda;
     HujanKampusArthur tiraiHujan;
     PerlengkapanHujanArthur perlengkapanHujan;
     float bulanAwal;
@@ -34,8 +45,12 @@ public sealed class SiklusWaktuKampus : MonoBehaviour
     {
         arthur=FindFirstObjectByType<ArthurJalurKampus>();pilihan=FindFirstObjectByType<SistemPilihan>();
         if(matahari==null)matahari=RenderSettings.sun;
+        if(matahari==null)foreach(var lampu in FindObjectsByType<Light>(FindObjectsSortMode.None))
+            if(lampu.type==LightType.Directional){matahari=lampu;break;}
+        if(matahari!=null)RenderSettings.sun=matahari;
         langitAsli=RenderSettings.skybox;
         if(langitAsli!=null){langit=new Material(langitAsli);RenderSettings.skybox=langit;}
+        Jam=waktu==WaktuKampus.Pagi?6:waktu==WaktuKampus.Sore?16:20;
         AmbilAwal();diterapkan=waktu;awalPeralihan=Time.unscaledTime-durasiPeralihan;siap=true;Terapkan(1);
     }
     void OnEnable(){SceneManager.sceneLoaded+=SceneLoaded;}
@@ -57,16 +72,26 @@ public sealed class SiklusWaktuKampus : MonoBehaviour
         PeriksaKawasan();
         if(waktu!=diterapkan)
         {
+            jamTujuan=waktu==WaktuKampus.Pagi?6:waktu==WaktuKampus.Sore?16:20;
             AmbilAwal();
             diterapkan=waktu;
             awalPeralihan=Time.unscaledTime;
             DetikFase=0;
-            Hujan = PilihHujan(Random.value);
+            UndiCuaca(Random.value);
             arahBulanSiap = false;
         }
         var dialog=DialogManager.Instance;
         bool jeda=(dialog!=null&&(dialog.PercakapanAktif||dialog.minigameAktif))||(KawasanKampus.Instance!=null&&KawasanKampus.Instance.SedangMemuat);
-        if(berjalanOtomatis&&!jeda && !(waktu==WaktuKampus.Malam && MalamEksplorasiArthur.Instance!=null && MalamEksplorasiArthur.Instance.PulangOtomatis)){DetikFase+=Time.deltaTime;float lama=waktu==WaktuKampus.Pagi?durasiPagi:waktu==WaktuKampus.Sore?durasiSore:durasiMalam;if(DetikFase>=lama)AturWaktu((WaktuKampus)(((int)waktu+1)%3));}
+        if(!jeda&&jamTujuan>=0){
+            float selisih=Mathf.Repeat(jamTujuan-Jam,24);float langkah=Mathf.Min(.1f,Time.deltaTime)*24/Mathf.Max(18,durasiPeralihan);
+            Jam=Mathf.Repeat(Jam+Mathf.Min(selisih,langkah),24);
+            if(selisih<=langkah+.0001f){Jam=jamTujuan;jamTujuan=-1;}
+        }
+        else if(berjalanOtomatis&&!jeda&&!(waktu==WaktuKampus.Malam&&MalamEksplorasiArthur.Instance!=null&&MalamEksplorasiArthur.Instance.PulangOtomatis)){
+            DetikFase+=Time.deltaTime;Jam=JamSetelah(Jam,Time.deltaTime,detikSatuHari);
+            var fase=FaseJam(Jam);if(fase!=waktu){waktu=diterapkan=fase;DetikFase=0;UndiCuaca(Random.value);}
+        }
+        PerbaruiLangitHujan(Time.deltaTime);
         Terapkan(Mathf.SmoothStep(0,1,Mathf.Clamp01((Time.unscaledTime-awalPeralihan)/Mathf.Max(.1f,durasiPeralihan))));
         bool tertutup = (KawasanKampus.Instance != null && KawasanKampus.Instance.SedangMemuat) ||
             (pilihan != null && pilihan.efekTransisi != null && pilihan.efekTransisi.SedangBerjalan);
@@ -86,24 +111,44 @@ public sealed class SiklusWaktuKampus : MonoBehaviour
     void Terapkan(float t)
     {
         bool sore=waktu==WaktuKampus.Sore,malam=waktu==WaktuKampus.Malam;
-        Color cahaya=malam?new Color(.56f,.67f,1):sore?new Color(1,.72f,.47f):new Color(1,.97f,.91f);
-        Color sky=malam?new Color(.10f,.15f,.29f):sore?new Color(.72f,.38f,.30f):new Color(.32f,.53f,.79f);
-        Color horizon=malam?new Color(.12f,.18f,.30f):sore?new Color(.85f,.60f,.45f):new Color(.62f,.78f,.94f);
-        if (Hujan && DiLuarRuangan)
+        float terang=Mathf.SmoothStep(0,1,Mathf.InverseLerp(-.14f,.32f,Mathf.Sin((Jam-6)*Mathf.PI/12)));
+        float senja=terang*(1-Mathf.SmoothStep(0,1,Mathf.InverseLerp(.08f,.60f,Mathf.Sin((Jam-6)*Mathf.PI/12))));
+        Color cahaya=Color.Lerp(new Color(.56f,.67f,1),Color.Lerp(new Color(1,.97f,.91f),new Color(1,.72f,.47f),senja),terang);
+        Color sky=Color.Lerp(new Color(.10f,.15f,.29f),Color.Lerp(new Color(.32f,.53f,.79f),new Color(.72f,.38f,.30f),senja),terang);
+        Color horizon=Color.Lerp(new Color(.12f,.18f,.30f),Color.Lerp(new Color(.62f,.78f,.94f),new Color(.85f,.60f,.45f),senja),terang);
+        float mendungAktif = DiLuarRuangan ? KadarMendung : 0f;
+        if (mendungAktif > 0)
         {
-            Color mendung = malam ? new Color(.09f,.12f,.20f) : new Color(.38f,.43f,.49f);
-            sky = Color.Lerp(sky, mendung, .65f);
-            horizon = Color.Lerp(horizon, mendung, .48f);
+            Color mendung = malam ? new Color(.045f,.06f,.09f) : new Color(.23f,.27f,.31f);
+            sky = Color.Lerp(sky, mendung, mendungAktif);
+            horizon = Color.Lerp(horizon, mendung * 1.15f, mendungAktif * .94f);
         }
-        if(LangitHijau&&DiLuarRuangan){sky=Color.Lerp(sky,new Color(.32f,.53f,.38f),malam?.25f:.65f);horizon=Color.Lerp(horizon,new Color(.48f,.66f,.48f),malam?.25f:.8f);}
-        Color ambient=malam?new Color(.28f,.34f,.49f):sore?new Color(.65f,.48f,.39f):new Color(.72f,.78f,.84f);
-        if(matahari){matahari.color=Color.Lerp(warnaAwal,cahaya,t);matahari.intensity=Mathf.Lerp(intensitasAwal,malam?.22f:sore?.85f:1.1f,t);matahari.transform.rotation=Quaternion.Slerp(sudutAwal,Quaternion.Euler(malam?38:sore?18:50,malam?130:sore?-65:-35,0),t);}
+        if(LangitHijau&&DiLuarRuangan){sky=Color.Lerp(sky,new Color(.32f,.53f,.38f),(malam?.25f:.65f)*(1-mendungAktif));horizon=Color.Lerp(horizon,new Color(.48f,.66f,.48f),(malam?.25f:.8f)*(1-mendungAktif));}
+        Color ambient=Color.Lerp(new Color(.18f,.23f,.36f),Color.Lerp(new Color(.53f,.62f,.72f),new Color(.52f,.40f,.34f),senja),terang);
+        ambient=Color.Lerp(ambient,malam?new Color(.18f,.21f,.28f):new Color(.43f,.47f,.52f),mendungAktif);
+        cahaya=Color.Lerp(cahaya,new Color(.69f,.75f,.83f),mendungAktif);
+        // Interiors retain a readable warm fill instead of receiving full outdoor sunlight.
+        if(!DiLuarRuangan){ambient=new Color(.57f,.55f,.51f);cahaya=new Color(1,.92f,.81f);}
+        if(matahari){matahari.color=Color.Lerp(warnaAwal,cahaya,t);matahari.intensity=Mathf.Lerp(intensitasAwal,DiLuarRuangan?Mathf.Lerp(.18f,1.02f,terang)*Mathf.Lerp(1,.40f,mendungAktif):.28f,t);matahari.transform.rotation=Quaternion.Slerp(matahari.transform.rotation,Quaternion.Euler((Jam<6||Jam>=18?Jam*15+90:Jam*15-90),150,0),Application.isPlaying?1-Mathf.Exp(-Time.unscaledDeltaTime*3):1);}
         RenderSettings.ambientMode=UnityEngine.Rendering.AmbientMode.Trilight;
         RenderSettings.ambientSkyColor=Color.Lerp(ambientAwal,ambient,t);
         RenderSettings.ambientEquatorColor=Color.Lerp(equatorAwal,ambient*.82f,t);
         RenderSettings.ambientGroundColor=Color.Lerp(groundAwal,ambient*.58f,t);
-        if(langit!=null&&langit.HasProperty("_SkyTint")){if(RenderSettings.skybox!=langit)RenderSettings.skybox=langit;langit.SetColor("_SkyTint",Color.Lerp(langitAwal,sky,t));if(langit.HasProperty("_Exposure"))langit.SetFloat("_Exposure",Mathf.Lerp(exposureAwal,malam?.45f:sore?.85f:1f,t));if(langit.HasProperty("_GroundColor"))langit.SetColor("_GroundColor",Color.Lerp(tanahLangitAwal,malam?new Color(.12f,.16f,.24f):sore?new Color(.45f,.32f,.35f):new Color(.40f,.55f,.75f),t));if(langit.HasProperty("_HorizonColor"))langit.SetColor("_HorizonColor",horizon);if(langit.HasProperty("_Mountains"))langit.SetFloat("_Mountains",DiLuarRuangan?1:0);if(langit.HasProperty("_MountainTint"))langit.SetColor("_MountainTint",Color.Lerp(sky,horizon,.25f)*.78f);}
+        // The mobile vertex shader uses the same live gradient, without stale baked probes.
+        Shader.SetGlobalColor("_ArthurAmbientSky",RenderSettings.ambientSkyColor);
+        Shader.SetGlobalColor("_ArthurAmbientEquator",RenderSettings.ambientEquatorColor);
+        Shader.SetGlobalColor("_ArthurAmbientGround",RenderSettings.ambientGroundColor);
+        Shader.SetGlobalFloat("_ArthurAmbientActif",1);
+        if(langit!=null&&langit.HasProperty("_Matahari"))
+        {
+            var surya=Quaternion.Euler(Jam*15-90,150,0)*Vector3.back;
+            langit.SetFloat("_Matahari",DiLuarRuangan?(1-KepadatanAwan)*Mathf.SmoothStep(0,1,Mathf.InverseLerp(-.03f,.06f,surya.y)):0);
+            langit.SetVector("_ArahMatahari",surya);
+            langit.SetColor("_WarnaMatahari",Color.Lerp(new Color(1,.93f,.66f),new Color(1,.64f,.30f),senja));
+        }
+        if(langit!=null&&langit.HasProperty("_SkyTint")){if(RenderSettings.skybox!=langit)RenderSettings.skybox=langit;langit.SetColor("_SkyTint",Color.Lerp(langitAwal,sky,t));if(langit.HasProperty("_Exposure"))langit.SetFloat("_Exposure",Mathf.Lerp(exposureAwal,Mathf.Lerp(.45f,1f,terang),t));if(langit.HasProperty("_GroundColor"))langit.SetColor("_GroundColor",Color.Lerp(tanahLangitAwal,Color.Lerp(new Color(.12f,.16f,.24f),Color.Lerp(new Color(.40f,.55f,.75f),new Color(.45f,.32f,.35f),senja),terang),t));if(langit.HasProperty("_HorizonColor"))langit.SetColor("_HorizonColor",horizon);if(langit.HasProperty("_Mountains"))langit.SetFloat("_Mountains",DiLuarRuangan?1:0);if(langit.HasProperty("_MountainTint"))langit.SetColor("_MountainTint",Color.Lerp(sky,horizon,.25f)*.78f);}
         if(RenderSettings.fog)RenderSettings.fogColor=Color.Lerp(RenderSettings.ambientSkyColor,sky,.5f);
+        if(langit!=null&&langit.HasProperty("_Awan"))langit.SetFloat("_Awan",DiLuarRuangan?KepadatanAwan:0f);
         if (langit != null && langit.HasProperty("_Bulan"))
         {
             if (!arahBulanSiap && malam && DiLuarRuangan && arthur != null && arthur.kamera != null)
@@ -113,12 +158,41 @@ public sealed class SiklusWaktuKampus : MonoBehaviour
                 langit.SetVector("_ArahBulan", arah.normalized);
                 arahBulanSiap = true;
             }
-            langit.SetFloat("_Bulan", DiLuarRuangan ? Mathf.Lerp(bulanAwal, malam ? (Hujan ? .38f : 1f) : 0f, t) : 0f);
+            langit.SetVector("_ArahBulan",Quaternion.Euler(Jam*15+90,150,0)*Vector3.back);
+            langit.SetFloat("_Bulan", DiLuarRuangan ? (1-terang)*Mathf.Lerp(1f,.08f,KepadatanAwan) : 0f);
         }
     }
-    public void AturWaktu(WaktuKampus pilihan){waktu=pilihan;DetikFase=0;}
+    public static float JamSetelah(float jam,float detik,float durasiHari=720)=>Mathf.Repeat(jam+detik*24/Mathf.Max(60,durasiHari),24);
+    public static WaktuKampus FaseJam(float jam)=>jam>=6&&jam<16?WaktuKampus.Pagi:jam>=16&&jam<18?WaktuKampus.Sore:WaktuKampus.Malam;
+    public void AturWaktu(WaktuKampus pilihan){waktu=pilihan;DetikFase=0;jamTujuan=pilihan==WaktuKampus.Pagi?6:pilihan==WaktuKampus.Sore?16:20;}
     public static bool PilihLangitHijau(float undian,float peluang=.01f)=>undian<Mathf.Clamp01(peluang);
-    public static bool PilihHujan(float undian) => undian >= 0f && undian < .01f;
+    public static float PeluangHujanUntuk(int tingkat) => tingkat <= 0 ? .01f : tingkat == 1 ? .10f : tingkat == 2 ? .50f : tingkat == 3 ? .70f : 1f;
+    public static bool PilihHujan(float undian, float peluang = .01f) => undian >= 0f && undian <= 1f && (peluang >= 1f || undian < Mathf.Clamp01(peluang));
+    void UndiCuaca(float undian)
+    {
+        Hujan=PilihHujan(undian,PeluangHujanBerikutnya);
+        if(Hujan)tingkatPeluangHujan=(tingkatPeluangHujan+1)%5;
+    }
+    void PerbaruiLangitHujan(float delta)
+    {
+        if (Hujan)
+        {
+            KepadatanAwan = Mathf.MoveTowards(KepadatanAwan, 1f, delta / Mathf.Max(.1f,durasiPeralihan));
+            KadarMendung = Mathf.MoveTowards(KadarMendung, 1f, delta / Mathf.Max(.1f,durasiPeralihan));
+        }
+        else
+        {
+            if (hujanVisualTerakhir)
+            {
+                detikReda=0; awanSaatReda=KepadatanAwan; mendungSaatReda=KadarMendung;
+            }
+            detikReda+=delta;
+            // Awan menipis dahulu, langit tetap mendung sesaat, kemudian kembali cerah.
+            KepadatanAwan=Mathf.Lerp(awanSaatReda,0,Mathf.SmoothStep(0,1,detikReda/Mathf.Max(.1f,durasiAwanReda)));
+            KadarMendung=Mathf.Lerp(mendungSaatReda,0,Mathf.SmoothStep(0,1,(detikReda-durasiAwanReda-jedaMendungReda)/Mathf.Max(.1f,durasiCerahKembali)));
+        }
+        hujanVisualTerakhir=Hujan;
+    }
 #if UNITY_EDITOR || UNITY_ANDROID
     public void PratinjauHujan(bool aktif) => Hujan = aktif;
 #endif
@@ -135,5 +209,5 @@ public sealed class SiklusWaktuKampus : MonoBehaviour
     [ContextMenu("Coba Pagi")] void Pagi(){AturWaktu(WaktuKampus.Pagi);}
     [ContextMenu("Coba Sore")] void Sore(){AturWaktu(WaktuKampus.Sore);}
     [ContextMenu("Coba Malam")] void Malam(){AturWaktu(WaktuKampus.Malam);}
-    void OnDestroy(){if(Instance==this)Instance=null;if(langit!=null){if(RenderSettings.skybox==langit)RenderSettings.skybox=langitAsli;Destroy(langit);}}
+    void OnDestroy(){if(Instance==this){Instance=null;Shader.SetGlobalFloat("_ArthurAmbientActif",0);}if(langit!=null){if(RenderSettings.skybox==langit)RenderSettings.skybox=langitAsli;Destroy(langit);}}
 }

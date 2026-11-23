@@ -26,6 +26,19 @@ public class AplikasiCatatanHP : MonoBehaviour
     public ScrollRect gulirPesan;
     public Color warnaPilihan = new Color32(209,222,195,255);
     public int Pilihan {get;private set;}
+    UnityEngine.UI.Image[] tandaBalas;
+    void SiapkanTandaBalas()
+    {
+        if(jenis!=JenisBukuArthur.Pesan||tandaBalas!=null)return;
+        tandaBalas=new UnityEngine.UI.Image[labelBaris.Length];
+        for(int i=0;i<labelBaris.Length;i++){
+            var go=new GameObject("Penanda balasan kotak masuk",typeof(RectTransform),typeof(UnityEngine.UI.Image));
+            var r=(RectTransform)go.transform;r.SetParent(labelBaris[i].transform.parent,false);r.anchorMin=r.anchorMax=new Vector2(1,.5f);r.anchoredPosition=new Vector2(-22,0);r.sizeDelta=new Vector2(26,26);
+            var img=go.GetComponent<UnityEngine.UI.Image>();img.color=new Color32(245,171,84,255);img.raycastTarget=false;tandaBalas[i]=img;
+            var text=new GameObject("Tanda",typeof(RectTransform),typeof(TextMeshProUGUI));var tr=(RectTransform)text.transform;tr.SetParent(r,false);tr.anchorMin=Vector2.zero;tr.anchorMax=Vector2.one;tr.offsetMin=tr.offsetMax=Vector2.zero;
+            var t=text.GetComponent<TextMeshProUGUI>();t.text="!";t.font=labelBaris[i].font;t.fontSize=26;t.alignment=TextAlignmentOptions.Center;t.color=new Color32(40,35,30,255);t.raycastTarget=false;
+        }
+    }
     public int Halaman => Pilihan/Mathf.Max(1,labelBaris.Length);
     public int JumlahHalaman => Mathf.Max(1,Mathf.CeilToInt(buku.Daftar(jenis).Count/(float)Mathf.Max(1,labelBaris.Length)));
     void OnEnable(){LihatPilihan();buku.Berubah+=Segarkan;Segarkan();}
@@ -45,6 +58,7 @@ public class AplikasiCatatanHP : MonoBehaviour
     public void Interaksi()
     {
         var list=buku.Daftar(jenis);if(list.Count==0 || jenis==JenisBukuArthur.Tas)return;
+        if(jenis==JenisBukuArthur.Pesan){var q=QuestKontakArthur.Untuk(buku);if(q!=null&&q.Cari(list[Pilihan].id)!=null){q.Aksi(list[Pilihan].id);return;}}
         if (jenis == JenisBukuArthur.Pesan && list[Pilihan].lampiranFoto != null)
         {
             TantanganSampingArthur.BukaFoto(list[Pilihan].lampiranFoto);
@@ -56,6 +70,7 @@ public class AplikasiCatatanHP : MonoBehaviour
     }
     public void Segarkan()
     {
+        SiapkanTandaBalas();
         var list=buku.Daftar(jenis);Pilihan=Mathf.Clamp(Pilihan,0,Mathf.Max(0,list.Count-1));
         bool empty=list.Count==0;
         int page=Pilihan/labelBaris.Length*labelBaris.Length;
@@ -71,6 +86,7 @@ public class AplikasiCatatanHP : MonoBehaviour
         for(int i=0;i<labelBaris.Length;i++)
         {
             int index=page+i;bool exists=index<list.Count;
+            if(tandaBalas!=null){var q=QuestKontakArthur.Untuk(buku);var m=exists&&q!=null?q.Cari(list[index].id):null;tandaBalas[i].gameObject.SetActive(m!=null&&(m.tahap==0||m.tahap==2));}
             // Tidak menggambar kantong kosong; slot terisi tetap mempunyai kotak seleksi.
             if(jenis==JenisBukuArthur.Tas)tombolBaris[i].gameObject.SetActive(exists);
             tombolBaris[i].interactable=exists;
@@ -91,6 +107,7 @@ public class AplikasiCatatanHP : MonoBehaviour
             if(fotoKontak!=null){fotoKontak.sprite=photo?list[Pilihan].ikon:null;fotoKontak.gameObject.SetActive(photo);}
             if(avatarKontak!=null)avatarKontak.gameObject.SetActive(!photo);
             if(statusKontak!=null)statusKontak.text=empty?"":list[Pilihan].anonim?"Nomor tidak dikenal":list[Pilihan].selesai?"Sudah dibaca":"Pesan baru";
+            if(!empty){var q=QuestKontakArthur.Untuk(buku);var m=q!=null?q.Cari(list[Pilihan].id):null;if(m!=null){aksi.interactable=m.tahap==0||m.tahap==2;labelAksi.text=m.tahap==0?"BALAS: OKE, KUBANTU":m.tahap==1?"TEMUI ORANGNYA DULU":m.tahap==2?"KIRIM KABAR":"SUDAH DIKABARI";}}
         }
     }
     string Nama(CatatanArthur item)=>jenis!=JenisBukuArthur.Pesan?item.judul:item.anonim?"Anonim":string.IsNullOrWhiteSpace(item.pengirim)?item.judul:item.pengirim;

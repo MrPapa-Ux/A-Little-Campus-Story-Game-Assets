@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f6d37b15cfd1e8479cb554586b22bd4, type: 3}
+  m_Name: PengaturanModeUjiArthur
+  m_EditorClassIdentifier: Assembly-CSharp::PengaturanModeUjiArthur
+  font: {fileID: 11400000, guid: 2b82d61f9e230cf47a8bbb975fe493f2, type: 2}
+  bingkai: {fileID: 1182944822, guid: 2e45938d7db7d9948bb3867ce6c885e7, type: 3}

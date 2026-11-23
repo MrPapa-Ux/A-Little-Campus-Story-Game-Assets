@@ -11,9 +11,12 @@ public sealed class KepergianDandi : MonoBehaviour
     public bool SedangPergi {get;private set;}
     public bool SudahPergi {get;private set;}
     SistemPilihan pilihan;AreaInteraksi area;
+    LewatiCutsceneArthur lewati;bool dilewati;
     void Start(){area=GetComponent<AreaInteraksi>();pilihan=FindFirstObjectByType<SistemPilihan>();if(pilihan!=null)pilihan.PercakapanSelesai+=SelesaiBicara;}
     void SelesaiBicara(AreaInteraksi pemilik,bool tuntas){if(pemilik==area&&tuntas&&!SedangPergi&&!SudahPergi)StartCoroutine(Pergi());}
     IEnumerator Pergi(){
+        dilewati=false;lewati=GetComponent<LewatiCutsceneArthur>()??gameObject.AddComponent<LewatiCutsceneArthur>();
+        lewati.Mulai(()=>dilewati=true,pilihan!=null?pilihan.teksCeritaUtama.font:null);
         SedangPergi=true;var dm=DialogManager.Instance;var arthur=dm!=null?dm.arthurScript:null;
         if(arthur!=null){arthur.BerhentiBergerak();arthur.kunciPergerakan=true;}
         if(dm!=null)dm.minigameAktif=true;
@@ -30,10 +33,12 @@ public sealed class KepergianDandi : MonoBehaviour
         var wadahAnimasi=life!=null&&life.kepala!=null?life.kepala.parent:visual;
         if(wadahAnimasi!=null&&animasiArthur!=null){animator=wadahAnimasi.GetComponent<Animator>();if(animator==null)animator=wadahAnimasi.gameObject.AddComponent<Animator>();animator.runtimeAnimatorController=animasiArthur;animator.cullingMode=AnimatorCullingMode.AlwaysAnimate;animator.fireEvents=false;animator.enabled=true;animator.Rebind();animator.SetBool("isJalan",true);animator.Update(0);}
         float mulai=Time.time;
-        while(Time.time-mulai<lamaBerjalan){var p=Vector3.Lerp(awal,akhir,Mathf.Clamp01((Time.time-mulai)/lamaBerjalan));if(transform is RectTransform r)r.anchoredPosition3D=p;else transform.position=p;yield return null;}
+        while(!dilewati&&Time.time-mulai<lamaBerjalan){var p=Vector3.Lerp(awal,akhir,Mathf.Clamp01((Time.time-mulai)/lamaBerjalan));if(transform is RectTransform r)r.anchoredPosition3D=p;else transform.position=p;yield return null;}
+        transform.position=akhir;
         if(animator!=null)animator.SetBool("isJalan",false);
         var gambar=GetComponentsInChildren<SpriteRenderer>(true);var warna=new Color[gambar.Length];for(int i=0;i<gambar.Length;i++)warna[i]=gambar[i].color;
-        mulai=Time.time;while(Time.time-mulai<lamaPudar){float alpha=1-Mathf.SmoothStep(0,1,(Time.time-mulai)/lamaPudar);for(int i=0;i<gambar.Length;i++){var c=warna[i];c.a*=alpha;gambar[i].color=c;}yield return null;}
+        mulai=Time.time;while(!dilewati&&Time.time-mulai<lamaPudar){float alpha=1-Mathf.SmoothStep(0,1,(Time.time-mulai)/lamaPudar);for(int i=0;i<gambar.Length;i++){var c=warna[i];c.a*=alpha;gambar[i].color=c;}yield return null;}
+        lewati.Selesai();
         foreach(var renderer in GetComponentsInChildren<Renderer>(true))renderer.enabled=false;
         if(animator!=null)animator.enabled=false;SedangPergi=false;SudahPergi=true;
         // Tetap aktif sampai monolog dipanggil, sehingga coroutine tidak terputus saat model disembunyikan.

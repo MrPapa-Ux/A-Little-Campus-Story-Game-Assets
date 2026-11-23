@@ -11,6 +11,7 @@ public sealed class PerjalananDiningChapter1 : MonoBehaviour
  public CeritaKamar201Arthur kamar;
  public DialogManager dialog;
  public GameObject prefabAdegan;
+ public GameObject prefabRefleksi;
  public string idQuest="chapter1_dining";
  public bool QuestAktif{get;private set;}
  public bool AdeganAktif{get;private set;}
@@ -21,6 +22,7 @@ public sealed class PerjalananDiningChapter1 : MonoBehaviour
  readonly List<GameObject> canvasAktif=new List<GameObject>();
  readonly List<Light> cahayaAktif=new List<Light>();
  readonly List<Renderer> npcAktif=new List<Renderer>();
+ bool refleksiBerjalan,jedaSebelumRefleksi;
  void Update(){
   if(Selesai||AdeganAktif||perjalananDandi==null||!perjalananDandi.Selesai)return;
   if(!QuestAktif){QuestAktif=true;Catat(false);if(kamar.procrastination!=null){kamar.procrastination.PulihkanBar();kamar.procrastination.tanpaBatasWaktu=false;}}
@@ -30,7 +32,7 @@ public sealed class PerjalananDiningChapter1 : MonoBehaviour
  public void MulaiAdegan(){
   if(AdeganAktif||Selesai||prefabAdegan==null||kamar==null)return;
   AdeganAktif=true;var pemain=kamar.pemain;var arthur=kamar.arthur;
-  if(MusikArthur.Instance!=null)MusikArthur.Instance.HentikanSemua();
+  // dialog.minigameAktif di bawah menahan playlist sementara, tanpa menghapus lagu pemain.
   kunciLama=pemain.kunciPergerakan;visualLama=arthur.wadahArahVisual.gameObject.activeSelf;kameraLama=arthur.kamera.enabled;barLama=kamar.procrastination!=null&&kamar.procrastination.tanpaBatasWaktu;dialogLama=dialog!=null&&dialog.minigameAktif;
   pendengar=arthur.kamera.GetComponent<AudioListener>();pendengarLama=pendengar!=null&&pendengar.enabled;if(pendengar!=null)pendengar.enabled=false;
   pemain.BerhentiBergerak();pemain.kunciPergerakan=true;arthur.wadahArahVisual.gameObject.SetActive(false);arthur.kamera.enabled=false;if(kamar.procrastination!=null)kamar.procrastination.tanpaBatasWaktu=true;if(dialog!=null)dialog.minigameAktif=true;
@@ -47,13 +49,30 @@ public sealed class PerjalananDiningChapter1 : MonoBehaviour
   if(mekar==null){Pulihkan();Debug.LogError("Adegan Dining tidak mempunyai Tap-Tap Mekar.",this);return;}
   mekar.saatSelesai.AddListener(Tuntas);
  }
- void Tuntas(){Selesai=true;QuestAktif=false;Catat(true);Pulihkan();if(kamar!=null&&kamar.procrastination!=null)kamar.procrastination.tanpaBatasWaktu=true;}
+ void Tuntas(){if(!refleksiBerjalan)StartCoroutine(RefleksiSetelahMekar());}
+ System.Collections.IEnumerator RefleksiSetelahMekar(){
+  // Chapel baru dimulai setelah ilustrasi selesai atau sengaja dilewati pemain.
+  Pulihkan();
+  if(prefabRefleksi!=null){
+   refleksiBerjalan=true;AdeganAktif=true;kamar.pemain.BerhentiBergerak();kamar.pemain.kunciPergerakan=true;
+   if(dialog!=null)dialog.minigameAktif=true;
+   if(kamar.procrastination!=null){jedaSebelumRefleksi=kamar.procrastination.JedaKhususCerita;kamar.procrastination.JedaKhususCerita=true;}
+   instans=Instantiate(prefabRefleksi);SceneManager.MoveGameObjectToScene(instans,gameObject.scene);
+   var refleksi=instans.GetComponent<KenanganPembukaArthur>();
+   if(refleksi!=null)yield return refleksi.Mainkan();
+   else Debug.LogError("Prefab refleksi Dining belum mempunyai pemutar cutscene.",this);
+  }
+  Pulihkan();Selesai=true;QuestAktif=false;Catat(true);
+  if(kamar!=null&&kamar.procrastination!=null)kamar.procrastination.tanpaBatasWaktu=true;
+ }
  void Pulihkan(){
   if(mekar!=null)mekar.saatSelesai.RemoveListener(Tuntas);
   if(instans!=null){instans.SetActive(false);Destroy(instans);instans=null;}
   foreach(var c in canvasAktif)if(c!=null)c.SetActive(true);canvasAktif.Clear();foreach(var l in cahayaAktif)if(l!=null)l.enabled=true;cahayaAktif.Clear();foreach(var r in npcAktif)if(r!=null)r.enabled=true;npcAktif.Clear();
   if(kamar!=null){if(kamar.pemain!=null)kamar.pemain.kunciPergerakan=kunciLama;if(kamar.arthur!=null){kamar.arthur.wadahArahVisual.gameObject.SetActive(visualLama);kamar.arthur.kamera.enabled=kameraLama;}if(kamar.procrastination!=null)kamar.procrastination.tanpaBatasWaktu=barLama;}
   if(pendengar!=null)pendengar.enabled=pendengarLama;if(dialog!=null)dialog.minigameAktif=dialogLama;AdeganAktif=false;
+  if(refleksiBerjalan&&kamar!=null&&kamar.procrastination!=null)kamar.procrastination.JedaKhususCerita=jedaSebelumRefleksi;
+  refleksiBerjalan=false;
  }
- void OnDisable(){if(AdeganAktif)Pulihkan();}
+ void OnDisable(){StopAllCoroutines();if(AdeganAktif)Pulihkan();}
 }

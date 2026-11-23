@@ -23,11 +23,22 @@ public class AreaInteraksi : MonoBehaviour
 
     [Header("2. Daftar Panel Opsi (Muncul Terakhir)")]
     public OpsiInteraksi[] daftarOpsi;
+    [Min(0),Tooltip("Nol memakai pemicu semula. Nilai positif mempersempit akses pada jalur mendatar.")]
+    public float batasJarakMendatar;
+    public bool DalamBatas
+    {
+        get {
+            if(batasJarakMendatar<=0)return true;
+            var p=DialogManager.Instance!=null?DialogManager.Instance.arthurScript:null;
+            return p!=null&&Mathf.Abs(p.transform.position.x-transform.position.x)<=batasJarakMendatar&&Mathf.Abs(p.transform.position.y-transform.position.y)<1.25f;
+        }
+    }
 
     public void TawarkanInteraksi() { KirimDataKeManager(); }
 
     private void KirimDataKeManager()
     {
+        if(!DalamBatas){DialogManager.Instance?.HapusInteraksi(this);return;}
         if (DialogManager.Instance != null)
         {
             DialogManager.Instance.TawarkanInteraksi(this);

@@ -73,6 +73,7 @@ public sealed class KawasanKampus : MonoBehaviour
     public static string IdUntuk(JalurKampus jalur)
     {
         string n=jalur!=null?jalur.name:"";
+        if(n.StartsWith("Jasmine_Interior_",StringComparison.Ordinal))return "JasmineInterior";
         if(n.StartsWith("UNK_CrystalInterior_",StringComparison.Ordinal))return "CrystalInterior";
         if(n.StartsWith("GK1_KelasDandi_",StringComparison.Ordinal))return "KelasDandi";
         if(n=="GH_Kamar201")return "GHRoom";

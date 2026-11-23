@@ -12,6 +12,7 @@ public sealed class KenanganPembukaArthur : MonoBehaviour
         [TextArea(2, 6)] public string narasi;
         [Min(1)] public float lamaTampil = 6f;
         public Rect bagianGambar;
+        public Texture2D gambarTerpisah;
     }
     public CanvasGroup kelompok;
     public RawImage gambar;
@@ -43,12 +44,18 @@ public sealed class KenanganPembukaArthur : MonoBehaviour
     }
     public void TerapkanPanel(Adegan entry)
     {
-        gambar.uvRect = entry.bagianGambar;
+        if (teksturAwal == null) teksturAwal = gambar.texture;
+        gambar.texture = entry.gambarTerpisah != null ? entry.gambarTerpisah : teksturAwal;
+        Rect bagian = entry.gambarTerpisah != null ? new Rect(0, 0, 1, 1) : entry.bagianGambar;
+        gambar.uvRect = bagian;
         var fit = gambar.GetComponent<AspectRatioFitter>();
         if (fit != null && gambar.texture != null)
-            fit.aspectRatio = gambar.texture.width * entry.bagianGambar.width / Mathf.Max(1f, gambar.texture.height * entry.bagianGambar.height);
+            fit.aspectRatio = gambar.texture.width * bagian.width / Mathf.Max(1f, gambar.texture.height * bagian.height);
     }
     AudioSource musik;
+    Texture teksturAwal;
+    LewatiCutsceneArthur lewati;
+    bool dilewati;
     Rect safeTerakhir;
     int lebarTerakhir, tinggiTerakhir;
     void Awake() { Sembunyikan(); AturAreaAman(); }
@@ -69,6 +76,9 @@ public sealed class KenanganPembukaArthur : MonoBehaviour
     {
         if (SedangBerjalan || kelompok == null || gambar == null || teks == null || adegan == null) yield break;
         SedangBerjalan = true;
+        dilewati = false;
+        if (lewati == null) lewati = gameObject.GetComponent<LewatiCutsceneArthur>() ?? gameObject.AddComponent<LewatiCutsceneArthur>();
+        lewati.Mulai(() => dilewati = true, teks.font);
         kelompok.gameObject.SetActive(true);
         kelompok.blocksRaycasts = false; kelompok.interactable = false;
         musik = GetComponent<AudioSource>();
@@ -76,7 +86,7 @@ public sealed class KenanganPembukaArthur : MonoBehaviour
         musik.playOnAwake = false; musik.spatialBlend = 0; musik.loop = true;
         musik.clip = laguKenangan; musik.volume = volumeLagu;
         if (laguKenangan != null) musik.Play();
-        for (int i = 0; i < adegan.Length; i++)
+        for (int i = 0; i < adegan.Length && !dilewati; i++)
         {
             AdeganAktif = i; TerapkanPanel(adegan[i]);
             teks.text = adegan[i].narasi ?? ""; teks.alpha = 1;
@@ -84,7 +94,7 @@ public sealed class KenanganPembukaArthur : MonoBehaviour
             yield return Fade(0, 1, fadeMasuk);
             float durasi = DurasiTahan(adegan[i]);
             float waktu = 0;
-            while (waktu < durasi)
+            while (waktu < durasi && !dilewati)
             {
                 waktu += Mathf.Min(Time.unscaledDeltaTime, .05f);
                 yield return null;
@@ -96,7 +106,7 @@ public sealed class KenanganPembukaArthur : MonoBehaviour
     IEnumerator Fade(float dari, float ke, float durasi)
     {
         float t = 0;
-        while (t < durasi)
+        while (t < durasi && !dilewati)
         {
             t += Mathf.Min(Time.unscaledDeltaTime, .05f);
             if (musik != null && ke == 0 && AdeganAktif == adegan.Length - 1) musik.volume = volumeLagu * (1 - Mathf.Clamp01(t / durasi));
@@ -108,6 +118,7 @@ public sealed class KenanganPembukaArthur : MonoBehaviour
     void Sembunyikan()
     {
         SedangBerjalan = false; AdeganAktif = -1;
+        if (lewati != null) lewati.Selesai();
         if (musik != null) musik.Stop();
         if (kelompok != null) kelompok.alpha = 0;
     }

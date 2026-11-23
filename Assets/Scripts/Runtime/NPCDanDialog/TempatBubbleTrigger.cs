@@ -34,10 +34,12 @@ public class TempatBubbleTrigger : MonoBehaviour
     private readonly HashSet<Collider2D> pemainDalamArea = new HashSet<Collider2D>();
     private bool sedangDinonaktifkan;
     private bool dialogMenyembunyikan;
+    AreaInteraksi area;
     private bool BolehAnimasi => !sedangDinonaktifkan && gameObject.activeInHierarchy && isActiveAndEnabled;
 
     void Awake()
     {
+        area=GetComponent<AreaInteraksi>();
         // Animasi hanya boleh menyentuh gambar, bukan transform pemilik collider.
         if (ikonTransform == transform)
         {
@@ -80,7 +82,7 @@ public class TempatBubbleTrigger : MonoBehaviour
     {
         if (BolehAnimasi && collision.CompareTag("Player") && pemainDalamArea.Add(collision) && pemainDalamArea.Count == 1)
         {
-            bool sembunyi=DialogManager.Instance!=null&&(DialogManager.Instance.PercakapanAktif||DialogManager.Instance.minigameAktif);
+            bool sembunyi=(area!=null&&!area.DalamBatas)||(DialogManager.Instance!=null&&(DialogManager.Instance.PercakapanAktif||DialogManager.Instance.minigameAktif));
             MulaiAnimasiIkon(sembunyi?Vector3.zero:ukuranMaksimal);
             if (wigglyCoroutine != null) StopCoroutine(wigglyCoroutine);
             if(!sembunyi)wigglyCoroutine = StartCoroutine(JedaDanGoyang());
@@ -136,7 +138,7 @@ public class TempatBubbleTrigger : MonoBehaviour
 
     void Update()
     {
-        bool dialog = DialogManager.Instance != null && (DialogManager.Instance.PercakapanAktif||DialogManager.Instance.minigameAktif);
+        bool dialog = (area!=null&&!area.DalamBatas)||(DialogManager.Instance != null && (DialogManager.Instance.PercakapanAktif||DialogManager.Instance.minigameAktif));
         if(dialog != dialogMenyembunyikan)
         {
             dialogMenyembunyikan=dialog;

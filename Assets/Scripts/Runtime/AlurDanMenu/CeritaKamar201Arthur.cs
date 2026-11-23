@@ -85,7 +85,7 @@ public sealed class CeritaKamar201Arthur : MonoBehaviour
         if(procrastination!=null&&procrastination.waktuHabis)return;
         if(DialogManager.Instance!=null&&DialogManager.Instance.PercakapanAktif)return;
         if(hp!=null&&hp.MenjedaParameter)return;
-        SisaWaktu=Mathf.Max(0,SisaWaktu-Time.deltaTime);SegarkanTimer();
+        SisaWaktu=Mathf.Max(0,SisaWaktu-(ModeUjiArthur.TimerDijeda?0:Time.deltaTime));SegarkanTimer();
         if(SisaWaktu<=0){
             if(procrastination!=null){procrastination.GagalKarenaBatasWaktu();return;}
             TampilkanGagal();

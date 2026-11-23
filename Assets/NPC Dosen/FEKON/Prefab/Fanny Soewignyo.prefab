@@ -294,6 +294,7 @@ GameObject:
   - component: {fileID: 3731523954573391447}
   - component: {fileID: 8833226375668664927}
   - component: {fileID: 7867563118583756420}
+  - component: {fileID: 8215443380319627023}
   m_Layer: 0
   m_Name: Fanny Soewignyo
   m_TagString: Untagged
@@ -368,6 +369,7 @@ MonoBehaviour:
   skenarioDialog:
   - siapaYangBicara: 1
     namaKarakter: Fanny Soewignyo
+    potretPembicara: {fileID: 0}
     teksDialog: Selamat datang. Saya Fanny Soewignyo, Dosen FEB.
     teksTombolLanjut: Selesai
     picuEmoteSetelahIni: 0
@@ -379,6 +381,7 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   daftarOpsi: []
+  batasJarakMendatar: 0
 --- !u!114 &237947646205000487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,6 +530,9 @@ MonoBehaviour:
   fase: 0.71
   jarakAnimasi: 42
   idleArthur: {fileID: 11400000, guid: 3ae34a284fac2d1498e74f49ba0e1813, type: 2}
+  jalanArthur: {fileID: 0}
+  langkahMengikutiGerak: 0
+  waktuJalan: 0
 --- !u!58 &8833226375668664927
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -581,6 +587,24 @@ MonoBehaviour:
   jarakInteraksi: 2.1
   geserTitikInteraksi: {x: 0, y: 0, z: 0}
   jalurInteraksi: {fileID: 0}
+--- !u!114 &8215443380319627023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989588879526782994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0908ff263e41994f84fe93611d37342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TampilanNpcPerempuan
+  perempuan: 1
+  badan: {fileID: 8555155842628562465}
+  kemejaPerempuan: {fileID: 21300000, guid: fe39084cdf06d544b8bbcdc3bf48440d, type: 3}
+  badanSemula: {fileID: -208721368, guid: 1550e4d48747392499835ae702b8d5c3, type: 3}
+  warnaSemula: {r: 1, g: 0.75, b: 0.25, a: 1}
+  warnaPakaian: {r: 0.7254902, g: 0.60784316, b: 0.38039216, a: 1}
 --- !u!1 &2894571796921377985
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,8 +810,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -208721368, guid: 1550e4d48747392499835ae702b8d5c3, type: 3}
-  m_Color: {r: 1, g: 0.75, b: 0.25, a: 1}
+  m_Sprite: {fileID: 21300000, guid: fe39084cdf06d544b8bbcdc3bf48440d, type: 3}
+  m_Color: {r: 0.7254902, g: 0.60784316, b: 0.38039216, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

@@ -16,9 +16,7 @@ public class IntroTitle : MonoBehaviour
     [Header("Pengaturan Rute")]
     public string namaSceneMenu = "MainMenu";      
 
-    private int tapCount = 0;
-    private float tapTimer = 0f;
-    private float timeLimit = 1.0f;
+    LewatiCutsceneArthur lewati; AsyncOperation operasiMuat;
 
     void Start()
     {
@@ -26,6 +24,8 @@ public class IntroTitle : MonoBehaviour
         if (teksJudul != null) teksJudul.color = new Color(teksJudul.color.r, teksJudul.color.g, teksJudul.color.b, 1f);
         if (panelHitam != null) panelHitam.alpha = 1f; 
         
+        lewati=GetComponent<LewatiCutsceneArthur>()??gameObject.AddComponent<LewatiCutsceneArthur>();
+        lewati.Mulai(()=>{StopAllCoroutines();if(operasiMuat!=null)operasiMuat.allowSceneActivation=true;else SceneManager.LoadScene(namaSceneMenu);},teksJudul!=null?teksJudul.font:null);
         StartCoroutine(AturanMutlak7Detik());
     }
 
@@ -38,7 +38,7 @@ public class IntroTitle : MonoBehaviour
         yield return new WaitForSeconds(3f);
         
         // 🔥 FASE 3 (2 DETIK): Fade Out + Nyicil Load Scene Menu (ASYNC)
-        AsyncOperation operasiMuat = SceneManager.LoadSceneAsync(namaSceneMenu);
+        operasiMuat = SceneManager.LoadSceneAsync(namaSceneMenu);
         operasiMuat.allowSceneActivation = false; // Tahan dulu, jangan pindah sampai layar gelap!
 
         float t = 0; 
@@ -50,23 +50,6 @@ public class IntroTitle : MonoBehaviour
 
         // Layar sudah hitam pekat, pindah ke Menu sekarang!
         operasiMuat.allowSceneActivation = true; 
-    }
-
-    void Update()
-    {
-        // SISTEM SKIP 3X -> LANGSUNG TERBANG KE SAMPLE SCENE
-        bool isTapped = Input.GetMouseButtonDown(0);
-        for (int i = 0; i < Input.touchCount; i++)
-            if (Input.GetTouch(i).phase == TouchPhase.Began) isTapped = true;
-
-        if (isTapped) { tapCount++; if (tapCount == 1) tapTimer = 0f; }
-
-        if (tapCount > 0)
-        {
-            tapTimer += Time.deltaTime;
-            if (tapTimer <= timeLimit) { if (tapCount >= 3) SceneManager.LoadScene(namaSceneMenu); }
-            else { tapCount = 0; tapTimer = 0f; }
-        }
     }
 
     IEnumerator FadeSelimutHitam(float start, float end, float duration)

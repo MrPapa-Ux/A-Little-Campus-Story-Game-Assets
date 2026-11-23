@@ -42,7 +42,7 @@ public class LazyBarArthur : MonoBehaviour
     [Tooltip("Khusus cerita Arthur: baca langkah nyata pada jalur kampus maupun gerak bebas Jasmine. HP selalu menjeda bar.")]
     public bool aturanCeritaArthur;
     public bool JedaKhususCerita {get;set;}
-    public float batasWaktuMalas = 15f;
+    public float batasWaktuMalas = 7f;
     private float sisaWaktu;
     [Tooltip("Opsional untuk adegan cerita: pemulihan momen terekam tanpa memuat ulang seluruh pembuka.")]
     public UnityEngine.Events.UnityEvent ketikaGlitchSelesai = new UnityEngine.Events.UnityEvent();
@@ -96,6 +96,8 @@ public class LazyBarArthur : MonoBehaviour
     private float faseEfek;
     private float faseGuncang;
     private float panikHalus;
+    private float rasioTampil = 1f;
+    private Color warnaIsiAwal = Color.white;
 
     void Start()
     {
@@ -113,7 +115,7 @@ public class LazyBarArthur : MonoBehaviour
         if (lazyBarFill != null) lazyBarFill.raycastTarget = false;
         if (lazyIkonFill != null) lazyIkonFill.raycastTarget = false;
 
-        if (lazyBarFill != null) lazyBarFill.fillAmount = 1f;
+        if (lazyBarFill != null) {lazyBarFill.fillAmount = 1f;warnaIsiAwal=lazyBarFill.color;}
         ResetEfekVisual();
 
         if (panelGlitch != null) panelGlitch.SetActive(false);
@@ -126,6 +128,7 @@ public class LazyBarArthur : MonoBehaviour
 
     void LateUpdate()
     {
+        if(ModeUjiArthur.TimerDijeda){TenangkanEfekVisual();return;}
         if (tanpaBatasWaktu)
         {
             sisaWaktu = batasWaktuMalas;
@@ -164,11 +167,14 @@ public class LazyBarArthur : MonoBehaviour
         // 4. Logika Kurang/Tambah Bar
         if (!sedangBergerak)
         {
+            float diamSebelumnya=waktuDiam;
             waktuDiam+=Time.deltaTime;
-            if(waktuDiam>=jedaSebelumBerkurang)sisaWaktu -= Time.deltaTime;
+            // Hanya bagian frame sesudah masa jeda yang dihitung.
+            sisaWaktu-=Mathf.Max(0,waktuDiam-jedaSebelumBerkurang)-Mathf.Max(0,diamSebelumnya-jedaSebelumBerkurang);
             if (sisaWaktu <= 0)
             {
                 sisaWaktu = 0;
+                rasioTampil=0;
                 if (lazyBarFill != null) lazyBarFill.fillAmount = 0f;
                 PicuEfekGlitch();
                 return;
@@ -187,7 +193,14 @@ public class LazyBarArthur : MonoBehaviour
         // 5. Update UI Bar
         if (lazyBarFill != null)
         {
-            lazyBarFill.fillAmount = sisaWaktu / Mathf.Max(0.01f, batasWaktuMalas);
+            float target=RasioTersisa;
+            // Pengurangan tetap mengikuti tujuh detik secara tepat; pemulihan
+            // menyusul lembut, sehingga sentuhan pendek tidak membuat bar meloncat.
+            rasioTampil=target<rasioTampil?target:Mathf.MoveTowards(rasioTampil,target,2.4f*Time.deltaTime);
+            lazyBarFill.fillAmount = rasioTampil;
+            float kritis=Mathf.Clamp01((ambangPanik-target)/Mathf.Max(.01f,ambangPanik));
+            float denyut=.5f+.5f*Mathf.Sin(Time.time*5f);
+            lazyBarFill.color=Color.Lerp(warnaIsiAwal,new Color(1f,.53f,.36f,warnaIsiAwal.a),kritis*(.3f+.16f*denyut));
         }
 
         TerapkanEfekVisual();
@@ -233,6 +246,8 @@ public class LazyBarArthur : MonoBehaviour
 
     private void ResetEfekVisual()
     {
+        rasioTampil=RasioTersisa;
+        if(lazyBarFill!=null)lazyBarFill.color=warnaIsiAwal;
         panikHalus = 0f;
         faseEfek = 0f;
         faseGuncang = 0f;

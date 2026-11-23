@@ -12,6 +12,7 @@ public sealed class SimpananEksplorasiArthur : MonoBehaviour
         public float jarak;
         public Vector3 posisi;
         public bool depan, belakang, ruangan;
+        public bool tubuhNaya;
     }
     ArthurJalurKampus arthur;
     SistemPilihan pilihan;
@@ -49,6 +50,8 @@ public sealed class SimpananEksplorasiArthur : MonoBehaviour
         {
             foreach (var j in FindObjectsByType<JalurKampus>(FindObjectsInactive.Include, FindObjectsSortMode.None))
                 if (j.gameObject.scene == gameObject.scene && Alamat(j.transform) == l.jalur) { jalur = j; break; }
+            if(jalur!=null&&jalur.name=="Jasmine_Interior_Lantai3"&&!jalur.gameObject.activeInHierarchy)
+                jalur=Array.Find(FindObjectsByType<JalurKampus>(FindObjectsInactive.Include,FindObjectsSortMode.None),j=>j.gameObject.scene==gameObject.scene&&j.name=="Jasmine_Interior_Lantai2");
             // Rute yang dihapus/diganti: gunakan awal normal, jangan muncul di world kosong.
             if (jalur == null || jalur.titik == null || jalur.titik.Length < 2 || Array.Exists(jalur.titik, t => t == null)) return null;
             jalur.Sampel(Mathf.Clamp(l.jarak, 0, jalur.Panjang), out l.posisi, out _, out _);
@@ -63,6 +66,7 @@ public sealed class SimpananEksplorasiArthur : MonoBehaviour
     public void TerapkanTujuan(Transform tujuan)
     {
         Referensi();
+        try {var tersimpan=JsonUtility.FromJson<Lokasi>(PlayerPrefs.GetString(Kunci));if(Valid(tersimpan))arthur.GetComponent<PertukaranTubuhArthur>()?.Terapkan(tersimpan.tubuhNaya);}catch(Exception){}
         arthur.PindahKe(tujuan);
         // Kelompok fisika Jasmine diperlukan saat kembali ke ruas tanpa JalurKampus.
         Lokasi l = null;
@@ -93,6 +97,7 @@ public sealed class SimpananEksplorasiArthur : MonoBehaviour
         var rb = arthur.GetComponent<Rigidbody2D>();
         if (arthur.JalurAktif == null && rb != null && Mathf.Abs(rb.linearVelocity.y) > .1f) return;
         var l = new Lokasi {
+            tubuhNaya = arthur.GetComponent<PertukaranTubuhArthur>()?.DiTubuhPerempuan == true,
             jalur = arthur.JalurAktif != null ? Alamat(arthur.JalurAktif.transform) : "",
             jarak = arthur.JarakDiJalur, posisi = arthur.transform.position,
             depan = pilihan != null && pilihan.grupFisikDepan != null && pilihan.grupFisikDepan.activeSelf,

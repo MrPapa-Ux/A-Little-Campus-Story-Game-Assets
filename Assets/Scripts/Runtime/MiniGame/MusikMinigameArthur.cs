@@ -13,7 +13,7 @@ internal sealed class MusikMinigameArthur
     internal static AudioClip LaguPonsel(string judul)
     {
         var lagu = MusikArthur.Instance?.playlist?.lagu;
-        return lagu == null ? null : Array.Find(lagu, entri => entri?.judul == judul)?.audio;
+        return lagu == null ? null : Array.Find(lagu, entri => entri!=null&&entri.judul.Replace(" ", "")==judul.Replace(" ", ""))?.audio;
     }
 
     internal void Putar(GameObject pemilik, AudioClip klip)

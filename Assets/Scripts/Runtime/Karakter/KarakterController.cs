@@ -133,6 +133,7 @@ public class KarakterController : MonoBehaviour
 
     void Update()
     {
+        Vector3 posisiSebelumLangkah = transform.position;
         if (GerakTerkunci && arahJalan != 0f) BerhentiBergerak();
         // CharacterController 3D bergerak setiap frame, sebelum kamera LateUpdate.
         // Rigidbody2D Jasmine tetap menggunakan tick fisika di FixedUpdate.
@@ -143,7 +144,16 @@ public class KarakterController : MonoBehaviour
         }
         if (wadahVisual != null && arahJalan != 0f && !kunciPergerakan)
         {
-            float skalaXFlip = (arahJalan > 0) ? skalaAsliWadah.x : -skalaAsliWadah.x;
+            float arahVisual = arahJalan;
+            if (jalurKampus != null && jalurKampus.JalurAktif != null)
+            {
+                // Urutan titik kelas dapat berlawanan dengan kanan layar.
+                // Hadap mengikuti perpindahan nyata, bukan tombol yang ditekan.
+                float langkahDiLayar = Vector3.Dot(transform.position - posisiSebelumLangkah, jalurKampus.kamera.transform.right);
+                if (Mathf.Abs(langkahDiLayar) > .0001f) arahVisual = Mathf.Sign(langkahDiLayar);
+                else arahVisual = Mathf.Sign(wadahVisual.localScale.x / skalaAsliWadah.x);
+            }
+            float skalaXFlip = (arahVisual > 0) ? skalaAsliWadah.x : -skalaAsliWadah.x;
             wadahVisual.localScale = new Vector3(skalaXFlip, skalaAsliWadah.y, skalaAsliWadah.z);
         }
     }

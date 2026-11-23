@@ -30,10 +30,12 @@ public sealed class HewanKampus : MonoBehaviour
     {
         if(!ready||Jalur==null||arthur==null||Time.deltaTime<=0)return;
         if(KawasanKampus.Instance!=null&&KawasanKampus.Instance.SedangMemuat||DialogManager.Instance!=null&&(DialogManager.Instance.PercakapanAktif||DialogManager.Instance.minigameAktif)){next+=Time.deltaTime;return;}
-        float old=Jarak;var separation=transform.position-arthur.transform.position;separation.y=0;float distance=separation.magnitude;bool same=arthur.JalurAktif==Jalur;
-        if(Kucing&&same&&distance<(kontrol.SedangBerlari?4:2.8f)){goal=Mathf.Clamp(Jarak+(Jarak>=arthur.JarakDiJalur?1:-1)*4.5f,.5f,Jalur.Panjang-.5f);State(Perilaku.Menjauh);}
-        else if(!Kucing&&same&&distance<2.8f){goal=Mathf.Clamp(Jarak+(Jarak>=arthur.JarakDiJalur?1:-1)*4f,.5f,Jalur.Panjang-.5f);if(Keadaan!=Perilaku.Menjauh)State(Perilaku.Menjauh);}
-        else if(!Kucing&&same&&distance<7&&distance>3.8f){goal=Mathf.Clamp(arthur.JarakDiJalur+(Jarak>=arthur.JarakDiJalur?1:-1)*3.6f,.5f,Jalur.Panjang-.5f);if(Keadaan!=Perilaku.Mendekat)State(Perilaku.Mendekat);}
+        float old=Jarak;var separation=transform.position-arthur.transform.position;separation.y=0;float distance=separation.magnitude;
+        bool halaman=Jalur.name=="Jasmine_Hewan_Halaman"&&arthur.JalurAktif==null&&arthur.fisikDepanJasmine!=null&&arthur.fisikDepanJasmine.activeInHierarchy;
+        bool same=arthur.JalurAktif==Jalur||halaman;float jarakArthur=halaman?Jalur.JarakTerdekat(arthur.transform.position):arthur.JarakDiJalur;
+        if(Kucing&&same&&distance<(kontrol.SedangBerlari?4:2.8f)){goal=Mathf.Clamp(Jarak+(Jarak>=jarakArthur?1:-1)*4.5f,.5f,Jalur.Panjang-.5f);State(Perilaku.Menjauh);}
+        else if(!Kucing&&same&&distance<2.8f){goal=Mathf.Clamp(Jarak+(Jarak>=jarakArthur?1:-1)*4f,.5f,Jalur.Panjang-.5f);if(Keadaan!=Perilaku.Menjauh)State(Perilaku.Menjauh);}
+        else if(!Kucing&&same&&distance<7&&distance>3.8f){goal=Mathf.Clamp(jarakArthur+(Jarak>=jarakArthur?1:-1)*3.6f,.5f,Jalur.Panjang-.5f);if(Keadaan!=Perilaku.Mendekat)State(Perilaku.Mendekat);}
         else if(!Kucing&&same&&distance<=3.8f&&Keadaan==Perilaku.Mendekat)State(Perilaku.Duduk);
         if(Time.time>next){if(random.Next(3)==0){goal=Mathf.Clamp(home+((float)random.NextDouble()*2-1)*3,.5f,Jalur.Panjang-.5f);State(Perilaku.Jalan);}else State(Kucing?(random.Next(2)==0?Perilaku.MembersihkanDiri:Perilaku.Duduk):Perilaku.Mengendus);}
         bool moving=Keadaan==Perilaku.Jalan||Keadaan==Perilaku.Mendekat||Keadaan==Perilaku.Menjauh;

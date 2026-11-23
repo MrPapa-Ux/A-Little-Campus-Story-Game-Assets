@@ -10,6 +10,8 @@ public sealed class PertemuanHewanKampus : MonoBehaviour
     public Material bahan;
     public Material bahanBayangan;
     [Min(4f)] public float jarakMunculMinimal=7f;
+    [Tooltip("Lintasan hewan di halaman Jasmine yang memakai gerak 2D. Tidak dipakai sebagai jalur Arthur.")]
+    public JalurKampus jalurHalamanJasmine;
     public Hasil HasilKunjungan { get; private set; }
     public string Zona { get; private set; }="";
     public int JumlahUndian { get; private set; }
@@ -23,6 +25,7 @@ public sealed class PertemuanHewanKampus : MonoBehaviour
     {
         if(r==null)return "";
         var n=r.name;
+        if(n=="GK2_JalurUtama_BelokOtomatis"||n=="GK2_JalurBelakang")return "GK2";
         if(n.StartsWith("UNK_Crystal",StringComparison.Ordinal)||n=="UNK_Bundaran_JalurKananCrystal")return "Crystal";
         if(n.StartsWith("UNK_Dining",StringComparison.Ordinal)||n.StartsWith("UNK_StudyGarden",StringComparison.Ordinal))return "Dining";
         if(n=="UNK_TamanKanan"||n=="UNK_TanggaTaman")return "Crystal";
@@ -33,15 +36,17 @@ public sealed class PertemuanHewanKampus : MonoBehaviour
     public static bool BolehMuncul(JalurKampus r)
     {
         if(r==null)return false;var n=r.name;
-        return n=="GA_Taman_MenujuPioneer"||n=="UNK_Tugu"||n=="UNK_Plaza"||n=="UNK_Selasar"||n=="UNK_TamanKanan"||n=="UNK_Dining_Depan"||n=="UNK_Dining_Depan_Lanjutan"||n=="UNK_Crystal_Depan"||n=="UNK_Crystal_DepanKanan"||n=="UNK_Crystal_JalurKiri"||n=="UNK_Bundaran_JalurKananCrystal"||n.StartsWith("UNK_Dining_Jalur",StringComparison.Ordinal);
+        return n=="GK2_JalurUtama_BelokOtomatis"||n=="GK2_JalurBelakang"||n=="GA_Taman_MenujuPioneer"||n=="UNK_Tugu"||n=="UNK_Plaza"||n=="UNK_Selasar"||n=="UNK_TamanKanan"||n=="UNK_Dining_Depan"||n=="UNK_Dining_Depan_Lanjutan"||n=="UNK_Crystal_Depan"||n=="UNK_Crystal_DepanKanan"||n=="UNK_Crystal_JalurKiri"||n=="UNK_Bundaran_JalurKananCrystal"||n.StartsWith("UNK_Dining_Jalur",StringComparison.Ordinal);
     }
+    public bool DiHalamanJasmine => arthur!=null&&arthur.JalurAktif==null&&arthur.fisikDepanJasmine!=null&&arthur.fisikDepanJasmine.activeInHierarchy;
+    JalurKampus JalurHewan => arthur.JalurAktif!=null?arthur.JalurAktif:DiHalamanJasmine?jalurHalamanJasmine:null;
     void Start(){arthur=FindFirstObjectByType<ArthurJalurKampus>();}
     void Update()
     {
         if(arthur==null||KawasanKampus.Instance!=null&&KawasanKampus.Instance.SedangMemuat)return;
-        var route=arthur.JalurAktif;string zone=ZonaUntuk(route);
+        var route=JalurHewan;string zone=DiHalamanJasmine?"Jasmine":ZonaUntuk(route);
         if(zone!=Zona){Hapus();Zona=zone;HasilKunjungan=Hasil.TidakAda;VarianHumanoid=false;if(zone!=""){JumlahUndian++;float roll=(float)random.NextDouble();HasilKunjungan=Pilih(roll,random.Next(1,4),peluang);VarianHumanoid=PilihHumanoid(roll,peluang);}}
-        bool outdoors=BolehMuncul(route);
+        bool outdoors=BolehMuncul(route)||DiHalamanJasmine&&route!=null;
         // A successful encounter must not be stranded on a distant, invisible old road.
         // Reposition the same result only when every pet is outside the view and far away.
         if(outdoors&&(anjing!=null||kucing!=null)&&BolehPindah(anjing,route)&&BolehPindah(kucing,route))Hapus();
@@ -68,7 +73,7 @@ public sealed class PertemuanHewanKampus : MonoBehaviour
     }
     HewanKampus Spawn(bool cat,Sprite[] parts,JalurKampus route,float lateral,float offset)
     {
-        float d=arthur.JarakDiJalur;float sign=d<route.Panjang*.5f?1:-1;
+        float d=arthur.JalurAktif==route?arthur.JarakDiJalur:route.JarakTerdekat(arthur.transform.position);float sign=d<route.Panjang*.5f?1:-1;
         for(int i=0;i<8;i++){
             float direction=i<4?sign:-sign;float distance=Mathf.Clamp(d+direction*(offset+(i%4)*3),.6f,Mathf.Max(.6f,route.Panjang-.6f));
             route.Sampel(distance,out var p,out var tangent,out _);if(Mathf.Abs(tangent.y)>.15f)continue;
@@ -84,6 +89,6 @@ public sealed class PertemuanHewanKampus : MonoBehaviour
     void OnDisable(){Hapus();Zona="";}
 #if UNITY_EDITOR
     // Explicit test hook; production visits always use the single probability draw above.
-    public void Pratinjau(Hasil hasil,bool humanoid=false){if(arthur==null)arthur=FindFirstObjectByType<ArthurJalurKampus>();Hapus();Zona=ZonaUntuk(arthur.JalurAktif);HasilKunjungan=hasil;VarianHumanoid=humanoid;if(BolehMuncul(arthur.JalurAktif))Buat(arthur.JalurAktif);}
+    public void Pratinjau(Hasil hasil,bool humanoid=false){if(arthur==null)arthur=FindFirstObjectByType<ArthurJalurKampus>();Hapus();Zona=DiHalamanJasmine?"Jasmine":ZonaUntuk(arthur.JalurAktif);HasilKunjungan=hasil;VarianHumanoid=humanoid;if(BolehMuncul(JalurHewan)||DiHalamanJasmine&&JalurHewan!=null)Buat(JalurHewan);}
 #endif
 }

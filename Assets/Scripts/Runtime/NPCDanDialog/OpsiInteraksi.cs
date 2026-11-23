@@ -16,6 +16,8 @@ public class BarisDialog
     
     [Tooltip("Nama yang muncul di UI (Lyra, Arthur, dll)")]
     public string namaKarakter = "Arthur"; 
+    [Tooltip("Opsional: ganti potret kanan hanya pada baris ini, misalnya mahasiswa yang berbicara di dalam kelompok dosen.")]
+    public Sprite potretPembicara;
     
     [Header("2. Teks Percakapan (Muncul Per Huruf)")]
     [TextArea(2, 4)]
@@ -42,6 +44,11 @@ public class BarisDialog
 [System.Serializable]
 public class OpsiInteraksi
 {
+    public AksesArenaKoleksiArthur arenaKoleksi;
+    [Header("Asrama Jasmine dan pertukaran tubuh (opsional)")]
+    public PertukaranTubuhArthur pertukaranTubuh;
+    public bool kembaliKeArthur;
+    public AksesAsramaJasmine aksesJasmine;
     [Header("Kuis Mr.Quizo (opsional)")]
     public MrQuizoChapter1 mrQuizo;
     public int aksiQuizo;

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8758739275986248961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5676717225162159838}
+  - component: {fileID: 8316058201291548062}
+  m_Layer: 0
+  m_Name: Pedang Harapan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5676717225162159838
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8758739275986248961}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8316058201291548062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8758739275986248961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e73b56f7a333946a950d469783fdfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PratinjauMinigameBayangan
+  arena: 0
+  gaya: {fileID: 11400000, guid: 928723403e61e504486faafabce56457, type: 2}
+  laguArena: {fileID: 8300000, guid: 160245d8d3b9651469be46ed6f6f791c, type: 3}
+  keluarKeKampus: 0
+  latar: {fileID: 2800000, guid: 9e1af5108eac46c4eba0ae5ec32b01a0, type: 3}
+  tokoh: {fileID: 0}
+  stress: {fileID: 2800000, guid: 1c65f8b5e613eab42bf515a3dc965d54, type: 3}
+  burnout: {fileID: 2800000, guid: 92abaa66663aa8b4b8b16fb6cbaa9cc4, type: 3}
+  pedang: {fileID: 2800000, guid: 8ebd4338476bc16449dc28406648741a, type: 3}

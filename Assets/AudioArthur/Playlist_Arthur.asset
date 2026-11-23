@@ -34,15 +34,21 @@ MonoBehaviour:
     catatan: Melankolis band C minor, 155 BPM / 37,16 detik. Piano, gitar bersih,
       bass melodis, biola dan pasangan bass rendah dam-dam. Instrumental; aktifkan
       ULANG.
-  - judul: GigglyMagicPow
+  - judul: Giggly Magic Pow
     audio: {fileID: 8300000, guid: 29c5531876b474941bcc503ea8e959d9, type: 3}
     catatan: Lagu tambahan dari folder TambahanLagu milik pembuat game.
-  - judul: HappySugarMorningPaw
+  - judul: Happy Sugar Morning Paw
     audio: {fileID: 8300000, guid: d6c5d687a599f844f978f92f7dfddfed, type: 3}
     catatan: Lagu tambahan dari folder TambahanLagu milik pembuat game.
-  - judul: KingdomOfTutoas
+  - judul: Kingdom Of Tutoas
     audio: {fileID: 8300000, guid: d0c4866794858b843b5e0d3d653f14de, type: 3}
     catatan: Lagu tambahan dari folder TambahanLagu milik pembuat game.
-  - judul: MisterAndTheBall
+  - judul: Mister And The Ball
     audio: {fileID: 8300000, guid: 56b1b6a44e1581c48bfebc4baa4d33df, type: 3}
     catatan: Lagu tambahan dari folder TambahanLagu milik pembuat game.
+  - judul: Kebosanan yang menyenangkan
+    audio: {fileID: 8300000, guid: bacb08e9a3edecc4e972fdb87cbac2da, type: 3}
+    catatan: Musik instrumental pilihan Arthur.
+  - judul: Legenda pribadi
+    audio: {fileID: 8300000, guid: ef4074a0d42ee30478428783634fbf8f, type: 3}
+    catatan: Musik instrumental pilihan Arthur.

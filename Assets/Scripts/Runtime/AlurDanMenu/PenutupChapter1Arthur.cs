@@ -17,6 +17,13 @@ public sealed class PenutupChapter1Arthur : MonoBehaviour
  public TMP_Text judul,isi,aksi,teksKredit,petunjukDiam,teksPenutup;
  public Button tombol;
  public GameObject ilustrasiPenutup;
+ public GameObject prefabPagi;
+ LewatiCutsceneArthur lewatiTransisi;
+ bool lewatiMonolog;
+ void MulaiLewatiMonolog(){lewatiMonolog=false;lewatiTransisi=GetComponent<LewatiCutsceneArthur>()??gameObject.AddComponent<LewatiCutsceneArthur>();lewatiTransisi.Mulai(()=>lewatiMonolog=true,isi!=null?isi.font:teksPenutup.font);}
+ float peringatanBerikut;
+ Vector2 posisiPeringatan;
+ bool posisiPeringatanTersimpan;
  public CanvasGroup gambarArthurPertama,gambarArthurKedua;
  public GameObject grupTeksPenutup;
  [Min(.5f)] public float lamaGambarPertama=3;
@@ -37,7 +44,7 @@ public sealed class PenutupChapter1Arthur : MonoBehaviour
  [TextArea(1,3)] public string monologIstirahat="Aku harus istirahat, jangan memaksakan diri, ya,";
  [Min(1)] public float tahanMonolog=2f;
  public string sceneMenu="MainMenu";
- [TextArea(8,20)] public string isiKredit="A LITTLE CAMPUS STORY\n\nCHAPTER 1\nArthur Saputra\nKeraguan dan Penerimaan\n\nDibuat dengan Unity\n\nTerima kasih telah bermain.";
+ [TextArea(8,20)] public string isiKredit="A LITTLE CAMPUS STORY\n\nCHAPTER 1\nArthur Saputra\nKeraguan dan Penerimaan\n\nTERIMA KASIH KHUSUS\nSeluruh teman-teman UVICS\n\nTerima kasih telah bermain.";
  [Min(5)] public float durasiKredit=20;
  public Fase Status {get;private set;}
  public float SisaDiam {get;private set;}
@@ -56,6 +63,12 @@ public sealed class PenutupChapter1Arthur : MonoBehaviour
   if(otomatis!=null&&otomatis.Status==AdeganRhythmPembukaArthur.Fase.Selesai)otomatis.MainkanRondePenutup();
   if(Time.unscaledTime<abaikanInputSampai)return;
   ProsesDiam(Time.unscaledDeltaTime,Input.anyKeyDown||Input.GetMouseButtonDown(0)||Input.GetMouseButtonDown(1)||Input.touchCount>0);
+    if(Status==Fase.Diam){
+     if(!posisiPeringatanTersimpan){posisiPeringatan=petunjukDiam.rectTransform.anchoredPosition;posisiPeringatanTersimpan=true;}
+     if(Time.unscaledTime>=peringatanBerikut){peringatanBerikut=Time.unscaledTime+Random.Range(.8f,1.2f);var parent=petunjukDiam.rectTransform.parent as RectTransform;
+      if(parent!=null){float x=Mathf.Min(100,Mathf.Max(0,(parent.rect.width-petunjukDiam.rectTransform.rect.width)*.3f));petunjukDiam.rectTransform.anchoredPosition=posisiPeringatan+new Vector2(Random.Range(-x,x),Random.Range(-28f,28f));}}
+     petunjukDiam.alpha=Mathf.Repeat(Time.unscaledTime,1.1f)<.75f?1:0;
+    }
  }
  public void ProsesDiam(float selang,bool menekan){
   if(Status!=Fase.Diam)return;
@@ -80,7 +93,9 @@ public sealed class PenutupChapter1Arthur : MonoBehaviour
   panggung=Instantiate(prefabMengetik);panggung.transform.position+=Vector3.right*5000;otomatis=panggung.GetComponentInChildren<AdeganRhythmPembukaArthur>(true);otomatis.permainanDikendalikanPemain=false;otomatis.worship=null;if(otomatis.bubbleIstirahat!=null){otomatis.bubbleIstirahat.alpha=0;otomatis.bubbleIstirahat.gameObject.SetActive(false);}otomatis.bubbleIstirahat=null;otomatis.lamaMengetik=float.MaxValue;otomatis.pembukaan.tampilkanTeks=false;otomatis.enabled=true;otomatis.Ulangi();var cam=panggung.GetComponentInChildren<Camera>(true);cam.backgroundColor=Color.black;cam.clearFlags=CameraClearFlags.SolidColor;
   yield return Redup(false);
   Status=Fase.MonologSebelumGame;
-  foreach(var kalimat in monologKamar)yield return TampilkanPikiran(kalimat);
+  MulaiLewatiMonolog();
+  foreach(var kalimat in monologKamar){if(lewatiMonolog)break;yield return TampilkanPikiran(kalimat);}
+  lewatiTransisi.Selesai();
   otomatis.pembukaan.tampilkanTeks=false;otomatis.lamaMengetik=0;otomatis.Ulangi();
   yield return TungguGame();MulaiDiam();
  }
@@ -88,7 +103,7 @@ public sealed class PenutupChapter1Arthur : MonoBehaviour
  IEnumerator TampilkanPikiran(string kalimat){
   var p=otomatis.pembukaan;p.enabled=true;p.kalimat=kalimat;p.tampilkanTeks=true;
   p.jedaTeks=.35f;p.tahanTeksSelesai=tahanMonolog;p.Ulangi();
-  while(p.WaktuAdegan<p.DurasiTeks)yield return null;
+  while(!lewatiMonolog&&p.WaktuAdegan<p.DurasiTeks)yield return null;
   p.tampilkanTeks=false;if(p.teksPikiran!=null)p.teksPikiran.gameObject.SetActive(false);
  }
  IEnumerator TungguGame(){while(otomatis!=null&&otomatis.Status!=AdeganRhythmPembukaArthur.Fase.RondePertama&&otomatis.Status!=AdeganRhythmPembukaArthur.Fase.RondeKedua)yield return null;}
@@ -102,13 +117,17 @@ public sealed class PenutupChapter1Arthur : MonoBehaviour
  }
  IEnumerator Pagi(){
   petunjukDiam.gameObject.SetActive(false);
+   petunjukDiam.alpha=1;if(posisiPeringatanTersimpan)petunjukDiam.rectTransform.anchoredPosition=posisiPeringatan;
   Status=Fase.MonologIstirahat;
+  MulaiLewatiMonolog();
   otomatis.StopAllCoroutines();otomatis.enabled=false;otomatis.rhythm.TutupDariHP();
   otomatis.layarHP.alpha=0;otomatis.layarHP.gameObject.SetActive(false);otomatis.hpPortrait.gameObject.SetActive(false);
   otomatis.pembukaan.enabled=true;
   yield return TampilkanPikiran(monologIstirahat);
+  lewatiTransisi.Selesai();
   yield return Redup(true);Status=Fase.Pagi;if(panggung!=null){panggung.SetActive(false);Destroy(panggung);panggung=null;}RenderSettings.ambientMode=modeAmbientLama;RenderSettings.ambientLight=ambientLama;RenderSettings.reflectionIntensity=refleksiLama;chapel.waktu.enabled=waktuEnabledLama;chapel.waktu.berjalanOtomatis=false;chapel.waktu.AturWaktu(WaktuKampus.Pagi);
-  ilustrasiPenutup.SetActive(true);teksPenutup.text=monologPagi.skenarioDialog[0].teksDialog;if(grupTeksPenutup!=null)grupTeksPenutup.SetActive(true);if(gambarArthurPertama!=null)gambarArthurPertama.alpha=1;if(gambarArthurKedua!=null)gambarArthurKedua.alpha=0;yield return Redup(false);
+   if(prefabPagi!=null){yield return CutsceneLanjutanArthur.Mainkan(prefabPagi,chapel.kamar);}
+   ilustrasiPenutup.SetActive(true);teksPenutup.text=monologPagi.skenarioDialog[0].teksDialog;if(grupTeksPenutup!=null)grupTeksPenutup.SetActive(true);if(gambarArthurPertama!=null)gambarArthurPertama.alpha=1;if(gambarArthurKedua!=null)gambarArthurKedua.alpha=0;yield return Redup(false);
   yield return new WaitForSecondsRealtime(lamaGambarPertama);
   var rectPertama=gambarArthurPertama!=null?gambarArthurPertama.transform as RectTransform:null;
   Vector2 posisiPertama=rectPertama!=null?rectPertama.anchoredPosition:Vector2.zero;

@@ -13,6 +13,7 @@ public sealed class PratinjauMinigameBayangan : MonoBehaviour
     public Arena arena;
     public GayaMinigameBayangan gaya;
     public AudioClip laguArena;
+    [HideInInspector] public bool keluarKeKampus;
     readonly MusikMinigameArthur musik = new MusikMinigameArthur();
     public Texture2D latar, tokoh, stress, burnout, pedang;
 
@@ -197,6 +198,7 @@ public sealed class PratinjauMinigameBayangan : MonoBehaviour
 
     void KembaliKeAwal()
     {
+        if(keluarKeKampus){Destroy(gameObject);return;}
         musik.Tutup();
         ResetArena();
         Status();

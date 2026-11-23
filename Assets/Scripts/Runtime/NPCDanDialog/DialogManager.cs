@@ -71,9 +71,7 @@ public class DialogManager : MonoBehaviour
         if(!PercakapanAktif)
         {
             PercakapanAktif=true;keadaanHUD.Clear();
-            // Story dialogue interrupts the phone playlist; ambient NPC dialogue does not.
-            if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name.StartsWith("Chapter1") && MusikArthur.Instance!=null)
-                MusikArthur.Instance.HentikanSemua();
+            // Pemutar menjeda musik selama interaksi, lalu menyambungkannya setelah selesai.
             if(hudSaatPercakapan!=null)foreach(var grup in hudSaatPercakapan)
             {
                 if(grup==null)continue;

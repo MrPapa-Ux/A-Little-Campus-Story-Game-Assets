@@ -67,6 +67,7 @@ public sealed class MrQuizoChapter1 : MonoBehaviour
   if (transform is RectTransform rect) rect.anchoredPosition3D = rect.localPosition;
  }
  public static bool Cegat(AreaInteraksi pemilik,OpsiInteraksi opsi){
+  if(ModeUjiArthur.KuisDilewati)return false;
   var q=Instance;if(q==null||!q.isActiveAndEnabled||q.Selesai||pemilik==null||opsi==null)return false;
   if (q.tujuanGA != null && opsi.titikTujuan != q.tujuanGA) return false;
   bool exit=false;foreach(var gate in q.pintuKeluar??Array.Empty<AreaInteraksi>())if(gate!=null&&gate==pemilik){foreach(var original in gate.daftarOpsi??Array.Empty<OpsiInteraksi>())if(original.titikTujuan!=null&&original.titikTujuan==opsi.titikTujuan)exit=true;}
@@ -98,5 +99,5 @@ public sealed class MrQuizoChapter1 : MonoBehaviour
   if(Selesai)feedback+=" Kuis tuntas! Jalan sudah terbuka. Silakan lanjut, Arthur. Hati-hati di jalan!";
   Dialog(feedback,new[]{Opsi(Selesai?"Terima kasih, aku lanjut!":benar?"Pertanyaan berikutnya!":"Oke, coba lagi.",Selesai?-3:-2)});pilihan.SegarkanPercakapan(area);
  }
- IEnumerator Minggir(){var start=transform.position;var finish=start+Vector3.right*1.15f;for(float time=0;time<.5f;time+=Time.deltaTime){transform.position=Vector3.Lerp(start,finish,Mathf.SmoothStep(0,1,time/.5f));if(transform is RectTransform rect)rect.anchoredPosition3D=rect.localPosition;yield return null;}transform.position=finish;if(transform is RectTransform r)r.anchoredPosition3D=r.localPosition;}
+ IEnumerator Minggir(){var start=transform.position;var finish=start+Vector3.right*1.15f;var rig=GetComponent<NpcKampusHidup>();if(rig!=null){rig.langkahMengikutiGerak=true;rig.waktuJalan=0;rig.kegiatan=KegiatanNpcKampus.Berjalan;}for(float time=0;time<.5f;time+=Time.deltaTime){var before=transform.position;transform.position=Vector3.Lerp(start,finish,Mathf.SmoothStep(0,1,time/.5f));if(rig!=null)rig.waktuJalan+=Vector3.Distance(before,transform.position)/2.5f;if(transform is RectTransform rect)rect.anchoredPosition3D=rect.localPosition;yield return null;}transform.position=finish;if(transform is RectTransform r)r.anchoredPosition3D=r.localPosition;if(rig!=null)rig.kegiatan=KegiatanNpcKampus.Berdiri;}
 }

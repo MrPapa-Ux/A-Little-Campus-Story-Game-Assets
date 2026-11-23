@@ -37,13 +37,19 @@ public sealed class AdeganMakanDiningArthur : MonoBehaviour
     Material skyboxAwal;Color latarAwal;CameraClearFlags clearAwal;Vector3[] posisiFiguran;
     UnityEngine.Rendering.AmbientMode modeAwal;
     bool siap,malamAktif;int kameraTerakhir;
+    LewatiCutsceneArthur lewati;bool lewatiPunchline;
+    void Start(){
+        var m=GetComponent<TapTapMekarArthur>();
+        lewati=GetComponent<LewatiCutsceneArthur>()??gameObject.AddComponent<LewatiCutsceneArthur>();
+        lewati.Mulai(()=>{if(Selesai)return;Selesai=true;saatMakanSelesai.Invoke();},m!=null?m.petunjuk.font:null);
+    }
     void Awake(){Siapkan();PilihKamera(sudutKamera);if(wajahArthur!=null)wajahArthur.AturSedihCerita(true,sedihRingan);if(penutupFade!=null){penutupFade.alpha=0;penutupFade.blocksRaycasts=false;}if(pratinjauMalam)TampilkanMalamSekali();}
     void Siapkan(){if(siap)return;siap=true;awalKepala=kepala.localPosition;awalBadan=badan.localPosition;awalMakan=tanganMakan.localPosition;awalDiam=tanganDiam.localPosition;rotasiMakan=tanganMakan.localRotation;ambientAwal=RenderSettings.ambientLight;modeAwal=RenderSettings.ambientMode;skyboxAwal=RenderSettings.skybox;if(kamera!=null){latarAwal=kamera.backgroundColor;clearAwal=kamera.clearFlags;}posisiFiguran=new Vector3[figuran.Length];for(int i=0;i<figuran.Length;i++)if(figuran[i]!=null)posisiFiguran[i]=figuran[i].position;if(lampuUtama!=null){warnaUtama=lampuUtama.color;intensitasAwal=lampuUtama.intensity;}}
     void Update(){
         if(kameraTerakhir!=sudutKamera)PilihKamera(sudutKamera);
         if(Selesai)return;
         WaktuAdegan+=Mathf.Min(Time.deltaTime,.05f);AturFrame(WaktuAdegan);
-        if(WaktuAdegan>=durasiAdegan&&!ulangiUntukPratinjau){Selesai=true;saatMakanSelesai.Invoke();}
+        if(WaktuAdegan>=durasiAdegan&&!ulangiUntukPratinjau){Selesai=true;lewati?.Selesai();saatMakanSelesai.Invoke();}
     }
     public void AturFrame(float waktu){
         Siapkan();
@@ -78,13 +84,14 @@ public sealed class AdeganMakanDiningArthur : MonoBehaviour
     }
     System.Collections.IEnumerator Punchline()
     {
+        lewatiPunchline=false;lewati?.Mulai(()=>lewatiPunchline=true,GetComponent<TapTapMekarArthur>()?.petunjuk.font);
         PunchlineAktif=true;WaktuMulaiFade=-1;
         if(wajahArthur!=null)wajahArthur.AturSedihCerita(true,1);
         if(penutupFade!=null){penutupFade.alpha=0;penutupFade.blocksRaycasts=true;}
-        yield return new WaitForSecondsRealtime(tahanPunchline);
+        float tahan=0;while(tahan<tahanPunchline&&!lewatiPunchline){tahan+=Time.unscaledDeltaTime;yield return null;}
         WaktuMulaiFade=Time.unscaledTime;
         if(penutupFade!=null){float t=0;while(t<durasiFade){t+=Time.unscaledDeltaTime;penutupFade.alpha=Mathf.SmoothStep(0,1,t/Mathf.Max(.01f,durasiFade));yield return null;}penutupFade.alpha=1;}
-        urutanPunchline=null;saatPunchlineSelesai.Invoke();
+        lewati?.Selesai();urutanPunchline=null;saatPunchlineSelesai.Invoke();
     }
     [ContextMenu("Kembali ke pose sebelum Mekar (saat Play)")]
     public void KembaliKePoseTenang()

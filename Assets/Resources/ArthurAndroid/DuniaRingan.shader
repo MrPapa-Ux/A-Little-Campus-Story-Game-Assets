@@ -25,6 +25,8 @@ Shader "Arthur/Android/Dunia Ringan"
             // dari Lighting.hlsl pada driver GLES ponsel lama.
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
             TEXTURE2D(_BaseMap); SAMPLER(sampler_BaseMap);
+            half4 _ArthurAmbientSky, _ArthurAmbientEquator, _ArthurAmbientGround;
+            half _ArthurAmbientActif;
             CBUFFER_START(UnityPerMaterial)
                 float4 _BaseMap_ST;
                 half4 _BaseColor;
@@ -44,6 +46,9 @@ Shader "Arthur/Android/Dunia Ringan"
                 half4 b = normalWS.xyzz * normalWS.yzzx;
                 ambient += half3(dot(unity_SHBr,b),dot(unity_SHBg,b),dot(unity_SHBb,b));
                 ambient += unity_SHC.rgb * (normalWS.x * normalWS.x - normalWS.y * normalWS.y);
+                half3 gradient = lerp(_ArthurAmbientEquator.rgb,
+                    normalWS.y >= 0 ? _ArthurAmbientSky.rgb : _ArthurAmbientGround.rgb, abs(normalWS.y));
+                ambient = lerp(ambient, gradient, _ArthurAmbientActif);
                 output.light = max(ambient, half3(.18h,.18h,.18h))
                     + _MainLightColor.rgb * saturate(dot(normalWS, _MainLightPosition.xyz));
                 return output;

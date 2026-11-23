@@ -46,21 +46,21 @@ public sealed class NpcKunciMotor : MonoBehaviour
         bubble?.TampilkanTeksKhusus("Ketemu!",9);
         yield return new WaitForSeconds(1.1f);
         var bagian=npc.GetComponentsInChildren<SpriteRenderer>(true);
-        Transform kiri=null,kanan=null;Vector3 pk=Vector3.zero,pr=Vector3.zero;
-        foreach(var r in bagian){if(r.name=="KakiKiri"){kiri=r.transform;pk=kiri.localPosition;}if(r.name=="KakiKanan"){kanan=r.transform;pr=kanan.localPosition;}}
+        var rig=npc.GetComponent<NpcKampusHidup>();
+        if(rig!=null){rig.langkahMengikutiGerak=true;rig.waktuJalan=0;rig.kegiatan=KegiatanNpcKampus.Berjalan;}
         if(lintasanPergi!=null)foreach(var titik in lintasanPergi)
         {
             if(titik==null)continue;
             while(npc.activeInHierarchy&&Vector3.Distance(npc.transform.position,titik.position)>.02f)
             {
                 if(KawasanKampus.Instance!=null&&KawasanKampus.Instance.SedangMemuat){npc.SetActive(false);SedangPergi=false;yield break;}
-                npc.transform.position=Vector3.MoveTowards(npc.transform.position,titik.position,Time.deltaTime*.8f);
-                float langkah=Mathf.Sin(Time.time*10)*.045f;
-                if(kiri!=null)kiri.localPosition=pk+Vector3.up*Mathf.Max(0,langkah);
-                if(kanan!=null)kanan.localPosition=pr+Vector3.up*Mathf.Max(0,-langkah);
+                var sebelum=npc.transform.position;
+                npc.transform.position=Vector3.MoveTowards(sebelum,titik.position,Time.deltaTime*.8f);
+                if(rig!=null)rig.waktuJalan+=Vector3.Distance(sebelum,npc.transform.position)/2.5f;
                 yield return null;
             }
         }
+        if(rig!=null)rig.kegiatan=KegiatanNpcKampus.Berdiri;
         var meshes=npc.GetComponentsInChildren<MeshRenderer>(true);var warna=new Color[bagian.Length];for(int i=0;i<bagian.Length;i++)warna[i]=bagian[i].color;
         var blok=new MaterialPropertyBlock();float t=0;
         while(t<1.2f&&npc.activeInHierarchy){t+=Time.deltaTime;float alpha=1-Mathf.Clamp01(t/1.2f);

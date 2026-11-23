@@ -27,34 +27,38 @@ public class SutradaraTransisi : MonoBehaviour
     // ✅ JEMBATAN DATA: Variabel statis untuk dibaca oleh LoadingScene
     public static string sceneTujuanUtama;
 
+    bool lewatiTeks; LewatiCutsceneArthur lewati;
+    IEnumerator Tunggu(float detik){float t=0;while(!lewatiTeks&&t<detik){t+=Time.unscaledDeltaTime;yield return null;}}
     void Start()
     {
         // Langsung mulai adegan saat layar ini terbuka
+        lewati=GetComponent<LewatiCutsceneArthur>()??gameObject.AddComponent<LewatiCutsceneArthur>();lewati.Mulai(()=>lewatiTeks=true,teksAlasan.font);
         StartCoroutine(AdeganMetaMessage());
     }
 
     IEnumerator AdeganMetaMessage()
     {
-        yield return new WaitForSeconds(1f); // Jeda gelap awal
+        yield return Tunggu(1f); // Jeda gelap awal
 
         // Muncul Teks "Chapter 1"
         yield return LakukanFade(teksChapter, 0f, 1f);
-        yield return new WaitForSeconds(durasiBacaChapter); 
+        yield return Tunggu(durasiBacaChapter); 
 
         // Teks "Chapter 1" Menghilang
         yield return LakukanFade(teksChapter, 1f, 0f);
-        yield return new WaitForSeconds(1f); 
+        yield return Tunggu(1f); 
 
         // Muncul Teks Tamparan Realita
         yield return LakukanFade(teksAlasan, 0f, 1f);
-        yield return new WaitForSeconds(durasiBacaPertanyaan); 
+        yield return Tunggu(durasiBacaPertanyaan); 
 
         // Teks Tamparan Realita Menghilang
         yield return LakukanFade(teksAlasan, 1f, 0f);
-        yield return new WaitForSeconds(1f);
+        yield return Tunggu(1f);
 
         // ✅ REVISI OPTIMASI: Titip nama tujuan, lalu lempar ke LoadingScene dulu!
         // Delapan gambar dimainkan dalam scene ini, sebelum adegan mengetik.
+        lewati.Selesai();teksChapter.alpha=0;teksAlasan.alpha=0;
         if (kenanganPembuka != null)
             yield return kenanganPembuka.Mainkan();
         sceneTujuanUtama = namaSceneTujuan;
@@ -67,7 +71,7 @@ public class SutradaraTransisi : MonoBehaviour
         float waktu = 0f;
         Color warnaTeks = aktorTeks.color;
 
-        while (waktu < 1f)
+        while (!lewatiTeks && waktu < 1f)
         {
             waktu += Time.deltaTime * kecepatanFade;
             warnaTeks.a = Mathf.Lerp(alphaAwal, alphaTujuan, waktu);

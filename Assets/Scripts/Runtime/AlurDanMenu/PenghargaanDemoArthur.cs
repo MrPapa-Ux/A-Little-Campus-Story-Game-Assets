@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public sealed class PenghargaanDemoArthur : MonoBehaviour
 {
  public const string KunciSelesai="GameFinished";
- public const string AlamatCerita="https://www.wattpad.com/story/415653090-a-little-campus-story";
+ public const string AlamatCerita="https://www.wattpad.com/story/419725182-a-little-campus-story";
  public Button tombolCerita;
  public TMP_Text status;
  bool pratinjau;

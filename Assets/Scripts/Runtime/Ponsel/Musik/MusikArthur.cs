@@ -17,8 +17,10 @@ public class MusikArthur : MonoBehaviour
     public bool TemaAktif => tema != null && tema.clip != null;
     public bool Memutar => sumber != null && sumber.isPlaying;
     public event Action Berubah;
-    bool berjalan, appDijeda, lanjutSetelahTema;
-    bool ditahanMinigame,lanjutMusikMinigame,lanjutTemaMinigame;
+    bool berjalan, appDijeda;
+    bool ditahanMinigame, sumberDitahan, temaDitahan;
+    bool InteraksiAktif => DialogManager.Instance != null &&
+        (DialogManager.Instance.PercakapanAktif || DialogManager.Instance.minigameAktif);
     public string Status { get; private set; } = "Kaset Arthur masih kosong.";
     public LaguArthur Lagu => playlist != null && playlist.lagu != null && Pilihan >= 0 && Pilihan < playlist.lagu.Length ? playlist.lagu[Pilihan] : null;
     public float Volume => sumber == null ? 0f : sumber.volume;
@@ -35,10 +37,12 @@ public class MusikArthur : MonoBehaviour
     }
     void Update()
     {
+        if(JedaSaatTidakAktif.Dijeda || appDijeda)return;
+        SinkronkanJeda();
         // AudioSource menyambung sampel loop langsung, tanpa menunggu frame
         // berikutnya untuk memanggil Play lagi di ujung lagu.
         if(sumber!=null && sumber.loop!=ulang)sumber.loop=ulang;
-        if(JedaSaatTidakAktif.Dijeda || ditahanMinigame || appDijeda || TemaAktif || !berjalan || Dijeda || sumber.isPlaying) return;
+        if(ditahanMinigame || InteraksiAktif || TemaAktif || !berjalan || Dijeda || sumber.isPlaying) return;
         if(sumber.clip!=null && sumber.clip.loadState==AudioDataLoadState.Loading)return;
         if(ulang){sumber.Play();return;}
         Berikutnya();
@@ -46,7 +50,7 @@ public class MusikArthur : MonoBehaviour
     public void Pilih(int index)
     {
         if(playlist==null || playlist.lagu==null || index<0 || index>=playlist.lagu.Length)return;
-        sumber.Stop();berjalan=false;Dijeda=false;lanjutSetelahTema=false;Pilihan=index;
+        sumber.Stop();berjalan=false;Dijeda=false;sumberDitahan=false;Pilihan=index;
         sumber.clip=Lagu?.audio;
         Status=sumber.clip==null ? "Lagu ini belum ada di kaset." : "Siap diputar.";Berubah?.Invoke();
     }
@@ -54,8 +58,9 @@ public class MusikArthur : MonoBehaviour
     {
         if(TemaAktif){Status="Tema karakter sedang diputar.";Berubah?.Invoke();return;}
         if(Lagu?.audio==null){Status="Kaset ini menunggu lagu pertamanya.";Berubah?.Invoke();return;}
-        if(sumber.isPlaying){sumber.Pause();Dijeda=true;Status="Dijeda.";}
+        if(berjalan&&!Dijeda){sumber.Pause();Dijeda=true;sumberDitahan=false;Status="Dijeda.";}
         else {if(Dijeda)sumber.UnPause();else {sumber.clip=Lagu.audio;sumber.Play();}Dijeda=false;berjalan=true;Status="Sedang diputar.";}
+        SinkronkanJeda();
         Berubah?.Invoke();
     }
     public void Berikutnya(){Langkah(1);}
@@ -80,25 +85,35 @@ public class MusikArthur : MonoBehaviour
     public void MulaiTema(AudioClip clip)
     {
         if(clip==null)return;
-        if(!TemaAktif){lanjutSetelahTema=sumber.isPlaying;if(lanjutSetelahTema)sumber.Pause();}
-        tema.Stop();tema.clip=clip;tema.loop=true;tema.Play();Status="Tema karakter.";Berubah?.Invoke();
+        tema.Stop();temaDitahan=false;tema.clip=clip;tema.loop=true;tema.Play();SinkronkanJeda();Status="Tema karakter.";Berubah?.Invoke();
     }
     public void SelesaiTema()
     {
-        tema.Stop();tema.clip=null;
-        if(lanjutSetelahTema && sumber.clip!=null){sumber.UnPause();berjalan=true;Dijeda=false;Status="Sedang diputar.";}
+        tema.Stop();tema.clip=null;temaDitahan=false;SinkronkanJeda();
+        if(berjalan && !Dijeda && sumber.clip!=null){Status="Sedang diputar.";}
         else Status=Dijeda?"Dijeda.":"Siap diputar.";
-        lanjutSetelahTema=false;Berubah?.Invoke();
+        Berubah?.Invoke();
     }
     public void TahanMinigame(bool tahan)
     {
-        if(ditahanMinigame==tahan)return;ditahanMinigame=tahan;
-        if(tahan){lanjutMusikMinigame=sumber.isPlaying;lanjutTemaMinigame=tema.isPlaying;if(lanjutMusikMinigame)sumber.Pause();if(lanjutTemaMinigame)tema.Pause();}
-        else {if(lanjutMusikMinigame)sumber.UnPause();if(lanjutTemaMinigame)tema.UnPause();lanjutMusikMinigame=lanjutTemaMinigame=false;}
+        ditahanMinigame=tahan;SinkronkanJeda();
     }
+    void SinkronkanJeda()
+    {
+        bool tahan=ditahanMinigame||InteraksiAktif;
+        TahanSumber(sumber,tahan||TemaAktif,ref sumberDitahan);
+        TahanSumber(tema,tahan,ref temaDitahan);
+    }
+    static void TahanSumber(AudioSource audio,bool tahan,ref bool dijedaOtomatis)
+    {
+        if(audio==null)return;
+        if(tahan){if(audio.isPlaying){audio.Pause();dijedaOtomatis=true;}}
+        else if(dijedaOtomatis){audio.UnPause();dijedaOtomatis=false;}
+    }
+    void LateUpdate(){if(!JedaSaatTidakAktif.Dijeda&&!appDijeda)SinkronkanJeda();}
     public void HentikanSemua()
     {
-        berjalan=Dijeda=lanjutSetelahTema=ditahanMinigame=lanjutMusikMinigame=lanjutTemaMinigame=false;
+        berjalan=Dijeda=ditahanMinigame=sumberDitahan=temaDitahan=false;
         sumber.Stop();tema.Stop();tema.clip=null;Status="Dihentikan.";Berubah?.Invoke();
     }
     void OnApplicationPause(bool pause){appDijeda=pause;if(pause)PlayerPrefs.Save();}

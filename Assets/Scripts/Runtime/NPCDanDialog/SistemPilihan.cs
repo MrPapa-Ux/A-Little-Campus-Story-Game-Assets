@@ -100,6 +100,7 @@ public class SistemPilihan : MonoBehaviour
     private void MulaiPercakapan()
     {
         if (DialogManager.Instance != null) ceritaSaatIni = DialogManager.Instance.skenarioAktif; 
+        dialogManager?.PemilikInteraksi?.GetComponent<AdeganNpcTaman>()?.MulaiMengobrol();
 
         indeksCerita = 0;
         ceritaTuntas = false;
@@ -142,6 +143,7 @@ public class SistemPilihan : MonoBehaviour
         GameObject npcObj = pemilik != null ? pemilik.gameObject : GameObject.Find(DialogManager.Instance.idInteraksiAktif);
         if (npcObj != null) npcLawanBicara = npcObj.GetComponent<NPCBubbleTrigger>();
         if (npcObj != null) npcMenghadap = npcObj.GetComponent<NPCMenghadapArthur>();
+        if(npcObj!=null&&npcMenghadap==null&&npcObj.GetComponent<NpcKampusHidup>()!=null)npcMenghadap=npcObj.AddComponent<NPCMenghadapArthur>();
         if (npcMenghadap != null && dialogManager.arthurScript != null) npcMenghadap.HadapArthur(dialogManager.arthurScript.transform);
     }
 
@@ -211,7 +213,10 @@ public class SistemPilihan : MonoBehaviour
 
     private void PercepatSampaiKataTerakhir()
     {
+        var adegan=dialogManager!=null&&dialogManager.PemilikInteraksi!=null?dialogManager.PemilikInteraksi.GetComponent<AdeganNpcTaman>():null;
+        if(adegan!=null&&adegan.KunciLewati)return;
         if (indeksHurufBerikutnya >= awalKataTerakhir) return;
+        if(adegan!=null)adegan.CatatLewati();
         if (coroutineKetik != null) StopCoroutine(coroutineKetik);
         indeksHurufBerikutnya = awalKataTerakhir;
         teksCeritaUtama.text = teksBaris.Substring(0, awalKataTerakhir);
@@ -330,6 +335,8 @@ public class SistemPilihan : MonoBehaviour
             var aktor = pemilik != null ? pemilik.gameObject : npcLawanBicara != null ? npcLawanBicara.gameObject : null;
             if (aktor != null) wajahPembicara = aktor.GetComponentInChildren<EkspresiWajah2D>();
         }
+        var tubuhDipinjam = dialogManager.arthurScript != null ? dialogManager.arthurScript.GetComponent<PertukaranTubuhArthur>() : null;
+        if(baris.siapaYangBicara==Pembicara.Kiri_Arthur&&tubuhDipinjam!=null&&tubuhDipinjam.DiTubuhPerempuan)wajahPembicara=null;
         if (wajahPembicara != null && baris.ubahEkspresi) wajahPembicara.AturEkspresiDialog(baris.ekspresi);
         if (efekTeriak == null && teksCeritaUtama != null) efekTeriak = teksCeritaUtama.GetComponent<DialogTeriakGoofy>();
         if (efekTeriak != null) efekTeriak.Atur(baris.berteriak, baris.kekuatanTeriak);
@@ -347,6 +354,12 @@ public class SistemPilihan : MonoBehaviour
             }
             if (potretKiriArthur != null) potretKiriArthur.SetActive(true);
             if (teksNamaKiri != null) { teksNamaKiri.gameObject.SetActive(true); teksNamaKiri.text = baris.namaKarakter; }
+            if(tubuhDipinjam!=null&&tubuhDipinjam.DiTubuhPerempuan)
+            {
+                if(teksNamaKiri!=null)teksNamaKiri.text=tubuhDipinjam.namaPerempuan;
+                var gambar=potretKiriArthur!=null?potretKiriArthur.GetComponent<UnityEngine.UI.Image>():null;
+                if(gambar!=null&&tubuhDipinjam.potretPerempuan!=null)gambar.sprite=tubuhDipinjam.potretPerempuan;
+            }
         }
         else if (baris.siapaYangBicara == Pembicara.Kanan_NPC)
         {
@@ -357,7 +370,7 @@ public class SistemPilihan : MonoBehaviour
                 {
                     if (!potretNpcDisimpan) { potretNpcSemula = gambar.sprite; potretNpcDisimpan = true; }
                     var pemilik = dialogManager != null ? dialogManager.PemilikInteraksi : null;
-                    gambar.sprite = pemilik != null && pemilik.potretDialog != null ? pemilik.potretDialog : potretNpcLelaki != null ? potretNpcLelaki : potretNpcSemula;
+                    gambar.sprite = baris.potretPembicara != null ? baris.potretPembicara : pemilik != null && pemilik.potretDialog != null ? pemilik.potretDialog : potretNpcLelaki != null ? potretNpcLelaki : potretNpcSemula;
                     gambar.preserveAspect = true;
                 }
             }
@@ -780,6 +793,23 @@ public class SistemPilihan : MonoBehaviour
         if (daftarOpsi != null && indeksPilihan < daftarOpsi.Length)
         {
             OpsiInteraksi opsiDipilih = daftarOpsi[indeksPilihan];
+            if(TeguranAsramaArthur.Cegat(opsiDipilih))return;
+            if(opsiDipilih.arenaKoleksi!=null)
+            {
+                if(opsiDipilih.arenaKoleksi.Terbuka)opsiDipilih.arenaKoleksi.Buka();
+                else if(teksCeritaUtama!=null)teksCeritaUtama.text="Masih ada koleksi yang belum lengkap. Cek permainan singkat dan pesan teman-teman di Kontak HP.";
+                return;
+            }
+            if(opsiDipilih.pertukaranTubuh!=null)
+            {
+                opsiDipilih.pertukaranTubuh.MintaBertukar(opsiDipilih.kembaliKeArthur);
+                return;
+            }
+            if(opsiDipilih.aksesJasmine!=null&&!opsiDipilih.aksesJasmine.BolehMasuk)
+            {
+                if(teksCeritaUtama!=null)teksCeritaUtama.text=opsiDipilih.aksesJasmine.PesanTerkunci;
+                return;
+            }
             if(opsiDipilih.mrQuizo!=null){opsiDipilih.mrQuizo.Pilih(opsiDipilih.aksiQuizo);return;}
             if(MrQuizoChapter1.Cegat(dialogManager.PemilikInteraksi,opsiDipilih))return;
             if(!BatasMalamChapter1.Boleh(opsiDipilih.titikTujuan,opsiDipilih.teksOpsi)){if(teksCeritaUtama!=null)teksCeritaUtama.text="Akses ke tempat ini ditutup pada malam hari. Kembali ke kamar 201 Guest House.";return;}
@@ -889,6 +919,8 @@ public class SistemPilihan : MonoBehaviour
 
     private IEnumerator ProsesTutupDialogAnimasi()
     {
+        var adegan=dialogManager!=null&&dialogManager.PemilikInteraksi!=null?dialogManager.PemilikInteraksi.GetComponent<AdeganNpcTaman>():null;
+        if(adegan!=null&&adegan.KunciLewati&&!ceritaTuntas)yield break;
         HentikanMulut();
         if (sedangMenutup) yield break;
         sedangMenutup = true;
