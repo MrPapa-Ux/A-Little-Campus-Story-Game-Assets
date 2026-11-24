@@ -8,6 +8,8 @@ public sealed class NpcYangBisaDiatur : MonoBehaviour
 {
     [Tooltip("Nama yang ditampilkan pada panel percakapan.")]
     public string namaNpc="Mahasiswa";
+    [TextArea(1,3), Tooltip("Perkenalan sebelum dialog biasa; nama pada label tetap singkat.")]
+    public string perkenalan;
     [TextArea(2,6)] public string dialog="...";
     [Tooltip("Matikan jika ingin menyusun banyak baris dan emote langsung di komponen Area Interaksi.")]
     public bool dialogSederhana=true;
@@ -42,7 +44,9 @@ public sealed class NpcYangBisaDiatur : MonoBehaviour
     {
         var area=GetComponent<AreaInteraksi>();if(area==null||!dialogSederhana)return;
         area.tipeInteraksi=TipeInteraksi.NPC_Karakter;
-        area.skenarioDialog=new[]{new BarisDialog{siapaYangBicara=Pembicara.Kanan_NPC,namaKarakter=namaNpc,teksDialog=dialog,teksTombolLanjut="Selesai"}};
+        var percakapan=new BarisDialog{siapaYangBicara=Pembicara.Kanan_NPC,namaKarakter=namaNpc,teksDialog=dialog,teksTombolLanjut="Selesai"};
+        area.skenarioDialog=string.IsNullOrWhiteSpace(perkenalan)?new[]{percakapan}:new[]{
+            new BarisDialog{siapaYangBicara=Pembicara.Kanan_NPC,namaKarakter=namaNpc,teksDialog=perkenalan,teksTombolLanjut="Lanjut"},percakapan};
         area.daftarOpsi=Array.Empty<OpsiInteraksi>();area.tampilkanTombolKeluar=true;
     }
 }

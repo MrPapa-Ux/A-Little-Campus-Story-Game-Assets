@@ -39,6 +39,7 @@ public sealed class PratinjauArthurMengetik : MonoBehaviour
     public int JumlahKetukan { get; private set; }
     public float WaktuAdegan => waktuBerjalan;
     public int HurufTerlihat { get; private set; }
+    public void TampilkanKalimatLengkap(){waktuBerjalan=jedaTeks+DurasiPengetikan;AturFrame(waktuBerjalan);}
 #if UNITY_EDITOR
     void OnValidate(){UnityEditor.EditorApplication.delayCall+=PratinjauTeksEditor;}
     void PratinjauTeksEditor(){

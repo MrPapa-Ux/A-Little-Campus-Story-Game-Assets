@@ -998,8 +998,9 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Julio Kolapitawondal
-    teksDialog: Selamat datang. Saya Julio Kolapitawondal, Dosen FILKOM.
+    namaKarakter: Sir Julio
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Julio Kolapitawondal, Dosen FILKOM.
     teksTombolLanjut: Selesai
     picuEmoteSetelahIni: 0
     spriteEmote: {fileID: 0}
@@ -1010,6 +1011,7 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   daftarOpsi: []
+  batasJarakMendatar: 0
 --- !u!114 &5013255650775028038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1158,6 +1160,9 @@ MonoBehaviour:
   fase: 5.68
   jarakAnimasi: 42
   idleArthur: {fileID: 11400000, guid: 3ae34a284fac2d1498e74f49ba0e1813, type: 2}
+  jalanArthur: {fileID: 0}
+  langkahMengikutiGerak: 0
+  waktuJalan: 0
 --- !u!58 &7434825154890772125
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1206,8 +1211,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Julio Kolapitawondal
-  dialog: Selamat datang. Saya Julio Kolapitawondal, Dosen FILKOM.
+  namaNpc: Sir Julio
+  perkenalan: 
+  dialog: Hai, saya Sir Julio Kolapitawondal, Dosen FILKOM.
   dialogSederhana: 1
   jarakInteraksi: 2.1
   geserTitikInteraksi: {x: 0, y: 0, z: 0}

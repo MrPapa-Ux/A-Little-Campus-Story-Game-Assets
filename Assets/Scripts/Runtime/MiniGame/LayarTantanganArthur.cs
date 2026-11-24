@@ -46,7 +46,8 @@ public sealed class LayarTantanganArthur : MonoBehaviour
     KarakterController pemain;
     NPCJogetGoofy joget, jogetBimo;
     Camera kameraJoget;
-    Button[] tombolJoget;
+    Image[] tombolJoget;
+    Color[] warnaTombolJoget;
     TMP_Text abaJoget;
     AudioSource bunyiJoget;
     readonly MusikMinigameArthur musik = new MusikMinigameArthur();
@@ -509,9 +510,11 @@ public sealed class LayarTantanganArthur : MonoBehaviour
         kameraJoget = jalur != null ? jalur.kamera : Camera.main;
         if (joget != null) joget.MulaiIkutiAba();
         if (jogetBimo != null) jogetBimo.MulaiIkutiAba();
+        if(pemain!=null)pemain.TombolArahMinigame+=Ketuk;
         var panelKertas = bidang.GetComponent<Image>();
         panelKertas.enabled = false;
         bidang.parent.GetComponent<Image>().color = new Color(0, 0, 0, .12f);
+        bidang.parent.GetComponent<Image>().raycastTarget=false;
         var judul = bidang.GetChild(0).GetComponent<TMP_Text>();
         var pita = BuatRect("Pita joget", bidang, new Vector2(-42, 226), new Vector2(715, 60)).gameObject.AddComponent<Image>();
         pita.color = new Color32(255, 242, 213, 246);
@@ -533,20 +536,18 @@ public sealed class LayarTantanganArthur : MonoBehaviour
         alas.transform.SetSiblingIndex(status.transform.GetSiblingIndex());
         status.color = Kertas;
         status.fontSize = 27;
-        tombolJoget = new[]
-        {
-            Tombol(bidang, new Vector2(-250, -146), new Vector2(236, 100), "← KIRI", () => Ketuk(0), Petak),
-            Tombol(bidang, new Vector2(250, -146), new Vector2(236, 100), "KANAN →", () => Ketuk(1), Petak)
-        };
-        foreach (var tombol in tombolJoget)
-        {
-            tombol.transition = Selectable.Transition.None;
-            tombol.image.sprite = panelKertas.sprite;
-            tombol.image.type = panelKertas.type;
-            var label = tombol.GetComponentInChildren<TMP_Text>();
-            label.fontSize = 46;
-            label.fontStyle = FontStyles.Bold;
-        }
+        // Pakai EventTrigger tombol jalan asli, tanpa membuat pasangan tombol baru.
+        tombolJoget=new Image[2];warnaTombolJoget=new Color[2];
+        foreach(var trigger in FindObjectsByType<EventTrigger>(FindObjectsInactive.Include,FindObjectsSortMode.None))
+            foreach(var entry in trigger.triggers)if(entry.eventID==EventTriggerType.PointerDown)
+                for(int i=0;i<entry.callback.GetPersistentEventCount();i++){
+                    if(entry.callback.GetPersistentTarget(i)!=pemain)continue;
+                    string metode=entry.callback.GetPersistentMethodName(i);
+                    int arah=metode=="JalanKeKiri"?0:metode=="JalanKeKanan"?1:-1;
+                    if(arah<0)continue;
+                    tombolJoget[arah]=trigger.GetComponent<Image>();
+                    if(tombolJoget[arah]!=null)warnaTombolJoget[arah]=tombolJoget[arah].color;
+                }
 
         bunyiJoget = gameObject.AddComponent<AudioSource>();
         bunyiJoget.playOnAwake = false;
@@ -584,6 +585,7 @@ public sealed class LayarTantanganArthur : MonoBehaviour
         WarnaTombolJoget(arah);
         BunyiJoget(arah == 0 ? 1.15f : 1.45f);
         mulaiAbaJoget = Time.unscaledTime;
+        if(jogetBimo!=null)jogetBimo.GerakAba(arah,false,mulaiAbaJoget,kameraJoget!=null?kameraJoget.transform.right:Vector3.right);
         batasKetukJoget = mulaiAbaJoget + JendelaKetukJoget;
         sisaWaktuJoget.color = WarnaArahJoget[arah];
         sisaWaktuJoget.rectTransform.localScale = Vector3.one;
@@ -596,7 +598,7 @@ public sealed class LayarTantanganArthur : MonoBehaviour
     {
         for (int i = 0; i < tombolJoget.Length; i++)
         {
-            tombolJoget[i].image.color = i == arah ? WarnaArahJoget[i] : new Color32(192, 182, 166, 255);
+            if(tombolJoget[i]!=null)tombolJoget[i].color = i == arah ? WarnaArahJoget[i] : warnaTombolJoget[i];
         }
     }
 
@@ -609,10 +611,11 @@ public sealed class LayarTantanganArthur : MonoBehaviour
 
     void GerakJoget(int arah, bool salah)
     {
-        float waktu = Time.unscaledTime;
+        float waktu = siapKetukJoget ? mulaiAbaJoget : Time.unscaledTime;
+        int arahBimo=Ketukan[sesi][nada];
         Vector3 kanan = kameraJoget != null ? kameraJoget.transform.right : Vector3.right;
-        if (joget != null) joget.GerakAba(arah, salah, waktu, kanan);
-        if (jogetBimo != null) jogetBimo.GerakAba(salah ? 1 - arah : arah, salah, waktu, kanan);
+        if (joget != null) joget.GerakAba(salah?1-arahBimo:arah, salah, waktu, kanan);
+        if (jogetBimo != null) jogetBimo.GerakAba(arahBimo, false, waktu, kanan);
     }
 
     void GagalJoget(int arah = -1)
@@ -637,6 +640,8 @@ public sealed class LayarTantanganArthur : MonoBehaviour
         musik.Hentikan();
         BunyiJoget(.65f);
         yield return new WaitForSecondsRealtime(1.05f);
+        if(joget!=null){joget.SelesaiIkutiAba();joget.MulaiIkutiAba();}
+        if(jogetBimo!=null){jogetBimo.SelesaiIkutiAba();jogetBimo.MulaiIkutiAba();}
         sedangUlangJoget = false;
         musik.Putar(gameObject, laguMinigame);
         yield return AbaAbaJoget(true);
@@ -665,7 +670,6 @@ public sealed class LayarTantanganArthur : MonoBehaviour
                 abaJoget.text = "Mantap!";
                 abaJoget.color = Kertas;
                 abaJoget.rectTransform.localScale = Vector3.one;
-                foreach (var tombol in tombolJoget) tombol.interactable = false;
                 Menang("Tahap 3 / 3");
                 return;
             }
@@ -819,8 +823,8 @@ public sealed class LayarTantanganArthur : MonoBehaviour
                 if (t < 1) abaJoget.rectTransform.localScale = Vector3.one * (1 + .16f * Mathf.Sin(t * Mathf.PI));
                 else if (abaJoget.rectTransform.localScale != Vector3.one) abaJoget.rectTransform.localScale = Vector3.one;
             }
-            if (Input.GetKeyDown(KeyCode.LeftArrow)) Ketuk(0);
-            else if (Input.GetKeyDown(KeyCode.RightArrow)) Ketuk(1);
+            if (Input.GetKeyDown(KeyCode.LeftArrow)||Input.GetKeyDown(KeyCode.A)) Ketuk(0);
+            else if (Input.GetKeyDown(KeyCode.RightArrow)||Input.GetKeyDown(KeyCode.D)) Ketuk(1);
             return;
         }
         if (jenis != JenisTantanganArthur.Buah) return;
@@ -884,6 +888,7 @@ public sealed class LayarTantanganArthur : MonoBehaviour
         if (!aktif) return;
         aktif = false;
         musik.Tutup();
+        if(jenis==JenisTantanganArthur.Joget){WarnaTombolJoget(-1);if(pemain!=null)pemain.TombolArahMinigame-=Ketuk;}
         if (kameraPuzzle != null) kameraPuzzle.enabled = true;
         if (latarPuzzle != null)
         {

@@ -1236,8 +1236,9 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Joe Y. Y. Mambu
-    teksDialog: Selamat datang. Saya Joe Y. Y. Mambu, Dosen FILKOM.
+    namaKarakter: Sir Joe
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Joe Y. Y. Mambu, Dosen FILKOM.
     teksTombolLanjut: Selesai
     picuEmoteSetelahIni: 0
     spriteEmote: {fileID: 0}
@@ -1248,6 +1249,7 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   daftarOpsi: []
+  batasJarakMendatar: 0
 --- !u!114 &1094876735113671811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1396,6 +1398,9 @@ MonoBehaviour:
   fase: 6.39
   jarakAnimasi: 42
   idleArthur: {fileID: 11400000, guid: 3ae34a284fac2d1498e74f49ba0e1813, type: 2}
+  jalanArthur: {fileID: 0}
+  langkahMengikutiGerak: 0
+  waktuJalan: 0
 --- !u!58 &3997255177887975243
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1444,8 +1449,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Joe Y. Y. Mambu
-  dialog: Selamat datang. Saya Joe Y. Y. Mambu, Dosen FILKOM.
+  namaNpc: Sir Joe
+  perkenalan: 
+  dialog: Hai, saya Sir Joe Y. Y. Mambu, Dosen FILKOM.
   dialogSederhana: 1
   jarakInteraksi: 2.1
   geserTitikInteraksi: {x: 0, y: 0, z: 0}

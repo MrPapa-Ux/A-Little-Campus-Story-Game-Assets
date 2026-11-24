@@ -1031,8 +1031,9 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Stenly R. Pungus
-    teksDialog: Selamat datang. Saya Stenly R. Pungus, Dekan FILKOM.
+    namaKarakter: Sir Stenly
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Stenly R. Pungus, Dekan FILKOM.
     teksTombolLanjut: Selesai
     picuEmoteSetelahIni: 0
     spriteEmote: {fileID: 0}
@@ -1043,6 +1044,7 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   daftarOpsi: []
+  batasJarakMendatar: 0
 --- !u!114 &1923992009054368628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1191,6 +1193,9 @@ MonoBehaviour:
   fase: 3.55
   jarakAnimasi: 42
   idleArthur: {fileID: 11400000, guid: 3ae34a284fac2d1498e74f49ba0e1813, type: 2}
+  jalanArthur: {fileID: 0}
+  langkahMengikutiGerak: 0
+  waktuJalan: 0
 --- !u!58 &2548271053850639767
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1239,8 +1244,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Stenly R. Pungus
-  dialog: Selamat datang. Saya Stenly R. Pungus, Dekan FILKOM.
+  namaNpc: Sir Stenly
+  perkenalan: 
+  dialog: Hai, saya Sir Stenly R. Pungus, Dekan FILKOM.
   dialogSederhana: 1
   jarakInteraksi: 2.1
   geserTitikInteraksi: {x: 0, y: 0, z: 0}

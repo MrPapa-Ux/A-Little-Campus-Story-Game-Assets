@@ -415,9 +415,9 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Ika Prayanthi
+    namaKarakter: Ma'am Ika
     potretPembicara: {fileID: 0}
-    teksDialog: Selamat datang. Saya Ika Prayanthi, Kaprodi Akuntansi.
+    teksDialog: Hai, saya Ma'am Ika Prayanthi, Kaprodi Akuntansi.
     teksTombolLanjut: Selesai
     picuEmoteSetelahIni: 0
     spriteEmote: {fileID: 0}
@@ -628,8 +628,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Ika Prayanthi
-  dialog: Selamat datang. Saya Ika Prayanthi, Kaprodi Akuntansi.
+  namaNpc: Ma'am Ika
+  perkenalan: 
+  dialog: Hai, saya Ma'am Ika Prayanthi, Kaprodi Akuntansi.
   dialogSederhana: 1
   jarakInteraksi: 2.1
   geserTitikInteraksi: {x: 0, y: 0, z: 0}

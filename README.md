@@ -23,6 +23,20 @@ Ketentuan aset pihak ketiga mengikuti lisensi masing-masing. Atribusi yang ada d
 APK yang dapat dipasang tersedia di [GitHub Releases](https://github.com/MrPapa-Ux/A-Little-Campus-Story-Game-Assets/releases). Catat tanggal build dan SHA-256 pada halaman rilis ketika mendokumentasikan versi yang diuji. Cabang sumber terus berkembang setelah APK dibangun.
 
 
+## Snapshot terbaru — 24 November 2026
+
+Versi **v2026.11.24** mencakup perubahan permainan setelah snapshot 23 November:
+
+- Joget Bareng Bimo memakai tombol kiri–kanan bawaan. Bimo mengikuti aba-aba; Arthur bergerak serasi ketika benar dan berlawanan arah ketika salah, dengan langkah dan perubahan arah hadap.
+- Skip pembuka bertahan setelah ditampilkan dan melanjutkan gambar/narasi satu per satu. Bagian “Aku tertekan” melengkapi kalimat terlebih dahulu. Permainan tap-tap tetap harus dimainkan.
+- Pengatur Scene menyediakan mode **GAMBAR BUBBLE SAJA**. Offset gambar dapat disunting tanpa memindahkan titik, radius, jalur, atau tujuan interaksi.
+- Pelintas Dining mengikuti lekukan lorong, reaksi NPC diperbesar, kamera mendukung zoom dua jari, dan sesi baru mulai pukul 07.00 dengan jam dunia pada HP Arthur.
+- Nama dosen pada label percakapan dipersingkat; nama lengkap tersedia melalui perkenalan.
+
+APK utama snapshot ini disediakan sebagai **A Little Campus Story.apk** pada [halaman rilis](https://github.com/MrPapa-Ux/A-Little-Campus-Story-Game-Assets/releases). Versi ini mempertahankan identitas aplikasi utama dan terpisah dari MOD uji. Tanggal snapshot/tag GitHub tidak mengubah penomoran internal aplikasi Android.
+
+Tag dan rilis sebelumnya, termasuk `v2026.11.23`, `source-2026-11-18`, dan `mod-uji-2026-11-22`, dipertahankan. Paket yang memerlukan lisensi/impor terpisah tetap mengikuti daftar dependensi di atas.
+
 ## Snapshot 23 November 2026
 
 Seluruh kode permainan terkini dan aset proyek yang dapat dipublikasikan disinkronkan pada snapshot ini. Termasuk revisi quest Kontak, lorong Jasmine, akses asrama, cutscene dan Skip, tampilan MISI UTAMA, serta tautan Wattpad https://www.wattpad.com/story/419725182-a-little-campus-story.

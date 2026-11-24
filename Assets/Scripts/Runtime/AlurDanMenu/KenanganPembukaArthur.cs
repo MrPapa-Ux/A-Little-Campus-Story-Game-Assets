@@ -56,6 +56,7 @@ public sealed class KenanganPembukaArthur : MonoBehaviour
     Texture teksturAwal;
     LewatiCutsceneArthur lewati;
     bool dilewati;
+    bool lanjutAdegan;
     Rect safeTerakhir;
     int lebarTerakhir, tinggiTerakhir;
     void Awake() { Sembunyikan(); AturAreaAman(); }
@@ -78,7 +79,8 @@ public sealed class KenanganPembukaArthur : MonoBehaviour
         SedangBerjalan = true;
         dilewati = false;
         if (lewati == null) lewati = gameObject.GetComponent<LewatiCutsceneArthur>() ?? gameObject.AddComponent<LewatiCutsceneArthur>();
-        lewati.Mulai(() => dilewati = true, teks.font);
+        bool pembuka=gameObject.scene.name=="Transisi_Arthur";
+        lewati.Mulai(() => {if(pembuka)lanjutAdegan=true;else dilewati=true;}, teks.font, pembuka);
         kelompok.gameObject.SetActive(true);
         kelompok.blocksRaycasts = false; kelompok.interactable = false;
         musik = GetComponent<AudioSource>();
@@ -88,25 +90,26 @@ public sealed class KenanganPembukaArthur : MonoBehaviour
         if (laguKenangan != null) musik.Play();
         for (int i = 0; i < adegan.Length && !dilewati; i++)
         {
+            lanjutAdegan=false;
             AdeganAktif = i; TerapkanPanel(adegan[i]);
             teks.text = adegan[i].narasi ?? ""; teks.alpha = 1;
             kelompok.alpha = 0;
             yield return Fade(0, 1, fadeMasuk);
             float durasi = DurasiTahan(adegan[i]);
             float waktu = 0;
-            while (waktu < durasi && !dilewati)
+            while (waktu < durasi && !dilewati&&!lanjutAdegan)
             {
                 waktu += Mathf.Min(Time.unscaledDeltaTime, .05f);
                 yield return null;
             }
-            yield return Fade(1, 0, fadeKeluar);
+            yield return Fade(1, 0, lanjutAdegan?Mathf.Min(.15f,fadeKeluar):fadeKeluar);
         }
         Sembunyikan();
     }
     IEnumerator Fade(float dari, float ke, float durasi)
     {
         float t = 0;
-        while (t < durasi && !dilewati)
+        while (t < durasi && !dilewati&&!(dari==0&&lanjutAdegan))
         {
             t += Mathf.Min(Time.unscaledDeltaTime, .05f);
             if (musik != null && ke == 0 && AdeganAktif == adegan.Length - 1) musik.volume = volumeLagu * (1 - Mathf.Clamp01(t / durasi));

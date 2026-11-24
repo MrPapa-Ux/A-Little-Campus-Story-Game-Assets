@@ -17,8 +17,12 @@ public class NPCJogetGoofy : MonoBehaviour
     Quaternion[] rotasi;
     bool ikutiAba, aktifSebelumAba, salahAba;
     float mulaiAba, arahAba;
-    const float DurasiGerakAba = .32f;
-    const float DurasiGerakSalah = .56f;
+    Transform wadahTarian;
+    Vector3 posisiWadah,skalaWadah,geserTarian;
+    float arahLayar;
+    Animator animatorTarian;
+    NpcKampusHidup hidupTarian;
+    bool animatorSebelumTarian,hidupSebelumTarian;
 
     public void MulaiIkutiAba()
     {
@@ -26,6 +30,13 @@ public class NPCJogetGoofy : MonoBehaviour
         aktifSebelumAba = enabled;
         if (enabled) ResetPose();
         SimpanPoseDasar();
+        wadahTarian=badan!=null?badan.parent:null;
+        if(wadahTarian!=null){posisiWadah=wadahTarian.localPosition;skalaWadah=wadahTarian.localScale;}
+        geserTarian=Vector3.zero;
+        animatorTarian=GetComponent<KarakterController>()?.animator;
+        if(animatorTarian!=null){animatorSebelumTarian=animatorTarian.enabled;animatorTarian.enabled=false;}
+        hidupTarian=GetComponent<NpcKampusHidup>();
+        if(hidupTarian!=null){hidupSebelumTarian=hidupTarian.enabled;hidupTarian.enabled=false;}
         mulaiAba = float.NegativeInfinity;
         ikutiAba = true;
         enabled = true;
@@ -35,6 +46,13 @@ public class NPCJogetGoofy : MonoBehaviour
     {
         if (!ikutiAba) return;
         var induk = badan != null && badan.parent != null ? badan.parent : transform;
+        arahLayar=arah==0?-1:1;
+        if(wadahTarian!=null){
+            // Balik seluruh visual, termasuk rambut; titik interaksi dan collider tidak bergerak.
+            var s=skalaWadah;s.x=Mathf.Abs(s.x)*arahLayar;wadahTarian.localScale=s;
+            var dunia=kananLayar;dunia.y=0;dunia.Normalize();
+            geserTarian=wadahTarian.parent!=null?wadahTarian.parent.InverseTransformVector(dunia*arahLayar*.32f):dunia*arahLayar*.32f;
+        }
         float orientasi = Vector3.Dot(induk.TransformVector(Vector3.right), kananLayar) < 0f ? -1f : 1f;
         arahAba = (arah == 0 ? -1f : 1f) * orientasi;
         salahAba = salah;
@@ -46,20 +64,23 @@ public class NPCJogetGoofy : MonoBehaviour
         if (!ikutiAba) return;
         ikutiAba = false;
         ResetPose();
+        if(wadahTarian!=null){wadahTarian.localPosition=posisiWadah;wadahTarian.localScale=skalaWadah;}
+        if(animatorTarian!=null)animatorTarian.enabled=animatorSebelumTarian;
+        if(hidupTarian!=null)hidupTarian.enabled=hidupSebelumTarian;
         enabled = aktifSebelumAba;
     }
 
     void PoseAba()
     {
-        float t = Mathf.Clamp01((Time.unscaledTime - mulaiAba) / (salahAba ? DurasiGerakSalah : DurasiGerakAba));
-        if (t >= 1f) { ResetPose(); return; }
-
-        float tekan = Mathf.Sin(t * Mathf.PI);
+        if(float.IsNegativeInfinity(mulaiAba)){ResetPose();return;}
+        float berlalu=Mathf.Max(0,Time.unscaledTime-mulaiAba);
+        // Terus shuffle selama menunggu aba-aba berikutnya, bukan satu gerak lalu diam.
+        float tekan = .35f+.65f*Mathf.Abs(Mathf.Sin(berlalu*7f));
+        if(wadahTarian!=null)wadahTarian.localPosition=Vector3.Lerp(wadahTarian.localPosition,posisiWadah+geserTarian,1-Mathf.Exp(-14*Time.unscaledDeltaTime));
         float geser = arahAba * tekan;
-        if (salahAba) geser *= Mathf.Cos(t * Mathf.PI * 2f);
-        float naik = tekan * (salahAba ? .17f : .045f);
+        float naik = tekan * .045f;
         Vector3 pinggul = new Vector3(geser * .17f, naik, 0f);
-        Quaternion miringKepala = Quaternion.Euler(0f, 0f, -geser * (salahAba ? 23f : 15f));
+        Quaternion miringKepala = Quaternion.Euler(0f, 0f, -geser * (salahAba ? 20f : 15f));
         for (int i = 0; i < parts.Length; i++)
         {
             if (parts[i] == null) continue;

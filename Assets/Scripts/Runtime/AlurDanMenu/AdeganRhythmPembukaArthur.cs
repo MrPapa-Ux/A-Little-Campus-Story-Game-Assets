@@ -32,6 +32,12 @@ public sealed class AdeganRhythmPembukaArthur : MonoBehaviour
     Coroutine urutanBuka;Vector3 posisiHP,skalaHP;Quaternion rotasiHP;bool posisiDisimpan;
     Rect amanLandscape;
     int lebarLandscape, tinggiLandscape;
+    LewatiCutsceneArthur lewatiPembuka;
+    bool pembukaanDilewati;
+    bool lanjutMengetik;
+    System.Collections.IEnumerator TungguPembukaan(float durasi){
+        float t=0;while(!pembukaanDilewati&&t<durasi){t+=Time.unscaledDeltaTime;yield return null;}
+    }
     void Start(){
         var canvas=rhythm.papan.GetComponentInParent<Canvas>();
         if(canvas!=null&&canvas.GetComponent<UnityEngine.UI.GraphicRaycaster>()==null)canvas.gameObject.AddComponent<UnityEngine.UI.GraphicRaycaster>();
@@ -51,9 +57,19 @@ public sealed class AdeganRhythmPembukaArthur : MonoBehaviour
         rhythm.TutupDariHP();rhythm.tombolJeda.gameObject.SetActive(false);rhythm.tombolKeluar.gameObject.SetActive(false);
         layarHP.alpha=0;layarHP.gameObject.SetActive(false);layarHP.blocksRaycasts=false;layarHP.interactable=false;
         pembukaan.enabled=true;pembukaan.Ulangi();awal=Time.unscaledTime;Status=Fase.Mengetik;RondeKalah=RondeMenang=0;
+        pembukaanDilewati=lanjutMengetik=false;lewatiPembuka?.Selesai();
+        // Penutup memiliki Skip monolog sendiri dan tidak boleh melewati tantangan diam.
+        if(permainanDikendalikanPemain){
+            lewatiPembuka=GetComponent<LewatiCutsceneArthur>()??gameObject.AddComponent<LewatiCutsceneArthur>();
+            lewatiPembuka.Mulai(()=>{
+                if(Status==Fase.Mengetik){if(pembukaan.HurufTerlihat<pembukaan.kalimat.Length)pembukaan.TampilkanKalimatLengkap();else lanjutMengetik=true;}
+                else if(Status==Fase.MembukaHP)pembukaanDilewati=true;
+            },pembukaan.teksPikiran!=null?pembukaan.teksPikiran.font:null,true);
+        }
     }
     public void MainkanRondePenutup(){MulaiRonde(true);}
     void MulaiRonde(bool kedua){
+        lewatiPembuka?.Selesai();
         rhythm.NotCepatPembuka = permainanDikendalikanPemain && !kedua;
         rhythm.MulaiAdeganOtomatis();Status=kedua?Fase.RondeKedua:Fase.RondePertama;
         rhythm.papan.raycastTarget=permainanDikendalikanPemain;
@@ -66,7 +82,7 @@ public sealed class AdeganRhythmPembukaArthur : MonoBehaviour
         if (Status == Fase.RondePertama || Status == Fase.HasilPertama || Status == Fase.RondeKedua || Status == Fase.Selesai)
             SesuaikanLandscape();
         float durasiPembukaan=pembukaan.tampilkanTeks?Mathf.Max(lamaMengetik,pembukaan.DurasiTeks):lamaMengetik;
-        if(Status==Fase.Mengetik&&pembukaan.WaktuAdegan>=durasiPembukaan){
+        if(Status==Fase.Mengetik&&(lanjutMengetik||pembukaan.WaktuAdegan>=durasiPembukaan)){
             pembukaan.enabled=false;waktuFase=now;Status=Fase.MembukaHP;urutanBuka=StartCoroutine(BukaHPBertahap());
         }
         if(Status==Fase.MembukaHP)return;
@@ -95,27 +111,30 @@ public sealed class AdeganRhythmPembukaArthur : MonoBehaviour
         }
     }
     System.Collections.IEnumerator BukaHPBertahap(){
+        pembukaanDilewati=false;
         if(bubbleIstirahat!=null){
-            float muncul=0;while(muncul<.25f){muncul+=Time.unscaledDeltaTime;bubbleIstirahat.alpha=Mathf.SmoothStep(0,1,muncul/.25f);yield return null;}
-            yield return new WaitForSecondsRealtime(lamaBubbleIstirahat);
-            float hilang=0;while(hilang<.25f){hilang+=Time.unscaledDeltaTime;bubbleIstirahat.alpha=1-Mathf.SmoothStep(0,1,hilang/.25f);yield return null;}bubbleIstirahat.alpha=0;
+            float muncul=0;while(!pembukaanDilewati&&muncul<.25f){muncul+=Time.unscaledDeltaTime;bubbleIstirahat.alpha=Mathf.SmoothStep(0,1,muncul/.25f);yield return null;}
+            yield return TungguPembukaan(lamaBubbleIstirahat);
+            float hilang=0;while(!pembukaanDilewati&&hilang<.25f){hilang+=Time.unscaledDeltaTime;bubbleIstirahat.alpha=1-Mathf.SmoothStep(0,1,hilang/.25f);yield return null;}bubbleIstirahat.alpha=0;
         }
+        pembukaanDilewati=false;
         hpPortrait.gameObject.SetActive(true);kelompokPortrait.alpha=1;kelompokPortrait.blocksRaycasts=false;kelompokPortrait.interactable=false;
         Canvas.ForceUpdateCanvases();
         Vector3 ukuranPortrait = SesuaikanPortrait();
         foreach(var i in ikonHP)i.SetActive(false);sorotGame.SetActive(false);
         var gelap=layarHitam.color;gelap.a=1;layarHitam.color=gelap;BunyiTombolUI.MainkanBukaHP();
         float t=0;
-        while(t<durasiMuncul){t+=Time.unscaledDeltaTime;float x=Mathf.Clamp01(t/Mathf.Max(.01f,durasiMuncul));hpPortrait.localScale=ukuranPortrait*Mathf.SmoothStep(0,1,x);yield return null;}
-        hpPortrait.localScale=ukuranPortrait;yield return new WaitForSecondsRealtime(jedaLayarHitam);
-        t=0;while(t<durasiLayarNyala){t+=Time.unscaledDeltaTime;gelap.a=1-Mathf.Clamp01(t/Mathf.Max(.01f,durasiLayarNyala));layarHitam.color=gelap;yield return null;}
+        while(!pembukaanDilewati&&t<durasiMuncul){t+=Time.unscaledDeltaTime;float x=Mathf.Clamp01(t/Mathf.Max(.01f,durasiMuncul));hpPortrait.localScale=ukuranPortrait*Mathf.SmoothStep(0,1,x);yield return null;}
+        hpPortrait.localScale=ukuranPortrait;yield return TungguPembukaan(jedaLayarHitam);
+        t=0;while(!pembukaanDilewati&&t<durasiLayarNyala){t+=Time.unscaledDeltaTime;gelap.a=1-Mathf.Clamp01(t/Mathf.Max(.01f,durasiLayarNyala));layarHitam.color=gelap;yield return null;}
         gelap.a=0;layarHitam.color=gelap;foreach(var i in ikonHP)i.SetActive(true);
-        float awalSorotan=Time.unscaledTime;
+        pembukaanDilewati=false;
         for(int i=0;i<ikonHP.Length;i++){
             foreach(var ikon in ikonHP){var sorot=ikon.transform.Find("TelahTerpilih");if(sorot!=null)sorot.gameObject.SetActive(false);}
             var aktif=ikonHP[i].transform.Find("TelahTerpilih");if(aktif!=null)aktif.gameObject.SetActive(true);IndeksSorotan=i;
             BunyiTombolUI.MainkanKetukHP();
-            float akhir=awalSorotan+(i+1)*jedaSorotAplikasi;while(Time.unscaledTime<akhir)yield return null;
+            float akhir=Time.unscaledTime+jedaSorotAplikasi;while(!pembukaanDilewati&&Time.unscaledTime<akhir)yield return null;
+            pembukaanDilewati=false;
             if(aktif!=null&&aktif.gameObject==sorotGame)break;
         }
         foreach(var w in hpPortrait.GetComponentsInChildren<WigglyContainer>(true))w.enabled=false;
@@ -153,4 +172,5 @@ public sealed class AdeganRhythmPembukaArthur : MonoBehaviour
         PonselAplikasiBersama.PasTengah(bidangLandscape, new Vector2(.9f, .9f));
     }
     void SembunyikanTombolHasil(){foreach(var b in rhythm.menu.GetComponentsInChildren<UnityEngine.UI.Button>(true))b.gameObject.SetActive(false);}
+    void OnDisable(){lewatiPembuka?.Selesai();}
 }

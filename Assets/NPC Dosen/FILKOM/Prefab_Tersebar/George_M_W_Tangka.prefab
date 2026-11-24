@@ -1389,7 +1389,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Sir George M. W. Tangka
+    namaKarakter: Sir George
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir George M. W. Tangka.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Sir George
     potretPembicara: {fileID: 0}
     teksDialog: Selamat beraktivitas, Arthur.
     teksTombolLanjut: Selesai
@@ -1402,6 +1415,7 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   daftarOpsi: []
+  batasJarakMendatar: 0
 --- !u!114 &5362041429401379401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1550,6 +1564,9 @@ MonoBehaviour:
   fase: 0
   jarakAnimasi: 42
   idleArthur: {fileID: 11400000, guid: 3ae34a284fac2d1498e74f49ba0e1813, type: 2}
+  jalanArthur: {fileID: 0}
+  langkahMengikutiGerak: 0
+  waktuJalan: 0
 --- !u!58 &8758234603746925708
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1598,7 +1615,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Sir George M. W. Tangka
+  namaNpc: Sir George
+  perkenalan: Hai, saya Sir George M. W. Tangka.
   dialog: Selamat beraktivitas, Arthur.
   dialogSederhana: 1
   jarakInteraksi: 2.8

@@ -30,6 +30,7 @@ public sealed class ArthurJalurKampus : MonoBehaviour
     float tinggiColliderSemula;
     Vector3 pusatColliderSemula;
     BingkaiKameraTetap bingkai;
+    ZoomKameraArthur zoomKamera;
     // Kamera tetap anak Arthur untuk HP, tetapi penghalusannya bekerja di ruang world.
     Vector3 posisiKameraHalus;
     Quaternion rotasiKameraHalus;
@@ -54,6 +55,9 @@ public sealed class ArthurJalurKampus : MonoBehaviour
         bidangDekatSemula = kamera.nearClipPlane;
         sudutPandanganSemula = kamera.fieldOfView;
         bingkai = kamera.GetComponent<BingkaiKameraTetap>();
+        zoomKamera = GetComponent<ZoomKameraArthur>();
+        if(zoomKamera==null)zoomKamera=gameObject.AddComponent<ZoomKameraArthur>();
+        zoomKamera.Siapkan(this);
         goyang = kamera.GetComponent<KameraGoyang>();
         var pilihan = FindFirstObjectByType<SistemPilihan>();
         if (pilihan != null) transisi = pilihan.efekTransisi;
@@ -61,6 +65,7 @@ public sealed class ArthurJalurKampus : MonoBehaviour
     }
     public void PindahKe(Transform tujuan)
     {
+        zoomKamera?.PulihkanKamera();
         if (goyang != null) goyang.AturUlang();
         var penanda = tujuan.GetComponent<TujuanJalurKampus>();
         kameraMasukAktif = penanda != null && penanda.jalur != null && penanda.kameraMasukSinematik;
@@ -167,6 +172,7 @@ public sealed class ArthurJalurKampus : MonoBehaviour
     void LateUpdate()
     {
         if (kamera == null) return;
+        zoomKamera?.PulihkanKamera();
         if (JalurAktif != null) AturKamera(false);
         else
         {
@@ -177,6 +183,7 @@ public sealed class ArthurJalurKampus : MonoBehaviour
                 p.x = Mathf.Clamp(transform.position.x + p.x, batasKameraKiriJasmine, batasKameraKananJasmine) - transform.position.x;
             kamera.transform.localPosition = p;
         }
+        zoomKamera?.TerapkanKamera();
     }
     void AturKamera(bool langsung)
     {

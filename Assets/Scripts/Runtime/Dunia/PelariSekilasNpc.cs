@@ -2,12 +2,14 @@ using UnityEngine;
 
 public enum GayaPelintasNpc { JalanArthur, LariArthur, JalanUnik }
 
-// Jalur rumput pendek dan tetap; tidak memakai collider, interaksi, atau pencarian jalan.
+// Pelintas memakai penanda lurus di luar, atau mengikuti lorong JalurKampus di interior.
 public sealed class PelariSekilasNpc : MonoBehaviour
 {
     public Transform pelari;
     [Tooltip("Opsional: tampil hanya di jalur ini. Kantin, kamar, dan Chapel tidak memakai pelintas.")]
     public JalurKampus jalurKhusus;
+    [Tooltip("Ikuti lekukan jalur Arthur, bukan garis lurus yang dapat memotong meja atau dinding.")]
+    public bool ikutiJalurKhusus;
     [Tooltip("Geser dua penanda ini di Scene untuk mengatur lintasan pelari.")]
     public Transform titikAwal,titikAkhir;
     public Vector3 awal,akhir;
@@ -29,6 +31,27 @@ public sealed class PelariSekilasNpc : MonoBehaviour
     Vector3 Awal=>titikAwal!=null?titikAwal.position:awal;
     Vector3 Akhir=>titikAkhir!=null?titikAkhir.position:akhir;
     Vector3 awalLintasan,akhirLintasan;
+    float jarakAwalLintasan,jarakAkhirLintasan;
+    bool MemakaiJalur => ikutiJalurKhusus && jalurKhusus != null && jalurKhusus.titik != null && jalurKhusus.titik.Length >= 2;
+    public Vector3 PosisiLintasan(float t)
+    {
+        if (!MemakaiJalur) return Vector3.Lerp(Awal,Akhir,Mathf.Clamp01(t));
+        jalurKhusus.Sampel(Mathf.Lerp(jalurKhusus.JarakTerdekat(Awal),jalurKhusus.JarakTerdekat(Akhir),Mathf.Clamp01(t)),out var p,out _,out _);
+        return p-Vector3.up*ArthurJalurKampus.JarakKaki;
+    }
+    Vector3 PosisiBerjalan(float t)
+    {
+        if (!MemakaiJalur) return Vector3.Lerp(awalLintasan,akhirLintasan,Mathf.Clamp01(t));
+        jalurKhusus.Sampel(Mathf.Lerp(jarakAwalLintasan,jarakAkhirLintasan,Mathf.Clamp01(t)),out var p,out _,out _);
+        return p-Vector3.up*ArthurJalurKampus.JarakKaki;
+    }
+    void Hadapkan(Vector3 arah)
+    {
+        if(gerakUnik==null||gerakUnik.visual==null||arthur==null||arthur.kamera==null)return;
+        float samping=Vector3.Dot(arah,arthur.kamera.transform.right);
+        if(Mathf.Abs(samping)<.001f)return;
+        var skala=gerakUnik.visual.localScale;skala.x=Mathf.Abs(skala.x)*Mathf.Sign(samping);gerakUnik.visual.localScale=skala;
+    }
     [ContextMenu("Pratinjau pelari saat Play")]
     public void Pratinjau(){if(Application.isPlaying&&!SedangBerlari)berikut=Time.time;}
     public void PratinjauGaya(GayaPelintasNpc gaya){if(Application.isPlaying&&!SedangBerlari){gayaPratinjau=gaya;berikut=Time.time;}}
@@ -49,7 +72,7 @@ public sealed class PelariSekilasNpc : MonoBehaviour
             if(jeda){mulai+=Time.deltaTime;if(animatorArthur!=null)animatorArthur.speed=0;return;}
             if(animatorArthur!=null)animatorArthur.speed=tempoAnimasiArthur;
             float durasi=durasiAktif,waktu=Time.time-mulai;
-            float t=waktu/durasi;pelari.position=Vector3.Lerp(awalLintasan,akhirLintasan,Mathf.Clamp01(t));
+            float t=waktu/durasi;var posisi=PosisiBerjalan(t);Hadapkan(PosisiBerjalan(Mathf.Min(1,t+.01f))-posisi);pelari.position=posisi;
             // SmoothStep's first two arguments are output values, not time thresholds.
             // Keep full opacity until the final 1.25 seconds of the pass.
             float alpha=Mathf.Min(Mathf.Clamp01(waktu/.25f),1-Mathf.SmoothStep(0,1,Mathf.InverseLerp(durasi-1.25f,durasi,waktu)));
@@ -69,7 +92,7 @@ public sealed class PelariSekilasNpc : MonoBehaviour
         bool lintasanTerlihat=false;
         foreach(float t in new[]{.25f,.5f,.65f})
         {
-            Vector3 p=arthur.kamera.WorldToViewportPoint(Vector3.Lerp(Awal,Akhir,t)+Vector3.up*.9f);
+            Vector3 p=arthur.kamera.WorldToViewportPoint(PosisiLintasan(t)+Vector3.up*.9f);
             if(p.z>=2&&p.x>=.06f&&p.x<=.94f&&p.y>=.06f&&p.y<=.9f){lintasanTerlihat=true;break;}
         }
         if(!lintasanTerlihat)return;
@@ -82,20 +105,22 @@ public sealed class PelariSekilasNpc : MonoBehaviour
         foreach(var s in gambar)s.enabled=true;
         if(gerakUnik!=null){gerakUnik.enabled=unik;if(gerakUnik.visual!=null){var scale=gerakUnik.visual.localScale;scale.x=Mathf.Abs(scale.x)*(Vector3.Dot(bolakBalik&&JumlahLintasan%2==1?Awal-Akhir:Akhir-Awal,arthur.kamera.transform.right)>=0?1:-1);gerakUnik.visual.localScale=scale;}}
         bool balik=bolakBalik&&JumlahLintasan%2==1;awalLintasan=balik?Akhir:Awal;akhirLintasan=balik?Awal:Akhir;durasiAktif=Mathf.Max(2,GayaAktif==GayaPelintasNpc.LariArthur?durasiLari:durasiJalan);
+        if(MemakaiJalur){jarakAwalLintasan=jalurKhusus.JarakTerdekat(awalLintasan);jarakAkhirLintasan=jalurKhusus.JarakTerdekat(akhirLintasan);}
         if(samakanKecepatanArthur && arthur!=null)
         {
             var kontrol=arthur.GetComponent<KarakterController>();
             if(kontrol!=null)
             {
                 float kecepatan=kontrol.kecepatanJalan*(GayaAktif==GayaPelintasNpc.LariArthur?1f:kontrol.pengaliKecepatanJalan);
-                durasiAktif=Vector3.Distance(awalLintasan,akhirLintasan)/Mathf.Max(.1f,kecepatan);
+                float panjang=MemakaiJalur?Mathf.Abs(jarakAkhirLintasan-jarakAwalLintasan):Vector3.Distance(awalLintasan,akhirLintasan);
+                durasiAktif=Mathf.Max(.1f,panjang/Mathf.Max(.1f,kecepatan));
                 tempoAnimasiArthur=kontrol.animator!=null?kontrol.animator.speed:1f;
             }
         }
-        pelari.position=awalLintasan;pelari.gameObject.SetActive(true);
+        pelari.position=PosisiBerjalan(0);Hadapkan(PosisiBerjalan(.01f)-pelari.position);pelari.gameObject.SetActive(true);
         if(animatorArthur!=null&&!unik){animatorArthur.enabled=true;animatorArthur.Rebind();animatorArthur.SetBool("isJalan",true);animatorArthur.SetBool("isLari",GayaAktif==GayaPelintasNpc.LariArthur);animatorArthur.speed=tempoAnimasiArthur;animatorArthur.Update(0);}
         mulai=Time.time;SedangBerlari=true;JumlahLintasan++;
     }
     void LateUpdate(){if(SedangBerlari&&gerakUnik!=null&&gerakUnik.visual!=null&&arthur!=null&&arthur.kamera!=null)gerakUnik.visual.rotation=Quaternion.Euler(0,arthur.kamera.transform.eulerAngles.y,0);}
-    void OnDrawGizmosSelected(){Gizmos.color=Color.green;Gizmos.DrawLine(Awal,Akhir);Gizmos.DrawWireSphere(Awal,.25f);Gizmos.DrawWireSphere(Akhir,.25f);}
+    void OnDrawGizmosSelected(){Gizmos.color=Color.green;var p=PosisiLintasan(0);for(int i=1;i<=64;i++){var q=PosisiLintasan(i/64f);Gizmos.DrawLine(p,q);p=q;}Gizmos.DrawWireSphere(PosisiLintasan(0),.25f);Gizmos.DrawWireSphere(PosisiLintasan(1),.25f);}
 }

@@ -3813,6 +3813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PelariSekilasNpc
   pelari: {fileID: 48964131}
   jalurKhusus: {fileID: 38190068}
+  ikutiJalurKhusus: 1
   titikAwal: {fileID: 876300655}
   titikAkhir: {fileID: 807908789}
   awal: {x: 1217.5, y: 8.025, z: -27}
@@ -5422,6 +5423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PelariSekilasNpc
   pelari: {fileID: 5823422449471946343}
   jalurKhusus: {fileID: 0}
+  ikutiJalurKhusus: 0
   titikAwal: {fileID: 1818184449}
   titikAkhir: {fileID: 158664679}
   awal: {x: 1217.5, y: 8.025, z: -27}
@@ -8173,6 +8175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Chipuy
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -8706,6 +8709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Naya
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.8
@@ -17520,6 +17524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Titipan_BukuSketsa_GK1
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 2.2
@@ -27845,6 +27850,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Melly
+  perkenalan: 
   dialog: Kalau lorong ini sepi, biasanya semua lagi sibuk. Atau sama-sama pura-pura
     sibuk.
   dialogSederhana: 1
@@ -28923,6 +28929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PelariSekilasNpc
   pelari: {fileID: 2047997397}
   jalurKhusus: {fileID: 38190068}
+  ikutiJalurKhusus: 1
   titikAwal: {fileID: 309636412}
   titikAkhir: {fileID: 1158359025}
   awal: {x: 1217.5, y: 8.025, z: -27}
@@ -35240,6 +35247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Laras
+  perkenalan: 
   dialog: Livia cari aku? Bilang aku sudah di lantai dua. Kalau aku tidak membalas,
     biasanya HP-ku yang diam, bukan aku marah.
   dialogSederhana: 1
@@ -36957,6 +36965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Rina
+  perkenalan: 
   dialog: Bimo cari aku? Aku di sini dari tadi. Pesannya baru kubaca setelah dia
     menitip orang. Teknologi memang membantu.
   dialogSederhana: 1
@@ -39241,6 +39250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Vina
+  perkenalan: 
   dialog: Katanya mau tidur cepat. Itu masih rencana, belum keputusan.
   dialogSederhana: 1
   jarakInteraksi: 2
@@ -59594,6 +59604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PelariSekilasNpc
   pelari: {fileID: 519982526}
   jalurKhusus: {fileID: 703601823}
+  ikutiJalurKhusus: 1
   titikAwal: {fileID: 2126774153}
   titikAkhir: {fileID: 52521186}
   awal: {x: 1217.5, y: 8.025, z: -27}
@@ -60250,6 +60261,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1993872601}
     m_Modifications:
     - target: {fileID: 437214275835305648, guid: fc61a50d4daa02e409d90f0ceef86d89, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Stenly R. Pungus, Dekan FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 437214275835305648, guid: fc61a50d4daa02e409d90f0ceef86d89, type: 3}
+      propertyPath: namaNpc
+      value: Sir Stenly
+      objectReference: {fileID: 0}
+    - target: {fileID: 437214275835305648, guid: fc61a50d4daa02e409d90f0ceef86d89, type: 3}
       propertyPath: jalurInteraksi
       value: 
       objectReference: {fileID: 1231873384}
@@ -60261,6 +60280,14 @@ PrefabInstance:
       propertyPath: jalanArthur
       value: 
       objectReference: {fileID: 11400000, guid: 3113da70341dc3748a2573d60a001884, type: 2}
+    - target: {fileID: 6725806976532780666, guid: fc61a50d4daa02e409d90f0ceef86d89, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Stenly R. Pungus, Dekan FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725806976532780666, guid: fc61a50d4daa02e409d90f0ceef86d89, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Stenly
+      objectReference: {fileID: 0}
     - target: {fileID: 7189183103272922593, guid: fc61a50d4daa02e409d90f0ceef86d89, type: 3}
       propertyPath: m_Name
       value: Stenly R Pungus
@@ -63536,7 +63563,7 @@ Transform:
   m_GameObject: {fileID: 309341160}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1150.4, y: 8.04, z: -3}
+  m_LocalPosition: {x: 1153.4778, y: 8.04, z: -3.005059}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -63567,7 +63594,7 @@ Transform:
   m_GameObject: {fileID: 309636411}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1151.2, y: 8.04, z: 3}
+  m_LocalPosition: {x: 1153.4877, y: 8.04, z: 2.99624}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -73622,6 +73649,7 @@ RectTransform:
   - {fileID: 171741626}
   - {fileID: 672327933}
   - {fileID: 1720116676}
+  - {fileID: 1677931656}
   m_Father: {fileID: 62928892}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -73740,6 +73768,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 605693583}
     m_Modifications:
     - target: {fileID: 42349938746521688, guid: d0994a4ef93a09a42a1e1433aa13143b, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Green A. Sandag, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 42349938746521688, guid: d0994a4ef93a09a42a1e1433aa13143b, type: 3}
+      propertyPath: namaNpc
+      value: Sir Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 42349938746521688, guid: d0994a4ef93a09a42a1e1433aa13143b, type: 3}
       propertyPath: jalurInteraksi
       value: 
       objectReference: {fileID: 138853131}
@@ -73854,6 +73890,14 @@ PrefabInstance:
     - target: {fileID: 6439629487699965568, guid: d0994a4ef93a09a42a1e1433aa13143b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073137268747398053, guid: d0994a4ef93a09a42a1e1433aa13143b, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Green A. Sandag, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073137268747398053, guid: d0994a4ef93a09a42a1e1433aa13143b, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Green
       objectReference: {fileID: 0}
     - target: {fileID: 8972498058470499462, guid: d0994a4ef93a09a42a1e1433aa13143b, type: 3}
       propertyPath: m_Name
@@ -77611,6 +77655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Bima
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -94945,6 +94990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Irene
+  perkenalan: 
   dialog: Aku bukan sedang olahraga. Kelasnya sebentar lagi. Tolong bilang ke Atan
     aku masih sempat, menurut perhitunganku sendiri.
   dialogSederhana: 1
@@ -103875,6 +103921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Raka
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -106289,6 +106336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Kezia
+  perkenalan: 
   dialog: Aku cuma mau ambil air. Kenapa pulangnya selalu sempat mampir ke kamar
     orang?
   dialogSederhana: 1
@@ -118387,6 +118435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Lala
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -131662,6 +131711,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1658575861009699035, guid: ea507d7af584f2d429f4b523e39bcb5d, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Argha O. Silitonga, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658575861009699035, guid: ea507d7af584f2d429f4b523e39bcb5d, type: 3}
+      propertyPath: namaNpc
+      value: Sir Argha
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658575861009699035, guid: ea507d7af584f2d429f4b523e39bcb5d, type: 3}
       propertyPath: jalurInteraksi
       value: 
       objectReference: {fileID: 138853131}
@@ -131680,6 +131737,14 @@ PrefabInstance:
     - target: {fileID: 5609134825823945499, guid: ea507d7af584f2d429f4b523e39bcb5d, type: 3}
       propertyPath: m_Name
       value: Argha O Silitonga
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090842215268610139, guid: ea507d7af584f2d429f4b523e39bcb5d, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Argha O. Silitonga, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090842215268610139, guid: ea507d7af584f2d429f4b523e39bcb5d, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Argha
       objectReference: {fileID: 0}
     - target: {fileID: 8006159315165186367, guid: ea507d7af584f2d429f4b523e39bcb5d, type: 3}
       propertyPath: jalanArthur
@@ -131861,6 +131926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Glen
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -136462,6 +136528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Nessa
+  perkenalan: 
   dialog: Aku cuma mau ambil air. Kenapa pulangnya selalu sempat mampir ke kamar
     orang?
   dialogSederhana: 1
@@ -140313,6 +140380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Mira
+  perkenalan: 
   dialog: Katanya mau tidur cepat. Itu masih rencana, belum keputusan.
   dialogSederhana: 1
   jarakInteraksi: 2
@@ -141709,6 +141777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Celine
+  perkenalan: 
   dialog: Kalau lorong ini sepi, biasanya semua lagi sibuk. Atau sama-sama pura-pura
     sibuk.
   dialogSederhana: 1
@@ -142075,6 +142144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Naya
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.8
@@ -149480,6 +149550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Damar
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -154998,6 +155069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Nara
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -160623,6 +160695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Developer
+  perkenalan: 
   dialog: Hei, Arthur. Kalau sudah di depan kamar, jangan lupa masuk. Berdiri di
     sini belum dihitung istirahat.
   dialogSederhana: 0
@@ -162403,7 +162476,7 @@ Transform:
   m_GameObject: {fileID: 807908788}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1156, y: 8.04, z: 36}
+  m_LocalPosition: {x: 1153.4438, y: 8.04, z: 36.012764}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -175339,6 +175412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Arthur
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.8
@@ -177240,6 +177314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PelariSekilasNpc
   pelari: {fileID: 313952861}
   jalurKhusus: {fileID: 38190068}
+  ikutiJalurKhusus: 1
   titikAwal: {fileID: 309341161}
   titikAkhir: {fileID: 1551081505}
   awal: {x: 1217.5, y: 8.025, z: -27}
@@ -177805,7 +177880,7 @@ Transform:
   m_GameObject: {fileID: 876300654}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1156, y: 8.04, z: 9}
+  m_LocalPosition: {x: 1153.4974, y: 8.04, z: 9.004112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -191000,6 +191075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Dini
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -191298,6 +191374,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 605693583}
     m_Modifications:
+    - target: {fileID: 1065950053609002771, guid: 9bd176ac031db0b408df4d8b71ff7030, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Joe Y. Y. Mambu, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065950053609002771, guid: 9bd176ac031db0b408df4d8b71ff7030, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Joe
+      objectReference: {fileID: 0}
     - target: {fileID: 1591753144178733268, guid: 9bd176ac031db0b408df4d8b71ff7030, type: 3}
       propertyPath: jalanArthur
       value: 
@@ -191393,6 +191477,14 @@ PrefabInstance:
     - target: {fileID: 2750370791730469134, guid: 9bd176ac031db0b408df4d8b71ff7030, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970767235138460397, guid: 9bd176ac031db0b408df4d8b71ff7030, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Joe Y. Y. Mambu, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970767235138460397, guid: 9bd176ac031db0b408df4d8b71ff7030, type: 3}
+      propertyPath: namaNpc
+      value: Sir Joe
       objectReference: {fileID: 0}
     - target: {fileID: 4970767235138460397, guid: 9bd176ac031db0b408df4d8b71ff7030, type: 3}
       propertyPath: jalurInteraksi
@@ -223230,6 +223322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Titipan_HardDisk_GA
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 2.2
@@ -233708,7 +233801,7 @@ Transform:
   m_GameObject: {fileID: 1158359024}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1151.2, y: 8.04, z: 27}
+  m_LocalPosition: {x: 1153.5427, y: 8.04, z: 28.787502}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -237540,6 +237633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PelariSekilasNpc
   pelari: {fileID: 1042667810}
   jalurKhusus: {fileID: 38190068}
+  ikutiJalurKhusus: 1
   titikAwal: {fileID: 1917864316}
   titikAkhir: {fileID: 1366095753}
   awal: {x: 1217.5, y: 8.025, z: -27}
@@ -257068,6 +257162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Sela
+  perkenalan: 
   dialog: Bilang ke Naya aku masih di lantai satu. Tadi mau membalas, lalu merasa
     bisa mengingatnya. Ternyata ingatan juga suka menunda.
   dialogSederhana: 1
@@ -257436,6 +257531,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1994288202}
     m_Modifications:
     - target: {fileID: 172687071902063583, guid: a2e8b0a0368d58847a32c8e3dc0499e9, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Moody Wahongan, Kaprodi Manajemen.
+      objectReference: {fileID: 0}
+    - target: {fileID: 172687071902063583, guid: a2e8b0a0368d58847a32c8e3dc0499e9, type: 3}
+      propertyPath: namaNpc
+      value: Sir Moody
+      objectReference: {fileID: 0}
+    - target: {fileID: 172687071902063583, guid: a2e8b0a0368d58847a32c8e3dc0499e9, type: 3}
       propertyPath: jalurInteraksi
       value: 
       objectReference: {fileID: 2103595512}
@@ -257450,6 +257553,14 @@ PrefabInstance:
     - target: {fileID: 172687071902063583, guid: a2e8b0a0368d58847a32c8e3dc0499e9, type: 3}
       propertyPath: geserTitikInteraksi.z
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 337213748451582315, guid: a2e8b0a0368d58847a32c8e3dc0499e9, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Moody Wahongan, Kaprodi Manajemen.
+      objectReference: {fileID: 0}
+    - target: {fileID: 337213748451582315, guid: a2e8b0a0368d58847a32c8e3dc0499e9, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Moody
       objectReference: {fileID: 0}
     - target: {fileID: 2876930781614958230, guid: a2e8b0a0368d58847a32c8e3dc0499e9, type: 3}
       propertyPath: m_Name
@@ -264810,6 +264921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PelariSekilasNpc
   pelari: {fileID: 1895200695}
   jalurKhusus: {fileID: 1972580168}
+  ikutiJalurKhusus: 0
   titikAwal: {fileID: 1142859729}
   titikAkhir: {fileID: 372341383}
   awal: {x: 1217.5, y: 8.025, z: -27}
@@ -268758,6 +268870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Epona
+  perkenalan: 
   dialog: 'Hmm~ la la la...
 
     Oh, hai Arthur! Aku lagi latihan nyanyi. Boleh dengar
@@ -271744,6 +271857,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7867563118583756420, guid: d11e37932c016024c899c469a08d5125, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Ma'am Fanny Soewignyo, Dosen FEB.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867563118583756420, guid: d11e37932c016024c899c469a08d5125, type: 3}
+      propertyPath: namaNpc
+      value: Ma'am Fanny
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867563118583756420, guid: d11e37932c016024c899c469a08d5125, type: 3}
       propertyPath: jalurInteraksi
       value: 
       objectReference: {fileID: 2103595512}
@@ -271786,6 +271907,14 @@ PrefabInstance:
     - target: {fileID: 8555155842628562465, guid: d11e37932c016024c899c469a08d5125, type: 3}
       propertyPath: m_Color.r
       value: 0.7254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846342001328616975, guid: d11e37932c016024c899c469a08d5125, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Ma'am Fanny Soewignyo, Dosen FEB.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846342001328616975, guid: d11e37932c016024c899c469a08d5125, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Ma'am Fanny
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -276836,7 +276965,7 @@ Transform:
   m_GameObject: {fileID: 1366095752}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1153.5166, y: 8.04, z: 19.798872}
+  m_LocalPosition: {x: 1153.5153, y: 8.04, z: 19.798874}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -296943,6 +297072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Dandi
+  perkenalan: 
   dialog: Hard diskmu belum ketemu? Coba periksa dekat lemari. Setelah ketemu, simpan
     di tas supaya tidak lupa lagi.
   dialogSederhana: 0
@@ -305228,6 +305358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Livia
+  perkenalan: 
   dialog: Lagi cari jalan keluar? Ke ujung kanan lorong, ya. Aku masih menunggu temanku
     di sini.
   dialogSederhana: 1
@@ -307036,6 +307167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Dina
+  perkenalan: 
   dialog: Aku cuma mau ambil air. Kenapa pulangnya selalu sempat mampir ke kamar
     orang?
   dialogSederhana: 1
@@ -315298,7 +315430,7 @@ Transform:
   m_GameObject: {fileID: 1551081504}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1150.4, y: 8.04, z: 18}
+  m_LocalPosition: {x: 1153.5123, y: 8.04, z: 17.994883}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -316395,6 +316527,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PelariSekilasNpc
   pelari: {fileID: 987370255}
   jalurKhusus: {fileID: 1290395389}
+  ikutiJalurKhusus: 0
   titikAwal: {fileID: 2086047456}
   titikAkhir: {fileID: 921475040}
   awal: {x: 1217.5, y: 8.025, z: -27}
@@ -318828,6 +318961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Developer
+  perkenalan: 
   dialog: Hei, Arthur. Kalau sudah di depan kamar, jangan lupa masuk. Berdiri di
     sini belum dihitung istirahat.
   dialogSederhana: 1
@@ -327783,6 +327917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Tessa
+  perkenalan: 
   dialog: Katanya mau tidur cepat. Itu masih rencana, belum keputusan.
   dialogSederhana: 1
   jarakInteraksi: 2
@@ -333754,6 +333889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Ayu
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -341261,6 +341397,157 @@ SortingGroup:
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
+--- !u!1 &1677931655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1677931656}
+  - component: {fileID: 1677931659}
+  - component: {fileID: 1677931658}
+  - component: {fileID: 1677931657}
+  m_Layer: 0
+  m_Name: JamKampusHP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1677931656
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677931655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 374690684}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 916.9261, y: 437.16196}
+  m_SizeDelta: {x: 100, y: 33}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &1677931657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677931655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8eb7f4c24b886947bb9ae2ecd1b411b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JamKampusHP
+  teks: {fileID: 1677931658}
+--- !u!114 &1677931658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677931655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 07:00
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 2b82d61f9e230cf47a8bbb975fe493f2, type: 2}
+  m_sharedMaterial: {fileID: 2618178619663465960, guid: 2b82d61f9e230cf47a8bbb975fe493f2, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 0.13, g: 0.14, b: 0.15, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 32
+  m_fontSizeBase: 32
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 4
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1677931659
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677931655}
+  m_CullTransparentMesh: 1
 --- !u!1 &1679716397
 GameObject:
   m_ObjectHideFlags: 0
@@ -345745,6 +346032,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ika Prayanthi
       objectReference: {fileID: 0}
+    - target: {fileID: 4585681076531599596, guid: 95422f0728145aa43a4640a415112aa2, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Ma'am Ika Prayanthi, Kaprodi Akuntansi.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585681076531599596, guid: 95422f0728145aa43a4640a415112aa2, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Ma'am Ika
+      objectReference: {fileID: 0}
+    - target: {fileID: 5060321532695868975, guid: 95422f0728145aa43a4640a415112aa2, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Ma'am Ika Prayanthi, Kaprodi Akuntansi.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5060321532695868975, guid: 95422f0728145aa43a4640a415112aa2, type: 3}
+      propertyPath: namaNpc
+      value: Ma'am Ika
+      objectReference: {fileID: 0}
     - target: {fileID: 5060321532695868975, guid: 95422f0728145aa43a4640a415112aa2, type: 3}
       propertyPath: jalurInteraksi
       value: 
@@ -346135,6 +346438,22 @@ PrefabInstance:
     - target: {fileID: 3552127571423550744, guid: aa232e449cec84d42ae4bb81c7b33738, type: 3}
       propertyPath: m_Name
       value: Semmy W Taju
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343891152511526072, guid: aa232e449cec84d42ae4bb81c7b33738, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Semmy W. Taju, Kaprodi Informatika.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343891152511526072, guid: aa232e449cec84d42ae4bb81c7b33738, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Semmy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859318930807187411, guid: aa232e449cec84d42ae4bb81c7b33738, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Semmy W. Taju, Kaprodi Informatika.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859318930807187411, guid: aa232e449cec84d42ae4bb81c7b33738, type: 3}
+      propertyPath: namaNpc
+      value: Sir Semmy
       objectReference: {fileID: 0}
     - target: {fileID: 6859318930807187411, guid: aa232e449cec84d42ae4bb81c7b33738, type: 3}
       propertyPath: jalurInteraksi
@@ -346583,6 +346902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Fajar
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -348770,6 +349090,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Mika
+  perkenalan: 
   dialog: Bilang ke Nisay, catatannya sudah kubaca. Judulnya dulu. Isinya menyusul
     hari ini, bukan semester depan.
   dialogSederhana: 1
@@ -358269,6 +358590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Rena
+  perkenalan: 
   dialog: Kalau lorong ini sepi, biasanya semua lagi sibuk. Atau sama-sama pura-pura
     sibuk.
   dialogSederhana: 1
@@ -364867,6 +365189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Sari
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -375075,6 +375398,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elvis R Sumanti
       objectReference: {fileID: 0}
+    - target: {fileID: 5424841377435316762, guid: 75335aaf4b1cb6d45a50595838e69e1d, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Elvis R. Sumanti, Dekan FEB.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5424841377435316762, guid: 75335aaf4b1cb6d45a50595838e69e1d, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Elvis
+      objectReference: {fileID: 0}
+    - target: {fileID: 5510146279680196412, guid: 75335aaf4b1cb6d45a50595838e69e1d, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Elvis R. Sumanti, Dekan FEB.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5510146279680196412, guid: 75335aaf4b1cb6d45a50595838e69e1d, type: 3}
+      propertyPath: namaNpc
+      value: Sir Elvis
+      objectReference: {fileID: 0}
     - target: {fileID: 5510146279680196412, guid: 75335aaf4b1cb6d45a50595838e69e1d, type: 3}
       propertyPath: jalurInteraksi
       value: 
@@ -379932,6 +380271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Vids
+  perkenalan: 
   dialog: 'Aku punya pacar, namanya Sella.
 
     Dan aku sangat mencintainya.'
@@ -387969,7 +388309,7 @@ Transform:
   m_GameObject: {fileID: 1917864315}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1153.477, y: 8.04, z: -4.201096}
+  m_LocalPosition: {x: 1153.4758, y: 8.04, z: -4.201094}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -391180,6 +391520,22 @@ PrefabInstance:
     - target: {fileID: 2430412984427072576, guid: e29c26113df09654bb92ea481d7ff353, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2949621335231616619, guid: e29c26113df09654bb92ea481d7ff353, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Deske W. Mandagi, Kaprodi Pascasarjana (MM).
+      objectReference: {fileID: 0}
+    - target: {fileID: 2949621335231616619, guid: e29c26113df09654bb92ea481d7ff353, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Deske
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101020531900121621, guid: e29c26113df09654bb92ea481d7ff353, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Deske W. Mandagi, Kaprodi Pascasarjana (MM).
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101020531900121621, guid: e29c26113df09654bb92ea481d7ff353, type: 3}
+      propertyPath: namaNpc
+      value: Sir Deske
       objectReference: {fileID: 0}
     - target: {fileID: 3101020531900121621, guid: e29c26113df09654bb92ea481d7ff353, type: 3}
       propertyPath: jalurInteraksi
@@ -418294,6 +418650,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 605693583}
     m_Modifications:
     - target: {fileID: 649263717178492462, guid: dfdb9b354eaa76b4bb0b564a940103e2, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Julio Kolapitawondal, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 649263717178492462, guid: dfdb9b354eaa76b4bb0b564a940103e2, type: 3}
+      propertyPath: namaNpc
+      value: Sir Julio
+      objectReference: {fileID: 0}
+    - target: {fileID: 649263717178492462, guid: dfdb9b354eaa76b4bb0b564a940103e2, type: 3}
       propertyPath: jalurInteraksi
       value: 
       objectReference: {fileID: 138853131}
@@ -418404,6 +418768,14 @@ PrefabInstance:
     - target: {fileID: 6132750502815117728, guid: dfdb9b354eaa76b4bb0b564a940103e2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952427430963818487, guid: dfdb9b354eaa76b4bb0b564a940103e2, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Julio Kolapitawondal, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952427430963818487, guid: dfdb9b354eaa76b4bb0b564a940103e2, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Julio
       objectReference: {fileID: 0}
     - target: {fileID: 8662308655267564364, guid: dfdb9b354eaa76b4bb0b564a940103e2, type: 3}
       propertyPath: jalanArthur
@@ -430630,6 +431002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Rani
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -435575,6 +435948,22 @@ PrefabInstance:
       propertyPath: jalanArthur
       value: 
       objectReference: {fileID: 11400000, guid: 3113da70341dc3748a2573d60a001884, type: 2}
+    - target: {fileID: 5857247527691757616, guid: 15e5e495ce2bc07428d81e062a7be2ee, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Green Ferry Mandias, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857247527691757616, guid: 15e5e495ce2bc07428d81e062a7be2ee, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Green M.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488231193684075496, guid: 15e5e495ce2bc07428d81e062a7be2ee, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Green Ferry Mandias, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488231193684075496, guid: 15e5e495ce2bc07428d81e062a7be2ee, type: 3}
+      propertyPath: namaNpc
+      value: Sir Green M.
+      objectReference: {fileID: 0}
     - target: {fileID: 6488231193684075496, guid: 15e5e495ce2bc07428d81e062a7be2ee, type: 3}
       propertyPath: jalurInteraksi
       value: 
@@ -439787,7 +440176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Sir George M. W. Tangka
+  namaNpc: Sir George
+  perkenalan: 
   dialog: 
   dialogSederhana: 0
   jarakInteraksi: 2.8
@@ -440072,7 +440462,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Prof. Andrew T. Liem
+    namaKarakter: Sir Andrew
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Andrew T. Liem.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Sir Andrew
     potretPembicara: {fileID: 0}
     teksDialog: Halo, Arthur. Semoga kegiatanmu hari ini berjalan baik. Kerjakan
       satu per satu, ya.
@@ -440364,6 +440767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Niko - VOCS
+  perkenalan: 
   dialog: ...
   dialogSederhana: 1
   jarakInteraksi: 1.8
@@ -440499,7 +440903,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Prof. Andrew T. Liem
+  namaNpc: Sir Andrew
+  perkenalan: Hai, saya Sir Andrew T. Liem.
   dialog: Halo, Arthur. Semoga kegiatanmu hari ini berjalan baik. Kerjakan satu per
     satu, ya.
   dialogSederhana: 1
@@ -440613,7 +441018,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Sir Stenly I. Adam
+  namaNpc: Sir Stenly
+  perkenalan: Hai, saya Sir Stenly I. Adam.
   dialog: Halo, Arthur. Kalau mencari ruangan, perhatikan penanda lantainya dulu
     supaya tidak bolak-balik.
   dialogSederhana: 1
@@ -442493,7 +442899,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Ma'am Raissa Camila Maringka
+  namaNpc: Ma'am Raissa
+  perkenalan: Hai, saya Ma'am Raissa Camila Maringka.
   dialog: Halo, Arthur. Mau ke gedung mana? Cek peta dulu kalau belum yakin jalannya,
     ya.
   dialogSederhana: 1
@@ -445087,6 +445494,19 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
+    namaKarakter: Sir George
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir George M. W. Tangka.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
     namaKarakter: Niko
     potretPembicara: {fileID: 1565207551, guid: 1550e4d48747392499835ae702b8d5c3, type: 3}
     teksDialog: Sir! Aku mau join VOCS! Voice Of Computer Science di semester depan;
@@ -445101,7 +445521,7 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   - siapaYangBicara: 1
-    namaKarakter: Sir George Tangka
+    namaKarakter: Sir George
     potretPembicara: {fileID: 0}
     teksDialog: Kau kalau ikut itu bukan fokus untuk cari nilai, dan itu juga nilai
       rekomendasi, jadi tergantung dosen mau menambahkannya sebagai nilai bonus atau
@@ -445214,7 +445634,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Sir Reymon Rotikan
+    namaKarakter: Sir Reymon
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Reymon Rotikan.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Sir Reymon
     potretPembicara: {fileID: 0}
     teksDialog: Halo, Arthur. Jalan sebentar boleh, nanti lanjutkan lagi pekerjaan
       yang belum selesai.
@@ -446255,7 +446688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Ma'am Debby E. Sondakh
+  namaNpc: Ma'am Debby
+  perkenalan: Hai, saya Ma'am Debby E. Sondakh.
   dialog: Halo, Arthur. Selamat beraktivitas. Jangan lupa jaga kesehatan dan semangat
     belajarnya.
   dialogSederhana: 1
@@ -448104,7 +448538,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Sir Green A. Sandag
+  namaNpc: Sir Green
+  perkenalan: 
   dialog: 
   dialogSederhana: 0
   jarakInteraksi: 2.8
@@ -449365,7 +449800,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Ma'am Debby E. Sondakh
+    namaKarakter: Ma'am Debby
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Ma'am Debby E. Sondakh.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Ma'am Debby
     potretPembicara: {fileID: 0}
     teksDialog: Halo, Arthur. Selamat beraktivitas. Jangan lupa jaga kesehatan dan
       semangat belajarnya.
@@ -450153,7 +450601,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Sir Oktoverano H. Lengkong
+    namaKarakter: Sir Oktoverano
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Oktoverano H. Lengkong.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Sir Oktoverano
     potretPembicara: {fileID: 0}
     teksDialog: Arthur, menikmati suasana kampus? Perhatikan lingkungan sekitar juga,
       jangan hanya layar HP.
@@ -451995,7 +452456,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Ma'am Lidya C. Laoh
+    namaKarakter: Ma'am Lidya
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Ma'am Lidya C. Laoh.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Ma'am Lidya
     potretPembicara: {fileID: 0}
     teksDialog: Halo, Arthur. Kalau belum paham sesuatu, tidak apa-apa bertanya.
       Jangan hanya dipendam sendiri.
@@ -453606,7 +454080,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Sir Oktoverano H. Lengkong
+  namaNpc: Sir Oktoverano
+  perkenalan: Hai, saya Sir Oktoverano H. Lengkong.
   dialog: Arthur, menikmati suasana kampus? Perhatikan lingkungan sekitar juga, jangan
     hanya layar HP.
   dialogSederhana: 1
@@ -454976,7 +455451,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Ma'am Raissa Camila Maringka
+    namaKarakter: Ma'am Raissa
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Ma'am Raissa Camila Maringka.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Ma'am Raissa
     potretPembicara: {fileID: 0}
     teksDialog: Halo, Arthur. Mau ke gedung mana? Cek peta dulu kalau belum yakin
       jalannya, ya.
@@ -457290,6 +457778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Chipeng
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.15
@@ -458318,7 +458807,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Sir Reymon Rotikan
+  namaNpc: Sir Reymon
+  perkenalan: Hai, saya Sir Reymon Rotikan.
   dialog: Halo, Arthur. Jalan sebentar boleh, nanti lanjutkan lagi pekerjaan yang
     belum selesai.
   dialogSederhana: 1
@@ -459063,7 +459553,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Sir Andria K. Wahyudi
+    namaKarakter: Sir Andria
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Andria K. Wahyudi.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Sir Andria
     potretPembicara: {fileID: 0}
     teksDialog: Halo, Arthur. Kalau sudah selesai memakai ruang kelas, jangan lupa
       rapikan tempat duduknya, ya.
@@ -461155,7 +461658,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Sir Green Sandag
+    namaKarakter: Sir Green
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Green A. Sandag.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Sir Green
     potretPembicara: {fileID: 0}
     teksDialog: Hei, Arthur, aman aja skripsimu?
     teksTombolLanjut: Next ->
@@ -461168,7 +461684,7 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   - siapaYangBicara: 1
-    namaKarakter: Sir Green Sandag
+    namaKarakter: Sir Green
     potretPembicara: {fileID: 0}
     teksDialog: Semangat jo,
     teksTombolLanjut: Next ->
@@ -461290,7 +461806,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Sir Stenly I. Adam
+    namaKarakter: Sir Stenly
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Stenly I. Adam.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Sir Stenly
     potretPembicara: {fileID: 0}
     teksDialog: Halo, Arthur. Kalau mencari ruangan, perhatikan penanda lantainya
       dulu supaya tidak bolak-balik.
@@ -461922,7 +462451,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Ma'am Lidya C. Laoh
+  namaNpc: Ma'am Lidya
+  perkenalan: Hai, saya Ma'am Lidya C. Laoh.
   dialog: Halo, Arthur. Kalau belum paham sesuatu, tidak apa-apa bertanya. Jangan
     hanya dipendam sendiri.
   dialogSederhana: 1
@@ -462371,6 +462901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Ratu Ngaw
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.15
@@ -466218,7 +466749,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Sir Rolly J. Lontaan
+  namaNpc: Sir Rolly
+  perkenalan: Hai, saya Sir Rolly J. Lontaan.
   dialog: Arthur, sudah makan? Jangan sampai terlalu sibuk sampai lupa istirahat.
   dialogSederhana: 1
   jarakInteraksi: 2.8
@@ -466719,6 +467251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Monica
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.15
@@ -468459,6 +468992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Timo - VOCS
+  perkenalan: 
   dialog: ...
   dialogSederhana: 1
   jarakInteraksi: 1.8
@@ -469546,6 +470080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Leno - VOCS
+  perkenalan: 
   dialog: ...
   dialogSederhana: 1
   jarakInteraksi: 1.8
@@ -472145,7 +472680,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Ma'am Jacquline M. Waworundeng
+  namaNpc: Ma'am Jacquline
+  perkenalan: Hai, saya Ma'am Jacquline M. Waworundeng.
   dialog: Halo, Arthur. Catat dulu hal yang ingin ditanyakan supaya nanti tidak lupa
     saat berdiskusi.
   dialogSederhana: 1
@@ -474136,6 +474672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Asel
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.15
@@ -475091,7 +475628,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Sir Andria K. Wahyudi
+  namaNpc: Sir Andria
+  perkenalan: Hai, saya Sir Andria K. Wahyudi.
   dialog: Halo, Arthur. Kalau sudah selesai memakai ruang kelas, jangan lupa rapikan
     tempat duduknya, ya.
   dialogSederhana: 1
@@ -475133,7 +475671,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Sir Rolly J. Lontaan
+    namaKarakter: Sir Rolly
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Rolly J. Lontaan.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Sir Rolly
     potretPembicara: {fileID: 0}
     teksDialog: Arthur, sudah makan? Jangan sampai terlalu sibuk sampai lupa istirahat.
     teksTombolLanjut: Selesai
@@ -480374,7 +480925,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Ma'am Jacquline M. Waworundeng
+    namaKarakter: Ma'am Jacquline
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Ma'am Jacquline M. Waworundeng.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Ma'am Jacquline
     potretPembicara: {fileID: 0}
     teksDialog: Halo, Arthur. Catat dulu hal yang ingin ditanyakan supaya nanti tidak
       lupa saat berdiskusi.

@@ -11,6 +11,17 @@ public static class BubbleArthurScene
     static Tool previousTool;
     static bool hidden;
     static int dragGroup = -1;
+    public static bool TampilanSaja {
+        get=>EditorPrefs.GetBool("Arthur.Bubble.TampilanSaja",true);
+        set=>EditorPrefs.SetBool("Arthur.Bubble.TampilanSaja",value);
+    }
+    public static Vector3 TitikTampilan(InteraksiJalurKampus marker)=>marker.transform.position+Vector3.up*(marker.tinggiKepalaDiTitik+marker.jarakDariKepala+.6f)+marker.geserTampilanBubble;
+    public static void GeserTampilan(InteraksiJalurKampus marker,Vector3 next){
+        if(marker==null||EditorApplication.isPlayingOrWillChangePlaymode)return;
+        Undo.RecordObject(marker,"Geser gambar bubble saja");
+        marker.geserTampilanBubble+=next-TitikTampilan(marker);
+        PrefabUtility.RecordPrefabInstancePropertyModifications(marker);EditorUtility.SetDirty(marker);EditorSceneManager.MarkSceneDirty(marker.gameObject.scene);SceneView.RepaintAll();
+    }
     public static bool IkutiJalur
     {
         get => EditorPrefs.GetBool("Arthur.Bubble.IkutiJalur", true);
@@ -25,6 +36,8 @@ public static class BubbleArthurScene
     }
     static void SelectionChanged()
     {
+        var pemilik=Selection.activeGameObject!=null?Selection.activeGameObject.GetComponentInParent<InteraksiJalurKampus>():null;
+        if(TampilanSaja&&pemilik!=null&&Selection.activeGameObject!=pemilik.gameObject){Pilih(pemilik);return;}
         if (selected != null && Selection.activeGameObject != selected.gameObject) Restore();
     }
     static void Restore()
@@ -90,29 +103,31 @@ public static class BubbleArthurScene
         {
             if (!marker.isActiveAndEnabled || !marker.gameObject.scene.IsValid()) continue;
             // Use the existing text-icon location, so clicking the blue T area selects its parent place.
-            var p = marker.ikon != null ? marker.ikon.position : marker.transform.position + Vector3.up;
-            if ((p - marker.transform.position).sqrMagnitude > 25) p = marker.transform.position + Vector3.up;
+            var p = TampilanSaja?TitikTampilan(marker):marker.ikon != null ? marker.ikon.position : marker.transform.position + Vector3.up;
+            if (!TampilanSaja&&(p - marker.transform.position).sqrMagnitude > 25) p = marker.transform.position + Vector3.up;
             var screen = view.camera.WorldToViewportPoint(p);
             if (screen.z <= 0 || screen.z > 100 || screen.x < -.05f || screen.x > 1.05f || screen.y < -.05f || screen.y > 1.05f) continue;
             float size = HandleUtility.GetHandleSize(p) * .13f;
             Handles.color = new Color(1, .62f, .12f);
             if (Handles.Button(p, view.camera.transform.rotation, size, size * 1.4f, Handles.CircleHandleCap)) Pilih(marker);
-            Handles.Label(p + view.camera.transform.up * size * 1.5f, new GUIContent("BUBBLE", "Klik untuk membaca fungsi dan menggeser tempat interaksi."));
+            Handles.Label(p + view.camera.transform.up * size * 1.5f, new GUIContent(TampilanSaja?"GAMBAR BUBBLE":"TEMPAT INTERAKSI", TampilanSaja?"Geser gambar saja. Tempat interaksi tetap.":"Menggeser tempat Arthur berinteraksi."));
         }
         var active = Selection.activeGameObject != null ? Selection.activeGameObject.GetComponent<InteraksiJalurKampus>() : null;
         if (active != null && selected == null) Pilih(active);
         if (selected != null)
         {
+            if(TampilanSaja)Tools.current=Tool.None;
             var foot = selected.transform.position - Vector3.up * ArthurJalurKampus.JarakKaki;
             Handles.color = new Color(1, .62f, .12f);
             Handles.DrawWireDisc(foot, Vector3.up, selected.radius);
             Handles.Label(foot + Vector3.up * .35f, Ringkasan(selected));
             EditorGUI.BeginChangeCheck();
-            var next = Handles.PositionHandle(foot, Quaternion.identity);
+            var next = Handles.PositionHandle(TampilanSaja?TitikTampilan(selected):foot, Quaternion.identity);
             if (EditorGUI.EndChangeCheck())
             {
                 if (dragGroup < 0) { Undo.IncrementCurrentGroup(); dragGroup = Undo.GetCurrentGroup(); }
-                Geser(selected, next + Vector3.up * ArthurJalurKampus.JarakKaki, IkutiJalur);
+                if(TampilanSaja)GeserTampilan(selected,next);
+                else Geser(selected, next + Vector3.up * ArthurJalurKampus.JarakKaki, IkutiJalur);
             }
         }
         if (GUIUtility.hotControl == 0) FinishDrag();

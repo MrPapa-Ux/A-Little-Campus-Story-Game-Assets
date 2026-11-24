@@ -10,6 +10,9 @@ public sealed class InteraksiJalurKampus : MonoBehaviour
     public JalurKampus[] jalurTambahan;
     [Min(.1f)] public float radius = 2.4f;
     public Transform ikon;
+    [Header("Posisi gambar bubble saja")]
+    [Tooltip("Menggeser tampilan bubble dalam arah dunia, tanpa memindahkan titik, radius, collider, atau tujuan interaksi.")]
+    public Vector3 geserTampilanBubble;
     public Vector3 ukuranIkon = new Vector3(.1f, .1f, .1f);
     [Min(.05f)] public float durasiMuncul = .2f;
     [Min(.05f)] public float durasiMenciut = .18f;
@@ -102,6 +105,7 @@ public sealed class InteraksiJalurKampus : MonoBehaviour
         // Place markers use their own standing point, never the moving player.
         // Head-following remains an explicit opt-in for future item search markers.
         Vector3 acuan = ikutiKepalaArthur ? kepalaArthur.bounds.center : transform.position + Vector3.up * tinggiKepalaDiTitik;
+        acuan+=geserTampilanBubble;
         float atasKepala = ikutiKepalaArthur ? kepalaArthur.bounds.max.y : acuan.y;
         ikon.rotation = kamera.transform.rotation;
         ikon.position = acuan;

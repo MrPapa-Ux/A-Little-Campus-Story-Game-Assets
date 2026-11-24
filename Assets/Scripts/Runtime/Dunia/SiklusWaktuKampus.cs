@@ -11,7 +11,8 @@ public sealed class SiklusWaktuKampus : MonoBehaviour
     public WaktuKampus waktu = WaktuKampus.Pagi;
     public bool berjalanOtomatis = true;
     [Min(60)] public float detikSatuHari=720;
-    public float Jam {get;private set;}=6;
+    public const float JamMulaiPermainan = 7f;
+    public float Jam {get;private set;}=JamMulaiPermainan;
     float jamTujuan=-1;
     [Min(30)] public float durasiPagi = 480, durasiSore = 300, durasiMalam = 420;
     [Min(.1f)] public float durasiPeralihan = 6;
@@ -50,7 +51,8 @@ public sealed class SiklusWaktuKampus : MonoBehaviour
         if(matahari!=null)RenderSettings.sun=matahari;
         langitAsli=RenderSettings.skybox;
         if(langitAsli!=null){langit=new Material(langitAsli);RenderSettings.skybox=langit;}
-        Jam=waktu==WaktuKampus.Pagi?6:waktu==WaktuKampus.Sore?16:20;
+        // Scene yang pernah disimpan pada malam hari tetap memulai sesi baru pukul 07.00.
+        waktu=WaktuKampus.Pagi;Jam=JamMulaiPermainan;jamTujuan=-1;DetikFase=0;berjalanOtomatis=true;
         AmbilAwal();diterapkan=waktu;awalPeralihan=Time.unscaledTime-durasiPeralihan;siap=true;Terapkan(1);
     }
     void OnEnable(){SceneManager.sceneLoaded+=SceneLoaded;}
@@ -72,7 +74,7 @@ public sealed class SiklusWaktuKampus : MonoBehaviour
         PeriksaKawasan();
         if(waktu!=diterapkan)
         {
-            jamTujuan=waktu==WaktuKampus.Pagi?6:waktu==WaktuKampus.Sore?16:20;
+            jamTujuan=waktu==WaktuKampus.Pagi?JamMulaiPermainan:waktu==WaktuKampus.Sore?16:20;
             AmbilAwal();
             diterapkan=waktu;
             awalPeralihan=Time.unscaledTime;
@@ -87,7 +89,7 @@ public sealed class SiklusWaktuKampus : MonoBehaviour
             Jam=Mathf.Repeat(Jam+Mathf.Min(selisih,langkah),24);
             if(selisih<=langkah+.0001f){Jam=jamTujuan;jamTujuan=-1;}
         }
-        else if(berjalanOtomatis&&!jeda&&!(waktu==WaktuKampus.Malam&&MalamEksplorasiArthur.Instance!=null&&MalamEksplorasiArthur.Instance.PulangOtomatis)){
+        else if(berjalanOtomatis&&!jeda){
             DetikFase+=Time.deltaTime;Jam=JamSetelah(Jam,Time.deltaTime,detikSatuHari);
             var fase=FaseJam(Jam);if(fase!=waktu){waktu=diterapkan=fase;DetikFase=0;UndiCuaca(Random.value);}
         }
@@ -164,7 +166,7 @@ public sealed class SiklusWaktuKampus : MonoBehaviour
     }
     public static float JamSetelah(float jam,float detik,float durasiHari=720)=>Mathf.Repeat(jam+detik*24/Mathf.Max(60,durasiHari),24);
     public static WaktuKampus FaseJam(float jam)=>jam>=6&&jam<16?WaktuKampus.Pagi:jam>=16&&jam<18?WaktuKampus.Sore:WaktuKampus.Malam;
-    public void AturWaktu(WaktuKampus pilihan){waktu=pilihan;DetikFase=0;jamTujuan=pilihan==WaktuKampus.Pagi?6:pilihan==WaktuKampus.Sore?16:20;}
+    public void AturWaktu(WaktuKampus pilihan){waktu=pilihan;DetikFase=0;jamTujuan=pilihan==WaktuKampus.Pagi?JamMulaiPermainan:pilihan==WaktuKampus.Sore?16:20;}
     public static bool PilihLangitHijau(float undian,float peluang=.01f)=>undian<Mathf.Clamp01(peluang);
     public static float PeluangHujanUntuk(int tingkat) => tingkat <= 0 ? .01f : tingkat == 1 ? .10f : tingkat == 2 ? .50f : tingkat == 3 ? .70f : 1f;
     public static bool PilihHujan(float undian, float peluang = .01f) => undian >= 0f && undian <= 1f && (peluang >= 1f || undian < Mathf.Clamp01(peluang));

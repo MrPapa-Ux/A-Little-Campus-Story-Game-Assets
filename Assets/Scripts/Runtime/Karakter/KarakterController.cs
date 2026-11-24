@@ -11,6 +11,7 @@ public class KarakterController : MonoBehaviour
     [Range(0.1f, 1f)] public float pengaliKecepatanJalan = 0.5f;
     [Range(0.15f, 0.5f)] public float jedaKetukGanda = 0.3f;
     public bool SedangBerlari { get; private set; }
+    public event System.Action<int> TombolArahMinigame;
     private float arahJalan = 0f;
     private Rigidbody2D rigidbodyKarakter;
     private ArthurJalurKampus jalurKampus;
@@ -90,6 +91,7 @@ public class KarakterController : MonoBehaviour
 
     private void TekanArah(float arah)
     {
+        if(TombolArahMinigame!=null){TombolArahMinigame.Invoke(arah<0?0:1);return;}
         if (GerakTerkunci || arahJalan == arah) return;
         SedangBerlari = ketukanPertamaDilepas && arahTekanTerakhir == arah && Time.unscaledTime - waktuTekanTerakhir <= jedaKetukGanda;
         arahJalan = arah;

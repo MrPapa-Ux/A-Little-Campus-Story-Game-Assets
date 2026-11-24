@@ -16,8 +16,13 @@ public sealed class LewatiCutsceneArthur : MonoBehaviour
     GameObject layarPetunjuk;
     float ketukanTerakhir = -10, munculSampai;
     Rect amanTerakhir;
+    bool bertahap;
+    float aksiBerikut=-10;
+    static bool petunjukPembukaTerlihat;
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    static void ResetPetunjuk(){petunjukPembukaTerlihat=false;}
 
-    public void Mulai(Action selesai, TMP_FontAsset font)
+    public void Mulai(Action selesai, TMP_FontAsset font, bool perBagian=false)
     {
         if (label == null)
         {
@@ -44,7 +49,8 @@ public sealed class LewatiCutsceneArthur : MonoBehaviour
         }
         if (font != null) label.font = font;
         saatDilewati = selesai; SedangBerjalan = true;
-        ketukanTerakhir = -10; PetunjukTerlihat = false; label.gameObject.SetActive(false);
+        bertahap=perBagian;aksiBerikut=-10;
+        ketukanTerakhir = -10; PetunjukTerlihat = bertahap&&petunjukPembukaTerlihat; label.gameObject.SetActive(PetunjukTerlihat);
         AturAreaAman();
     }
 
@@ -75,18 +81,22 @@ public sealed class LewatiCutsceneArthur : MonoBehaviour
     public void Perbarui(float waktu)
     {
         if (!SedangBerjalan || !PetunjukTerlihat) return;
-        if (waktu >= munculSampai)
+        if (!bertahap&&waktu >= munculSampai)
         {
             PetunjukTerlihat = false; ketukanTerakhir = -10;
             label.gameObject.SetActive(false); return;
         }
-        posisiLabel.anchoredPosition = new Vector2(-36, 25 + Mathf.Sin(waktu * 5f) * 6f);
+        posisiLabel.anchoredPosition = new Vector2(-36, 25 + Mathf.Sin(waktu * 5f) * (bertahap?2f:6f));
     }
 
     public void Ketuk(float waktu)
     {
         if (!SedangBerjalan) return;
         Perbarui(waktu);
+        if(bertahap&&PetunjukTerlihat){
+            if(waktu>=aksiBerikut){aksiBerikut=waktu+.25f;saatDilewati?.Invoke();}
+            return;
+        }
         bool cepat = waktu >= ketukanTerakhir && waktu - ketukanTerakhir <= JarakKetukanCepat;
         ketukanTerakhir = waktu;
         if (!cepat) return;
@@ -94,6 +104,7 @@ public sealed class LewatiCutsceneArthur : MonoBehaviour
         if (!PetunjukTerlihat)
         {
             PetunjukTerlihat = true; munculSampai = waktu + LamaPetunjuk;
+            if(bertahap){petunjukPembukaTerlihat=true;aksiBerikut=waktu+.25f;}
             label.gameObject.SetActive(true); Perbarui(waktu);
         }
         else

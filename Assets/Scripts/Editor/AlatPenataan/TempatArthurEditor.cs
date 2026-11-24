@@ -35,13 +35,19 @@ public sealed class InteraksiJalurKampusInspector : Editor
  public override void OnInspectorGUI(){
   var m=(InteraksiJalurKampus)target;var area=m.GetComponent<AreaInteraksi>();
   EditorGUILayout.LabelField("TEMPAT BUBBLE INTERAKSI",EditorStyles.boldLabel);
-  EditorGUILayout.HelpBox("Fungsi: "+BubbleArthurScene.Ringkasan(m)+"\nJalur: "+(m.jalur!=null?m.jalur.name:"Belum dipilih")+"\n\nKlik penanda oranye BUBBLE di Scene, lalu seret panahnya. Lingkaran di lantai adalah jangkauan interaksi. Ctrl+Z membatalkan. Matikan Play dan simpan dengan Ctrl+S.",MessageType.Info);
+  EditorGUILayout.HelpBox("Fungsi: "+BubbleArthurScene.Ringkasan(m)+"\nJalur: "+(m.jalur!=null?m.jalur.name:"Belum dipilih")+"\n\nMode gambar hanya mengubah posisi bubble yang terlihat. Tempat Arthur berdiri, radius, dan titik tujuan tetap. Ctrl+Z membatalkan; Ctrl+S menyimpan.",MessageType.Info);
   using(new EditorGUI.DisabledScope(EditorApplication.isPlayingOrWillChangePlaymode)){
-   BubbleArthurScene.IkutiJalur=EditorGUILayout.ToggleLeft(new GUIContent("Tempel ke jalur hijau saat digeser","Arthur harus dapat mencapai titik bubble. Matikan hanya jika kamu sengaja ingin posisi bebas."),BubbleArthurScene.IkutiJalur);
-   if(GUILayout.Button("Geser tempat bubble di Scene"))BubbleArthurScene.Pilih(m);
-   if(GUILayout.Button("Pusatkan tempat bubble ke jalur hijau"))BubbleArthurScene.Geser(m,m.transform.position,true);
+   BubbleArthurScene.TampilanSaja=EditorGUILayout.ToggleLeft("GAMBAR BUBBLE SAJA — tempat interaksi tetap",BubbleArthurScene.TampilanSaja);
+   if(BubbleArthurScene.TampilanSaja){
+    serializedObject.Update();EditorGUILayout.PropertyField(serializedObject.FindProperty("geserTampilanBubble"),new GUIContent("Geser tampilan (X / Y / Z)"));serializedObject.ApplyModifiedProperties();
+    if(GUILayout.Button("Geser GAMBAR bubble di Scene"))BubbleArthurScene.Pilih(m);
+   }else{
+    BubbleArthurScene.IkutiJalur=EditorGUILayout.ToggleLeft("Tempel titik interaksi ke jalur hijau",BubbleArthurScene.IkutiJalur);
+    if(GUILayout.Button("Geser TEMPAT interaksi di Scene"))BubbleArthurScene.Pilih(m);
+    if(GUILayout.Button("Pusatkan TEMPAT interaksi ke jalur hijau"))BubbleArthurScene.Geser(m,m.transform.position,true);
+   }
   }
-  EditorGUILayout.HelpBox("Yang digeser adalah tempat Arthur berdiri untuk berinteraksi. Gambar bubble muncul di atas titik itu saat Play. Titik kedatangan yang berimpit ikut bergeser; garis hijau tetap.",MessageType.None);
+  EditorGUILayout.HelpBox(BubbleArthurScene.TampilanSaja?"Yang berubah hanya GAMBAR bubble. Panah Scene mengatur tampilan, bukan titik interaksi.":"Mode TEMPAT: titik interaksi dan titik kedatangan yang berimpit ikut berpindah.",MessageType.None);
   if(area!=null&&area.daftarOpsi!=null)foreach(var o in area.daftarOpsi){
    if(o==null)continue;EditorGUILayout.LabelField("Pilihan",o.teksOpsi,EditorStyles.wordWrappedLabel);
    if(o.titikTujuan!=null){var d=o.titikTujuan.GetComponent<TujuanJalurKampus>();EditorGUILayout.LabelField("Menuju",d!=null&&d.jalur!=null?d.jalur.name:o.titikTujuan.name,EditorStyles.wordWrappedLabel);if(GUILayout.Button("Lihat tujuan: "+o.teksOpsi)){Selection.activeTransform=o.titikTujuan;SceneView.lastActiveSceneView?.FrameSelected();}}

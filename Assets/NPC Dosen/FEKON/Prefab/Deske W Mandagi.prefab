@@ -1508,8 +1508,9 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Deske W. Mandagi
-    teksDialog: Selamat datang. Saya Deske W. Mandagi, Kaprodi Pascasarjana (MM).
+    namaKarakter: Sir Deske
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Deske W. Mandagi, Kaprodi Pascasarjana (MM).
     teksTombolLanjut: Selesai
     picuEmoteSetelahIni: 0
     spriteEmote: {fileID: 0}
@@ -1520,6 +1521,7 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   daftarOpsi: []
+  batasJarakMendatar: 0
 --- !u!114 &1091681237738087519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1668,6 +1670,9 @@ MonoBehaviour:
   fase: 1.42
   jarakAnimasi: 42
   idleArthur: {fileID: 11400000, guid: 3ae34a284fac2d1498e74f49ba0e1813, type: 2}
+  jalanArthur: {fileID: 0}
+  langkahMengikutiGerak: 0
+  waktuJalan: 0
 --- !u!58 &1524190107355272383
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1716,8 +1721,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Deske W. Mandagi
-  dialog: Selamat datang. Saya Deske W. Mandagi, Kaprodi Pascasarjana (MM).
+  namaNpc: Sir Deske
+  perkenalan: 
+  dialog: Hai, saya Sir Deske W. Mandagi, Kaprodi Pascasarjana (MM).
   dialogSederhana: 1
   jarakInteraksi: 2.1
   geserTitikInteraksi: {x: 0, y: 0, z: 0}

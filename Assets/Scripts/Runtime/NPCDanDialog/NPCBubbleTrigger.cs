@@ -120,7 +120,9 @@ public class NPCBubbleTrigger : MonoBehaviour
         if(gambarBubble==null)gambarBubble=bubbleChatTransform.GetComponentInChildren<SpriteRenderer>();
         CariKepalaNpc();
         float perbesaran = kepalaNpc != null ? Mathf.Max(1, pengaliUkuranNpc) : 1;
-        if(tinggiBubbleDiLayar>0&&gambarBubble!=null)
+        // Reaksi otomatis tetap terbaca walau NPC jauh atau skala prefab-nya kecil.
+        float tinggiSasaran=sapaanKhusus?Mathf.Max(.15f,tinggiBubbleDiLayar):tinggiBubbleDiLayar;
+        if(tinggiSasaran>0&&gambarBubble!=null)
         {
             var b=gambarBubble.localBounds;
             float muncul=Mathf.Clamp01(Mathf.Abs(skalaAnimasi.x/ukuranMaksimal.x));
@@ -130,7 +132,7 @@ public class NPCBubbleTrigger : MonoBehaviour
                 var atas=kameraBubble.WorldToScreenPoint(gambarBubble.transform.TransformPoint(b.center+Vector3.up*b.extents.y));
                 var bawah=kameraBubble.WorldToScreenPoint(gambarBubble.transform.TransformPoint(b.center-Vector3.up*b.extents.y));
                 float tinggi=Mathf.Abs(atas.y-bawah.y);
-                if(tinggi>.01f&&atas.z>0)bubbleChatTransform.localScale*=kameraBubble.pixelHeight*tinggiBubbleDiLayar*perbesaran*muncul/tinggi;
+                if(tinggi>.01f&&atas.z>0)bubbleChatTransform.localScale*=kameraBubble.pixelHeight*tinggiSasaran*perbesaran*muncul/tinggi;
             }
         }
         else bubbleChatTransform.localScale *= perbesaran;

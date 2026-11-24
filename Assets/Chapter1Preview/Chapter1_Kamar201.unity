@@ -5538,6 +5538,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 1835220107}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -5804,6 +5805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PelariSekilasNpc
   pelari: {fileID: 5823422449471946343}
   jalurKhusus: {fileID: 0}
+  ikutiJalurKhusus: 0
   titikAwal: {fileID: 1818184449}
   titikAkhir: {fileID: 158664679}
   awal: {x: 1217.5, y: 8.025, z: -27}
@@ -5941,6 +5943,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 0.65
   ikon: {fileID: 722596138}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -7623,6 +7626,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1129826632}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -9051,7 +9055,7 @@ Transform:
   m_GameObject: {fileID: 38599920}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1153.477, y: 8.04, z: -4.201096}
+  m_LocalPosition: {x: 1153.4758, y: 8.04, z: -4.201094}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11835,6 +11839,22 @@ PrefabInstance:
       propertyPath: jalanArthur
       value: 
       objectReference: {fileID: 11400000, guid: 3113da70341dc3748a2573d60a001884, type: 2}
+    - target: {fileID: 5857247527691757616, guid: 15e5e495ce2bc07428d81e062a7be2ee, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Green Ferry Mandias, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5857247527691757616, guid: 15e5e495ce2bc07428d81e062a7be2ee, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Green M.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488231193684075496, guid: 15e5e495ce2bc07428d81e062a7be2ee, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Green Ferry Mandias, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488231193684075496, guid: 15e5e495ce2bc07428d81e062a7be2ee, type: 3}
+      propertyPath: namaNpc
+      value: Sir Green M.
+      objectReference: {fileID: 0}
     - target: {fileID: 6488231193684075496, guid: 15e5e495ce2bc07428d81e062a7be2ee, type: 3}
       propertyPath: jalurInteraksi
       value: 
@@ -13384,6 +13404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Glen
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -14807,6 +14828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Melly
+  perkenalan: 
   dialog: Kalau lorong ini sepi, biasanya semua lagi sibuk. Atau sama-sama pura-pura
     sibuk.
   dialogSederhana: 1
@@ -15621,6 +15643,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 0.65
   ikon: {fileID: 1652795404}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -18139,6 +18162,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 1578520167}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -19025,6 +19049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Titipan_BukuSketsa_GK1
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 2.2
@@ -19148,6 +19173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Rena
+  perkenalan: 
   dialog: Kalau lorong ini sepi, biasanya semua lagi sibuk. Atau sama-sama pura-pura
     sibuk.
   dialogSederhana: 1
@@ -23417,6 +23443,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 173342668}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -28111,6 +28138,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 0.85
   ikon: {fileID: 114453974}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -28490,6 +28518,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 3.5
   ikon: {fileID: 1649235230}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.124618165, y: 0.12838869, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -29313,6 +29342,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 753208132}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -29992,6 +30022,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 590643382}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -30503,6 +30534,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 966031504}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -32420,6 +32452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Dina
+  perkenalan: 
   dialog: Aku cuma mau ambil air. Kenapa pulangnya selalu sempat mampir ke kamar
     orang?
   dialogSederhana: 1
@@ -34828,6 +34861,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 1652575807}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -34958,6 +34992,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 765836547}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -35429,6 +35464,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1543532509}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.124618165, y: 0.12838869, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -38046,6 +38082,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 618296942}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -38864,6 +38901,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 0.85
   ikon: {fileID: 1791601604}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -39647,6 +39685,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 495586795}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -43504,6 +43543,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1942469312}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -43549,6 +43589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Dandi
+  perkenalan: 
   dialog: Hard diskmu belum ketemu? Coba periksa dekat lemari. Setelah ketemu, simpan
     di tas supaya tidak lupa lagi.
   dialogSederhana: 0
@@ -44814,6 +44855,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1660472759}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -50140,6 +50182,7 @@ MonoBehaviour:
   - {fileID: 1698906491}
   radius: 0.85
   ikon: {fileID: 1745945479}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -51985,6 +52028,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 646153046}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -52448,6 +52492,7 @@ MonoBehaviour:
   - {fileID: 1174501206}
   radius: 0.85
   ikon: {fileID: 276734819}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -52994,6 +53039,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1445722927}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -59200,6 +59246,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 408003989}
     m_Modifications:
     - target: {fileID: 649263717178492462, guid: dfdb9b354eaa76b4bb0b564a940103e2, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Julio Kolapitawondal, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 649263717178492462, guid: dfdb9b354eaa76b4bb0b564a940103e2, type: 3}
+      propertyPath: namaNpc
+      value: Sir Julio
+      objectReference: {fileID: 0}
+    - target: {fileID: 649263717178492462, guid: dfdb9b354eaa76b4bb0b564a940103e2, type: 3}
       propertyPath: jalurInteraksi
       value: 
       objectReference: {fileID: 1594747657}
@@ -59310,6 +59364,14 @@ PrefabInstance:
     - target: {fileID: 6132750502815117728, guid: dfdb9b354eaa76b4bb0b564a940103e2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952427430963818487, guid: dfdb9b354eaa76b4bb0b564a940103e2, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Julio Kolapitawondal, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952427430963818487, guid: dfdb9b354eaa76b4bb0b564a940103e2, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Julio
       objectReference: {fileID: 0}
     - target: {fileID: 8662308655267564364, guid: dfdb9b354eaa76b4bb0b564a940103e2, type: 3}
       propertyPath: jalanArthur
@@ -61134,6 +61196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Arthur
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.8
@@ -71729,6 +71792,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 2055537592}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -72982,6 +73046,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 491374521}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -73932,6 +73997,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 388769808}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -78615,6 +78681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Feth
+  perkenalan: 
   dialog: Hard diskmu belum ketemu? Coba periksa dekat lemari. Setelah ketemu, simpan
     di tas supaya tidak lupa lagi.
   dialogSederhana: 0
@@ -78947,6 +79014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Irene
+  perkenalan: 
   dialog: Aku bukan sedang olahraga. Kelasnya sebentar lagi. Tolong bilang ke Atan
     aku masih sempat, menurut perhitunganku sendiri.
   dialogSederhana: 1
@@ -79429,6 +79497,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 417304175}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -83388,6 +83457,7 @@ RectTransform:
   - {fileID: 171741626}
   - {fileID: 672327933}
   - {fileID: 1720116676}
+  - {fileID: 1372083797}
   m_Father: {fileID: 62928892}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -83531,6 +83601,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 746460190}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -87031,6 +87102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Bima
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -96050,6 +96122,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 549037093}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -98027,6 +98100,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1112068697}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -98428,6 +98502,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 529540523}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -101926,6 +102001,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.5
   ikon: {fileID: 1707311335}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -102194,6 +102270,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 0.85
   ikon: {fileID: 159927569}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -104199,6 +104276,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1
   ikon: {fileID: 1195349508}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -106382,6 +106460,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Elvis R Sumanti
       objectReference: {fileID: 0}
+    - target: {fileID: 5424841377435316762, guid: 75335aaf4b1cb6d45a50595838e69e1d, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Elvis R. Sumanti, Dekan FEB.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5424841377435316762, guid: 75335aaf4b1cb6d45a50595838e69e1d, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Elvis
+      objectReference: {fileID: 0}
+    - target: {fileID: 5510146279680196412, guid: 75335aaf4b1cb6d45a50595838e69e1d, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Elvis R. Sumanti, Dekan FEB.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5510146279680196412, guid: 75335aaf4b1cb6d45a50595838e69e1d, type: 3}
+      propertyPath: namaNpc
+      value: Sir Elvis
+      objectReference: {fileID: 0}
     - target: {fileID: 5510146279680196412, guid: 75335aaf4b1cb6d45a50595838e69e1d, type: 3}
       propertyPath: jalurInteraksi
       value: 
@@ -107141,6 +107235,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 2.2
   ikon: {fileID: 498138400}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.1, y: 0.10302566, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -108218,6 +108313,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 1636828135}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -108916,6 +109012,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1087092180}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -109742,6 +109839,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 465310276}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -116010,6 +116108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Raka
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -116319,6 +116418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Developer
+  perkenalan: 
   dialog: Hei, Arthur! Selamat datang di Guest House. Kalau lagi jalan-jalan di kampus,
     coba sapa orang-orang yang kamu temui.
   dialogSederhana: 1
@@ -116695,6 +116795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PelariSekilasNpc
   pelari: {fileID: 891703433}
   jalurKhusus: {fileID: 38190068}
+  ikutiJalurKhusus: 1
   titikAwal: {fileID: 1475573115}
   titikAkhir: {fileID: 1180112758}
   awal: {x: 1217.5, y: 8.025, z: -27}
@@ -117148,6 +117249,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 462111610}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.124618165, y: 0.12838869, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -124437,6 +124539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Rina
+  perkenalan: 
   dialog: Bimo cari aku? Aku di sini dari tadi. Pesannya baru kubaca setelah dia
     menitip orang. Teknologi memang membantu.
   dialogSederhana: 1
@@ -129237,6 +129340,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.4
   ikon: {fileID: 2131225482}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.11215635, y: 0.11554982, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -132543,6 +132647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Lala
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -133012,6 +133117,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1
   ikon: {fileID: 718392204}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -133496,6 +133602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Vids
+  perkenalan: 
   dialog: 'Aku punya pacar, namanya Sella.
 
     Dan aku sangat mencintainya.'
@@ -139841,6 +139948,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1
   ikon: {fileID: 545577111}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -144601,6 +144709,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1365657321}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -144946,6 +145055,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1658575861009699035, guid: ea507d7af584f2d429f4b523e39bcb5d, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Argha O. Silitonga, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658575861009699035, guid: ea507d7af584f2d429f4b523e39bcb5d, type: 3}
+      propertyPath: namaNpc
+      value: Sir Argha
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658575861009699035, guid: ea507d7af584f2d429f4b523e39bcb5d, type: 3}
       propertyPath: jalurInteraksi
       value: 
       objectReference: {fileID: 1594747657}
@@ -144964,6 +145081,14 @@ PrefabInstance:
     - target: {fileID: 5609134825823945499, guid: ea507d7af584f2d429f4b523e39bcb5d, type: 3}
       propertyPath: m_Name
       value: Argha O Silitonga
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090842215268610139, guid: ea507d7af584f2d429f4b523e39bcb5d, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Argha O. Silitonga, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090842215268610139, guid: ea507d7af584f2d429f4b523e39bcb5d, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Argha
       objectReference: {fileID: 0}
     - target: {fileID: 8006159315165186367, guid: ea507d7af584f2d429f4b523e39bcb5d, type: 3}
       propertyPath: jalanArthur
@@ -146389,6 +146514,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 312003374}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -146734,7 +146860,7 @@ Transform:
   m_GameObject: {fileID: 660899899}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1156, y: 8.04, z: 36}
+  m_LocalPosition: {x: 1153.4438, y: 8.04, z: 36.012764}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -147247,6 +147373,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 853297426}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -151195,6 +151322,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 0.85
   ikon: {fileID: 1483931233}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -152347,6 +152475,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1
   ikon: {fileID: 1809503289}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -154568,6 +154697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PelariSekilasNpc
   pelari: {fileID: 2011070383}
   jalurKhusus: {fileID: 38190068}
+  ikutiJalurKhusus: 1
   titikAwal: {fileID: 1619441825}
   titikAkhir: {fileID: 954115139}
   awal: {x: 1217.5, y: 8.025, z: -27}
@@ -160050,6 +160180,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 2.4
   ikon: {fileID: 1430574719}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.08, y: 0.08242053, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -160568,6 +160699,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 726170756}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -162947,6 +163079,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 909170936}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.124618165, y: 0.12838869, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -163203,6 +163336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Damar
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -163728,6 +163862,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 706109187}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -164013,6 +164148,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 0.8
   ikon: {fileID: 1673993050}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -169140,6 +169276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Nara
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -169673,6 +169810,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1170962216}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -170488,6 +170626,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 198583531}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -173933,6 +174072,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.25
   ikon: {fileID: 1241175329}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -175571,6 +175711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Chipuy
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -175995,6 +176136,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 1038706041}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -180295,7 +180437,7 @@ Transform:
   m_GameObject: {fileID: 825817878}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1153.5166, y: 8.04, z: 19.798872}
+  m_LocalPosition: {x: 1153.5153, y: 8.04, z: 19.798874}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -180326,7 +180468,7 @@ Transform:
   m_GameObject: {fileID: 826067159}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1156, y: 8.04, z: 9}
+  m_LocalPosition: {x: 1153.4974, y: 8.04, z: 9.004112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -181252,6 +181394,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 125030982}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.124618165, y: 0.12838869, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -181907,6 +182050,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.4
   ikon: {fileID: 1974924607}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -184485,6 +184629,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 811997155}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -186108,6 +186253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Mira
+  perkenalan: 
   dialog: Katanya mau tidur cepat. Itu masih rencana, belum keputusan.
   dialogSederhana: 1
   jarakInteraksi: 2
@@ -192501,6 +192647,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 2.2
   ikon: {fileID: 946821545}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.1, y: 0.10302566, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -198111,6 +198258,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 943172058}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -198402,6 +198550,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1594696979}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -201982,6 +202131,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.3
   ikon: {fileID: 1133816289}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -203258,6 +203408,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 408003989}
     m_Modifications:
+    - target: {fileID: 1065950053609002771, guid: 9bd176ac031db0b408df4d8b71ff7030, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Joe Y. Y. Mambu, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065950053609002771, guid: 9bd176ac031db0b408df4d8b71ff7030, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Joe
+      objectReference: {fileID: 0}
     - target: {fileID: 1591753144178733268, guid: 9bd176ac031db0b408df4d8b71ff7030, type: 3}
       propertyPath: jalanArthur
       value: 
@@ -203353,6 +203511,14 @@ PrefabInstance:
     - target: {fileID: 2750370791730469134, guid: 9bd176ac031db0b408df4d8b71ff7030, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970767235138460397, guid: 9bd176ac031db0b408df4d8b71ff7030, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Joe Y. Y. Mambu, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970767235138460397, guid: 9bd176ac031db0b408df4d8b71ff7030, type: 3}
+      propertyPath: namaNpc
+      value: Sir Joe
       objectReference: {fileID: 0}
     - target: {fileID: 4970767235138460397, guid: 9bd176ac031db0b408df4d8b71ff7030, type: 3}
       propertyPath: jalurInteraksi
@@ -203766,6 +203932,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 667815555}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -205956,6 +206123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Dini
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -209385,6 +209553,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 3518559}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -209643,6 +209812,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 253568022}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.124618165, y: 0.12838869, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -209889,7 +210059,7 @@ Transform:
   m_GameObject: {fileID: 954115138}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1151.2, y: 8.04, z: 27}
+  m_LocalPosition: {x: 1153.5427, y: 8.04, z: 28.787502}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -212115,6 +212285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Nessa
+  perkenalan: 
   dialog: Aku cuma mau ambil air. Kenapa pulangnya selalu sempat mampir ke kamar
     orang?
   dialogSederhana: 1
@@ -214554,7 +214725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SiklusWaktuKampus
   waktu: 0
-  berjalanOtomatis: 0
+  berjalanOtomatis: 1
   detikSatuHari: 720
   durasiPagi: 300
   durasiSore: 60
@@ -217654,6 +217825,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.25
   ikon: {fileID: 2001862324}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -218071,6 +218243,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 864313911}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -218725,6 +218898,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 408003989}
     m_Modifications:
     - target: {fileID: 42349938746521688, guid: d0994a4ef93a09a42a1e1433aa13143b, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Green A. Sandag, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 42349938746521688, guid: d0994a4ef93a09a42a1e1433aa13143b, type: 3}
+      propertyPath: namaNpc
+      value: Sir Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 42349938746521688, guid: d0994a4ef93a09a42a1e1433aa13143b, type: 3}
       propertyPath: jalurInteraksi
       value: 
       objectReference: {fileID: 1594747657}
@@ -218839,6 +219020,14 @@ PrefabInstance:
     - target: {fileID: 6439629487699965568, guid: d0994a4ef93a09a42a1e1433aa13143b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073137268747398053, guid: d0994a4ef93a09a42a1e1433aa13143b, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Green A. Sandag, Dosen FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8073137268747398053, guid: d0994a4ef93a09a42a1e1433aa13143b, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Green
       objectReference: {fileID: 0}
     - target: {fileID: 8972498058470499462, guid: d0994a4ef93a09a42a1e1433aa13143b, type: 3}
       propertyPath: m_Name
@@ -225874,6 +226063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Kezia
+  perkenalan: 
   dialog: Aku cuma mau ambil air. Kenapa pulangnya selalu sempat mampir ke kamar
     orang?
   dialogSederhana: 1
@@ -232309,6 +232499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PelariSekilasNpc
   pelari: {fileID: 2132063488}
   jalurKhusus: {fileID: 1290395389}
+  ikutiJalurKhusus: 0
   titikAwal: {fileID: 1482236769}
   titikAkhir: {fileID: 934793291}
   awal: {x: 1217.5, y: 8.025, z: -27}
@@ -233347,6 +233538,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 622067201}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -233984,6 +234176,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1177641847}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -234565,6 +234758,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1840404143}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -237675,6 +237869,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1362981275}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -239335,6 +239530,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.35
   ikon: {fileID: 1331877548}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.055, y: 0.056661, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -239573,6 +239769,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1376432585}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -240542,6 +240739,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1178536282}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -242493,6 +242691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Titipan_HardDisk_GA
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 2.2
@@ -243091,6 +243290,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1554647681}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -246637,6 +246837,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 423791839}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -247784,6 +247985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Celine
+  perkenalan: 
   dialog: Kalau lorong ini sepi, biasanya semua lagi sibuk. Atau sama-sama pura-pura
     sibuk.
   dialogSederhana: 1
@@ -248944,6 +249146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PelariSekilasNpc
   pelari: {fileID: 221065364}
   jalurKhusus: {fileID: 38190068}
+  ikutiJalurKhusus: 1
   titikAwal: {fileID: 826067160}
   titikAkhir: {fileID: 660899900}
   awal: {x: 1217.5, y: 8.025, z: -27}
@@ -249892,6 +250095,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1531359276}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -250448,6 +250652,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 2115640832}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -251260,6 +251465,22 @@ PrefabInstance:
     - target: {fileID: 3468828358130915545, guid: 95422f0728145aa43a4640a415112aa2, type: 3}
       propertyPath: m_Name
       value: Ika Prayanthi
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585681076531599596, guid: 95422f0728145aa43a4640a415112aa2, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Ma'am Ika Prayanthi, Kaprodi Akuntansi.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585681076531599596, guid: 95422f0728145aa43a4640a415112aa2, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Ma'am Ika
+      objectReference: {fileID: 0}
+    - target: {fileID: 5060321532695868975, guid: 95422f0728145aa43a4640a415112aa2, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Ma'am Ika Prayanthi, Kaprodi Akuntansi.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5060321532695868975, guid: 95422f0728145aa43a4640a415112aa2, type: 3}
+      propertyPath: namaNpc
+      value: Ma'am Ika
       objectReference: {fileID: 0}
     - target: {fileID: 5060321532695868975, guid: 95422f0728145aa43a4640a415112aa2, type: 3}
       propertyPath: jalurInteraksi
@@ -252467,6 +252688,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 813246918}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -252912,6 +253134,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 302741975}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -254608,6 +254831,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.35
   ikon: {fileID: 2125204096}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -259011,7 +259235,7 @@ Transform:
   m_GameObject: {fileID: 1180112757}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1150.4, y: 8.04, z: 18}
+  m_LocalPosition: {x: 1153.5123, y: 8.04, z: 17.994883}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -261456,6 +261680,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.25
   ikon: {fileID: 862721963}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -262458,6 +262683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Mika
+  perkenalan: 
   dialog: Bilang ke Nisay, catatannya sudah kubaca. Judulnya dulu. Isinya menyusul
     hari ini, bukan semester depan.
   dialogSederhana: 1
@@ -265039,6 +265265,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1770061046}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -265270,6 +265497,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 1256929161}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -266317,6 +266545,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 931404243}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -268267,6 +268496,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 512467406}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.124618165, y: 0.12838869, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -268676,6 +268906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Naya
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.8
@@ -277651,6 +277882,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1028208968}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -285585,6 +285817,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 216020120}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -288900,6 +289133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Vina
+  perkenalan: 
   dialog: Katanya mau tidur cepat. Itu masih rencana, belum keputusan.
   dialogSederhana: 1
   jarakInteraksi: 2
@@ -289600,6 +289834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Naya
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.8
@@ -292199,6 +292434,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 444271768}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.124618165, y: 0.12838869, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -297708,6 +297944,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1647251471}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -299326,6 +299563,157 @@ MonoBehaviour:
   kameraMasukSinematik: 0
   durasiKameraMasuk: 1.1
   geserAwalKamera: 0.8
+--- !u!1 &1372083796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1372083797}
+  - component: {fileID: 1372083800}
+  - component: {fileID: 1372083799}
+  - component: {fileID: 1372083798}
+  m_Layer: 0
+  m_Name: JamKampusHP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1372083797
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372083796}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 374690684}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 916.92615, y: 437.16196}
+  m_SizeDelta: {x: 100, y: 33}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &1372083798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372083796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8eb7f4c24b886947bb9ae2ecd1b411b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JamKampusHP
+  teks: {fileID: 1372083799}
+--- !u!114 &1372083799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372083796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 07:00
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 2b82d61f9e230cf47a8bbb975fe493f2, type: 2}
+  m_sharedMaterial: {fileID: 2618178619663465960, guid: 2b82d61f9e230cf47a8bbb975fe493f2, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4280689697
+  m_fontColor: {r: 0.13, g: 0.14, b: 0.15, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 32
+  m_fontSizeBase: 32
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 4
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1372083800
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372083796}
+  m_CullTransparentMesh: 1
 --- !u!1 &1372284563
 GameObject:
   m_ObjectHideFlags: 0
@@ -300518,6 +300906,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 2011158805}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -302437,6 +302826,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1160946434}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -303142,6 +303532,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 127718511}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -303309,6 +303700,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 967956718}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.124618165, y: 0.12838869, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -305642,6 +306034,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 395732114}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -310655,6 +311048,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1
   ikon: {fileID: 1626902170}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -311735,6 +312129,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 35328728}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -312534,6 +312929,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 272345188}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -313606,6 +314002,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 808923595}
     m_Modifications:
     - target: {fileID: 172687071902063583, guid: a2e8b0a0368d58847a32c8e3dc0499e9, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Moody Wahongan, Kaprodi Manajemen.
+      objectReference: {fileID: 0}
+    - target: {fileID: 172687071902063583, guid: a2e8b0a0368d58847a32c8e3dc0499e9, type: 3}
+      propertyPath: namaNpc
+      value: Sir Moody
+      objectReference: {fileID: 0}
+    - target: {fileID: 172687071902063583, guid: a2e8b0a0368d58847a32c8e3dc0499e9, type: 3}
       propertyPath: jalurInteraksi
       value: 
       objectReference: {fileID: 2103595512}
@@ -313620,6 +314024,14 @@ PrefabInstance:
     - target: {fileID: 172687071902063583, guid: a2e8b0a0368d58847a32c8e3dc0499e9, type: 3}
       propertyPath: geserTitikInteraksi.z
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 337213748451582315, guid: a2e8b0a0368d58847a32c8e3dc0499e9, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Moody Wahongan, Kaprodi Manajemen.
+      objectReference: {fileID: 0}
+    - target: {fileID: 337213748451582315, guid: a2e8b0a0368d58847a32c8e3dc0499e9, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Moody
       objectReference: {fileID: 0}
     - target: {fileID: 2876930781614958230, guid: a2e8b0a0368d58847a32c8e3dc0499e9, type: 3}
       propertyPath: m_Name
@@ -314504,6 +314916,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 169439487}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -319955,7 +320368,7 @@ Transform:
   m_GameObject: {fileID: 1475573114}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1150.4, y: 8.04, z: -3}
+  m_LocalPosition: {x: 1153.4778, y: 8.04, z: -3.005059}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -321048,6 +321461,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.25
   ikon: {fileID: 291223692}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -322967,6 +323381,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 2.4
   ikon: {fileID: 606821632}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.08, y: 0.08242053, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -323510,6 +323925,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1
   ikon: {fileID: 290590612}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -327001,6 +327417,22 @@ PrefabInstance:
     - target: {fileID: 3552127571423550744, guid: aa232e449cec84d42ae4bb81c7b33738, type: 3}
       propertyPath: m_Name
       value: Semmy W Taju
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343891152511526072, guid: aa232e449cec84d42ae4bb81c7b33738, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Semmy W. Taju, Kaprodi Informatika.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343891152511526072, guid: aa232e449cec84d42ae4bb81c7b33738, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Semmy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859318930807187411, guid: aa232e449cec84d42ae4bb81c7b33738, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Semmy W. Taju, Kaprodi Informatika.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859318930807187411, guid: aa232e449cec84d42ae4bb81c7b33738, type: 3}
+      propertyPath: namaNpc
+      value: Sir Semmy
       objectReference: {fileID: 0}
     - target: {fileID: 6859318930807187411, guid: aa232e449cec84d42ae4bb81c7b33738, type: 3}
       propertyPath: jalurInteraksi
@@ -330560,6 +330992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Sela
+  perkenalan: 
   dialog: Bilang ke Naya aku masih di lantai satu. Tadi mau membalas, lalu merasa
     bisa mengingatnya. Ternyata ingatan juga suka menunda.
   dialogSederhana: 1
@@ -331617,6 +332050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Laras
+  perkenalan: 
   dialog: Livia cari aku? Bilang aku sudah di lantai dua. Kalau aku tidak membalas,
     biasanya HP-ku yang diam, bukan aku marah.
   dialogSederhana: 1
@@ -334804,6 +335238,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2949621335231616619, guid: e29c26113df09654bb92ea481d7ff353, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Deske W. Mandagi, Kaprodi Pascasarjana (MM).
+      objectReference: {fileID: 0}
+    - target: {fileID: 2949621335231616619, guid: e29c26113df09654bb92ea481d7ff353, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Deske
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101020531900121621, guid: e29c26113df09654bb92ea481d7ff353, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Deske W. Mandagi, Kaprodi Pascasarjana (MM).
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101020531900121621, guid: e29c26113df09654bb92ea481d7ff353, type: 3}
+      propertyPath: namaNpc
+      value: Sir Deske
+      objectReference: {fileID: 0}
     - target: {fileID: 3101020531900121621, guid: e29c26113df09654bb92ea481d7ff353, type: 3}
       propertyPath: jalurInteraksi
       value: 
@@ -336761,6 +337211,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1687919079}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -337740,6 +338191,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 0.85
   ikon: {fileID: 299240425}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -340730,6 +341182,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 0.95
   ikon: {fileID: 826380734}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.09, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -345393,6 +345846,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1671523083}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -346417,6 +346871,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 879461207}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -349205,7 +349660,7 @@ Transform:
   m_GameObject: {fileID: 1619441824}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1151.2, y: 8.04, z: 3}
+  m_LocalPosition: {x: 1153.4877, y: 8.04, z: 2.99624}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -356634,6 +357089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Ayu
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -356973,6 +357429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PelariSekilasNpc
   pelari: {fileID: 61297949}
   jalurKhusus: {fileID: 38190068}
+  ikutiJalurKhusus: 1
   titikAwal: {fileID: 38599921}
   titikAkhir: {fileID: 825817879}
   awal: {x: 1217.5, y: 8.025, z: -27}
@@ -357143,6 +357600,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 2016571929}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.124618165, y: 0.12838869, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -358448,6 +358906,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 603556376}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.124618165, y: 0.12838869, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -359174,6 +359633,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 206332273}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -366561,6 +367021,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 1339023249}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.124618165, y: 0.12838869, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -367736,6 +368197,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.45
   ikon: {fileID: 641830014}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.09, y: 0.09272, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -368923,6 +369385,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 0.95
   ikon: {fileID: 195583741}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.09, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -370862,6 +371325,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1601625023}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -372749,6 +373213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Fajar
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -375104,6 +375569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PelariSekilasNpc
   pelari: {fileID: 476586380}
   jalurKhusus: {fileID: 703601823}
+  ikutiJalurKhusus: 1
   titikAwal: {fileID: 599124691}
   titikAkhir: {fileID: 1533926372}
   awal: {x: 1217.5, y: 8.025, z: -27}
@@ -383987,6 +384453,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1869661388}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -385175,6 +385642,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7867563118583756420, guid: d11e37932c016024c899c469a08d5125, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Ma'am Fanny Soewignyo, Dosen FEB.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867563118583756420, guid: d11e37932c016024c899c469a08d5125, type: 3}
+      propertyPath: namaNpc
+      value: Ma'am Fanny
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867563118583756420, guid: d11e37932c016024c899c469a08d5125, type: 3}
       propertyPath: jalurInteraksi
       value: 
       objectReference: {fileID: 2103595512}
@@ -385217,6 +385692,14 @@ PrefabInstance:
     - target: {fileID: 8555155842628562465, guid: d11e37932c016024c899c469a08d5125, type: 3}
       propertyPath: m_Color.r
       value: 0.7254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846342001328616975, guid: d11e37932c016024c899c469a08d5125, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Ma'am Fanny Soewignyo, Dosen FEB.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8846342001328616975, guid: d11e37932c016024c899c469a08d5125, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Ma'am Fanny
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -386115,6 +386598,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 36964649}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -389114,6 +389598,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 810303566}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.124618165, y: 0.12838869, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -391601,6 +392086,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1
   ikon: {fileID: 1782182609}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -391992,6 +392478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Sari
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -394561,6 +395048,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 12399008}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -401293,6 +401781,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1732974562}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -408803,6 +409292,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1199768159}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -411706,6 +412196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Tessa
+  perkenalan: 
   dialog: Katanya mau tidur cepat. Itu masih rencana, belum keputusan.
   dialogSederhana: 1
   jarakInteraksi: 2
@@ -416292,6 +416783,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 1259632025}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -417687,6 +418179,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 764280153}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -419611,6 +420104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PelariSekilasNpc
   pelari: {fileID: 306450065}
   jalurKhusus: {fileID: 1972580168}
+  ikutiJalurKhusus: 0
   titikAwal: {fileID: 1258093246}
   titikAkhir: {fileID: 1728462}
   awal: {x: 1217.5, y: 8.025, z: -27}
@@ -419731,6 +420225,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 0.85
   ikon: {fileID: 1624684032}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -422114,6 +422609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Atan
+  perkenalan: 
   dialog: Hard diskmu belum ketemu? Coba periksa dekat lemari. Setelah ketemu, simpan
     di tas supaya tidak lupa lagi.
   dialogSederhana: 0
@@ -429698,6 +430194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Livia
+  perkenalan: 
   dialog: Lagi cari jalan keluar? Ke ujung kanan lorong, ya. Aku masih menunggu temanku
     di sini.
   dialogSederhana: 1
@@ -430096,6 +430593,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 0.85
   ikon: {fileID: 779989177}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -430673,6 +431171,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 0.7
   ikon: {fileID: 1341780858}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -431710,6 +432209,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 2.2
   ikon: {fileID: 76127728}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.09, y: 0.0975, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -431978,6 +432478,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.35
   ikon: {fileID: 2058292321}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.09, y: 0.09272, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -434903,6 +435404,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 1184766644}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.124618165, y: 0.12838869, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -435490,6 +435992,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 1383214026}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -437208,6 +437711,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 386219852}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -438892,6 +439396,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1031978404}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -448667,6 +449172,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1345778191}
     m_Modifications:
     - target: {fileID: 437214275835305648, guid: fc61a50d4daa02e409d90f0ceef86d89, type: 3}
+      propertyPath: dialog
+      value: Hai, saya Sir Stenly R. Pungus, Dekan FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 437214275835305648, guid: fc61a50d4daa02e409d90f0ceef86d89, type: 3}
+      propertyPath: namaNpc
+      value: Sir Stenly
+      objectReference: {fileID: 0}
+    - target: {fileID: 437214275835305648, guid: fc61a50d4daa02e409d90f0ceef86d89, type: 3}
       propertyPath: jalurInteraksi
       value: 
       objectReference: {fileID: 992750278}
@@ -448678,6 +449191,14 @@ PrefabInstance:
       propertyPath: jalanArthur
       value: 
       objectReference: {fileID: 11400000, guid: 3113da70341dc3748a2573d60a001884, type: 2}
+    - target: {fileID: 6725806976532780666, guid: fc61a50d4daa02e409d90f0ceef86d89, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].teksDialog
+      value: Hai, saya Sir Stenly R. Pungus, Dekan FILKOM.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725806976532780666, guid: fc61a50d4daa02e409d90f0ceef86d89, type: 3}
+      propertyPath: skenarioDialog.Array.data[0].namaKarakter
+      value: Sir Stenly
+      objectReference: {fileID: 0}
     - target: {fileID: 7189183103272922593, guid: fc61a50d4daa02e409d90f0ceef86d89, type: 3}
       propertyPath: m_Name
       value: Stenly R Pungus
@@ -454668,6 +455189,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 876598561}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -455116,6 +455638,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1908883707}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -460046,6 +460569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Rani
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.9
@@ -464382,6 +464906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Epona
+  perkenalan: 
   dialog: 'Hmm~ la la la...
 
     Oh, hai Arthur! Aku lagi latihan nyanyi. Boleh dengar
@@ -465039,6 +465564,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1260224625}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -465428,6 +465954,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1208772526}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -467754,6 +468281,7 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.45
   ikon: {fileID: 332542097}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
   ukuranIkon: {x: 0.09, y: 0.09272, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
@@ -469732,7 +470260,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Sir Andria K. Wahyudi
+    namaKarakter: Sir Andria
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Andria K. Wahyudi.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Sir Andria
     potretPembicara: {fileID: 0}
     teksDialog: Halo, Arthur. Kalau sudah selesai memakai ruang kelas, jangan lupa
       rapikan tempat duduknya, ya.
@@ -471306,7 +471847,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Sir Oktoverano H. Lengkong
+  namaNpc: Sir Oktoverano
+  perkenalan: Hai, saya Sir Oktoverano H. Lengkong.
   dialog: Arthur, menikmati suasana kampus? Perhatikan lingkungan sekitar juga, jangan
     hanya layar HP.
   dialogSederhana: 1
@@ -473488,7 +474030,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Sir Stenly I. Adam
+  namaNpc: Sir Stenly
+  perkenalan: Hai, saya Sir Stenly I. Adam.
   dialog: Halo, Arthur. Kalau mencari ruangan, perhatikan penanda lantainya dulu
     supaya tidak bolak-balik.
   dialogSederhana: 1
@@ -473956,7 +474499,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Sir Reymon Rotikan
+  namaNpc: Sir Reymon
+  perkenalan: Hai, saya Sir Reymon Rotikan.
   dialog: Halo, Arthur. Jalan sebentar boleh, nanti lanjutkan lagi pekerjaan yang
     belum selesai.
   dialogSederhana: 1
@@ -474891,7 +475435,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Sir Oktoverano H. Lengkong
+    namaKarakter: Sir Oktoverano
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Oktoverano H. Lengkong.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Sir Oktoverano
     potretPembicara: {fileID: 0}
     teksDialog: Arthur, menikmati suasana kampus? Perhatikan lingkungan sekitar juga,
       jangan hanya layar HP.
@@ -475728,7 +476285,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Sir Green Sandag
+    namaKarakter: Sir Green
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Green A. Sandag.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Sir Green
     potretPembicara: {fileID: 0}
     teksDialog: Hei, Arthur, aman aja skripsimu?
     teksTombolLanjut: Next ->
@@ -475741,7 +476311,7 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   - siapaYangBicara: 1
-    namaKarakter: Sir Green Sandag
+    namaKarakter: Sir Green
     potretPembicara: {fileID: 0}
     teksDialog: Semangat jo,
     teksTombolLanjut: Next ->
@@ -483423,7 +483993,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Sir Andria K. Wahyudi
+  namaNpc: Sir Andria
+  perkenalan: Hai, saya Sir Andria K. Wahyudi.
   dialog: Halo, Arthur. Kalau sudah selesai memakai ruang kelas, jangan lupa rapikan
     tempat duduknya, ya.
   dialogSederhana: 1
@@ -484859,7 +485430,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Ma'am Lidya C. Laoh
+  namaNpc: Ma'am Lidya
+  perkenalan: Hai, saya Ma'am Lidya C. Laoh.
   dialog: Halo, Arthur. Kalau belum paham sesuatu, tidak apa-apa bertanya. Jangan
     hanya dipendam sendiri.
   dialogSederhana: 1
@@ -488117,6 +488689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Chipeng
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.15
@@ -490222,6 +490795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Niko - VOCS
+  perkenalan: 
   dialog: ...
   dialogSederhana: 1
   jarakInteraksi: 1.8
@@ -490362,7 +490936,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Sir Rolly J. Lontaan
+  namaNpc: Sir Rolly
+  perkenalan: Hai, saya Sir Rolly J. Lontaan.
   dialog: Arthur, sudah makan? Jangan sampai terlalu sibuk sampai lupa istirahat.
   dialogSederhana: 1
   jarakInteraksi: 2.8
@@ -491122,7 +491697,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Sir Reymon Rotikan
+    namaKarakter: Sir Reymon
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Reymon Rotikan.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Sir Reymon
     potretPembicara: {fileID: 0}
     teksDialog: Halo, Arthur. Jalan sebentar boleh, nanti lanjutkan lagi pekerjaan
       yang belum selesai.
@@ -492257,7 +492845,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Ma'am Raissa Camila Maringka
+  namaNpc: Ma'am Raissa
+  perkenalan: Hai, saya Ma'am Raissa Camila Maringka.
   dialog: Halo, Arthur. Mau ke gedung mana? Cek peta dulu kalau belum yakin jalannya,
     ya.
   dialogSederhana: 1
@@ -492882,6 +493471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Ratu Ngaw
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.15
@@ -493451,6 +494041,19 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
+    namaKarakter: Sir George
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir George M. W. Tangka.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
     namaKarakter: Niko
     potretPembicara: {fileID: 1565207551, guid: 1550e4d48747392499835ae702b8d5c3, type: 3}
     teksDialog: Sir! Aku mau join VOCS! Voice Of Computer Science di semester depan;
@@ -493465,7 +494068,7 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   - siapaYangBicara: 1
-    namaKarakter: Sir George Tangka
+    namaKarakter: Sir George
     potretPembicara: {fileID: 0}
     teksDialog: Kau kalau ikut itu bukan fokus untuk cari nilai, dan itu juga nilai
       rekomendasi, jadi tergantung dosen mau menambahkannya sebagai nilai bonus atau
@@ -495803,7 +496406,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Ma'am Lidya C. Laoh
+    namaKarakter: Ma'am Lidya
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Ma'am Lidya C. Laoh.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Ma'am Lidya
     potretPembicara: {fileID: 0}
     teksDialog: Halo, Arthur. Kalau belum paham sesuatu, tidak apa-apa bertanya.
       Jangan hanya dipendam sendiri.
@@ -496664,7 +497280,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Ma'am Debby E. Sondakh
+  namaNpc: Ma'am Debby
+  perkenalan: Hai, saya Ma'am Debby E. Sondakh.
   dialog: Halo, Arthur. Selamat beraktivitas. Jangan lupa jaga kesehatan dan semangat
     belajarnya.
   dialogSederhana: 1
@@ -496848,7 +497465,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Prof. Andrew T. Liem
+  namaNpc: Sir Andrew
+  perkenalan: Hai, saya Sir Andrew T. Liem.
   dialog: Halo, Arthur. Semoga kegiatanmu hari ini berjalan baik. Kerjakan satu per
     satu, ya.
   dialogSederhana: 1
@@ -497189,6 +497807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Monica
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.15
@@ -497340,7 +497959,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Prof. Andrew T. Liem
+    namaKarakter: Sir Andrew
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Andrew T. Liem.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Sir Andrew
     potretPembicara: {fileID: 0}
     teksDialog: Halo, Arthur. Semoga kegiatanmu hari ini berjalan baik. Kerjakan
       satu per satu, ya.
@@ -497367,7 +497999,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Sir George M. W. Tangka
+  namaNpc: Sir George
+  perkenalan: 
   dialog: 
   dialogSederhana: 0
   jarakInteraksi: 2.8
@@ -498628,7 +499261,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Sir Stenly I. Adam
+    namaKarakter: Sir Stenly
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Stenly I. Adam.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Sir Stenly
     potretPembicara: {fileID: 0}
     teksDialog: Halo, Arthur. Kalau mencari ruangan, perhatikan penanda lantainya
       dulu supaya tidak bolak-balik.
@@ -499979,7 +500625,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Ma'am Debby E. Sondakh
+    namaKarakter: Ma'am Debby
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Ma'am Debby E. Sondakh.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Ma'am Debby
     potretPembicara: {fileID: 0}
     teksDialog: Halo, Arthur. Selamat beraktivitas. Jangan lupa jaga kesehatan dan
       semangat belajarnya.
@@ -500092,7 +500751,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Sir Rolly J. Lontaan
+    namaKarakter: Sir Rolly
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Sir Rolly J. Lontaan.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Sir Rolly
     potretPembicara: {fileID: 0}
     teksDialog: Arthur, sudah makan? Jangan sampai terlalu sibuk sampai lupa istirahat.
     teksTombolLanjut: Selesai
@@ -503630,7 +504302,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Ma'am Jacquline M. Waworundeng
+    namaKarakter: Ma'am Jacquline
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Ma'am Jacquline M. Waworundeng.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Ma'am Jacquline
     potretPembicara: {fileID: 0}
     teksDialog: Halo, Arthur. Catat dulu hal yang ingin ditanyakan supaya nanti tidak
       lupa saat berdiskusi.
@@ -504512,6 +505197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Asel
+  perkenalan: 
   dialog: ...
   dialogSederhana: 0
   jarakInteraksi: 1.15
@@ -505156,7 +505842,20 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog:
   - siapaYangBicara: 1
-    namaKarakter: Ma'am Raissa Camila Maringka
+    namaKarakter: Ma'am Raissa
+    potretPembicara: {fileID: 0}
+    teksDialog: Hai, saya Ma'am Raissa Camila Maringka.
+    teksTombolLanjut: Lanjut
+    picuEmoteSetelahIni: 0
+    spriteEmote: {fileID: 0}
+    durasiEmote: 1.5
+    akhiriSetelahEmote: 0
+    ubahEkspresi: 0
+    ekspresi: 0
+    berteriak: 0
+    kekuatanTeriak: 1
+  - siapaYangBicara: 1
+    namaKarakter: Ma'am Raissa
     potretPembicara: {fileID: 0}
     teksDialog: Halo, Arthur. Mau ke gedung mana? Cek peta dulu kalau belum yakin
       jalannya, ya.
@@ -507782,6 +508481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Leno - VOCS
+  perkenalan: 
   dialog: ...
   dialogSederhana: 1
   jarakInteraksi: 1.8
@@ -508453,7 +509153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Ma'am Jacquline M. Waworundeng
+  namaNpc: Ma'am Jacquline
+  perkenalan: Hai, saya Ma'am Jacquline M. Waworundeng.
   dialog: Halo, Arthur. Catat dulu hal yang ingin ditanyakan supaya nanti tidak lupa
     saat berdiskusi.
   dialogSederhana: 1
@@ -510218,7 +510919,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9baec56ddc55db47b617721d683b1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
-  namaNpc: Sir Green A. Sandag
+  namaNpc: Sir Green
+  perkenalan: 
   dialog: 
   dialogSederhana: 0
   jarakInteraksi: 2.8
@@ -510295,6 +510997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NpcYangBisaDiatur
   namaNpc: Timo - VOCS
+  perkenalan: 
   dialog: ...
   dialogSederhana: 1
   jarakInteraksi: 1.8
