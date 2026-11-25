@@ -1,0 +1,61 @@
+A LITTLE CAMPUS STORY — SUSUNAN PROYEK
+Dirapikan 25 November 2026
+
+1. SKRIP — semua kode C# (303 berkas)
+   Runtime = kode yang berjalan saat bermain.
+   Di dalamnya: AlurDanMenu, Dunia, Kamera, Karakter, MiniGame,
+   NPCDanDialog, Ponsel, EfekUI, ParameterDanGlitch, Pengaturan.
+   Editor = alat bantu khusus Unity; tidak ikut menjadi fitur pemain.
+   Di dalamnya: AlatPenataan, Checkpoint, Pemeriksaan, Profiling,
+   SetupDanRevisi, Penutup, Impor_dan_Pendukung.
+   Nama folder Editor sengaja dipertahankan agar Unity mengenalinya.
+
+2. ASET — gambar, model, suara, prefab, dan bahan tampilan
+   Karakter: dosen, mahasiswa, hewan, aksesori, animasi, potret dialog.
+   Dunia: model kampus, Crystal/Edel, chapel, kamar, kelas, ruang dosen.
+   Audio: musik dan efek suara.
+   UI: antarmuka permainan, peta, tas, dan bingkai judul.
+   Quest: item quest dan quest kontak.
+   Gambar: foto untuk minigame.
+   Video: berkas video.
+   Pengaturan: render URP, fisika, shader, dan input.
+   Sumber_Asli: kumpulan aset sumber yang belum dipecah lagi.
+   Pihak_Ketiga: aset dari paket luar, termasuk TextMesh Pro.
+   Pendukung, Referensi, Arsip_Penataan: bahan tambahan dan arsip.
+
+3. SCENES — scene utama: menu, pembuka, Explorer, dan Chapter 1.
+4. CHAPTER1PREVIEW — scene penataan/pratinjau Chapter 1.
+5. WORLDSTREAMING — scene kawasan yang dimuat sesuai lokasi pemain.
+6. RESOURCES — aset yang dicari lewat nama saat game berjalan.
+   Struktur Resources dipertahankan agar pencarian aset tetap bekerja.
+
+MAU MENGUBAH APA?
+- Dialog/NPC: Skrip/Runtime/NPCDanDialog dan Aset/Karakter.
+- Ponsel/kontak: Skrip/Runtime/Ponsel dan Aset/Quest/Kontak.
+- Minigame: Skrip/Runtime/MiniGame.
+- Kamera: Skrip/Runtime/Kamera; alat penataan di Skrip/Editor/AlatPenataan.
+- Gedung/prefab: Aset/Dunia.
+- Musik/suara: Aset/Audio.
+
+CRYSTAL
+- Kawasan luar: WorldStreaming/Kawasan_TamanUNKLAB.unity.
+- Prefab kawasan luar: Aset/Dunia/Model_Kampus/Impor20261027/
+  CrystalEdelDining/CrystalEdelDining.prefab.
+- Prefab interior: Aset/Dunia/Asrama_Crystal_dan_Edel/Prefabs/
+  Asrama Crystal - Lantai 1.prefab.
+- Scene interior: WorldStreaming/Kawasan_CrystalInterior.unity.
+
+CATATAN
+Scripts pada dokumentasi lama sekarang bernama Skrip.
+Pemindahan dilakukan melalui Unity; GUID aset dan referensinya dipertahankan.
+Library, Temp, Logs, obj, Packages, dan ProjectSettings bukan folder isi game
+untuk ditata manual. Kerjakan pemindahan aset melalui jendela Project Unity
+agar pasangan berkas .meta selalu ikut.
+APK utama dan MOD tetap terpisah; penataan ini tidak membuat APK baru.
+
+SCENE UTAMA UNTUK PENATAAN DAN DEMO
+Buka Assets/Scenes/Penataan Kampus - Jalur NPC dan Bubble.unity.
+Scene ini berisi jalur, NPC, bubble interaksi, dan sistem Chapter 1.
+Nama sebelumnya: Chapter1_Kamar201 (bukan hanya isi kamar).
+Setelah scene utama terbuka, gunakan BUKA ALAT WORLD / PREFAB lalu
+pilih kawasan dan TAMPILKAN agar bangunannya terlihat bersama bubble/NPC.

@@ -8,13 +8,13 @@ Arsip pengembangan untuk penelitian pengenalan lingkungan Universitas Klabat mel
 2. Buka folder repositori di Unity Hub menggunakan Unity **6000.3.11f1**. Unity akan memulihkan dependensi dalam `Packages/manifest.json`.
 3. Impor dependensi aset pihak ketiga yang diperlukan ke tempat asalnya. Scene yang memakai paket tersebut dapat menampilkan referensi kosong sebelum paket dipulihkan.
 
-`SOURCE_MANIFEST.json` mencatat tanggal snapshot, jalur, ukuran, dan SHA-256 file. Folder `Assets/Scripts` berisi logika permainan dan alat editor. Folder `Assets/WorldExplorer` dan `Assets/WorldStreaming` memuat model kawasan dan scene. Arsip publik mengecualikan cache Unity, pemulihan editor, hasil uji sementara, kredensial, dan dokumen penelitian yang terpisah.
+`SOURCE_MANIFEST.json` mencatat tanggal snapshot, jalur, ukuran, dan SHA-256 file. Folder `Assets/Skrip` berisi logika permainan dan alat editor. Folder `Assets/Aset/Dunia/Model_Kampus` dan `Assets/WorldStreaming` memuat model kawasan dan scene. Arsip publik mengecualikan cache Unity, pemulihan editor, hasil uji sementara, kredensial, dan dokumen penelitian yang terpisah.
 
 ## Dependensi aset yang diperoleh terpisah
 
-- [Ezereal Car Controller](https://assetstore.unity.com/packages/tools/physics/ezereal-car-controller-302577) pada `Assets/Ezereal Assets`.
-- [Bird oleh Zacxophone](https://assetstore.unity.com/packages/3d/characters/animals/birds/bird-330238) pada `Assets/Zacxophone`.
-- Paket ikon BTN's Gorpaki, CasualGameButtonsVol02, Garden cozy kit, Paper Keys Sprite Pack V2, dan Ui Pack Version 5 By Zxgly. Folder asalnya berada di `Assets/All Asset/Sprites/Icon`. Gunakan aset dan `.meta` dari salinan yang sesuai agar GUID referensi cocok.
+- [Ezereal Car Controller](https://assetstore.unity.com/packages/tools/physics/ezereal-car-controller-302577) pada `Assets/Aset/Pihak_Ketiga/Ezereal`.
+- [Bird oleh Zacxophone](https://assetstore.unity.com/packages/3d/characters/animals/birds/bird-330238) pada `Assets/Aset/Pihak_Ketiga/Zacxophone`.
+- Paket ikon BTN's Gorpaki, CasualGameButtonsVol02, Garden cozy kit, Paper Keys Sprite Pack V2, dan Ui Pack Version 5 By Zxgly. Folder asalnya berada di `Assets/Aset/Sumber_Asli/Sprites/Icon`. Gunakan aset dan `.meta` dari salinan yang sesuai agar GUID referensi cocok.
 
 Ketentuan aset pihak ketiga mengikuti lisensi masing-masing. Atribusi yang ada dipertahankan dalam arsip.
 
@@ -23,7 +23,25 @@ Ketentuan aset pihak ketiga mengikuti lisensi masing-masing. Atribusi yang ada d
 APK yang dapat dipasang tersedia di [GitHub Releases](https://github.com/MrPapa-Ux/A-Little-Campus-Story-Game-Assets/releases). Catat tanggal build dan SHA-256 pada halaman rilis ketika mendokumentasikan versi yang diuji. Cabang sumber terus berkembang setelah APK dibangun.
 
 
-## Snapshot terbaru — 24 November 2026
+## Snapshot terbaru — 25 November 2026
+
+Versi **v2026.11.25** mempertahankan versi terdahulu dan menambahkan:
+
+- Struktur proyek dipisahkan menjadi `Assets/Skrip` dan `Assets/Aset`, dengan kelompok fungsi dan jenis aset. GUID serta rujukan aset dipertahankan.
+- Scene penataan diganti dari `Chapter1_Kamar201` menjadi `Assets/Scenes/Penataan Kampus - Jalur NPC dan Bubble.unity`. Rujukan pemuatan dan daftar build diperbarui.
+- TextMeshPro anak panah dapat dipilih langsung; alat penggeser bubble tidak lagi memaksa pemilihan kembali ke induknya.
+- Posisi NPC Dining diselaraskan pada scene penataan, Explorer, dan CharacterLab. Lima NPC tambahan dipertahankan sehingga masing-masing mempunyai 17 NPC Dining. NPC Dining 12 dikembalikan ke interior.
+- Posisi RectTransform disimpan melalui anchored position agar tidak kembali ke susunan lama setelah scene dibuka ulang.
+- Alat penambahan NPC menggunakan scene permainan aktif atau scene penataan, dengan acuan lokasi yang sesuai.
+
+APK utama build 25 November 2026: **A Little Campus Story.apk**. SHA-256: `ea9f37281db1ce6ab0973d0479fe641bba88d5c91cb9aab00a2d0ae62ae260a5`.
+Uji singkat Dining pada realme RMX3491 menghasilkan 59,7–59,9 FPS dengan render scale adaptif. Hasil ini terbatas pada sesi Dining yang dicatat, bukan sertifikasi seluruh alur permainan.
+
+MOD uji tetap tersedia pada [rilis MOD 22 November 2026](https://github.com/MrPapa-Ux/A-Little-Campus-Story-Game-Assets/releases/tag/mod-uji-2026-11-22). APK MOD tersebut belum dibangun ulang pada snapshot ini; tanggal buildnya berbeda dari kode terbaru.
+
+Cadangan scene, cache, berkas pengujian, dokumen penelitian, dan dependensi berlisensi yang memerlukan impor terpisah tidak dimasukkan ke arsip publik.
+
+## Snapshot 24 November 2026
 
 Versi **v2026.11.24** mencakup perubahan permainan setelah snapshot 23 November:
 

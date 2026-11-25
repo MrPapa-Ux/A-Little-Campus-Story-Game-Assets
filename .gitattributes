@@ -1,24 +1,24 @@
 * -text
-"/Assets/All Asset/AllMap/AsramaJasmineDanSekitarnyaAs/JalanAsramaJasmineFIX-RGBA.png" filter=lfs diff=lfs merge=lfs -text
-"/Assets/All Asset/AllMap/AsramaJasmineDanSekitarnyaAs/Obj nya/1.obj" filter=lfs diff=lfs merge=lfs -text
-"/Assets/All Asset/AllMap/AsramaJasmineDanSekitarnyaAs/Obj nya/JalanAsramaJasmineFIX.obj" filter=lfs diff=lfs merge=lfs -text
-"/Assets/AudioArthur/DemoOrisinal/Jam_Pulang_Campus_Groove.wav" filter=lfs diff=lfs merge=lfs -text
-"/Assets/AudioArthur/DemoOrisinal/Negeri_di_Ujung_Coretan_Demo01.wav" filter=lfs diff=lfs merge=lfs -text
-"/Assets/AudioArthur/DemoOrisinal/Neon_Belum_Padam.wav" filter=lfs diff=lfs merge=lfs -text
-"/Assets/AudioArthur/DemoOrisinal/Pulang_Fusion_213_Demo03.wav" filter=lfs diff=lfs merge=lfs -text
-"/Assets/AudioArthur/DemoOrisinal/Pulang_ke_Warna_yang_Hangat_Demo02.wav" filter=lfs diff=lfs merge=lfs -text
-"/Assets/ChapelPioneer/PioneerChapel_Interior.glb" filter=lfs diff=lfs merge=lfs -text
-"/Assets/ChapelPioneer/PioneerChapel_Interior.obj" filter=lfs diff=lfs merge=lfs -text
-"/Assets/Ruangan Kelas Referensi/Ruangan Kelas Referensi.obj" filter=lfs diff=lfs merge=lfs -text
-"/Assets/WorldExplorer/GuestHouse/Pedesaan/PedesaanGH_Gabungan.asset" filter=lfs diff=lfs merge=lfs -text
-"/Assets/WorldExplorer/Impor20261027/CrystalEdelDining/CrystalEdelDining.obj" filter=lfs diff=lfs merge=lfs -text
-"/Assets/WorldExplorer/Impor20261027/Gk1danGk3/Gk1danGk3.obj" filter=lfs diff=lfs merge=lfs -text
-"/Assets/WorldExplorer/JasmineKantinGK2/Jasmine_Kantin_GK2-RGBA.png" filter=lfs diff=lfs merge=lfs -text
-"/Assets/WorldExplorer/JasmineKantinGK2/Jasmine_Kantin_GK2.obj" filter=lfs diff=lfs merge=lfs -text
-"/Assets/WorldExplorer/JasmineKantinGK2/Revisi20261025/Jasmine_Kantin_GK2-RGBA.png" filter=lfs diff=lfs merge=lfs -text
-"/Assets/WorldExplorer/JasmineKantinGK2/Revisi20261025/Jasmine_Kantin_GK2.obj" filter=lfs diff=lfs merge=lfs -text
-"/Assets/WorldExplorer/JasmineKantinGK2/Revisi20261029/Jasmine_Kantin_GK2.obj" filter=lfs diff=lfs merge=lfs -text
-"/Assets/WorldExplorer/Pratinjau20261025/GA/GA-RGBA.png" filter=lfs diff=lfs merge=lfs -text
-"/Assets/WorldExplorer/Pratinjau20261025/GA/GA.obj" filter=lfs diff=lfs merge=lfs -text
-"/Assets/WorldExplorer/Pratinjau20261025/GK1/GK1-RGBA.png" filter=lfs diff=lfs merge=lfs -text
-"/Assets/WorldExplorer/Pratinjau20261025/GK1/GK1.obj" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Audio/Musik_dan_Suara_Arthur/DemoOrisinal/Jam_Pulang_Campus_Groove.wav" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Audio/Musik_dan_Suara_Arthur/DemoOrisinal/Negeri_di_Ujung_Coretan_Demo01.wav" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Audio/Musik_dan_Suara_Arthur/DemoOrisinal/Neon_Belum_Padam.wav" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Audio/Musik_dan_Suara_Arthur/DemoOrisinal/Pulang_Fusion_213_Demo03.wav" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Audio/Musik_dan_Suara_Arthur/DemoOrisinal/Pulang_ke_Warna_yang_Hangat_Demo02.wav" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Dunia/Model_Kampus/GuestHouse/Pedesaan/PedesaanGH_Gabungan.asset" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Dunia/Model_Kampus/Impor20261027/CrystalEdelDining/CrystalEdelDining.obj" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Dunia/Model_Kampus/Impor20261027/Gk1danGk3/Gk1danGk3.obj" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Dunia/Model_Kampus/JasmineKantinGK2/Jasmine_Kantin_GK2-RGBA.png" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Dunia/Model_Kampus/JasmineKantinGK2/Jasmine_Kantin_GK2.obj" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Dunia/Model_Kampus/JasmineKantinGK2/Revisi20261025/Jasmine_Kantin_GK2-RGBA.png" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Dunia/Model_Kampus/JasmineKantinGK2/Revisi20261025/Jasmine_Kantin_GK2.obj" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Dunia/Model_Kampus/JasmineKantinGK2/Revisi20261029/Jasmine_Kantin_GK2.obj" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Dunia/Model_Kampus/Pratinjau20261025/GA/GA-RGBA.png" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Dunia/Model_Kampus/Pratinjau20261025/GA/GA.obj" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Dunia/Model_Kampus/Pratinjau20261025/GK1/GK1-RGBA.png" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Dunia/Model_Kampus/Pratinjau20261025/GK1/GK1.obj" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Dunia/Pioneer_Chapel/PioneerChapel_Interior.glb" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Dunia/Pioneer_Chapel/PioneerChapel_Interior.obj" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Dunia/Ruang_Kelas/Ruangan Kelas Referensi.obj" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Sumber_Asli/AllMap/AsramaJasmineDanSekitarnyaAs/JalanAsramaJasmineFIX-RGBA.png" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Sumber_Asli/AllMap/AsramaJasmineDanSekitarnyaAs/Obj nya/1.obj" filter=lfs diff=lfs merge=lfs -text
+"/Assets/Aset/Sumber_Asli/AllMap/AsramaJasmineDanSekitarnyaAs/Obj nya/JalanAsramaJasmineFIX.obj" filter=lfs diff=lfs merge=lfs -text

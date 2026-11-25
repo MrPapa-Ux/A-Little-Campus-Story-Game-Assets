@@ -48,7 +48,7 @@ EditorBuildSettings:
     path: Assets/Chapter1Preview/Contoh_Arthur_RhythmOtomatis.unity
     guid: b52396077cd06aa41ba1c332b70e347d
   - enabled: 1
-    path: Assets/Chapter1Preview/Chapter1_Kamar201.unity
+    path: Assets/Scenes/Penataan Kampus - Jalur NPC dan Bubble.unity
     guid: 7486a26fe2b85004b90771fcbcfc554d
   - enabled: 1
     path: Assets/WorldStreaming/Kawasan_CrystalInterior.unity

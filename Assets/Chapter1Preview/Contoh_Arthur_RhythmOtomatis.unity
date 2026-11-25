@@ -12927,7 +12927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 189e9160939b25b46a472691db9867f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LanjutKeKamar201
-  sceneKamar: Assets/Chapter1Preview/Chapter1_Kamar201.unity
+  sceneKamar: Assets/Scenes/Penataan Kampus - Jalur NPC dan Bubble.unity
 --- !u!1 &1424553097
 GameObject:
   m_ObjectHideFlags: 0
