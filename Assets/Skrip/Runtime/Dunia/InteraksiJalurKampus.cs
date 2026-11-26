@@ -7,6 +7,7 @@ using System.Collections.Generic;
 public sealed class InteraksiJalurKampus : MonoBehaviour
 {
     public JalurKampus jalur;
+    public bool hanyaSaatIstirahat;
     public JalurKampus[] jalurTambahan;
     [Min(.1f)] public float radius = 2.4f;
     public Transform ikon;
@@ -56,6 +57,7 @@ public sealed class InteraksiJalurKampus : MonoBehaviour
         foreach (var calon in daftar)
         {
             if (calon == null || !calon.isActiveAndEnabled || !calon.Cocok(pemain.JalurAktif) || !MalamGAChapter1.BubbleBoleh(calon.name)) continue;
+            if(calon.hanyaSaatIstirahat && (MalamEksplorasiArthur.Instance==null || !MalamEksplorasiArthur.Instance.KamarDikunci))continue;
             float d = (pemain.transform.position - calon.transform.position).sqrMagnitude;
             if (d > calon.radius * calon.radius) continue;
             if (d < terbaik) { terbaik = d; terpilih = calon; }

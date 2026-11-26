@@ -29,7 +29,7 @@ public sealed class UkurPerformaPerangkatArthur : MonoBehaviour
 
     IEnumerator Start()
     {
-        bool paksaHujan;
+        bool paksaHujan, ukurTidur;
         // Opsi diagnosis untuk membandingkan jalur render pada driver perangkat,
         // hanya pada peluncuran pengukuran yang memakai extra ADB.
         using (var player = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
@@ -37,6 +37,7 @@ public sealed class UkurPerformaPerangkatArthur : MonoBehaviour
         using (var intent = activity.Call<AndroidJavaObject>("getIntent"))
         {
             paksaHujan = intent.Call<bool>("getBooleanExtra", "arthur_ukur_hujan", false);
+            ukurTidur = intent.Call<bool>("getBooleanExtra", "arthur_ukur_tidur", false);
             var rp = GraphicsSettings.currentRenderPipeline as UniversalRenderPipelineAsset;
             if (rp != null && intent.Call<bool>("getBooleanExtra", "arthur_srp_off", false)) rp.useSRPBatcher = false;
             if (rp != null && intent.Call<bool>("getBooleanExtra", "arthur_msaa_off", false)) rp.msaaSampleCount = 1;
@@ -66,6 +67,11 @@ public sealed class UkurPerformaPerangkatArthur : MonoBehaviour
             cuaca.PratinjauHujan(true);
         }
         yield return new WaitForSecondsRealtime(8);
+        if(ukurTidur)
+        {
+            yield return UjiTidur(arthur,cuaca);
+            Destroy(tujuan.gameObject);Destroy(gameObject);yield break;
+        }
         if (paksaHujan && cuaca != null)
         {
             var payung = CariPayung(arthur);
@@ -101,6 +107,23 @@ public sealed class UkurPerformaPerangkatArthur : MonoBehaviour
         }
         Destroy(tujuan.gameObject);
         Destroy(gameObject);
+    }
+
+    IEnumerator UjiTidur(ArthurJalurKampus arthur,SiklusWaktuKampus cuaca)
+    {
+        var malam=MalamEksplorasiArthur.Instance;
+        if(malam==null || cuaca==null){Debug.LogError("ARTHUR_MALAM gagal pengatur tidak ada");yield break;}
+        var luar=arthur.JalurAktif;
+        cuaca.berjalanOtomatis=false;cuaca.AturJam(21);
+        float batas=Time.realtimeSinceStartup+45;
+        while((arthur.JalurAktif==luar || malam.SedangPulang) && Time.realtimeSinceStartup<batas)yield return null;
+        yield return new WaitForSecondsRealtime(1);
+        bool pulang=arthur.JalurAktif!=null&&arthur.JalurAktif.name=="GH_Kamar201"&&malam.KamarDikunci&&cuaca.Jam==21;
+        Debug.Log("ARTHUR_MALAM pulang21="+pulang);
+        malam.MintaTidur();yield return new WaitForSecondsRealtime(8);
+        Debug.Log("ARTHUR_MALAM tidurPilihan="+(cuaca.Jam==7&&!malam.KamarDikunci&&!arthur.GetComponent<KarakterController>().kunciPergerakan));
+        cuaca.AturJam(21);yield return new WaitForSecondsRealtime(1);cuaca.AturJam(23);yield return new WaitForSecondsRealtime(8);
+        Debug.Log("ARTHUR_MALAM tidur23="+(cuaca.Jam==7&&!malam.KamarDikunci&&!malam.SedangTidur));
     }
 
     static Transform CariPayung(ArthurJalurKampus arthur)

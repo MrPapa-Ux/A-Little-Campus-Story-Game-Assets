@@ -23,7 +23,15 @@ Ketentuan aset pihak ketiga mengikuti lisensi masing-masing. Atribusi yang ada d
 APK yang dapat dipasang tersedia di [GitHub Releases](https://github.com/MrPapa-Ux/A-Little-Campus-Story-Game-Assets/releases). Catat tanggal build dan SHA-256 pada halaman rilis ketika mendokumentasikan versi yang diuji. Cabang sumber terus berkembang setelah APK dibangun.
 
 
-## Snapshot terbaru — 26 November 2026
+## Revisi jam malam — v2026.11.26.1
+
+Pada pukul 21.00 Arthur otomatis pulang ke kamar 201 dan akses keluar dikunci. Pemain dapat memilih tidur di tempat tidur. Pukul 23.00 tidur dipicu otomatis jika belum tidur, lalu Arthur bangun pada 07.00. Adegan khusus Rabu malam tetap mempunyai pengaturannya sendiri. Titik tujuan kamar yang sebelumnya kosong pada scene utama sudah dihubungkan.
+
+Tujuh pemeriksaan terarah di Unity lulus. APK lanjutan berhasil dipasang di realme; uji otomatis perangkat tertunda karena aplikasi segera dijeda oleh perangkat. Lihat `Pengujian/aturan-malam-2026-11-26.json`. Angka FPS snapshot awal berikut tetap milik biner sebelumnya, bukan pengukuran biner jam malam.
+
+APK terbaru untuk Google Drive bernama **A Little Campus Story.apk**. SHA-256: `842ce77cfcb0437046559f7ed36bd628f874d7e261725d6379a90e62ecf5c5a6`. Rilis v2026.11.26 dan semua versi lama tetap tersedia. MOD tidak dibangun ulang.
+
+## Snapshot 26 November 2026
 
 Rilis **v2026.11.26** memperbarui kamera dan panah turun ruang dekan, pemisahan kelas 3/4 GK2, pemilihan teks bubble, pembatas ujung jalur, transisi cahaya GA/Taman, jam ponsel kanan bawah dan pemulihan NPC malam. Geometri asli kawasan dipulihkan sesuai kebutuhan imersi. Pengaman alat kelas lama mencegah penataan manual tertimpa.
 

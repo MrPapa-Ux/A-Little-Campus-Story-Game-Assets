@@ -13,7 +13,17 @@ public sealed class MalamEksplorasiArthur : MonoBehaviour
     public Transform tujuanKamar;
     public float batasMalam = 180f;
     // CharacterLab boleh menampilkan siklus suasana untuk penataan, tetapi tidak memulangkan pemain.
-    public bool PulangOtomatis => gameObject.scene.name == "Explorer";
+    public bool PulangOtomatis => gameObject.scene.name == "Explorer" || gameObject.scene.name == "Penataan Kampus - Jalur NPC dan Bubble";
+    public bool KamarDikunci { get; private set; }
+    public bool SedangTidur { get; private set; }
+    public static bool JamIstirahat(float jam) => jam >= 21 || jam < 6;
+    public static bool JamTidurPaksa(float jam) => jam >= 23 || jam < 6;
+    public static bool BolehPindah(Transform tujuan)
+    {
+        if(Instance==null || !Instance.KamarDikunci || tujuan==null)return true;
+        var r=tujuan.GetComponent<TujuanJalurKampus>();
+        return r!=null && r.jalur!=null && r.jalur.name=="GH_Kamar201";
+    }
     [Min(.1f)] public float durasiPudarNpc = 1.5f;
     public float DetikMalam { get; private set; }
     public bool SedangPulang { get; private set; }
@@ -75,7 +85,7 @@ public sealed class MalamEksplorasiArthur : MonoBehaviour
     void Update()
     {
         var cerita=PerjalananChapelChapter1.Instance;
-        if(cerita!=null&&cerita.isActiveAndEnabled&&cerita.MalamAktif)return;
+        if(cerita!=null&&cerita.isActiveAndEnabled&&cerita.MalamAktif){KamarDikunci=false;return;}
         bool malam=NpcTidur;
         if(malam && Time.unscaledTime>=cekBerikut)
         {
@@ -88,30 +98,59 @@ public sealed class MalamEksplorasiArthur : MonoBehaviour
         }
         if(!malam && malamLama) { PulihkanNpc(); DetikMalam=0; }
         malamLama=malam;
-        if(!malam || SedangPulang || !PulangOtomatis)return;
+        if(!PulangOtomatis || waktu==null || SedangPulang || SedangTidur)return;
+        if(!JamIstirahat(waktu.Jam)){KamarDikunci=false;return;}
         var d=DialogManager.Instance; var k=KawasanKampus.Instance;
-        bool sibuk=(d!=null&&(d.PercakapanAktif||d.minigameAktif))||(hp!=null&&(hp.hpSedangBuka||hp.AplikasiSedangBuka))||k==null||!k.Siap||k.SedangMemuat||(pilihan!=null&&pilihan.efekTransisi!=null&&pilihan.efekTransisi.SedangBerjalan);
+        KamarDikunci=true;
+        bool sibuk=(d!=null&&(d.PercakapanAktif||d.minigameAktif))||k==null||!k.Siap||k.SedangMemuat||(pilihan!=null&&pilihan.efekTransisi!=null&&pilihan.efekTransisi.SedangBerjalan);
         if(sibuk)return;
+        if(hp!=null && hp.AplikasiSedangBuka){hp.TutupAplikasi();return;}
+        if(hp!=null && hp.hpSedangBuka){hp.TutupHP();return;}
         DetikMalam+=Time.deltaTime;
-        if(DetikMalam>=batasMalam && tujuanKamar!=null && pilihan!=null && pilihan.efekTransisi!=null)StartCoroutine(Pulang());
+        if(tujuanKamar==null || arthur==null || pilihan==null || pilihan.efekTransisi==null)return;
+        KamarDikunci=true;
+        if(arthur.JalurAktif==null || arthur.JalurAktif.name!="GH_Kamar201")StartCoroutine(Pulang());
+        else if(JamTidurPaksa(waktu.Jam))MintaTidur();
     }
     IEnumerator Pulang()
     {
         SedangPulang=true;
         var p=arthur.GetComponent<KarakterController>(); bool kunci=p.kunciPergerakan;
-        p.BerhentiBergerak();p.kunciPergerakan=true;
         var transisi=pilihan.efekTransisi; float tutup=transisi.durasiTutup;
-        transisi.durasiTutup=2f;
-        transisi.MulaiTransisiTeleportRutin(()=>PindahPagi());
-        while(transisi.SedangBerjalan)yield return null;
-        transisi.durasiTutup=tutup;p.kunciPergerakan=kunci;SedangPulang=false;
-        if(waktu.waktu==WaktuKampus.Malam)DetikMalam=batasMalam-10; // gagal muat: coba lagi tanpa mengunci pemain.
+        try{
+            p.BerhentiBergerak();p.kunciPergerakan=true;transisi.durasiTutup=2f;
+            transisi.MulaiTransisiTeleportRutin(()=>PindahKamar());
+            while(transisi.SedangBerjalan)yield return null;
+        }finally{transisi.durasiTutup=tutup;p.kunciPergerakan=kunci;SedangPulang=false;}
     }
-    IEnumerator PindahPagi()
+    IEnumerator PindahKamar()
     {
         bool tiba=false;
         yield return KawasanKampus.Instance.Pindahkan(tujuanKamar,()=>{arthur.PindahKe(tujuanKamar);tiba=true;});
-        if(tiba){waktu.AturWaktu(WaktuKampus.Pagi);DetikMalam=0;}
+        if(!tiba)KamarDikunci=false;
+    }
+    public void MintaTidur()
+    {
+        if(!KamarDikunci || SedangPulang || SedangTidur || arthur==null || arthur.JalurAktif==null || arthur.JalurAktif.name!="GH_Kamar201")return;
+        StartCoroutine(Tidur());
+    }
+    IEnumerator Tidur()
+    {
+        SedangTidur=true;
+        var p=arthur.GetComponent<KarakterController>();var d=DialogManager.Instance;
+        var transisi=pilihan.efekTransisi;
+        try{
+            if(d!=null && d.PercakapanAktif){pilihan.TutupPercakapanTerarah();while(d.PercakapanAktif)yield return null;}
+            p.BerhentiBergerak();p.kunciPergerakan=true;
+            transisi.MulaiTransisiTeleportRutin(()=>BangunPagi());
+            while(transisi.SedangBerjalan)yield return null;
+        }finally{p.kunciPergerakan=false;SedangTidur=false;}
+    }
+    IEnumerator BangunPagi()
+    {
+        yield return new WaitForSecondsRealtime(1);
+        waktu.AturJam(SiklusWaktuKampus.JamMulaiPermainan);
+        KamarDikunci=false;DetikMalam=0;PulihkanNpc();
     }
     void OnDestroy(){if(Instance==this)Instance=null;}
 }

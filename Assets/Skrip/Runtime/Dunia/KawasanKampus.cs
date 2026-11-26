@@ -95,6 +95,7 @@ public sealed class KawasanKampus : MonoBehaviour
     }
     public IEnumerator Pindahkan(Transform tujuan,Action pindah)
     {
+        if(!MalamEksplorasiArthur.BolehPindah(tujuan))yield break;
         // Caller owns the opaque fade for the entire load, move, unload operation.
         SedangMemuat=true;KesalahanTerakhir=null;
         try

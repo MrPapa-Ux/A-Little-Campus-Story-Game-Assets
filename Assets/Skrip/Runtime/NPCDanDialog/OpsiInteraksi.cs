@@ -44,6 +44,7 @@ public class BarisDialog
 [System.Serializable]
 public class OpsiInteraksi
 {
+    public bool tidurSampaiPagi;
     public AksesArenaKoleksiArthur arenaKoleksi;
     [Header("Asrama Jasmine dan pertukaran tubuh (opsional)")]
     public PertukaranTubuhArthur pertukaranTubuh;

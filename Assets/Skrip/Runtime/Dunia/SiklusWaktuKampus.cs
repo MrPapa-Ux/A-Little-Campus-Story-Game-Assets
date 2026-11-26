@@ -166,6 +166,7 @@ public sealed class SiklusWaktuKampus : MonoBehaviour
     }
     public static float JamSetelah(float jam,float detik,float durasiHari=720)=>Mathf.Repeat(jam+detik*24/Mathf.Max(60,durasiHari),24);
     public static WaktuKampus FaseJam(float jam)=>jam>=6&&jam<16?WaktuKampus.Pagi:jam>=16&&jam<18?WaktuKampus.Sore:WaktuKampus.Malam;
+    public void AturJam(float jam){AmbilAwal();Jam=Mathf.Repeat(jam,24);waktu=diterapkan=FaseJam(Jam);jamTujuan=-1;DetikFase=0;awalPeralihan=Time.unscaledTime;}
     public void AturWaktu(WaktuKampus pilihan){waktu=pilihan;DetikFase=0;jamTujuan=pilihan==WaktuKampus.Pagi?JamMulaiPermainan:pilihan==WaktuKampus.Sore?16:20;}
     public static bool PilihLangitHijau(float undian,float peluang=.01f)=>undian<Mathf.Clamp01(peluang);
     public static float PeluangHujanUntuk(int tingkat) => tingkat <= 0 ? .01f : tingkat == 1 ? .10f : tingkat == 2 ? .50f : tingkat == 3 ? .70f : 1f;

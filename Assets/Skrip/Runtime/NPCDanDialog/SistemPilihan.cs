@@ -793,6 +793,8 @@ public class SistemPilihan : MonoBehaviour
         if (daftarOpsi != null && indeksPilihan < daftarOpsi.Length)
         {
             OpsiInteraksi opsiDipilih = daftarOpsi[indeksPilihan];
+            if(opsiDipilih.tidurSampaiPagi){MalamEksplorasiArthur.Instance?.MintaTidur();return;}
+            if(!MalamEksplorasiArthur.BolehPindah(opsiDipilih.titikTujuan)){if(teksCeritaUtama!=null)teksCeritaUtama.text="Sudah lewat pukul sembilan. Istirahat dulu. Pilih tidur di tempat tidur; pukul 23.00 Arthur akan tidur otomatis.";return;}
             if(TeguranAsramaArthur.Cegat(opsiDipilih))return;
             if(opsiDipilih.arenaKoleksi!=null)
             {

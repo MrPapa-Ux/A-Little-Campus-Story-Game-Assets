@@ -5598,7 +5598,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -5649,6 +5650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 703601823}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 0.65
   ikon: {fileID: 722596138}
@@ -6996,7 +6998,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -7047,6 +7050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 399362850}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1129826632}
@@ -9117,7 +9121,8 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 1830004871}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -13386,7 +13391,8 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   opsiInteraksiAktif:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -13766,7 +13772,8 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 62838531}
@@ -14746,7 +14753,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -14797,6 +14805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 703601823}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 0.65
   ikon: {fileID: 1652795404}
@@ -21369,7 +21378,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -21386,7 +21396,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 0
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -21437,6 +21448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1358648313}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 173342668}
@@ -21502,7 +21514,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -21519,7 +21532,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 1
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -25707,6 +25721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 263652499}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 0.85
   ikon: {fileID: 114453974}
@@ -25737,7 +25752,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -26166,6 +26182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1165185618}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 3.5
   ikon: {fileID: 1649235230}
@@ -26196,7 +26213,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -27144,7 +27162,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -27195,6 +27214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1172690072}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 753208132}
@@ -27549,7 +27569,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -27600,6 +27621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 732024747}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 590643382}
@@ -28040,6 +28062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1303321248}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 966031504}
@@ -28070,7 +28093,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -32501,7 +32525,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -32552,6 +32577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1434010017}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 765836547}
@@ -32843,6 +32869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 403458890}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1543532509}
@@ -32873,7 +32900,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -35257,7 +35285,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -35274,7 +35303,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 0
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -35325,6 +35355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1969617306}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 618296942}
@@ -35853,6 +35884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 339860642}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 0.85
   ikon: {fileID: 1791601604}
@@ -35883,7 +35915,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -35900,7 +35933,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 0
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -37096,7 +37130,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -37147,6 +37182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1250463806}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 495586795}
@@ -39245,6 +39281,98 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &184921821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 184921822}
+  - component: {fileID: 184921823}
+  m_Layer: 0
+  m_Name: IkonGambar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &184921822
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184921821}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000004371139}
+  m_LocalPosition: {x: 0, y: 0.89999986, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 427039978}
+  m_Father: {fileID: 603567945}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &184921823
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184921821}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 28e3b759e77c0c340a662beb741800a1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: c930137d920fa37428434cb7a11776ff, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!1 &184980800
 GameObject:
   m_ObjectHideFlags: 0
@@ -41010,7 +41138,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -41027,7 +41156,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 0
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -41078,6 +41208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 872463109}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1942469312}
@@ -41478,7 +41609,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -41529,6 +41661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 291004601}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1660472759}
@@ -46858,6 +46991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1193345345}
+  hanyaSaatIstirahat: 0
   jalurTambahan:
   - {fileID: 1698906491}
   radius: 0.85
@@ -46889,7 +47023,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -48288,7 +48423,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -48305,7 +48441,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 0
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -48356,6 +48493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 23395478}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 646153046}
@@ -48898,6 +49036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1290395389}
+  hanyaSaatIstirahat: 0
   jalurTambahan:
   - {fileID: 1174501206}
   radius: 0.85
@@ -48929,7 +49068,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -49129,6 +49269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1165185618}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.25
   ikon: {fileID: 1923551744}
@@ -55331,7 +55472,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 262474664}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 262474664}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -55418,6 +55560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1358648313}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 807457096}
@@ -60273,7 +60416,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -60324,6 +60468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1302378743}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1470884599}
@@ -61128,7 +61273,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 290244077}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 290244077}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -61215,6 +61361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 23395478}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 1897134256}
@@ -61295,7 +61442,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -61346,6 +61494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 272225788}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 285538612}
@@ -66420,7 +66569,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -66471,6 +66621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 266813690}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 2055537592}
@@ -67384,7 +67535,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -67435,6 +67587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 703601823}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 491374521}
@@ -68052,7 +68205,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -68103,6 +68257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1745679250}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 388769808}
@@ -71867,6 +72022,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 263652500}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &352206436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 352206437}
+  - component: {fileID: 352206438}
+  m_Layer: 0
+  m_Name: Tujuan pulang malam - Kamar Arthur 201
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &352206437
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352206436}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1796.1, y: 3.74033, z: 1.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1727495752}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &352206438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352206436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2460788194c0041b68a8d0ecc99106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TujuanJalurKampus
+  jalur: {fileID: 1727495751}
+  kameraMasukSinematik: 0
+  durasiKameraMasuk: 1.1
+  geserAwalKamera: 0.8
 --- !u!1 &352558511
 GameObject:
   m_ObjectHideFlags: 0
@@ -75598,7 +75801,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -75649,6 +75853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 266813690}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 746460190}
@@ -76061,7 +76266,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -76112,6 +76318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 836501500}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1232598567}
@@ -85109,7 +85316,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -85160,6 +85368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1879528767}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1312058370}
@@ -85940,6 +86149,187 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.15, y: 0.3, z: 3.259462}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &427039977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 427039978}
+  - component: {fileID: 427039980}
+  - component: {fileID: 427039979}
+  m_Layer: 0
+  m_Name: TextTriggerTempat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &427039978
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427039977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.03}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 184921822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 1}
+  m_SizeDelta: {x: 17.4, y: 13}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &427039979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427039977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshPro
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Zzz
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 2b82d61f9e230cf47a8bbb975fe493f2, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: acdf65929881ab740b349ed4fda5ddc8, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 80
+  m_fontSizeBase: 80
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 12
+  m_fontSizeMax: 45
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 0
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
+  m_hasFontAssetChanged: 0
+  m_renderer: {fileID: 427039980}
+  m_maskType: 0
+--- !u!23 &427039980
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427039977}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: acdf65929881ab740b349ed4fda5ddc8, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &427916211
 GameObject:
   m_ObjectHideFlags: 0
@@ -88853,7 +89243,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -88904,6 +89295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1434010017}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1112068697}
@@ -89154,7 +89546,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -89205,6 +89598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1640507901}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 529540523}
@@ -92747,6 +93141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 339860642}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 0.85
   ikon: {fileID: 159927569}
@@ -92777,7 +93172,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -94638,6 +95034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1193345345}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1
   ikon: {fileID: 1195349508}
@@ -94668,7 +95065,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -97798,6 +98196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1633073103}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 2.2
   ikon: {fileID: 498138400}
@@ -97828,7 +98227,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -98875,6 +99275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1070459992}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 1636828135}
@@ -99181,6 +99582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1373703927}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1087092180}
@@ -99211,7 +99613,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -99228,7 +99631,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 1
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -99848,7 +100252,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -99935,6 +100340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 2063478948}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 1250636412}
@@ -102459,7 +102865,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -107009,7 +107416,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -107060,6 +107468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 551859073}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 462111610}
@@ -115377,7 +115786,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -115428,6 +115838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 795215882}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 1335417331}
@@ -117711,6 +118122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 836501500}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.4
   ikon: {fileID: 2131225482}
@@ -117741,7 +118153,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -119396,6 +119809,139 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.15, y: 0.3, z: 0.56}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &603567944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 603567945}
+  - component: {fileID: 603567949}
+  - component: {fileID: 603567948}
+  - component: {fileID: 603567947}
+  - component: {fileID: 603567946}
+  m_Layer: 0
+  m_Name: Tempat tidur Arthur - istirahat malam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &603567945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603567944}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1796.1, y: 3.74033, z: 1.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 184921822}
+  m_Father: {fileID: 1727495752}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &603567946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603567944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e09f77710fe16c42ad0a4fc09b38a72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WigglyBubbleInteraksi
+  kekuatanPiksel: 1.6
+  kecepatanGoyang: 8
+--- !u!114 &603567947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603567944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6f2161909c85f646b55b22913dfa5cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AreaInteraksi
+  idTempat: Tidur_Arthur_Malam
+  tipeInteraksi: 1
+  potretDialog: {fileID: 0}
+  tampilkanTombolKeluar: 1
+  skenarioDialog: []
+  daftarOpsi:
+  - tidurSampaiPagi: 1
+    arenaKoleksi: {fileID: 0}
+    pertukaranTubuh: {fileID: 0}
+    kembaliKeArthur: 0
+    aksesJasmine: {fileID: 0}
+    mrQuizo: {fileID: 0}
+    aksiQuizo: 0
+    rapidTap: {fileID: 0}
+    tantanganArthur: {fileID: 0}
+    levelJigsaw: 0
+    cabangJalur: {fileID: 0}
+    pilihJalanDepan: 0
+    teksOpsi: Tidur sampai pagi
+    titikTujuan: {fileID: 0}
+    pesanBelumTersedia: 
+    nyalakanGrupDepan: 0
+    nyalakanGrupBelakang: 0
+    nyalakanGrupRuangan: 0
+  batasJarakMendatar: 0
+--- !u!114 &603567948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603567944}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2caf101fc02bf1d44a7a1d2cf615d4d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TempatBubbleTrigger
+  ikonTransform: {fileID: 184921822}
+  durasiAnimasi: 0.4
+  ukuranMaksimal: {x: 0.1557727, y: 0.16048585, z: 0.9}
+  tinggiBubbleDiLayar: 0.13
+  pusatkanDiAtasKepalaArthur: 0
+  jedaWiggly: 0.5
+  kekuatanGoyang: 0.05
+  kecepatanGoyang: 15
+--- !u!114 &603567949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603567944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1281e8cfbe45104b9310fc09af915be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
+  jalur: {fileID: 1727495751}
+  hanyaSaatIstirahat: 1
+  jalurTambahan: []
+  radius: 1.3
+  ikon: {fileID: 184921822}
+  geserTampilanBubble: {x: 0, y: 0, z: 0}
+  ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
+  durasiMuncul: 0.2
+  durasiMenciut: 0.18
+  ikutiKepalaArthur: 0
+  tinggiKepalaDiTitik: -0.11
+  jarakDariKepala: 0.35
+  tinggiIkonDiLayar: 0.13
+  waktuHalusDiLayar: 0
 --- !u!1 &604513425
 GameObject:
   m_ObjectHideFlags: 0
@@ -121549,6 +122095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 2013632656}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1
   ikon: {fileID: 718392204}
@@ -121579,7 +122126,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -127729,6 +128277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1510135155}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1
   ikon: {fileID: 545577111}
@@ -127759,7 +128308,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -129634,7 +130184,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -129685,6 +130236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1766251336}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 927172320}
@@ -132937,7 +133489,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -132954,7 +133507,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 0
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -133005,6 +133559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1498266504}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1365657321}
@@ -136232,7 +136787,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -136283,6 +136839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 266813690}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 853297426}
@@ -138134,7 +138691,8 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -141244,6 +141802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1698906491}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 0.85
   ikon: {fileID: 1483931233}
@@ -141274,7 +141833,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -142240,6 +142800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1803523793}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1
   ikon: {fileID: 1809503289}
@@ -142270,7 +142831,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -144385,7 +144947,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 700516093}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 700516093}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -144472,6 +145035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1745679250}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 1199130684}
@@ -150097,6 +150661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 836501500}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 2.4
   ikon: {fileID: 1430574719}
@@ -150127,7 +150692,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -150144,7 +150710,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 0
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -150693,7 +151260,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -150744,6 +151312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 266813690}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 726170756}
@@ -153272,6 +153841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 263652499}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 706109187}
@@ -153302,7 +153872,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -153527,6 +154098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 203128827}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 0.8
   ikon: {fileID: 1673993050}
@@ -153557,7 +154129,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -158733,7 +159306,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -158750,7 +159324,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 0
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -158801,6 +159376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 2087041097}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1170962216}
@@ -159203,7 +159779,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -159254,6 +159831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 836501500}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 2066051640}
@@ -159862,6 +160440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1193345345}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 198583531}
@@ -159892,7 +160471,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -163044,7 +163624,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -163095,6 +163676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 38190068}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.25
   ikon: {fileID: 1241175329}
@@ -166347,6 +166929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1052518276}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 1038706041}
@@ -167571,7 +168154,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -167588,7 +168172,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 1
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -167639,6 +168224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1183011372}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1808747904}
@@ -172488,7 +173074,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -172539,6 +173126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1727495751}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.4
   ikon: {fileID: 1974924607}
@@ -175026,7 +175614,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -175077,6 +175666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 266813690}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 811997155}
@@ -179883,7 +180473,8 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 1830004871}
     kembaliKeArthur: 1
     aksesJasmine: {fileID: 0}
@@ -180291,7 +180882,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -180342,6 +180934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1183011372}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 120986860}
@@ -183575,6 +184168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1633073103}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 2.2
   ikon: {fileID: 946821545}
@@ -183605,7 +184199,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -189320,6 +189915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1972580168}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 943172058}
@@ -189350,7 +189946,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -192222,7 +192819,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -192273,6 +192871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1633073103}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 462907677}
@@ -193687,7 +194286,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -194031,7 +194631,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -194082,6 +194683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1530635462}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 667815555}
@@ -198312,7 +198914,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -198363,6 +198966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 2113177066}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 3518559}
@@ -202086,7 +202690,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -202137,6 +202742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 732024747}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 828567747}
@@ -203041,7 +203647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MalamEksplorasiArthur
   waktu: {fileID: 981109559}
-  tujuanKamar: {fileID: 1147442662}
+  tujuanKamar: {fileID: 352206437}
   batasMalam: 180
   durasiPudarNpc: 1.5
 --- !u!1 &982159635
@@ -205815,6 +206421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1165185618}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.25
   ikon: {fileID: 2001862324}
@@ -205845,7 +206452,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -206182,7 +206790,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -206233,6 +206842,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 592963989}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 864313911}
@@ -211022,7 +211632,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -211109,6 +211720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 112215978}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 1005362354}
@@ -214158,7 +214770,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -214209,6 +214822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 795215882}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 141343681}
@@ -218385,7 +218999,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -218436,6 +219051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1938239887}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1964593973}
@@ -219901,6 +220517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1303321248}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 622067201}
@@ -219931,7 +220548,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -220613,6 +221231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1086278487}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1177641847}
@@ -220643,7 +221262,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -221210,7 +221830,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -221261,6 +221882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 403458890}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1840404143}
@@ -226155,6 +226777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 928563053}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.35
   ikon: {fileID: 1331877548}
@@ -226185,7 +226808,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -226341,6 +226965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1303321248}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1376432585}
@@ -226371,7 +226996,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -226388,7 +227014,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 1
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -227083,7 +227710,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -227134,6 +227762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 38190068}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1178536282}
@@ -227597,7 +228226,8 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 1108713309}
@@ -228798,7 +229428,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -228815,7 +229446,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 0
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -228866,6 +229498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1302378743}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1554647681}
@@ -232491,6 +233124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 23395478}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 423791839}
@@ -234402,7 +235036,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -234453,6 +235088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 2010715824}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 601769721}
@@ -235733,6 +236369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1086278487}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 2115640832}
@@ -235763,7 +236400,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -237890,6 +238528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1698906491}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 813246918}
@@ -237920,7 +238559,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -239881,7 +240521,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -239932,6 +240573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1231873384}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 234072796}
@@ -240063,6 +240705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1250463806}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.35
   ikon: {fileID: 2125204096}
@@ -240093,7 +240736,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -246555,6 +247199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 698557066}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.25
   ikon: {fileID: 862721963}
@@ -246585,7 +247230,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -250221,6 +250867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1174501206}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1770061046}
@@ -250251,7 +250898,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -250583,7 +251231,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -250634,6 +251283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1530635462}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 1256929161}
@@ -251087,7 +251737,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -251138,6 +251789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 399362850}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 931404243}
@@ -270118,7 +270770,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -270169,6 +270822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 2060265597}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 216020120}
@@ -271959,7 +272613,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -276516,7 +277171,8 @@ MonoBehaviour:
     berteriak: 0
     kekuatanTeriak: 1
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -276603,6 +277259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 112215978}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 346270207}
@@ -282522,6 +283179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1972580168}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1647251471}
@@ -282552,7 +283210,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -287210,6 +287869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 620369949}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1160946434}
@@ -287240,7 +287900,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -287257,7 +287918,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 0
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -287762,6 +288424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 2063478948}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 118097812}
@@ -288013,7 +288676,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -288030,7 +288694,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 0
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -288081,6 +288746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 403458890}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 127718511}
@@ -289819,7 +290485,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -289870,6 +290537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1745679250}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 395732114}
@@ -295256,6 +295924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1290395389}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1
   ikon: {fileID: 1626902170}
@@ -295286,7 +295955,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -296882,7 +297552,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -296933,6 +297604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1183011372}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 995232274}
@@ -298613,7 +299285,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -298664,6 +299337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 703601823}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 169439487}
@@ -304157,7 +304831,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -304244,6 +304919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1708945547}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 1520559508}
@@ -306150,7 +306826,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -306201,6 +306878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1879528767}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1729647866}
@@ -306942,6 +307620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1803523793}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.25
   ikon: {fileID: 291223692}
@@ -306972,7 +307651,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -308662,6 +309342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1633073103}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 2.4
   ikon: {fileID: 606821632}
@@ -308692,7 +309373,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -309080,6 +309762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 828588025}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1
   ikon: {fileID: 290590612}
@@ -309110,7 +309793,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -312612,7 +313296,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -312629,7 +313314,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 1
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -312680,6 +313366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1183011372}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 218703319}
@@ -314751,7 +315438,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -314768,7 +315456,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 0
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -320250,7 +320939,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -322403,7 +323093,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -322454,6 +323145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1379799019}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1687919079}
@@ -322641,7 +323333,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 1554181729}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 1554181729}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -322728,6 +323421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 872463109}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 1221521044}
@@ -323407,6 +324101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1174501206}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 0.85
   ikon: {fileID: 299240425}
@@ -323437,7 +324132,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -325727,6 +326423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 302525645}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 0.95
   ikon: {fileID: 826380734}
@@ -325757,7 +326454,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -330229,7 +330927,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -330280,6 +330979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 2079776932}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1671523083}
@@ -330938,7 +331638,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -330989,6 +331690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 263652499}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 879461207}
@@ -333319,7 +334021,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -333370,6 +334073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 732024747}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 903415254}
@@ -343448,7 +344152,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -343499,6 +344204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1579867381}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 206332273}
@@ -350248,6 +350954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 10794202}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.45
   ikon: {fileID: 641830014}
@@ -350278,7 +350985,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -351064,6 +351772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 302525645}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 0.95
   ikon: {fileID: 195583741}
@@ -351094,7 +351803,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -352825,6 +353535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 2013632656}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1601625023}
@@ -352855,7 +353566,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -358698,7 +359410,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -358749,6 +359462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1633073103}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1963092513}
@@ -359060,6 +359774,8 @@ Transform:
   - {fileID: 1290192409}
   - {fileID: 1234429317}
   - {fileID: 1642057031}
+  - {fileID: 352206437}
+  - {fileID: 603567945}
   m_Father: {fileID: 2146025206}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1727583968
@@ -365495,7 +366211,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -365546,6 +366263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 291004601}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1869661388}
@@ -369967,6 +370685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 403458890}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 810303566}
@@ -369997,7 +370716,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -372722,6 +373442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1142242632}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1
   ikon: {fileID: 1782182609}
@@ -372752,7 +373473,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -388727,7 +389449,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -388814,6 +389537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 112215978}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 2.5
   ikon: {fileID: 2088864649}
@@ -400923,7 +401647,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -400974,6 +401699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 138853131}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.3
   ikon: {fileID: 1702804250}
@@ -401035,6 +401761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 263652499}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 0.85
   ikon: {fileID: 1624684032}
@@ -401065,7 +401792,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -410872,6 +411600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 2031438683}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 0.85
   ikon: {fileID: 779989177}
@@ -410902,7 +411631,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -411769,7 +412499,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -411820,6 +412551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 703601823}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 0.7
   ikon: {fileID: 1341780858}
@@ -413111,6 +413843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1165185618}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 2.2
   ikon: {fileID: 76127728}
@@ -413141,7 +413874,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -413158,7 +413892,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 0
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -413525,6 +414260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 928563053}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.35
   ikon: {fileID: 2058292321}
@@ -413555,7 +414291,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -417397,7 +418134,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -417448,6 +418186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1052518276}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 1383214026}
@@ -418917,7 +419656,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -418968,6 +419708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 403458890}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 386219852}
@@ -420807,7 +421548,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -420858,6 +421600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 836501500}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 602690863}
@@ -420998,6 +421741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1290395389}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1031978404}
@@ -421028,7 +421772,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -421045,7 +421790,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 0
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -421062,7 +421808,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 0
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -421079,7 +421826,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 1
     nyalakanGrupBelakang: 0
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -424367,7 +425115,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -424384,7 +425133,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 1
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -424401,7 +425151,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 1
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -424452,6 +425203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1183011372}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1762203430}
@@ -435791,6 +436543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 1290395389}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 876598561}
@@ -435821,7 +436574,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -436254,6 +437008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 405251295}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.15
   ikon: {fileID: 1908883707}
@@ -436284,7 +437039,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -445192,7 +445948,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -445243,6 +446000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 502680100}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1260224625}
@@ -445688,7 +446446,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -445705,7 +446464,8 @@ MonoBehaviour:
     nyalakanGrupDepan: 0
     nyalakanGrupBelakang: 0
     nyalakanGrupRuangan: 0
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -445756,6 +446516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 2103595512}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.2
   ikon: {fileID: 1208772526}
@@ -448022,7 +448783,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}
@@ -448146,6 +448908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
   jalur: {fileID: 10794202}
+  hanyaSaatIstirahat: 0
   jalurTambahan: []
   radius: 1.45
   ikon: {fileID: 332542097}
@@ -448176,7 +448939,8 @@ MonoBehaviour:
   tampilkanTombolKeluar: 1
   skenarioDialog: []
   daftarOpsi:
-  - arenaKoleksi: {fileID: 0}
+  - tidurSampaiPagi: 0
+    arenaKoleksi: {fileID: 0}
     pertukaranTubuh: {fileID: 0}
     kembaliKeArthur: 0
     aksesJasmine: {fileID: 0}

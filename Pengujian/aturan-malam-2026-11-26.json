@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-26",
+  "variant": "utama",
+  "revision": "jam-malam",
+  "sha256": "842ce77cfcb0437046559f7ed36bd628f874d7e261725d6379a90e62ecf5c5a6",
+  "bytes": 306481947,
+  "editor_tests": "7/7 lulus; work/jam-malam-20261126/uji.txt",
+  "android_install": "Success pada realme RMX3491",
+  "android_test": "Tertunda: APP_CMD_PAUSE/STOP segera sesudah peluncuran; menunggu layar HP dibuka.",
+  "rules": {
+    "return_to_room": 21,
+    "optional_sleep": "Tidur sampai pagi",
+    "forced_sleep": 23,
+    "wake_up": 7,
+    "room_exit_blocked_at_night": true
+  },
+  "limitations": [
+    "Tidak mengklaim angka FPS awal sebagai hasil biner jam malam.",
+    "Target 60 FPS masih belum stabil pada pengujian sebelumnya."
+  ]
+}

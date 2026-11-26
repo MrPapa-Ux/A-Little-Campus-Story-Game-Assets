@@ -25214,8 +25214,8 @@
     },
     {
       "path": "Assets/Scenes/CharacterLab.unity",
-      "bytes": 13816103,
-      "sha256": "bd08e6375587be55488a71145d64328f84673de27cca4b62960c023502e0b90c"
+      "bytes": 13836238,
+      "sha256": "85ddc2ef761fe2cfb3cbc8b2dd0ef4b1403bc3184bb32a6d6c43a6ba55039498"
     },
     {
       "path": "Assets/Scenes/CharacterLab.unity.meta",
@@ -25224,8 +25224,8 @@
     },
     {
       "path": "Assets/Scenes/Explorer.unity",
-      "bytes": 13778617,
-      "sha256": "cb00111df2d8f46415832b9a7af6e514fdc54713f75a210f28e6a13e9a820b29"
+      "bytes": 13798773,
+      "sha256": "088116fcd2088b9a952a0649291cc6198e533b2b2b2f76609d83eabd61c5052a"
     },
     {
       "path": "Assets/Scenes/Explorer.unity.meta",
@@ -25264,8 +25264,8 @@
     },
     {
       "path": "Assets/Scenes/Penataan Kampus - Jalur NPC dan Bubble.unity",
-      "bytes": 14456200,
-      "sha256": "0417940fcea48179e789810d24efa8af0a01d9b3e1de9d4b1485f6e1b7c28b60"
+      "bytes": 14476354,
+      "sha256": "11489bf95d3d0319c3e070f1c43676e442c74695df202fa959dbb3d0940921df"
     },
     {
       "path": "Assets/Scenes/Penataan Kampus - Jalur NPC dan Bubble.unity.meta",
@@ -27114,8 +27114,8 @@
     },
     {
       "path": "Assets/Skrip/Runtime/AlurDanMenu/UkurPerformaPerangkatArthur.cs",
-      "bytes": 6242,
-      "sha256": "9076ba01a7d2084b45f4cc614f31dbd81d0fffbbc09c7c6bdbc91f344f8bd68c"
+      "bytes": 7681,
+      "sha256": "42aac0e3549894c1c75fb9f2f97946ac4b57affe33491190a602e345d1a88470"
     },
     {
       "path": "Assets/Skrip/Runtime/AlurDanMenu/UkurPerformaPerangkatArthur.cs.meta",
@@ -27259,8 +27259,8 @@
     },
     {
       "path": "Assets/Skrip/Runtime/Dunia/InteraksiJalurKampus.cs",
-      "bytes": 7412,
-      "sha256": "ad6b7c9d353a4153016b3f179c35fd5bbc8bb4b5deaced4108e6a363ee0756a1"
+      "bytes": 7588,
+      "sha256": "e0b780e4d75fa2463642577c4978676fb31d802bf38a75da83db9f6cad29483c"
     },
     {
       "path": "Assets/Skrip/Runtime/Dunia/InteraksiJalurKampus.cs.meta",
@@ -27309,8 +27309,8 @@
     },
     {
       "path": "Assets/Skrip/Runtime/Dunia/KawasanKampus.cs",
-      "bytes": 7436,
-      "sha256": "ffa323cc2cec4c075bf5c66a87a532fe0564cb366c457a0f793d67d8765aff93"
+      "bytes": 7504,
+      "sha256": "3fac91e549aba3b1d9b6cba1d3663855b583224ecf554c0443219da9afa3be5d"
     },
     {
       "path": "Assets/Skrip/Runtime/Dunia/KawasanKampus.cs.meta",
@@ -27379,8 +27379,8 @@
     },
     {
       "path": "Assets/Skrip/Runtime/Dunia/MalamEksplorasiArthur.cs",
-      "bytes": 6104,
-      "sha256": "989f16ef7ea39c643d30aec8bee6a953895deb2ccd364776badd8171ace19c1f"
+      "bytes": 7949,
+      "sha256": "61c0c2b8b4625e5a106315ca0814c09ece200c4a33aacd00a32476230ab89ffc"
     },
     {
       "path": "Assets/Skrip/Runtime/Dunia/MalamEksplorasiArthur.cs.meta",
@@ -27569,8 +27569,8 @@
     },
     {
       "path": "Assets/Skrip/Runtime/Dunia/SiklusWaktuKampus.cs",
-      "bytes": 14798,
-      "sha256": "fead459039dcef1ed99a217a670f3dc573dbd7fd3f43a128c7f584e39f285ef5"
+      "bytes": 14960,
+      "sha256": "fe5a7d0c7f4365827cef3fc5d71ec9e8ff971f58ee648604f86272158a5d6cfd"
     },
     {
       "path": "Assets/Skrip/Runtime/Dunia/SiklusWaktuKampus.cs.meta",
@@ -28204,8 +28204,8 @@
     },
     {
       "path": "Assets/Skrip/Runtime/NPCDanDialog/OpsiInteraksi.cs",
-      "bytes": 3048,
-      "sha256": "e8c448a3758efa0446089823a3bb38bfe2d979c27dbe6f9fdd0ebc1defcd79a5"
+      "bytes": 3081,
+      "sha256": "ea7a8b6a90f2deba847f8747670b6e14ed45443fc70ea081262b6b3146d09e1a"
     },
     {
       "path": "Assets/Skrip/Runtime/NPCDanDialog/OpsiInteraksi.cs.meta",
@@ -28234,8 +28234,8 @@
     },
     {
       "path": "Assets/Skrip/Runtime/NPCDanDialog/SistemPilihan.cs",
-      "bytes": 39601,
-      "sha256": "6f7ff7ca313de4bbab3da5194f30049f2d5d3b7bfd23f06b994223a7859f2c16"
+      "bytes": 39947,
+      "sha256": "b401f1acc08fe8cb1e1f06d78c3f6d31ce5b26a57dcbc14150e354acc499cb8e"
     },
     {
       "path": "Assets/Skrip/Runtime/NPCDanDialog/SistemPilihan.cs.meta",
