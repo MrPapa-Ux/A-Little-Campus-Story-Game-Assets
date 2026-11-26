@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// Dipasang hanya pada CharacterLab dan Explorer, bukan scene Chapter 1.
+// NPC harian beristirahat saat malam. Adegan malam Chapter 1 tetap mengatur NPC ceritanya sendiri.
 [DefaultExecutionOrder(600)]
 public sealed class MalamEksplorasiArthur : MonoBehaviour
 {
@@ -20,6 +20,8 @@ public sealed class MalamEksplorasiArthur : MonoBehaviour
     readonly Dictionary<GameObject, bool> disembunyikan = new Dictionary<GameObject, bool>();
     readonly Dictionary<SpriteRenderer, Color> warnaNpc = new Dictionary<SpriteRenderer, Color>();
     readonly Dictionary<Behaviour, bool> interaksiNpc = new Dictionary<Behaviour, bool>();
+    readonly HashSet<GameObject> sedangPudar = new HashSet<GameObject>();
+    int versiPudar;
     bool malamLama;
     float cekBerikut;
     SistemHP hp;
@@ -29,29 +31,42 @@ public sealed class MalamEksplorasiArthur : MonoBehaviour
     void Start() { hp=FindFirstObjectByType<SistemHP>(); pilihan=FindFirstObjectByType<SistemPilihan>(); arthur=FindFirstObjectByType<ArthurJalurKampus>(); }
     void Sembunyikan(GameObject g)
     {
-        if(g==null || disembunyikan.ContainsKey(g))return;
+        if(g==null || g.GetComponentInParent<ArthurJalurKampus>()!=null)return;
+        if(disembunyikan.ContainsKey(g))
+        {
+            // Grup kawasan dapat mengaktifkan NPC lagi setelah proses pudar selesai.
+            if(g.activeSelf && !sedangPudar.Contains(g))g.SetActive(false);
+            return;
+        }
         disembunyikan.Add(g,g.activeSelf);
         if(!g.activeInHierarchy){g.SetActive(false);return;}
         foreach(var s in g.GetComponentsInChildren<SpriteRenderer>(true))if(!warnaNpc.ContainsKey(s))warnaNpc.Add(s,s.color);
         foreach(var b in g.GetComponents<Behaviour>())
             if(b is NpcYangBisaDiatur || b is AreaInteraksi || b is NPCBubbleTrigger)
             {if(!interaksiNpc.ContainsKey(b))interaksiNpc.Add(b,b.enabled);b.enabled=false;}
+        sedangPudar.Add(g);
         StartCoroutine(PudarNpc(g));
     }
     IEnumerator PudarNpc(GameObject g)
     {
+        int versi=versiPudar;
         var gambar=g.GetComponentsInChildren<SpriteRenderer>(true);
         float t=0;
-        while(g!=null && NpcTidur && t<durasiPudarNpc)
+        while(g!=null && versi==versiPudar && NpcTidur && t<durasiPudarNpc)
         {
             float alpha=1-Mathf.SmoothStep(0,1,t/durasiPudarNpc);
             foreach(var s in gambar)if(s!=null && warnaNpc.TryGetValue(s,out var c)){c.a*=alpha;s.color=c;}
             t+=Time.deltaTime;yield return null;
         }
-        if(g!=null && NpcTidur)g.SetActive(false);
+        if(versi==versiPudar)
+        {
+            if(g!=null && NpcTidur)g.SetActive(false);
+            sedangPudar.Remove(g);
+        }
     }
     void PulihkanNpc()
     {
+        versiPudar++;sedangPudar.Clear();
         foreach(var p in warnaNpc)if(p.Key!=null)p.Key.color=p.Value;
         foreach(var p in interaksiNpc)if(p.Key!=null)p.Key.enabled=p.Value;
         foreach(var p in disembunyikan)if(p.Key!=null)p.Key.SetActive(p.Value);
@@ -59,12 +74,15 @@ public sealed class MalamEksplorasiArthur : MonoBehaviour
     }
     void Update()
     {
+        var cerita=PerjalananChapelChapter1.Instance;
+        if(cerita!=null&&cerita.isActiveAndEnabled&&cerita.MalamAktif)return;
         bool malam=NpcTidur;
         if(malam && Time.unscaledTime>=cekBerikut)
         {
             cekBerikut=Time.unscaledTime+.5f;
             foreach(var n in FindObjectsByType<NpcKampusHidup>(FindObjectsInactive.Include,FindObjectsSortMode.None)) Sembunyikan(n.gameObject);
             foreach(var n in FindObjectsByType<NpcYangBisaDiatur>(FindObjectsInactive.Include,FindObjectsSortMode.None)) Sembunyikan(n.gameObject);
+            foreach(var n in FindObjectsByType<PelariSekilasNpc>(FindObjectsInactive.Include,FindObjectsSortMode.None)) Sembunyikan(n.gameObject);
             foreach(var n in FindObjectsByType<NPCBubbleTrigger>(FindObjectsInactive.Include,FindObjectsSortMode.None))
             { var a=n.GetComponent<AreaInteraksi>(); if(a!=null && a.tipeInteraksi==TipeInteraksi.NPC_Karakter)Sembunyikan(n.gameObject); }
         }

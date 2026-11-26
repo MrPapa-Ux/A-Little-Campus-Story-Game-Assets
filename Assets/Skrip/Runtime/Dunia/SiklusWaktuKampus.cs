@@ -202,6 +202,13 @@ public sealed class SiklusWaktuKampus : MonoBehaviour
     {
         var k=KawasanKampus.Instance;if(k==null||!k.Siap||k.SedangMemuat||arthur==null)return;
         bool luar=arthur.JalurAktif!=null?!arthur.JalurAktif.diDalamRuangan:pilihan==null||pilihan.grupFisikRuangan==null||!pilihan.grupFisikRuangan.activeInHierarchy;
+        if(DiLuarRuangan!=luar)
+        {
+            // Mulai dari cahaya yang sedang terlihat, bukan langsung meloncat
+            // antara isi lobby dan jalur taman saat Arthur melewati batas jalur.
+            AmbilAwal();
+            awalPeralihan=Time.unscaledTime;
+        }
         DiLuarRuangan=luar;
         if(!luar){LangitHijau=false;kawasanLangit=null;return;}
         string zona=PertemuanHewanKampus.ZonaUntuk(arthur.JalurAktif);string key=k.KawasanAktif+"/"+zona;

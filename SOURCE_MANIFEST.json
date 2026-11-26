@@ -1,8 +1,11 @@
 {
-  "snapshot": "2026-11-25",
+  "snapshot": "2026-11-26",
   "source_file_count": 303,
-  "project_file_count": 7961,
+  "project_file_count": 7963,
   "excluded": [
+    "Assets/_Recovery",
+    "Assets/work",
+    "Assets/Resources/PerformanceTestRunSettings.json",
     "Assets/Aset/Arsip_Penataan",
     "Assets/Aset/Pihak_Ketiga/Ezereal",
     "Assets/Aset/Pihak_Ketiga/Zacxophone",
@@ -9143,6 +9146,16 @@
       "path": "Assets/Aset/Dunia/Ruang_Dekan/Meshes/Jam_Dinding.asset.meta",
       "bytes": 188,
       "sha256": "c73219f9f7598120fb220ceda78a38fd13c4e2bd3dc299739ef67faad675a42c"
+    },
+    {
+      "path": "Assets/Aset/Dunia/Ruang_Dekan/Meshes/Jendela_Tanpa_Sisi_Kiri.asset",
+      "bytes": 126690,
+      "sha256": "36df1b322cceed9fb3c0b7c5cf063744cd2abbfbce00665c76913cfda702792f"
+    },
+    {
+      "path": "Assets/Aset/Dunia/Ruang_Dekan/Meshes/Jendela_Tanpa_Sisi_Kiri.asset.meta",
+      "bytes": 188,
+      "sha256": "9c0b679d409f9f220beb2381f1be0537cb898dd4695add38b28ef13600ed3c41"
     },
     {
       "path": "Assets/Aset/Dunia/Ruang_Dekan/Meshes/Kursi_Belakang.asset",
@@ -25201,8 +25214,8 @@
     },
     {
       "path": "Assets/Scenes/CharacterLab.unity",
-      "bytes": 13777983,
-      "sha256": "8c3ecf0d49dd662ac3cc97e93f1647b8c98e3c5081539a2dccdf2ac5da5ceceb"
+      "bytes": 13816103,
+      "sha256": "bd08e6375587be55488a71145d64328f84673de27cca4b62960c023502e0b90c"
     },
     {
       "path": "Assets/Scenes/CharacterLab.unity.meta",
@@ -25211,8 +25224,8 @@
     },
     {
       "path": "Assets/Scenes/Explorer.unity",
-      "bytes": 13740560,
-      "sha256": "a08b9e3bf6a9c6fa0f37d2846ade64772af923558e969b30e13dd2c186223baa"
+      "bytes": 13778617,
+      "sha256": "cb00111df2d8f46415832b9a7af6e514fdc54713f75a210f28e6a13e9a820b29"
     },
     {
       "path": "Assets/Scenes/Explorer.unity.meta",
@@ -25251,8 +25264,8 @@
     },
     {
       "path": "Assets/Scenes/Penataan Kampus - Jalur NPC dan Bubble.unity",
-      "bytes": 14408644,
-      "sha256": "acaa19ca4fe6d0bf2a5e07d023b3828ccc611da5cca1abfb27ecc317c94618c4"
+      "bytes": 14456200,
+      "sha256": "0417940fcea48179e789810d24efa8af0a01d9b3e1de9d4b1485f6e1b7c28b60"
     },
     {
       "path": "Assets/Scenes/Penataan Kampus - Jalur NPC dan Bubble.unity.meta",
@@ -25326,8 +25339,8 @@
     },
     {
       "path": "Assets/Skrip/Editor/AlatPenataan/BubbleArthurScene.cs",
-      "bytes": 7079,
-      "sha256": "d6a592a0907e05bf0cc3a526f1b9227044751d84cdb4546f2be535c220bb8a65"
+      "bytes": 7395,
+      "sha256": "9a390e0573abd2072894eec1c9fec3856bd6d3ae7cfacd61a551e95282910c0c"
     },
     {
       "path": "Assets/Skrip/Editor/AlatPenataan/BubbleArthurScene.cs.meta",
@@ -25396,8 +25409,8 @@
     },
     {
       "path": "Assets/Skrip/Editor/AlatPenataan/TempatArthurEditor.cs",
-      "bytes": 13941,
-      "sha256": "be16824eeb1c16955aa340374d5a466e1ea9e7b034b834c971b83550f700cff1"
+      "bytes": 15366,
+      "sha256": "6cc5a48baecb1fa4f742c080f05317ba9c5ea59bb7c0d85585785227e473081d"
     },
     {
       "path": "Assets/Skrip/Editor/AlatPenataan/TempatArthurEditor.cs.meta",
@@ -25686,8 +25699,8 @@
     },
     {
       "path": "Assets/Skrip/Editor/Impor_dan_Pendukung/Ruangan_Dekan/AturRuanganGK1.cs",
-      "bytes": 4897,
-      "sha256": "52e5981736fbcff30ebc4af638b401ee9dac4c9eac63b5d780d418e5886391e7"
+      "bytes": 5482,
+      "sha256": "42d98f87fdf18b6cf0cfdcf90738c47ba83a7e0a44bbe4f20671e4706d7566d1"
     },
     {
       "path": "Assets/Skrip/Editor/Impor_dan_Pendukung/Ruangan_Dekan/AturRuanganGK1.cs.meta",
@@ -26216,8 +26229,8 @@
     },
     {
       "path": "Assets/Skrip/Editor/Profiling/AndroidSceneRenderSettings.cs",
-      "bytes": 1319,
-      "sha256": "f6c42b70a06c51ff01b4b681bc4eb724f2da186d72da2c354f1f6854c8ce3def"
+      "bytes": 1479,
+      "sha256": "7e7dbc11fd98d01c4c53fb2a35ce3973b92b70a7fde8305565f67ccbb23b9d90"
     },
     {
       "path": "Assets/Skrip/Editor/Profiling/AndroidSceneRenderSettings.cs.meta",
@@ -26281,8 +26294,8 @@
     },
     {
       "path": "Assets/Skrip/Editor/SetupDanRevisi/AktifkanKelasGK2.cs",
-      "bytes": 5747,
-      "sha256": "32a8c242d28b5441d96b63ca89cc6792a01f99e1ddfcc72ede9dff558ef31958"
+      "bytes": 6406,
+      "sha256": "4ae056c76abfd04f243c405174eb9a2afc206b0e632d5f9388298ce240850828"
     },
     {
       "path": "Assets/Skrip/Editor/SetupDanRevisi/AktifkanKelasGK2.cs.meta",
@@ -26741,8 +26754,8 @@
     },
     {
       "path": "Assets/Skrip/Runtime/AlurDanMenu/CeritaKamar201Arthur.cs",
-      "bytes": 10994,
-      "sha256": "18566200fdfdbaa1f9488a0b10cbb410ec4cad79f7159b8d6d8ecf28ac375003"
+      "bytes": 11202,
+      "sha256": "6322737471b9f601ddd7e580d7a0cb16f19f5c78744e45f4f4bedf8d6b686503"
     },
     {
       "path": "Assets/Skrip/Runtime/AlurDanMenu/CeritaKamar201Arthur.cs.meta",
@@ -27296,8 +27309,8 @@
     },
     {
       "path": "Assets/Skrip/Runtime/Dunia/KawasanKampus.cs",
-      "bytes": 7039,
-      "sha256": "bb2bac9ea0d7ad9b0159fe23d0ebf56cc75d97130b204f065cb62a94e8a09ba8"
+      "bytes": 7436,
+      "sha256": "ffa323cc2cec4c075bf5c66a87a532fe0564cb366c457a0f793d67d8765aff93"
     },
     {
       "path": "Assets/Skrip/Runtime/Dunia/KawasanKampus.cs.meta",
@@ -27366,8 +27379,8 @@
     },
     {
       "path": "Assets/Skrip/Runtime/Dunia/MalamEksplorasiArthur.cs",
-      "bytes": 5230,
-      "sha256": "a7c77f0de379aa12fc514a0240f7927d2c92e51e8eff4bbc14b31f5591873082"
+      "bytes": 6104,
+      "sha256": "989f16ef7ea39c643d30aec8bee6a953895deb2ccd364776badd8171ace19c1f"
     },
     {
       "path": "Assets/Skrip/Runtime/Dunia/MalamEksplorasiArthur.cs.meta",
@@ -27556,8 +27569,8 @@
     },
     {
       "path": "Assets/Skrip/Runtime/Dunia/SiklusWaktuKampus.cs",
-      "bytes": 14508,
-      "sha256": "c652261e0e471cd13137820eecd56dd720e5ab461bcb4c1eea9930663174a98f"
+      "bytes": 14798,
+      "sha256": "fead459039dcef1ed99a217a670f3dc573dbd7fd3f43a128c7f584e39f285ef5"
     },
     {
       "path": "Assets/Skrip/Runtime/Dunia/SiklusWaktuKampus.cs.meta",
@@ -28776,8 +28789,8 @@
     },
     {
       "path": "Assets/WorldStreaming/Kawasan_GA.unity",
-      "bytes": 379615,
-      "sha256": "2b8acbfcd0b3677c1aea3a89bf9d484855f776fe175e69fcc6e702ba7fd5c715"
+      "bytes": 360166,
+      "sha256": "655e2e1319d3286605ba96619f74e1c79877353f582d9cd96ac7bcb29438f7d4"
     },
     {
       "path": "Assets/WorldStreaming/Kawasan_GA.unity.meta",
@@ -28816,8 +28829,8 @@
     },
     {
       "path": "Assets/WorldStreaming/Kawasan_JasmineGK2.unity",
-      "bytes": 1104352,
-      "sha256": "b54d4c0952b0129374c754ab79098f91c1e481d7f181f68f8e2c980c821c7ed5"
+      "bytes": 989536,
+      "sha256": "68b29fb5a3f29ff84abcb7618f8d52a1e2ba7af30d7a51c53d26a6ab3d709106"
     },
     {
       "path": "Assets/WorldStreaming/Kawasan_JasmineGK2.unity.meta",
@@ -39762,7 +39775,7 @@
     {
       "path": "ProjectSettings/ProjectSettings.asset",
       "bytes": 27629,
-      "sha256": "cdd1a2c7d3ed852514bc33e3bcc8868804d3d510c3474a49157e8f3ea8f3e368"
+      "sha256": "a93233d2cae63e500e24f2a9acde4a9e9588a3a209fc81fe7d902de0bfe9274a"
     },
     {
       "path": "ProjectSettings/ProjectVersion.txt",

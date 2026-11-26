@@ -53,6 +53,10 @@ public sealed class CeritaKamar201Arthur : MonoBehaviour
     Rect amanPanelLama;
 
     IEnumerator Start(){
+#if UNITY_EDITOR
+        var uji=FindFirstObjectByType<KawasanKampus>();
+        if(uji!=null&&uji.titikMulaiPengujian!=null){panel.SetActive(false);timer.gameObject.SetActive(false);yield break;}
+#endif
         pemain.kunciPergerakan=true;panel.SetActive(false);timer.gameObject.SetActive(false);BlokirInteraksi(true);
         if(procrastination!=null)procrastination.tanpaBatasWaktu=true;
         titikHardisk.SetActive(false);visualHardisk.SetActive(false);

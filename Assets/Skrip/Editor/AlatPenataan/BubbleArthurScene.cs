@@ -109,7 +109,12 @@ public static class BubbleArthurScene
             if (screen.z <= 0 || screen.z > 100 || screen.x < -.05f || screen.x > 1.05f || screen.y < -.05f || screen.y > 1.05f) continue;
             float size = HandleUtility.GetHandleSize(p) * .13f;
             Handles.color = new Color(1, .62f, .12f);
-            if (Handles.Button(p, view.camera.transform.rotation, size, size * 1.4f, Handles.CircleHandleCap)) Pilih(marker);
+            bool pilihTulisan = Event.current.clickCount >= 2;
+            if (Handles.Button(p, view.camera.transform.rotation, size, size * 1.4f, Handles.CircleHandleCap)) {
+                var text = marker.GetComponentInChildren<TMPro.TMP_Text>(true);
+                if(pilihTulisan && text!=null){Restore();Selection.activeGameObject=text.gameObject;EditorGUIUtility.PingObject(text);}
+                else Pilih(marker);
+            }
             Handles.Label(p + view.camera.transform.up * size * 1.5f, new GUIContent(TampilanSaja?"GAMBAR BUBBLE":"TEMPAT INTERAKSI", TampilanSaja?"Geser gambar saja. Tempat interaksi tetap.":"Menggeser tempat Arthur berinteraksi."));
         }
         var active = Selection.activeGameObject != null ? Selection.activeGameObject.GetComponent<InteraksiJalurKampus>() : null;

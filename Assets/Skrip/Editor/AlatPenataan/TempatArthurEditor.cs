@@ -61,7 +61,17 @@ public sealed class InteraksiJalurKampusInspector : Editor
     data.ApplyModifiedProperties();
    }
    var text=m.ikon!=null?m.ikon.GetComponentInChildren<TMPro.TMP_Text>(true):null;
-   if(text!=null){EditorGUI.BeginChangeCheck();var arrow=EditorGUILayout.TextField("Teks / panah bubble",text.text);if(EditorGUI.EndChangeCheck()){Undo.RecordObject(text,"Ubah panah bubble");text.text=arrow;EditorUtility.SetDirty(text);}}
+   if(text==null)text=m.GetComponentInChildren<TMPro.TMP_Text>(true);
+   if(text!=null){
+    using(var label=new SerializedObject(text)){
+     label.Update();EditorGUILayout.PropertyField(label.FindProperty("m_text"),new GUIContent("Teks / panah bubble"));
+     if(label.ApplyModifiedProperties()){
+      PrefabUtility.RecordPrefabInstancePropertyModifications(text);
+      UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(text.gameObject.scene);
+     }
+    }
+    if(GUILayout.Button("Pilih TextMeshPro untuk edit tulisan")){Selection.activeGameObject=text.gameObject;EditorGUIUtility.PingObject(text);}
+   }else EditorGUILayout.HelpBox("Objek tulisan bubble belum ditemukan. Periksa anak IkonGambar.",MessageType.Warning);
   }
   if(m.jalur!=null){m.jalur.Sampel(m.jalur.JarakTerdekat(m.transform.position),out var p,out _,out _);if(Vector3.Distance(p,m.transform.position)>m.radius)EditorGUILayout.HelpBox("Bubble terlalu jauh dari jalur Arthur. Klik Pusatkan tempat bubble ke jalur hijau agar bisa dijangkau.",MessageType.Warning);}
   pengaturanLanjutan=EditorGUILayout.Foldout(pengaturanLanjutan,"Pengaturan lanjutan (jalur, jangkauan, tampilan)",true);
@@ -82,10 +92,21 @@ public sealed class JalurKampusInspector : Editor
   var go=new GameObject("PijakanKhususLantai");Undo.RegisterCreatedObjectUndo(go,"Pijakan jalur");go.transform.SetParent(r.transform,true);go.transform.position=Vector3.zero;
   for(int i=1;i<r.titik.Length;i++){var d=r.titik[i].position-r.titik[i-1].position;if(d.magnitude<.001f)continue;var step=new GameObject("Pijakan_"+i);Undo.RegisterCreatedObjectUndo(step,"Pijakan jalur");step.transform.SetParent(go.transform,true);step.transform.position=(r.titik[i].position+r.titik[i-1].position)*.5f-Vector3.up*(ArthurJalurKampus.JarakKaki+.15f);step.transform.rotation=Quaternion.LookRotation(d);var box=step.AddComponent<BoxCollider>();box.size=new Vector3(1.15f,.3f,d.magnitude+.06f);}
   r.pijakanKhususJalur=go;go.SetActive(false);EditorUtility.SetDirty(r);
+  SesuaikanBatasAkhir(r);
   foreach(var b in UnityEngine.Object.FindObjectsByType<PengaturCabangKampus>(FindObjectsInactive.Include,FindObjectsSortMode.None))if(b.jalurLobby==r||b.jalanDepan==r||b.jalanBelakang==r){
    Undo.RecordObject(b.transform,"Ikuti titik simpang");foreach(var wall in new[]{b.dindingDepan,b.dindingBelakang})if(wall!=null){Undo.RecordObject(wall,"Pembatas cabang");Undo.RecordObject(wall.transform,"Posisi pembatas cabang");}b.SesuaikanDenganJalur();
   }
   Undo.CollapseUndoOperations(group);
+ }
+ public static void SesuaikanBatasAkhir(JalurKampus r){
+  if(r.titik==null||r.titik.Length<2)return;
+  var wall=r.transform.Find("HiddenWall_Akhir");if(wall==null)return;
+  var box=wall.GetComponent<BoxCollider>();if(box==null)return;
+  var arah=r.titik.Last().position-r.titik[r.titik.Length-2].position;arah.y=0;if(arah.sqrMagnitude<.000001f)return;arah.Normalize();
+  float setengah=Mathf.Abs(Vector3.Dot(arah,wall.right))*box.size.x*Mathf.Abs(wall.lossyScale.x)*.5f+Mathf.Abs(Vector3.Dot(arah,wall.forward))*box.size.z*Mathf.Abs(wall.lossyScale.z)*.5f;
+  float radius=r.radiusColliderKhusus>0?r.radiusColliderKhusus:.6f;
+  var p=r.titik.Last().position+arah*(radius+setengah+.12f);p.y=wall.position.y;
+  Undo.RecordObject(wall,"Ikuti ujung jalur - pembatas akhir");wall.position=p;PrefabUtility.RecordPrefabInstancePropertyModifications(wall);EditorUtility.SetDirty(wall);
  }
 }
 

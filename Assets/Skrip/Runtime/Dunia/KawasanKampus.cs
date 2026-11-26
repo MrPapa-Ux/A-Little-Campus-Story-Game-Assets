@@ -38,6 +38,14 @@ public sealed class KawasanKampus : MonoBehaviour
     }
     IEnumerator MuatAwal()
     {
+#if UNITY_EDITOR
+        // Titik uji editor harus mendahului awal cerita dan lokasi tersimpan.
+        if(titikMulaiPengujian!=null&&titikMulaiPengujian.GetComponent<TujuanJalurKampus>()?.jalur!=null)
+        {
+            yield return Pindahkan(titikMulaiPengujian,()=>arthur.PindahKe(titikMulaiPengujian));
+            Siap=aktif.IsValid()&&aktif.isLoaded;yield break;
+        }
+#endif
         var simpanan = GetComponent<SimpananEksplorasiArthur>();
         var tujuanTerakhir = simpanan != null ? simpanan.TujuanTersimpan() : null;
         if (tujuanTerakhir != null)

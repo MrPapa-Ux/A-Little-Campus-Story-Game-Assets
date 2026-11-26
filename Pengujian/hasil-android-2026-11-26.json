@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-26",
+  "variant": "utama",
+  "package": "com.UnityTechnologies.com.unity.template.urpblank",
+  "bytes": 306475587,
+  "sha256": "bd87044c345657d2960eacd3276c4ba5e327b212bb1af4fd6eec55bfe0d8e2f8",
+  "device": "realme RMX3491",
+  "battery_temperature_C": 50,
+  "method": "Intent ADB ke Explorer; diam, kiri, kanan masing-masing 10 detik; bukan speedrun seluruh cerita.",
+  "samples": [
+    {
+      "route": "GA_Taman_MenujuPioneer",
+      "mode": "0",
+      "fps": "30.9",
+      "p95_ms": "33.4",
+      "max_ms": "50.2",
+      "render_scale": "0,6666667"
+    },
+    {
+      "route": "GA_Taman_MenujuPioneer",
+      "mode": "1",
+      "fps": "31.7",
+      "p95_ms": "33.4",
+      "max_ms": "50.1",
+      "render_scale": "0,6666667"
+    },
+    {
+      "route": "GA_Taman_MenujuPioneer",
+      "mode": "2",
+      "fps": "32.1",
+      "p95_ms": "33.4",
+      "max_ms": "33.5",
+      "render_scale": "0,6666667"
+    },
+    {
+      "route": "GK2_JalurUtama_BelokOtomatis",
+      "mode": "0",
+      "fps": "21.4",
+      "p95_ms": "66.8",
+      "max_ms": "166.9",
+      "render_scale": "0,6666667"
+    },
+    {
+      "route": "GK2_JalurUtama_BelokOtomatis",
+      "mode": "1",
+      "fps": "23.8",
+      "p95_ms": "66.7",
+      "max_ms": "100.1",
+      "render_scale": "0,6666667"
+    },
+    {
+      "route": "GK2_JalurUtama_BelokOtomatis",
+      "mode": "2",
+      "fps": "26.6",
+      "p95_ms": "50.1",
+      "max_ms": "50.1",
+      "render_scale": "0,6666667"
+    },
+    {
+      "route": "Jasmine_Interior_Lantai2",
+      "mode": "0",
+      "fps": "59.6",
+      "p95_ms": "16.8",
+      "max_ms": "50.2",
+      "render_scale": "0,9138889"
+    },
+    {
+      "route": "Jasmine_Interior_Lantai2",
+      "mode": "1",
+      "fps": "55.9",
+      "p95_ms": "33.3",
+      "max_ms": "33.5",
+      "render_scale": "0,7638889"
+    },
+    {
+      "route": "Jasmine_Interior_Lantai2",
+      "mode": "2",
+      "fps": "59.7",
+      "p95_ms": "16.7",
+      "max_ms": "33.4",
+      "render_scale": "0,6888889"
+    },
+    {
+      "route": "UNK_Dining_Dalam",
+      "mode": "0",
+      "fps": "41.0",
+      "p95_ms": "33.4",
+      "max_ms": "50.0",
+      "render_scale": "0,6666667"
+    },
+    {
+      "route": "UNK_Dining_Dalam",
+      "mode": "1",
+      "fps": "43.7",
+      "p95_ms": "33.4",
+      "max_ms": "33.5",
+      "render_scale": "0,6666667"
+    },
+    {
+      "route": "UNK_Dining_Dalam",
+      "mode": "2",
+      "fps": "43.3",
+      "p95_ms": "33.4",
+      "max_ms": "50.1",
+      "render_scale": "0,6666667"
+    }
+  ],
+  "limitations": [
+    "Perangkat panas; hasil tidak sebanding langsung dengan uji sebelumnya.",
+    "Target 60 FPS belum tercapai di Dining, GK2 dan arah Taman.",
+    "MOD tidak dibangun ulang.",
+    "Input Handling Both masih dipakai; dialog Android diteruskan melalui Ignore."
+  ],
+  "build_result": "Succeeded",
+  "build_report_errors": 2,
+  "build_error_details": "Timeout permintaan Pipeline 5000/30000 ms saat main thread sibuk; bukan kegagalan kompilasi/Gradle.",
+  "build_warnings": 30,
+  "compile_errors_before_build": 0,
+  "sampled_exceptions": 0
+}

@@ -1976,6 +1976,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 76380097}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &10454273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 10454274}
+  - component: {fileID: 10454275}
+  m_Layer: 0
+  m_Name: Pijakan_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &10454274
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10454273}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.5198107, z: -0, w: 0.85428154}
+  m_LocalPosition: {x: -0.7288618, y: -2.4499998, z: -55.479244}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 953430662}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &10454275
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10454273}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 2.348517}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &10773433
 GameObject:
   m_ObjectHideFlags: 0
@@ -6448,7 +6501,7 @@ Transform:
   m_GameObject: {fileID: 28485293}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.3003397, y: -0.5446692, z: -53.9685}
+  m_LocalPosition: {x: 7.3003397, y: -0.5446693, z: -55.629177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18940,6 +18993,59 @@ Transform:
   - {fileID: 554706870}
   m_Father: {fileID: 2106957076}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &84139743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 84139744}
+  - component: {fileID: 84139745}
+  m_Layer: 0
+  m_Name: Pijakan_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &84139744
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84139743}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0030076094, y: -0.7819636, z: 0.0037731763, w: 0.6233054}
+  m_LocalPosition: {x: 0.1756078, y: -2.4299998, z: -56.426777}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1020499076}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &84139745
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84139743}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 4.2049484}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &84748134
 GameObject:
   m_ObjectHideFlags: 0
@@ -34753,7 +34859,7 @@ GameObject:
   - component: {fileID: 151778252}
   - component: {fileID: 151778251}
   m_Layer: 0
-  m_Name: GK2_Kelas3_Keluar_Pintu5
+  m_Name: GK2_Kelas4_Keluar_Pintu5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34768,12 +34874,12 @@ Transform:
   m_GameObject: {fileID: 151778249}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8, y: -0.58466995, z: -37.2}
+  m_LocalPosition: {x: 0.281403, y: -0.58466995, z: -35.987003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1652575807}
-  m_Father: {fileID: 640389707}
+  m_Father: {fileID: 2146203333}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &151778251
 MonoBehaviour:
@@ -34801,7 +34907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f2161909c85f646b55b22913dfa5cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaInteraksi
-  idTempat: GK2_Kelas3_Keluar_Pintu5
+  idTempat: GK2_Kelas4_Keluar_Pintu5
   tipeInteraksi: 1
   potretDialog: {fileID: 0}
   tampilkanTombolKeluar: 1
@@ -34857,7 +34963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1281e8cfbe45104b9310fc09af915be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteraksiJalurKampus
-  jalur: {fileID: 640389708}
+  jalur: {fileID: 2146203334}
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 1652575807}
@@ -40157,59 +40263,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174213585}
   m_CullTransparentMesh: 1
---- !u!1 &175358860
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 175358861}
-  - component: {fileID: 175358862}
-  m_Layer: 0
-  m_Name: Pijakan_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &175358861
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 175358860}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.00072480715, z: -0, w: 0.99999976}
-  m_LocalPosition: {x: 2300.255, y: -0.14999998, z: -50.66201}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1811804761}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &175358862
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 175358860}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.15, y: 0.3, z: 6.6282897}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &176445080
 GameObject:
   m_ObjectHideFlags: 0
@@ -45809,7 +45862,7 @@ GameObject:
   - component: {fileID: 202761784}
   - component: {fileID: 202761785}
   m_Layer: 0
-  m_Name: TitikMasuk_Kelas3_Pintu5
+  m_Name: TitikMasuk_Kelas4_Pintu5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45823,12 +45876,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202761783}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8, y: -0.58466995, z: -37.2}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.281403, y: -0.58466995, z: -35.987003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 640389707}
+  m_Father: {fileID: 2146203333}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &202761785
 MonoBehaviour:
@@ -45842,7 +45895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2460788194c0041b68a8d0ecc99106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TujuanJalurKampus
-  jalur: {fileID: 640389708}
+  jalur: {fileID: 2146203334}
   kameraMasukSinematik: 0
   durasiKameraMasuk: 1.1
   geserAwalKamera: 0.8
@@ -55045,6 +55098,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 243184513}
   m_Mesh: {fileID: 4300000, guid: 5e4f1847b3dcda542983fd6ce0264b45, type: 2}
+--- !u!1 &243516937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 243516938}
+  - component: {fileID: 243516939}
+  m_Layer: 0
+  m_Name: Pijakan_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &243516938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243516937}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.0022354773, z: -0, w: 0.9999975}
+  m_LocalPosition: {x: -1.7426157, y: -2.4499998, z: -49.285698}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 953430662}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &243516939
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243516937}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 3.0886366}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &243535025
 GameObject:
   m_ObjectHideFlags: 0
@@ -62877,6 +62983,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 275089139}
   m_CullTransparentMesh: 1
+--- !u!1 &276403154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 276403155}
+  - component: {fileID: 276403156}
+  m_Layer: 0
+  m_Name: Pijakan_8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &276403155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276403154}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 7.3003397, y: -1.4099993, z: -57.6185}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301928616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &276403156
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276403154}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 0.75999695}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &276734818
 GameObject:
   m_ObjectHideFlags: 0
@@ -65135,6 +65294,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286312318}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &286366068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 286366069}
+  - component: {fileID: 286366070}
+  m_Layer: 0
+  m_Name: Pijakan_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &286366069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286366068}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.009271039, z: -0, w: 0.999957}
+  m_LocalPosition: {x: -1.726829, y: -2.4499998, z: -42.647682}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 926745031}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &286366070
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286366068}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 4.5610485}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &287057717
 GameObject:
   m_ObjectHideFlags: 0
@@ -68681,6 +68893,59 @@ Transform:
   - {fileID: 2128315351}
   m_Father: {fileID: 542877287}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &302056155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 302056156}
+  - component: {fileID: 302056157}
+  m_Layer: 0
+  m_Name: Pijakan_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &302056156
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302056155}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 7.3003397, y: -2.4099991, z: -26.468498}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301928616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &302056157
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302056155}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 9.06}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &302525644
 GameObject:
   m_ObjectHideFlags: 0
@@ -70077,37 +70342,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &308946835
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 308946836}
-  m_Layer: 0
-  m_Name: 02 - masuk ruangan - geser saya
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &308946836
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 308946835}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8, y: -0.58466995, z: -55.96}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1434675684}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &311265970
 GameObject:
   m_ObjectHideFlags: 0
@@ -70133,7 +70367,7 @@ Transform:
   m_GameObject: {fileID: 311265970}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8, y: -0.58466995, z: -46}
+  m_LocalPosition: {x: -1.7358453, y: -0.58466995, z: -50.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -74227,6 +74461,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327834176}
   m_CullTransparentMesh: 1
+--- !u!1 &327988451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 327988452}
+  - component: {fileID: 327988453}
+  m_Layer: 0
+  m_Name: Pijakan_5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &327988452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327988451}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.91271645, z: 0.40859354, w: 0}
+  m_LocalPosition: {x: 7.3003397, y: -2.1599994, z: -56.300114}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301928616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &327988453
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327988451}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 0.730367}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &328485344
 GameObject:
   m_ObjectHideFlags: 0
@@ -74796,7 +75083,7 @@ MonoBehaviour:
   - id: JasmineInterior
     scene: Assets/WorldStreaming/Kawasan_JasmineInterior.unity
   titikMulaiCerita: {fileID: 359846935}
-  titikMulaiPengujian: {fileID: 0}
+  titikMulaiPengujian: {fileID: 202761784}
 --- !u!4 &330685326
 Transform:
   m_ObjectHideFlags: 0
@@ -88984,7 +89271,7 @@ Transform:
   m_GameObject: {fileID: 404971642}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.3003397, y: -0.044669233, z: -56.2685}
+  m_LocalPosition: {x: 7.3003397, y: -0.04466927, z: -56.52338}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -98327,59 +98614,6 @@ MonoBehaviour:
   kameraMasukSinematik: 0
   durasiKameraMasuk: 1.1
   geserAwalKamera: 0.1
---- !u!1 &448559328
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 448559329}
-  - component: {fileID: 448559330}
-  m_Layer: 0
-  m_Name: Pijakan_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &448559329
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 448559328}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8, y: -2.4499998, z: -50.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2019715966}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &448559330
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 448559328}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.15, y: 0.3, z: 8.86}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &448813322
 GameObject:
   m_ObjectHideFlags: 0
@@ -112711,6 +112945,59 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &514085469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 514085470}
+  - component: {fileID: 514085471}
+  m_Layer: 0
+  m_Name: Pijakan_12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &514085470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514085469}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
+  m_LocalPosition: {x: 11.80034, y: -0.9099992, z: -63.4685}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301928616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &514085471
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514085469}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 4.3026404}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &514221630
 GameObject:
   m_ObjectHideFlags: 0
@@ -122532,6 +122819,59 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.4, y: 4, z: 0.26}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &558390719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 558390720}
+  - component: {fileID: 558390721}
+  m_Layer: 0
+  m_Name: Pijakan_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &558390720
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558390719}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.55218846, z: -0, w: 0.8337193}
+  m_LocalPosition: {x: 2301.3445, y: -0.14999998, z: -46.918102}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 629366510}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &558390721
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558390719}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 2.416714}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &559147054
 GameObject:
   m_ObjectHideFlags: 0
@@ -125394,7 +125734,7 @@ Transform:
   m_GameObject: {fileID: 571356286}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.93788505, z: -0, w: 0.3469463}
-  m_LocalPosition: {x: 41.91859, y: 1.7553308, z: -98.68979}
+  m_LocalPosition: {x: 43.335873, y: 1.7553308, z: -100.042}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -133896,10 +134236,6 @@ Transform:
   - {fileID: 983894860}
   - {fileID: 1759355013}
   - {fileID: 553357858}
-  - {fileID: 2066583209}
-  - {fileID: 1685228330}
-  - {fileID: 1362153517}
-  - {fileID: 2115723622}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &614455518
@@ -141636,6 +141972,39 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &629366509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 629366510}
+  m_Layer: 0
+  m_Name: PijakanKhususLantai
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &629366510
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629366509}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2300, y: 0, z: 50}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1367455411}
+  - {fileID: 558390720}
+  m_Father: {fileID: 992750277}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &629440686
 GameObject:
   m_ObjectHideFlags: 0
@@ -141720,6 +142089,37 @@ MonoBehaviour:
   radiusTerbang: 0.65
   kecepatan: 0.5188444
   fase: 18.9
+--- !u!1 &629738327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 629738328}
+  m_Layer: 0
+  m_Name: TitikBaru
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &629738328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629738327}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.7451112, y: -0.58466995, z: -54.95335}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 640389707}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &630022637
 GameObject:
   m_ObjectHideFlags: 0
@@ -143724,11 +144124,10 @@ Transform:
   - {fileID: 311265971}
   - {fileID: 1721429342}
   - {fileID: 1771359264}
-  - {fileID: 2019715966}
   - {fileID: 1223228515}
   - {fileID: 1810860919}
-  - {fileID: 202761784}
-  - {fileID: 151778250}
+  - {fileID: 629738328}
+  - {fileID: 953430662}
   m_Father: {fileID: 1728372270}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &640389708
@@ -143747,9 +144146,11 @@ MonoBehaviour:
   ukuranVisualArthur: 1
   titik:
   - {fileID: 1771065172}
+  - {fileID: 629738328}
   - {fileID: 311265971}
   - {fileID: 1721429342}
   arahKamera:
+  - 90
   - 90
   - 90
   - 90
@@ -143757,7 +144158,7 @@ MonoBehaviour:
   kananMengikutiUrutanTitik: 0
   kiriMendekatiKamera: 0
   gerbangSatuArah: []
-  pijakanKhususJalur: {fileID: 2019715965}
+  pijakanKhususJalur: {fileID: 953430661}
   radiusColliderKhusus: 0.22
   tinggiColliderKhusus: 2.2
   lanjutanAwal: {fileID: 0}
@@ -143812,9 +144213,9 @@ MonoBehaviour:
   jarakSamping: 5.4
   tinggiSamping: 2.25
   tinggiFokusSamping: 0.7
-  posisi: {x: -6, y: 0.1500001, z: -46}
-  bidikan: {x: -0.8, y: -1.0999999, z: -46}
-  acuan: {x: -0.8, y: -0.58466995, z: -46}
+  posisi: {x: -6, y: 0.1500001, z: -50.8}
+  bidikan: {x: -0.8, y: -1.0999999, z: -50.8}
+  acuan: {x: -0.8, y: -0.58466995, z: -50.8}
   sudut: 65
   kehalusan: 5
 --- !u!1 &640984436
@@ -147712,6 +148113,59 @@ MeshRenderer:
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &664720489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 664720490}
+  - component: {fileID: 664720491}
+  m_Layer: 0
+  m_Name: Pijakan_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &664720490
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664720489}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 7.3003397, y: -1.9099993, z: -56.82376}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301928616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &664720491
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664720489}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 0.6607576}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &664913807
 GameObject:
   m_ObjectHideFlags: 0
@@ -157189,6 +157643,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712402623}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &712638689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 712638690}
+  - component: {fileID: 712638691}
+  m_Layer: 0
+  m_Name: Pijakan_7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &712638690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712638689}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7991858, z: 0.6010841, w: 0}
+  m_LocalPosition: {x: 7.3003397, y: -1.6599993, z: -57.19632}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301928616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &712638691
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712638689}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 0.58042365}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &713368642
 GameObject:
   m_ObjectHideFlags: 0
@@ -160369,7 +160876,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2191"
+  m_text: "\u2192"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2b82d61f9e230cf47a8bbb975fe493f2, type: 2}
   m_sharedMaterial: {fileID: 2618178619663465960, guid: 2b82d61f9e230cf47a8bbb975fe493f2, type: 2}
@@ -163566,6 +164073,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCMenghadapArthur
   wadahVisual: {fileID: 1535993023}
   durasiPutar: 0.24
+--- !u!1 &745740987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 745740988}
+  - component: {fileID: 745740989}
+  m_Layer: 0
+  m_Name: Pijakan_9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &745740988
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745740987}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.961249, z: -0, w: 0.27568167}
+  m_LocalPosition: {x: 7.5503397, y: -1.4099993, z: -58.3685}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301928616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &745740989
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745740987}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 1.0034007}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &745760375
 GameObject:
   m_ObjectHideFlags: 0
@@ -170705,6 +171265,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WigglyBubbleInteraksi
   kekuatanPiksel: 1.6
   kecepatanGoyang: 8
+--- !u!1 &778031886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 778031887}
+  - component: {fileID: 778031888}
+  m_Layer: 0
+  m_Name: Pijakan_16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &778031887
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778031886}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.93504786, z: -0, w: 0.35452154}
+  m_LocalPosition: {x: 39.003754, y: -0.9099992, z: -95.15029}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301928616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &778031888
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778031886}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 11.231872}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &778107296
 GameObject:
   m_ObjectHideFlags: 0
@@ -189122,7 +189735,7 @@ Transform:
   m_GameObject: {fileID: 868154157}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 41.30034, y: 0.9553308, z: -97.9685}
+  m_LocalPosition: {x: 42.70717, y: 0.9553308, z: -99.332085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -195268,6 +195881,59 @@ MonoBehaviour:
   jedaWiggly: 0.5
   kekuatanGoyang: 0.05
   kecepatanGoyang: 15
+--- !u!1 &892354140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 892354141}
+  - component: {fileID: 892354142}
+  m_Layer: 0
+  m_Name: Pijakan_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &892354141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892354140}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0.0000000063944166, w: 0}
+  m_LocalPosition: {x: 7.3003397, y: -2.4099994, z: -53.298836}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301928616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &892354142
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892354140}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 4.720679}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &892372367
 GameObject:
   m_ObjectHideFlags: 0
@@ -203197,6 +203863,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926669571}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &926745030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 926745031}
+  m_Layer: 0
+  m_Name: PijakanKhususLantai
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &926745031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926745030}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 286366069}
+  - {fileID: 2039269110}
+  - {fileID: 1615933387}
+  - {fileID: 1443762305}
+  m_Father: {fileID: 2146203333}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &927082286
 GameObject:
   m_ObjectHideFlags: 0
@@ -209394,6 +210095,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &953430661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 953430662}
+  m_Layer: 0
+  m_Name: PijakanKhususLantai
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &953430662
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953430661}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 10454274}
+  - {fileID: 1633256141}
+  - {fileID: 243516938}
+  m_Father: {fileID: 640389707}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &953546335
 GameObject:
   m_ObjectHideFlags: 0
@@ -214705,6 +215440,7 @@ GameObject:
   m_Component:
   - component: {fileID: 981109560}
   - component: {fileID: 981109559}
+  - component: {fileID: 981109561}
   m_Layer: 0
   m_Name: Waktu_Kampus
   m_TagString: Untagged
@@ -214752,6 +215488,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &981109561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981109558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2da2b10735e7145ae9a0c2629a3ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MalamEksplorasiArthur
+  waktu: {fileID: 981109559}
+  tujuanKamar: {fileID: 0}
+  batasMalam: 180
+  durasiPudarNpc: 1.5
 --- !u!1 &982159635
 GameObject:
   m_ObjectHideFlags: 0
@@ -216253,7 +217005,8 @@ Transform:
   - {fileID: 1550564560}
   - {fileID: 1345778191}
   - {fileID: 1467766066}
-  - {fileID: 1811804761}
+  - {fileID: 629366510}
+  - {fileID: 1402227320}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &992750278
@@ -216282,7 +217035,7 @@ MonoBehaviour:
   kananMengikutiUrutanTitik: 1
   kiriMendekatiKamera: 0
   gerbangSatuArah: []
-  pijakanKhususJalur: {fileID: 1811804760}
+  pijakanKhususJalur: {fileID: 629366509}
   radiusColliderKhusus: 0.22
   tinggiColliderKhusus: 2
   lanjutanAwal: {fileID: 0}
@@ -216330,17 +217083,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KameraPilihanPemilik
   gunakan: 1
-  ikutiArthur: 1
+  ikutiArthur: 0
   menyampingJalur: 0
   potonganInterior: 0
   balikSisi: 0
   jarakSamping: 5.4
   tinggiSamping: 2.25
   tinggiFokusSamping: 0.7
-  posisi: {x: 2302.8, y: 2.4, z: -49.36732}
-  bidikan: {x: 2297.95, y: 1.1, z: -49.36732}
+  posisi: {x: 2301.51, y: 2.5, z: -57.4}
+  bidikan: {x: 2300.76, y: 1.16, z: -48.91}
   acuan: {x: 2300.2566, y: 1.71533, z: -49.36732}
-  sudut: 65
+  sudut: 76
   kehalusan: 4
 --- !u!1 &993207329
 GameObject:
@@ -217802,7 +218555,7 @@ Transform:
   m_GameObject: {fileID: 1002006504}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 41.30034, y: 0.9553308, z: -97.9685}
+  m_LocalPosition: {x: 42.70717, y: 0.9553308, z: -99.332085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -220237,7 +220990,7 @@ Transform:
   m_GameObject: {fileID: 1008522733}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4199297, y: -0.54467005, z: -54.149582}
+  m_LocalPosition: {x: 42.70717, y: 0.9553308, z: -99.332085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -220255,7 +221008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2460788194c0041b68a8d0ecc99106, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TujuanJalurKampus
-  jalur: {fileID: 1633073103}
+  jalur: {fileID: 1165185618}
   kameraMasukSinematik: 0
   durasiKameraMasuk: 1.1
   geserAwalKamera: 0.8
@@ -223691,6 +224444,38 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1303321249}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1020499075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1020499076}
+  m_Layer: 0
+  m_Name: PijakanKhususLantai
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1020499076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020499075}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 84139744}
+  m_Father: {fileID: 1434675684}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1020664841
 GameObject:
@@ -236275,6 +237060,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.15, y: 0.3, z: 2.6439552}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1085047529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1085047530}
+  m_Layer: 0
+  m_Name: Titik kelas 4 - 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1085047530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085047529}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.2814029, y: -0.58466995, z: -35.987003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2146203333}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1085201533
 GameObject:
   m_ObjectHideFlags: 0
@@ -240748,6 +241564,37 @@ MonoBehaviour:
   jarakDariKepala: 0.35
   tinggiIkonDiLayar: 0.13
   waktuHalusDiLayar: 0
+--- !u!1 &1105168832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1105168833}
+  m_Layer: 0
+  m_Name: TitikBaru
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1105168833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105168832}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.740376, y: -0.58466995, z: -36.984}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2146203333}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1105283674
 GameObject:
   m_ObjectHideFlags: 0
@@ -255503,7 +256350,7 @@ MonoBehaviour:
   kananMengikutiUrutanTitik: 0
   kiriMendekatiKamera: 0
   gerbangSatuArah: []
-  pijakanKhususJalur: {fileID: 0}
+  pijakanKhususJalur: {fileID: 1301928615}
   radiusColliderKhusus: 0
   tinggiColliderKhusus: 0
   lanjutanAwal: {fileID: 0}
@@ -255571,6 +256418,7 @@ Transform:
   - {fileID: 691748403}
   - {fileID: 364834138}
   - {fileID: 571356287}
+  - {fileID: 1301928616}
   m_Father: {fileID: 2146025206}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1165575642
@@ -255712,9 +256560,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3952279918355719735, guid: 2a4ae3f80e013864e9a0127d9ae61aef, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: a8fadbfa52ec3f749a47329cde549667, type: 2}
     - target: {fileID: 7291860651144798005, guid: 2a4ae3f80e013864e9a0127d9ae61aef, type: 3}
       propertyPath: m_Name
       value: Ruangan Dekan Filkom
+      objectReference: {fileID: 0}
+    - target: {fileID: 8609157483717371898, guid: 2a4ae3f80e013864e9a0127d9ae61aef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -262257,7 +263113,7 @@ Transform:
   m_GameObject: {fileID: 1192656584}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.25610352, y: 1.71533, z: 0.28424835}
+  m_LocalPosition: {x: 0.25, y: 1.71533, z: -4.408516}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -269435,7 +270291,7 @@ Transform:
   m_GameObject: {fileID: 1223228514}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8, y: -0.58466995, z: -54.8}
+  m_LocalPosition: {x: 0.28738755, y: -0.58466995, z: -56.00514}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -275537,7 +276393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259632024}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000004371139}
+  m_LocalRotation: {x: 0.076889195, y: -0.058211517, z: 0.004496843, w: 0.9953287}
   m_LocalPosition: {x: 0, y: 0.30000007, z: 0}
   m_LocalScale: {x: 0.085, y: 0.087567, z: 0.9}
   m_ConstrainProportionsScale: 0
@@ -277839,7 +278695,7 @@ MonoBehaviour:
     levelJigsaw: 0
     cabangJalur: {fileID: 0}
     pilihJalanDepan: 0
-    teksOpsi: Masuk ke kelas 3
+    teksOpsi: Masuk ke kelas 4
     titikTujuan: {fileID: 202761784}
     pesanBelumTersedia: 
     nyalakanGrupDepan: 0
@@ -284057,6 +284913,59 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1300007116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1300007117}
+  - component: {fileID: 1300007118}
+  m_Layer: 0
+  m_Name: Pijakan_14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1300007117
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300007116}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.92387956, z: -0, w: 0.38268346}
+  m_LocalPosition: {x: 27.30034, y: -0.9099992, z: -78.9685}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301928616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1300007118
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300007116}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 11.373709}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1300241140
 GameObject:
   m_ObjectHideFlags: 0
@@ -284318,6 +285227,53 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.15, y: 0.3, z: 1.31}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1301928615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1301928616}
+  m_Layer: 0
+  m_Name: PijakanKhususLantai
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1301928616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301928615}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 302056156}
+  - {fileID: 1692174608}
+  - {fileID: 892354141}
+  - {fileID: 1337410116}
+  - {fileID: 327988452}
+  - {fileID: 664720490}
+  - {fileID: 712638690}
+  - {fileID: 276403155}
+  - {fileID: 745740988}
+  - {fileID: 2079244544}
+  - {fileID: 1383925909}
+  - {fileID: 514085470}
+  - {fileID: 1320365863}
+  - {fileID: 1300007117}
+  - {fileID: 1916257362}
+  - {fileID: 778031887}
+  m_Father: {fileID: 1165185619}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1302178013
 GameObject:
   m_ObjectHideFlags: 0
@@ -284994,7 +285950,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2191"
+  m_text: "\u2192"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2b82d61f9e230cf47a8bbb975fe493f2, type: 2}
   m_sharedMaterial: {fileID: 2618178619663465960, guid: 2b82d61f9e230cf47a8bbb975fe493f2, type: 2}
@@ -288328,6 +289284,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320336495}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1320365862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1320365863}
+  - component: {fileID: 1320365864}
+  m_Layer: 0
+  m_Name: Pijakan_13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1320365863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320365862}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.9238795, z: -0, w: 0.38268346}
+  m_LocalPosition: {x: 18.30034, y: -0.9099992, z: -69.9685}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301928616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1320365864
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320365862}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 14.202137}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1320603297
 GameObject:
   m_ObjectHideFlags: 0
@@ -290756,7 +291765,7 @@ Transform:
   m_GameObject: {fileID: 1330678515}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.3003397, y: -0.5446692, z: -53.9685}
+  m_LocalPosition: {x: 7.3003397, y: -0.5446693, z: -55.629177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -292546,6 +293555,59 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1.15, y: 0.3, z: 0.56}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1337410115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1337410116}
+  - component: {fileID: 1337410117}
+  m_Layer: 0
+  m_Name: Pijakan_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1337410116
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337410115}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 7.3003397, y: -2.4099994, z: -55.853012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301928616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1337410117
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337410115}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 0.50767}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1337545685
 GameObject:
@@ -297127,7 +298189,7 @@ RectTransform:
   - {fileID: 2027994708}
   - {fileID: 1682318260}
   - {fileID: 1106469538}
-  m_Father: {fileID: 614411056}
+  m_Father: {fileID: 2100314291}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -298570,6 +299632,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367199640}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1367455410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1367455411}
+  - component: {fileID: 1367455412}
+  m_Layer: 0
+  m_Name: Pijakan_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1367455411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367455410}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.00067714095, z: -0, w: 0.99999976}
+  m_LocalPosition: {x: 2300.255, y: -0.14999998, z: -50.893192}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 629366510}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1367455412
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367455410}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 7.090654}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1367715332
 GameObject:
   m_ObjectHideFlags: 0
@@ -299598,9 +300713,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 916.92615, y: 437.16196}
-  m_SizeDelta: {x: 100, y: 33}
-  m_Pivot: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 899.7676, y: 72.10349}
+  m_SizeDelta: {x: 115, y: 38}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &1372083798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299661,15 +300776,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32
-  m_fontSizeBase: 32
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 4
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -302261,6 +303376,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 263652500}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1383925908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1383925909}
+  - component: {fileID: 1383925910}
+  m_Layer: 0
+  m_Name: Pijakan_11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1383925909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383925908}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.93841434, z: -0, w: 0.34551206}
+  m_LocalPosition: {x: 9.150339, y: -0.9099992, z: -60.6185}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301928616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1383925910
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383925908}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 3.6068273}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1384928535
 GameObject:
   m_ObjectHideFlags: 0
@@ -305911,6 +307079,96 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402157127}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1402227319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1402227320}
+  - component: {fileID: 1402227322}
+  - component: {fileID: 1402227321}
+  m_Layer: 0
+  m_Name: Dinding putih - penutup bekas jendela kiri
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1402227320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402227319}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.6000977, y: 1.8999999, z: -2.5750008}
+  m_LocalScale: {x: 0.22, y: 1.9800001, z: 2.6949978}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 992750277}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1402227321
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402227319}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e7b6f4f16a3226045b5c7702aa6dfc9a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1402227322
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402227319}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1402456799
 GameObject:
@@ -312745,7 +314003,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1984289957}
-  - {fileID: 308946836}
+  - {fileID: 1020499076}
   m_Father: {fileID: 74952943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1434675685
@@ -312764,7 +314022,7 @@ MonoBehaviour:
   ukuranVisualArthur: 1
   titik:
   - {fileID: 1984289957}
-  - {fileID: 308946836}
+  - {fileID: 0}
   arahKamera:
   - 180
   - 180
@@ -312772,7 +314030,7 @@ MonoBehaviour:
   kananMengikutiUrutanTitik: 1
   kiriMendekatiKamera: 0
   gerbangSatuArah: []
-  pijakanKhususJalur: {fileID: 0}
+  pijakanKhususJalur: {fileID: 1020499075}
   radiusColliderKhusus: 0
   tinggiColliderKhusus: 0
   lanjutanAwal: {fileID: 0}
@@ -314460,6 +315718,59 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1443762304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1443762305}
+  - component: {fileID: 1443762306}
+  m_Layer: 0
+  m_Name: Pijakan_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1443762305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443762304}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.5280735, z: -0, w: 0.8491987}
+  m_LocalPosition: {x: -0.7294866, y: -2.4499998, z: -36.485504}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 926745031}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1443762306
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443762304}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 2.314239}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1443796274
 GameObject:
   m_ObjectHideFlags: 0
@@ -334773,7 +336084,7 @@ Transform:
   m_GameObject: {fileID: 1538104914}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.3003397, y: -0.5446692, z: -55.7685}
+  m_LocalPosition: {x: 7.3003397, y: -0.5446693, z: -56.076847}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -342847,6 +344158,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1671304869}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1585137556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1585137557}
+  m_Layer: 0
+  m_Name: TitikBaru (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1585137557
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585137556}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.7127388, y: -0.58466995, z: -38.317482}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2146203333}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1585365708
 GameObject:
   m_ObjectHideFlags: 0
@@ -349398,6 +350740,59 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1615933386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1615933387}
+  - component: {fileID: 1615933388}
+  m_Layer: 0
+  m_Name: Pijakan_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1615933387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615933386}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.010361153, z: -0, w: 0.99994636}
+  m_LocalPosition: {x: -1.7265574, y: -2.4499998, z: -37.65074}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 926745031}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1615933388
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615933386}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 1.3937671}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1616968169
 GameObject:
   m_ObjectHideFlags: 0
@@ -350637,7 +352032,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2193"
+  m_text: "\u2190"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2b82d61f9e230cf47a8bbb975fe493f2, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: acdf65929881ab740b349ed4fda5ddc8, type: 2}
@@ -357987,6 +359382,59 @@ Transform:
   - {fileID: 1405829563}
   m_Father: {fileID: 2146025206}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1633256140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1633256141}
+  - component: {fileID: 1633256142}
+  m_Layer: 0
+  m_Name: Pijakan_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1633256141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633256140}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.0011154707, z: -0, w: 0.9999994}
+  m_LocalPosition: {x: -1.7404783, y: -2.4499998, z: -52.876675}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 953430662}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1633256142
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633256140}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 4.2133613}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1633268463
 GameObject:
   m_ObjectHideFlags: 0
@@ -368672,7 +370120,7 @@ RectTransform:
   - {fileID: 1004895810}
   - {fileID: 168948092}
   - {fileID: 1576532826}
-  m_Father: {fileID: 614411056}
+  m_Father: {fileID: 2100314291}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -370217,6 +371665,59 @@ MonoBehaviour:
   radiusTerbang: 1.4514478
   kecepatan: 0.6172128
   fase: 21.524378
+--- !u!1 &1692174607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1692174608}
+  - component: {fileID: 1692174609}
+  m_Layer: 0
+  m_Name: Pijakan_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1692174608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692174607}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 7.3003397, y: -2.4099991, z: -40.9685}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301928616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1692174609
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692174607}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 20.06}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1692344065
 GameObject:
   m_ObjectHideFlags: 0
@@ -376239,7 +377740,7 @@ Transform:
   m_GameObject: {fileID: 1721429341}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8, y: -0.58466995, z: -37.2}
+  m_LocalPosition: {x: -1.7493862, y: -0.58466995, z: -47.771393}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -377285,6 +378786,7 @@ Transform:
   - {fileID: 727660407}
   - {fileID: 1019140340}
   - {fileID: 640389707}
+  - {fileID: 2146203333}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1728590507
@@ -386422,7 +387924,7 @@ Transform:
   m_GameObject: {fileID: 1771065171}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8, y: -0.58466995, z: -54.8}
+  m_LocalPosition: {x: 0.28738755, y: -0.58466995, z: -56.00514}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -386454,7 +387956,7 @@ Transform:
   m_GameObject: {fileID: 1771359263}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8, y: -0.58466995, z: -54.8}
+  m_LocalPosition: {x: 0.28738755, y: -0.58466995, z: -56.00514}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -391862,7 +393364,7 @@ Transform:
   m_GameObject: {fileID: 1795754816}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.25, y: 1.71533, z: -3.9461517}
+  m_LocalPosition: {x: 0.25, y: 1.71533, z: -4.408516}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -394955,7 +396457,7 @@ Transform:
   m_GameObject: {fileID: 1810860918}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8, y: -0.58466995, z: -54.8}
+  m_LocalPosition: {x: 0.28738755, y: -0.58466995, z: -56.00514}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -395385,39 +396887,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &1811804760
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1811804761}
-  m_Layer: 0
-  m_Name: PijakanKhususLantai
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1811804761
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1811804760}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2300, y: 0, z: 50}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 175358861}
-  - {fileID: 2125323820}
-  m_Father: {fileID: 992750277}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1811846156
 GameObject:
   m_ObjectHideFlags: 0
@@ -408494,7 +409963,7 @@ Transform:
   m_GameObject: {fileID: 1874692940}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.3003397, y: -0.044669233, z: -56.7685}
+  m_LocalPosition: {x: 7.3003397, y: -0.04466927, z: -57.124138}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -411363,6 +412832,37 @@ Transform:
   - {fileID: 1610651450}
   m_Father: {fileID: 347595228}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.561}
+--- !u!1 &1895991935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1895991936}
+  m_Layer: 0
+  m_Name: Titik kelas 4 - 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1895991936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1895991935}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6851014, y: -0.58466995, z: -40.397545}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2146203333}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1896308939
 GameObject:
   m_ObjectHideFlags: 0
@@ -414115,6 +415615,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.15, y: 0.3, z: 3.06}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1908993241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1908993242}
+  m_Layer: 0
+  m_Name: Titik kelas 4 - 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1908993242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908993241}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.7685566, y: -0.58466995, z: -44.89782}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2146203333}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1909215223
 GameObject:
   m_ObjectHideFlags: 0
@@ -415626,6 +417157,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 263652500}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1916257361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1916257362}
+  - component: {fileID: 1916257363}
+  m_Layer: 0
+  m_Name: Pijakan_15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1916257362
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916257361}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.973249, z: -0, w: 0.22975284}
+  m_LocalPosition: {x: 33.30034, y: -0.9099992, z: -86.9685}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301928616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1916257363
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916257361}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 9.0042715}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1916366502
 GameObject:
   m_ObjectHideFlags: 0
@@ -416688,7 +418272,7 @@ Transform:
   m_GameObject: {fileID: 1920993715}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.25, y: 1.71533, z: -3.9461517}
+  m_LocalPosition: {x: 0.25, y: 1.71533, z: -4.408516}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -416783,14 +418367,14 @@ MonoBehaviour:
   jalurTambahan: []
   radius: 1.1
   ikon: {fileID: 1259632025}
-  geserTampilanBubble: {x: 0, y: 0, z: 0}
+  geserTampilanBubble: {x: 0, y: 0.65, z: 0}
   ukuranIkon: {x: 0.085, y: 0.087567, z: 0.9}
   durasiMuncul: 0.2
   durasiMenciut: 0.18
   ikutiKepalaArthur: 0
   tinggiKepalaDiTitik: -0.11
-  jarakDariKepala: 0.14
-  tinggiIkonDiLayar: 0.11
+  jarakDariKepala: 0.4
+  tinggiIkonDiLayar: 0.18
   waktuHalusDiLayar: 0
 --- !u!1 &1921266046
 GameObject:
@@ -420120,59 +421704,6 @@ MonoBehaviour:
   jedaMaksimum: 38
   bolakBalik: 0
   tempoAnimasiArthur: 0.85
---- !u!1 &1935970010
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1935970011}
-  - component: {fileID: 1935970012}
-  m_Layer: 0
-  m_Name: Pijakan_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1935970011
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935970010}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8, y: -2.4499998, z: -41.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2019715966}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1935970012
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935970010}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.15, y: 0.3, z: 8.86}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1937279818
 GameObject:
   m_ObjectHideFlags: 0
@@ -432186,7 +433717,7 @@ Transform:
   m_GameObject: {fileID: 1970754518}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.3003397, y: -0.5446692, z: -53.9685}
+  m_LocalPosition: {x: 7.3003397, y: -0.5446693, z: -55.629177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -443898,39 +445429,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 263652500}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2019715965
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2019715966}
-  m_Layer: 0
-  m_Name: PijakanKhususLantai
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &2019715966
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019715965}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 448559329}
-  - {fileID: 1935970011}
-  m_Father: {fileID: 640389707}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2020001544
 GameObject:
   m_ObjectHideFlags: 0
@@ -447646,6 +449144,59 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1.15, y: 0.3, z: 8.316348}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &2039269109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2039269110}
+  - component: {fileID: 2039269111}
+  m_Layer: 0
+  m_Name: Pijakan_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2039269110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039269109}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.0066429568, z: -0, w: 0.99997795}
+  m_LocalPosition: {x: -1.69892, y: -2.4499998, z: -39.357513}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 926745031}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2039269111
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039269109}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 2.1402464}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2040069262
 GameObject:
@@ -452287,7 +453838,7 @@ RectTransform:
   - {fileID: 1302288639}
   - {fileID: 926515706}
   - {fileID: 1197629952}
-  m_Father: {fileID: 614411056}
+  m_Father: {fileID: 2100314291}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -454174,6 +455725,59 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &2079244543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2079244544}
+  - component: {fileID: 2079244545}
+  m_Layer: 0
+  m_Name: Pijakan_10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2079244544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079244543}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.069117635, y: 0.91401845, z: 0.35889935, w: 0.17602372}
+  m_LocalPosition: {x: 7.9003396, y: -1.1599991, z: -59.0185}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1301928616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2079244545
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079244543}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.15, y: 0.3, z: 0.7948469}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2079519718
 GameObject:
   m_ObjectHideFlags: 0
@@ -458624,6 +460228,55 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &2100314289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2100314291}
+  - component: {fileID: 2100314290}
+  m_Layer: 0
+  m_Name: NPC_Kelas4_GK2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2100314290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100314289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a884b671750530f4ba91c2f860cc1178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KelompokNpcManual
+  kawasan: JasmineGK2
+--- !u!4 &2100314291
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100314289}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2066583209}
+  - {fileID: 1685228330}
+  - {fileID: 1362153517}
+  - {fileID: 2115723622}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2100384259
 GameObject:
   m_ObjectHideFlags: 0
@@ -462643,7 +464296,7 @@ RectTransform:
   m_Children:
   - {fileID: 221596879}
   - {fileID: 1842676649}
-  m_Father: {fileID: 614411056}
+  m_Father: {fileID: 2100314291}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -464756,59 +466409,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &2125323819
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2125323820}
-  - component: {fileID: 2125323821}
-  m_Layer: 0
-  m_Name: Pijakan_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2125323820
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125323819}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.55218846, z: -0, w: 0.8337193}
-  m_LocalPosition: {x: 2301.3445, y: -0.14999998, z: -46.918102}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1811804761}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2125323821
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125323819}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.15, y: 0.3, z: 2.416714}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2125647933
 GameObject:
   m_ObjectHideFlags: 0
@@ -469565,6 +471165,137 @@ Transform:
   - {fileID: 1272645950}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2146203332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2146203333}
+  - component: {fileID: 2146203334}
+  - component: {fileID: 2146203335}
+  m_Layer: 0
+  m_Name: GK2_Kelas4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2146203333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146203332}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1908993242}
+  - {fileID: 1895991936}
+  - {fileID: 1085047530}
+  - {fileID: 151778250}
+  - {fileID: 202761784}
+  - {fileID: 1105168833}
+  - {fileID: 1585137557}
+  - {fileID: 926745031}
+  m_Father: {fileID: 1728372270}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2146203334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146203332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d4453574724d24297d22ddba2902a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JalurKampus
+  diDalamRuangan: 1
+  ukuranVisualArthur: 1
+  titik:
+  - {fileID: 1908993242}
+  - {fileID: 1895991936}
+  - {fileID: 1585137557}
+  - {fileID: 1105168833}
+  - {fileID: 1085047530}
+  arahKamera:
+  - 90
+  - 90
+  - 90
+  - 90
+  - 90
+  putaranBadan: []
+  kananMengikutiUrutanTitik: 0
+  kiriMendekatiKamera: 0
+  gerbangSatuArah: []
+  pijakanKhususJalur: {fileID: 926745030}
+  radiusColliderKhusus: 0.22
+  tinggiColliderKhusus: 2.2
+  lanjutanAwal: {fileID: 0}
+  lanjutanAkhir: {fileID: 0}
+  posisiKameraUjung: {fileID: 0}
+  bidikanKameraUjung: {fileID: 0}
+  posisiKameraAwal: {fileID: 0}
+  bidikanKameraAwal: {fileID: 0}
+  awalTransisiBingkai: 0
+  akhirTransisiBingkai: 1
+  kameraTetap: 0
+  bingkaiLokal: []
+  lintasanKamera: {fileID: 0}
+  kameraGK1: {fileID: 0}
+  zonaKameraUjung: 8
+  jarakKameraKoridorUjung: 0
+  zonaJarakKoridorUjung: 35
+  jarakKamera: 11
+  sudutPandangan: 60
+  tinggiKamera: 1.6
+  tinggiBidikan: 0.55
+  geserKameraSamping: 0
+  batasKiriKamera: -10000
+  batasKananKamera: 10000
+  batasDalamAcuanWorld: 0
+  pusatAcuanBatas: {x: 0, y: 0, z: 0}
+  rotasiAcuanBatas: {x: 0, y: 0, z: 0, w: 1}
+  batasJarakIkutKamera: -1
+  geserBidikanSamping: 0
+  bidangDekatKamera: 0.05
+  putaranVisualSaatBelok: 0
+  kehalusanKamera: 6
+  ikutiPosisiKameraTanpaJeda: 0
+  warnaPanduan: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &2146203335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146203332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48194819eeabf0d42a0acdc652afeaac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KameraPilihanPemilik
+  gunakan: 1
+  ikutiArthur: 1
+  menyampingJalur: 0
+  potonganInterior: 0
+  balikSisi: 0
+  jarakSamping: 5.4
+  tinggiSamping: 2.25
+  tinggiFokusSamping: 0.7
+  posisi: {x: -6, y: 0.1500001, z: -40.39755}
+  bidikan: {x: -0.8, y: -1.0999999, z: -40.39755}
+  acuan: {x: -0.8, y: -0.58466995, z: -40.39755}
+  sudut: 65
+  kehalusan: 5
 --- !u!4 &157361020018296
 Transform:
   m_ObjectHideFlags: 0
@@ -511372,3 +513103,4 @@ SceneRoots:
   - {fileID: 859739716}
   - {fileID: 120865855}
   - {fileID: 877593869}
+  - {fileID: 2100314291}

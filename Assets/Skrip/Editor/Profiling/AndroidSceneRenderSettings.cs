@@ -22,7 +22,9 @@ public sealed class AndroidSceneRenderSettings : IProcessSceneWithReport
             foreach (var canvas in canvases)
                 if (canvas.renderMode == RenderMode.ScreenSpaceCamera && canvas.worldCamera == camera)
                     distance = Mathf.Max(distance, canvas.planeDistance + 1f);
-            camera.farClipPlane = Mathf.Min(camera.farClipPlane, distance);
+            // Pertahankan jarak pandang kamera asli; jangan hilangkan world jauh
+            // khusus pada build Android. Canvas tetap harus masuk jangkauan.
+            camera.farClipPlane = Mathf.Max(camera.farClipPlane, distance);
             Debug.Log("ARTHUR_BUILD_CAMERA scene=" + scene.name + " far=" + camera.farClipPlane);
         }
     }

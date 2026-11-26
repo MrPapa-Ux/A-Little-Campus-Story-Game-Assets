@@ -16,6 +16,13 @@ public static class AktifkanKelasGK2
  public static void Run(){
  Directory.CreateDirectory(W+"cadangan");var original=SceneManager.GetActiveScene();var source=SceneManager.GetSceneByPath("Assets/Scenes/Explorer.unity");
  if(!source.isLoaded||EditorApplication.isPlaying)throw new Exception("Buka Explorer, hentikan Play.");
+ // Alat pemasangan awal ini tidak boleh menimpa kelas yang sudah dipisahkan manual.
+ foreach(var scenePath in new[]{"Assets/Scenes/Explorer.unity","Assets/Scenes/CharacterLab.unity","Assets/Scenes/Penataan Kampus - Jalur NPC dan Bubble.unity"})
+ {
+ var existing=SceneManager.GetSceneByPath(scenePath);
+ bool split=existing.isLoaded?All<JalurKampus>(existing).Any(r=>r.name=="GK2_Kelas4"):File.ReadAllText(scenePath).Contains("m_Name: GK2_Kelas4");
+ if(split)throw new InvalidOperationException("Kelas GK2 sudah dipisahkan menjadi empat kelas. Gunakan jalur dan bubble yang sudah ada di Hierarchy; pemasangan awal dibatalkan agar penataanmu tetap aman.");
+ }
  string[] doors={"GK2_TerasAtas_Bubble","GK2_TerasAtas_Bubble (1)","GK2_TerasAtas_Bubble (2)","GK2_JalurBelakang_Bubble","GK2_JalurBelakang_Bubble (1)"};int[] rooms={1,1,2,3,3};
  var originals=doors.Select(n=>All<InteraksiJalurKampus>(source).Single(m=>m.name==n)).ToArray();
  var report=new List<string>();

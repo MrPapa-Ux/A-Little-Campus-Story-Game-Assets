@@ -23,7 +23,17 @@ Ketentuan aset pihak ketiga mengikuti lisensi masing-masing. Atribusi yang ada d
 APK yang dapat dipasang tersedia di [GitHub Releases](https://github.com/MrPapa-Ux/A-Little-Campus-Story-Game-Assets/releases). Catat tanggal build dan SHA-256 pada halaman rilis ketika mendokumentasikan versi yang diuji. Cabang sumber terus berkembang setelah APK dibangun.
 
 
-## Snapshot terbaru — 25 November 2026
+## Snapshot terbaru — 26 November 2026
+
+Rilis **v2026.11.26** memperbarui kamera dan panah turun ruang dekan, pemisahan kelas 3/4 GK2, pemilihan teks bubble, pembatas ujung jalur, transisi cahaya GA/Taman, jam ponsel kanan bawah dan pemulihan NPC malam. Geometri asli kawasan dipulihkan sesuai kebutuhan imersi. Pengaman alat kelas lama mencegah penataan manual tertimpa.
+
+APK utama diperbarui terpisah dari MOD. Uji singkat realme RMX3491: Dining 41,0–43,7 FPS; Jasmine lantai 2 55,9–59,7 FPS; GK2 21,4–26,6 FPS; arah Taman 30,9–32,1 FPS. Tidak ada exception yang terdeteksi pada empat sesi tersebut. **Performa belum stabil pada target 60 FPS.** Suhu baterai tercatat 50°C; hasil ini bukan pembandingan terkontrol terhadap versi lama atau kelulusan seluruh alur cerita. Metode serta angka tiap sampel ada pada `Pengujian/hasil-android-2026-11-26.json`.
+
+APK: **A Little Campus Story.apk**, 306475587 byte. SHA-256: `bd87044c345657d2960eacd3276c4ba5e327b212bb1af4fd6eec55bfe0d8e2f8`.
+
+Versi dan rilis lama tetap dipertahankan. APK MOD terakhir tetap versi 22 November dan belum memuat seluruh revisi sumber tanggal ini. Biner utama masih memakai Active Input Handling Both; peringatan Android dicatat untuk regresi input berikutnya.
+
+## Snapshot 25 November 2026
 
 Versi **v2026.11.25** mempertahankan versi terdahulu dan menambahkan:
 

@@ -28,7 +28,7 @@ public class AturRuanganGK1 : EditorWindow
             EditorGUI.BeginChangeCheck();
             float zoom=EditorGUILayout.Slider("Lebar pandangan",route.sudutPandangan,45,85);
             float size=EditorGUILayout.Slider("Ukuran Arthur",route.ukuranVisualArthur,.4f,1f);
-            if(EditorGUI.EndChangeCheck()){Undo.RecordObject(route,"Atur tampilan ruangan");route.sudutPandangan=zoom;route.ukuranVisualArthur=size;Dirty(route);}
+            if(EditorGUI.EndChangeCheck()){Undo.RecordObject(route,"Atur tampilan ruangan");route.sudutPandangan=zoom;route.ukuranVisualArthur=size;var k=route.GetComponent<KameraPilihanPemilik>();if(k!=null&&k.gunakan){Undo.RecordObject(k,"Lebar kamera ruangan");k.sudut=zoom;Dirty(k);}Dirty(route);}
             var markers=route.GetComponentsInChildren<InteraksiJalurKampus>(true);
             foreach(var m in markers)
             {
@@ -48,9 +48,11 @@ public class AturRuanganGK1 : EditorWindow
     static void Lihat(JalurKampus r)
     {
         var v=SceneView.lastActiveSceneView;if(v==null||r.posisiKameraUjung==null||r.bidikanKameraUjung==null)return;
-        var delta=r.bidikanKameraUjung.position-r.posisiKameraUjung.position;
-        v.in2DMode=false;v.orthographic=false;v.cameraSettings.fieldOfView=r.sudutPandangan;
-        v.LookAtDirect(r.bidikanKameraUjung.position,Quaternion.LookRotation(delta),delta.magnitude*Mathf.Sin(r.sudutPandangan*Mathf.Deg2Rad*.5f));
+        var k=r.GetComponent<KameraPilihanPemilik>();bool custom=k!=null&&k.gunakan;
+        var posisi=custom?k.posisi:r.posisiKameraUjung.position;var bidikan=custom?k.bidikan:r.bidikanKameraUjung.position;var sudut=custom?k.sudut:r.sudutPandangan;
+        var delta=bidikan-posisi;
+        v.in2DMode=false;v.orthographic=false;v.cameraSettings.fieldOfView=sudut;
+        v.LookAtDirect(bidikan,Quaternion.LookRotation(delta),delta.magnitude*Mathf.Sin(sudut*Mathf.Deg2Rad*.5f));
         v.Focus();
     }
     static void Ambil(JalurKampus r)
@@ -61,5 +63,6 @@ public class AturRuanganGK1 : EditorWindow
         r.posisiKameraUjung.position=v.camera.transform.position;
         r.bidikanKameraUjung.position=v.camera.transform.position+v.camera.transform.forward*distance;
         r.kameraTetap=true;r.sudutPandangan=v.camera.fieldOfView;Dirty(r);Dirty(r.posisiKameraUjung);Dirty(r.bidikanKameraUjung);
+        var k=r.GetComponent<KameraPilihanPemilik>();if(k!=null&&k.gunakan){Undo.RecordObject(k,"Pakai sudut Scene ruangan");k.posisi=r.posisiKameraUjung.position;k.bidikan=r.bidikanKameraUjung.position;k.sudut=r.sudutPandangan;k.ikutiArthur=false;k.menyampingJalur=false;Dirty(k);}
     }
 }
