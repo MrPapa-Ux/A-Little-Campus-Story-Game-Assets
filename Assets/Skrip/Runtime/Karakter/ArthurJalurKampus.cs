@@ -135,6 +135,7 @@ public sealed class ArthurJalurKampus : MonoBehaviour
         float mendatar = new Vector2(arah.x, arah.z).magnitude;
         float tujuan = JarakDiJalur + input * tanda * kecepatan * deltaWaktu / Mathf.Max(.25f, mendatar);
         tujuan = MalamGAChapter1.Batasi(JalurAktif, tujuan);
+        tujuan = MrQuizoChapter1.BatasiGerak(JalurAktif, JarakDiJalur, tujuan);
         if(JalurAktif.gerbangSatuArah!=null)foreach(var gate in JalurAktif.gerbangSatuArah)if(gate!=null)tujuan=gate.Batasi(JarakDiJalur,tujuan);
         bool berpindahJalur = false;
         if (tujuan > JalurAktif.Panjang && JalurAktif.lanjutanAkhir != null && BatasMalamChapter1.BolehJalur(JalurAktif.lanjutanAkhir))

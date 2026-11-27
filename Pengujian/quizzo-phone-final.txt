@@ -1,0 +1,74 @@
+--------- beginning of main
+11-27 07:27:22.309 V/Unity   ( 5426): Context Type: GameActivity
+11-27 07:27:22.318 I/Unity   ( 5426): UnityApplication::CreateInstance
+11-27 07:27:22.318 I/Unity   ( 5426): GameActivity Package Version '3.0.5'
+11-27 07:27:22.320 I/Unity   ( 5426): Starting Game Loop
+11-27 07:27:22.335 I/Unity   ( 5426): Handle cmd APP_CMD_START(11)
+11-27 07:27:22.342 I/Unity   ( 5426): Handle cmd APP_CMD_RESUME(12)
+11-27 07:27:22.426 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:22.454 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:22.461 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:22.462 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:22.462 I/Unity   ( 5426): Handle cmd APP_CMD_CONTENT_RECT_CHANGED(5)
+11-27 07:27:22.489 I/Unity   ( 5426): Handle cmd APP_CMD_INIT_WINDOW(1)
+11-27 07:27:22.506 I/Unity   ( 5426): MemoryManager: Using 'Dynamic Heap' Allocator.
+11-27 07:27:22.722 I/Unity   ( 5426): SystemInfo CPU = ARM64 FP ASIMD AES, Cores = 8, Memory = 5607mb
+11-27 07:27:22.722 I/Unity   ( 5426): SystemInfo ARM big.LITTLE configuration: 4 big (mask: 0xf0), 4 little (mask: 0xf)
+11-27 07:27:22.722 I/Unity   ( 5426): ApplicationInfo 'com.UnityTechnologies.com.unity.template.urpblank', Version '0.1.0', Min API Level '25', Target API Level '36'
+11-27 07:27:22.723 I/Unity   ( 5426): Built from '6000.3/staging' branch, Version '6000.3.11f1 (3000ef702840)', Build type 'Release', Scripting Backend 'il2cpp', CPU 'arm64-v8a', Stripping 'Enabled'
+11-27 07:27:22.723 I/Unity   ( 5426): Device Model 'realme RMX3491', OS 'Android OS 13 (API 33)'
+11-27 07:27:23.624 I/Unity   ( 5426): Company Name: DefaultCompany
+11-27 07:27:23.624 I/Unity   ( 5426): Product Name: A Little Campus Story
+11-27 07:27:25.097 I/Unity   ( 5426):     HasWindow = 1, HasFocus = 0
+11-27 07:27:25.097 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_RESIZED(3)
+11-27 07:27:25.098 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+11-27 07:27:25.098 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:25.098 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:25.098 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:25.099 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:25.099 I/Unity   ( 5426): Handle cmd APP_CMD_GAINED_FOCUS(7)
+11-27 07:27:25.099 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:25.099 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:25.099 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:25.099 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:25.099 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:25.099 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:25.633 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:25.633 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:25.633 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:25.633 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:28.079 W/Unity   ( 5426): The referenced script (Unknown) on this Behaviour is missing!
+11-27 07:27:28.266 W/Unity   ( 5426): The referenced script on this Behaviour (Game Object 'Cek tantangan Arthur') is missing!
+11-27 07:27:28.408 I/Unity   ( 5426): Handle cmd APP_CMD_LOW_MEMORY(10)
+11-27 07:27:29.865 W/Unity   ( 5426): The character with Unicode value \u279C was not found in the [Caveat-VariableFont_wght SDF] font asset or any potential fallbacks. It was replaced by Unicode character \u25A1 in text object [TextTriggerTempat].
+11-27 07:27:29.865 W/Unity   ( 5426): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-27 07:27:29.865 W/Unity   ( 5426): TMPro.TextMeshPro:SetArraySizes(TextProcessingElement[])
+11-27 07:27:29.865 W/Unity   ( 5426): TMPro.TextMeshPro:OnPreRenderObject()
+11-27 07:27:29.865 W/Unity   ( 5426): TMPro.TextMeshPro:Rebuild(CanvasUpdate)
+11-27 07:27:29.865 W/Unity   ( 5426): TMPro.TMP_UpdateManager:DoRebuilds()
+11-27 07:27:29.865 W/Unity   ( 5426): 
+11-27 07:27:29.993 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:29.993 I/Unity   ( 5426): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+11-27 07:27:30.079 I/Unity   ( 5426): ARTHUR_GRAPHICS bahanRingan=0 kawasan=Kawasan_GH_Kamar201 api=Vulkan
+11-27 07:27:30.079 I/Unity   ( 5426): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-27 07:27:30.079 I/Unity   ( 5426): BahanDuniaAndroidArthur:SaatMuat(Scene, LoadSceneMode)
+11-27 07:27:30.079 I/Unity   ( 5426): 
+11-27 07:27:31.492 I/Unity   ( 5426): ARTHUR_GRAPHICS bahanRingan=7 kawasan=Kawasan_JasmineGK2 api=Vulkan
+11-27 07:27:31.492 I/Unity   ( 5426): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-27 07:27:31.492 I/Unity   ( 5426): BahanDuniaAndroidArthur:SaatMuat(Scene, LoadSceneMode)
+11-27 07:27:31.492 I/Unity   ( 5426): 
+11-27 07:27:39.745 I/Unity   ( 5426): ARTHUR_KUIS scene=Penataan Kampus - Jalur NPC dan Bubble penjaga=3 titikQuizza=2
+11-27 07:27:39.745 I/Unity   ( 5426): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-27 07:27:39.745 I/Unity   ( 5426): <Start>d__4:MoveNext()
+11-27 07:27:39.745 I/Unity   ( 5426): UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+11-27 07:27:39.745 I/Unity   ( 5426): 
+11-27 07:27:40.847 I/Unity   ( 5426): ARTHUR_QUIZZO aktif=True jarak=1,3 dalamJangkauan=True route=True titik=1
+11-27 07:27:40.847 I/Unity   ( 5426): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-27 07:27:40.847 I/Unity   ( 5426): <Start>d__4:MoveNext()
+11-27 07:27:40.847 I/Unity   ( 5426): UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+11-27 07:27:40.847 I/Unity   ( 5426): 
+11-27 07:27:40.851 I/Unity   ( 5426): ARTHUR_PRECHECK fotoQuizzo=siap
+11-27 07:27:40.851 I/Unity   ( 5426): UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+11-27 07:27:40.851 I/Unity   ( 5426): <Start>d__4:MoveNext()
+11-27 07:27:40.851 I/Unity   ( 5426): UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+11-27 07:27:40.851 I/Unity   ( 5426): 

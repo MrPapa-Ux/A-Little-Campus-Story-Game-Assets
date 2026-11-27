@@ -50,7 +50,7 @@ public static class PasangMrQuizo
   if (scene.name != "Penataan Kampus - Jalur NPC dan Bubble" || scene.isDirty)
    throw new InvalidOperationException("Buka dan simpan scene Penataan Kampus - Jalur NPC dan Bubble terlebih dahulu.");
   var objek = scene.GetRootGameObjects().SelectMany(x => x.GetComponentsInChildren<Transform>(true)).ToArray();
-  var quizo = objek.Select(x => x.GetComponent<MrQuizoChapter1>()).Single(x => x != null);
+  var quizo = objek.Select(x => x.GetComponent<MrQuizoChapter1>()).Single(x => x != null && x.kuisSebelumnya == null);
   Directory.CreateDirectory(Work);
   const string cadangan = Work + "Chapter1-sebelum-jaga-GA.unity";
   if (!File.Exists(cadangan)) File.Copy(scene.path, cadangan);

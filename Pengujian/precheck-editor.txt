@@ -1,0 +1,24 @@
+LULUS: Penataan Kampus - Jalur NPC dan Bubble: hanya satu posisi Quizzo
+LULUS: Penataan Kampus - Jalur NPC dan Bubble: posisi di depan Jasmine
+LULUS: Penataan Kampus - Jalur NPC dan Bubble: tanpa posisi atau penghalang Quizzo di GK2
+LULUS: Penataan Kampus - Jalur NPC dan Bubble: gerbang masuk mengarah ke kuis tanpa ketergantungan GA
+LULUS: Penataan Kampus - Jalur NPC dan Bubble: chunk satu panel dengan volume
+LULUS: Penataan Kampus - Jalur NPC dan Bubble: slider pilihan 0
+LULUS: Penataan Kampus - Jalur NPC dan Bubble: slider pilihan 1
+LULUS: Penataan Kampus - Jalur NPC dan Bubble: slider pilihan 2
+LULUS: Penataan Kampus - Jalur NPC dan Bubble: slider pilihan 3
+LULUS: Penataan Kampus - Jalur NPC dan Bubble: jarak dekat 32m
+LULUS: Penataan Kampus - Jalur NPC dan Bubble: mode utuh memulihkan seluruh jangkauan
+LULUS: Penataan Kampus - Jalur NPC dan Bubble: kontrol lama tetap terhubung
+LULUS: Explorer: hanya satu posisi Quizzo
+LULUS: Explorer: posisi di depan Jasmine
+LULUS: Explorer: tanpa posisi atau penghalang Quizzo di GK2
+LULUS: Explorer: gerbang masuk mengarah ke kuis tanpa ketergantungan GA
+LULUS: Explorer: chunk satu panel dengan volume
+LULUS: Explorer: slider pilihan 0
+LULUS: Explorer: slider pilihan 1
+LULUS: Explorer: slider pilihan 2
+LULUS: Explorer: slider pilihan 3
+LULUS: Explorer: jarak dekat 32m
+LULUS: Explorer: mode utuh memulihkan seluruh jangkauan
+LULUS: Explorer: kontrol lama tetap terhubung

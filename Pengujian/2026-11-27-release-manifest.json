@@ -1,0 +1,32 @@
+{
+  "version": "v2026.11.27",
+  "date": "2026-11-27",
+  "package_mod": "com.chipzz.alittlecampusstory.moduji",
+  "package_main": "com.UnityTechnologies.com.unity.template.urpblank",
+  "build_result": "Succeeded",
+  "build_errors": 0,
+  "smoke_test": "Installed alongside main on realme RMX3491; launch screenshot confirms MOD button. No full MOD FPS benchmark claimed.",
+  "gdd_pages": 325,
+  "gdd_figures": 36,
+  "source_scripts": 312,
+  "files": [
+    {
+      "local": "C:\\Users\\Hp\\Downloads\\ProjectSkripsi\\My project (3)\\Builds\\Android\\A Little Campus Story - MOD 20261127.apk",
+      "name": "A-Little-Campus-Story-MOD-20261127.apk",
+      "bytes": 309141585,
+      "sha256": "ea92000e3f18b45b93026a75e8f7a44bd00e9886e2c0483965187caf8bce4561"
+    },
+    {
+      "local": "C:\\Users\\Hp\\Downloads\\ProjectSkripsi\\GDD A Little Campus Story - Revisi Lengkap 27 November 2026.docx",
+      "name": "GDD-ALCS-20261127.docx",
+      "bytes": 12844822,
+      "sha256": "711dc6f42e7f74596754844bfdb294dd1052ef0a074720b4a4adb1c08542bf7b"
+    },
+    {
+      "local": "C:\\Users\\Hp\\Downloads\\ProjectSkripsi\\GDD A Little Campus Story - Revisi Lengkap 27 November 2026.pdf",
+      "name": "GDD-ALCS-20261127.pdf",
+      "bytes": 4660371,
+      "sha256": "398ef350804c6b48e2c78318a069b2d48906d70e07fa38f792e3c557c47befa2"
+    }
+  ]
+}

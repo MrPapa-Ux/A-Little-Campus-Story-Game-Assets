@@ -9,6 +9,8 @@ public sealed class PerformaAndroidArthur : MonoBehaviour
     public const int BatasSisiPendekDunia = 1080;
     public const int SisiPendekAwal = 960;
     public const int SisiPendekMinimum = 720;
+    public const int SisiPendekMinimumGK2 = 540;
+    public const int SisiPendekAwalGK2 = 600;
     public static float HitungSkala(int lebar, int tinggi) => SkalaUntuk(lebar, tinggi, BatasSisiPendekDunia);
     public static float SkalaUntuk(int lebar, int tinggi, int sisiPendek)
     {
@@ -28,6 +30,8 @@ public sealed class PerformaAndroidArthur : MonoBehaviour
     UniversalRenderPipelineAsset pipeline;
     float skalaSemula, minimum, maksimum, jumlahDetik, lewatiSampai;
     int lebarLama, tinggiLama, bingkai, stabil;
+    ArthurJalurKampus arthur;
+    bool diGK2;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
     static void ResetSesi() { instance = null; }
@@ -64,7 +68,7 @@ public sealed class PerformaAndroidArthur : MonoBehaviour
         lebarLama = Screen.width; tinggiLama = Screen.height;
         if (pipeline != null)
         {
-            maksimum = Mathf.Min(skalaSemula, HitungSkala(lebarLama, tinggiLama));
+            maksimum = Mathf.Min(skalaSemula, SkalaUntuk(lebarLama, tinggiLama, BatasSisiPendekDunia));
             minimum = Mathf.Min(maksimum, SkalaUntuk(lebarLama, tinggiLama, SisiPendekMinimum));
             pipeline.renderScale = Mathf.Clamp(SkalaUntuk(lebarLama, tinggiLama, SisiPendekAwal), minimum, maksimum);
         }
@@ -80,6 +84,9 @@ public sealed class PerformaAndroidArthur : MonoBehaviour
         { jumlahDetik = 0; bingkai = stabil = 0; lewatiSampai = Time.unscaledTime + 2f; return; }
         jumlahDetik += Time.unscaledDeltaTime; bingkai++;
         if (jumlahDetik < 2f || bingkai < 20) return;
+        if(arthur==null)arthur=FindFirstObjectByType<ArthurJalurKampus>();
+        bool gk2=arthur!=null&&arthur.JalurAktif!=null&&arthur.JalurAktif.name.StartsWith("GK2_",System.StringComparison.Ordinal);
+        if(gk2!=diGK2){diGK2=gk2;AturResolusiDunia();return;}
         float rataMs = jumlahDetik * 1000f / bingkai;
         // Target tetap 60 saat berpindah dari area berat ke area yang lebih ringan.
         float skala = SesuaikanSkala(pipeline.renderScale, minimum, maksimum, rataMs, ref stabil);
@@ -96,3 +103,4 @@ public sealed class PerformaAndroidArthur : MonoBehaviour
     void OnDestroy() { if (instance != this) return; Screen.sleepTimeout = SleepTimeout.SystemSetting; RenderPipelineManager.beginCameraRendering -= SebelumKamera; if (pipeline != null) pipeline.renderScale = skalaSemula; instance = null; }
 #endif
 }
+

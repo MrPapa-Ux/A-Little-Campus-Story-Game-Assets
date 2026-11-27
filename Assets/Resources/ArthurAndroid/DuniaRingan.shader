@@ -41,14 +41,26 @@ Shader "Arthur/Android/Dunia Ringan"
                 output.positionCS = TransformObjectToHClip(input.positionOS.xyz);
                 output.uv = TRANSFORM_TEX(input.uv, _BaseMap);
                 half3 normalWS = TransformObjectToWorldNormal(input.normalOS);
-                half4 n = half4(normalWS, 1);
-                half3 ambient = half3(dot(unity_SHAr,n),dot(unity_SHAg,n),dot(unity_SHAb,n));
-                half4 b = normalWS.xyzz * normalWS.yzzx;
-                ambient += half3(dot(unity_SHBr,b),dot(unity_SHBg,b),dot(unity_SHBb,b));
-                ambient += unity_SHC.rgb * (normalWS.x * normalWS.x - normalWS.y * normalWS.y);
-                half3 gradient = lerp(_ArthurAmbientEquator.rgb,
-                    normalWS.y >= 0 ? _ArthurAmbientSky.rgb : _ArthurAmbientGround.rgb, abs(normalWS.y));
-                ambient = lerp(ambient, gradient, _ArthurAmbientActif);
+                half3 ambient;
+                // Siklus kampus sudah memasok gradasi cahaya. Jangan hitung SH
+                // per vertex jika hasilnya akan diganti seluruhnya oleh gradasi.
+                UNITY_BRANCH
+                if (_ArthurAmbientActif >= 1.0h)
+                {
+                    ambient = lerp(_ArthurAmbientEquator.rgb,
+                        normalWS.y >= 0 ? _ArthurAmbientSky.rgb : _ArthurAmbientGround.rgb, abs(normalWS.y));
+                }
+                else
+                {
+                    half4 n = half4(normalWS, 1);
+                    ambient = half3(dot(unity_SHAr,n),dot(unity_SHAg,n),dot(unity_SHAb,n));
+                    half4 b = normalWS.xyzz * normalWS.yzzx;
+                    ambient += half3(dot(unity_SHBr,b),dot(unity_SHBg,b),dot(unity_SHBb,b));
+                    ambient += unity_SHC.rgb * (normalWS.x * normalWS.x - normalWS.y * normalWS.y);
+                    half3 gradient = lerp(_ArthurAmbientEquator.rgb,
+                        normalWS.y >= 0 ? _ArthurAmbientSky.rgb : _ArthurAmbientGround.rgb, abs(normalWS.y));
+                    ambient = lerp(ambient, gradient, _ArthurAmbientActif);
+                }
                 output.light = max(ambient, half3(.18h,.18h,.18h))
                     + _MainLightColor.rgb * saturate(dot(normalWS, _MainLightPosition.xyz));
                 return output;

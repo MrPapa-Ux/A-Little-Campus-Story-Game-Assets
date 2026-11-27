@@ -799,7 +799,7 @@ public class SistemPilihan : MonoBehaviour
             if(opsiDipilih.arenaKoleksi!=null)
             {
                 if(opsiDipilih.arenaKoleksi.Terbuka)opsiDipilih.arenaKoleksi.Buka();
-                else if(teksCeritaUtama!=null)teksCeritaUtama.text="Masih ada koleksi yang belum lengkap. Cek permainan singkat dan pesan teman-teman di Kontak HP.";
+                else if(teksCeritaUtama!=null)teksCeritaUtama.text=AksesArenaKoleksiArthur.PetunjukKoleksi;
                 return;
             }
             if(opsiDipilih.pertukaranTubuh!=null)

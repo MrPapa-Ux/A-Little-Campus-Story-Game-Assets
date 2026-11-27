@@ -1,0 +1,16 @@
+{
+  "old_images_preserved": true,
+  "inline_figures": 36,
+  "script_count": 312,
+  "new_catalog_paths": [
+    "Assets/Skrip/Editor/Profiling/AuditChunkDanQuiz.cs",
+    "Assets/Skrip/Editor/Profiling/FinalChunkRelease.cs",
+    "Assets/Skrip/Editor/Profiling/PasangChunkDanQuiz.cs",
+    "Assets/Skrip/Editor/Profiling/PrecheckChunkArthur.cs",
+    "Assets/Skrip/Editor/Profiling/RenderWorldGK2Android.cs",
+    "Assets/Skrip/Editor/SetupDanRevisi/BuildMod20261127.cs",
+    "Assets/Skrip/Editor/SetupDanRevisi/BuildUtamaQuizza20261126.cs",
+    "Assets/Skrip/Editor/SetupDanRevisi/PasangQuizzaDanKuisGK2.cs",
+    "Assets/Skrip/Runtime/Pengaturan/JangkauanChunkArthur.cs"
+  ]
+}

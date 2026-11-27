@@ -1,0 +1,1250 @@
+[
+  {
+    "path": "Assets/Skrip/Editor/AlatPenataan/AlatNpcArthur.cs",
+    "sha256": "9d05a55601ecf7c7ff9398617ebd83585a8b0c54aac85bfee3075044a571a2f7"
+  },
+  {
+    "path": "Assets/Skrip/Editor/AlatPenataan/AlatWorldArthur.cs",
+    "sha256": "70f6c3f3e2292f1b4f4bf34d9b6e2783cd1eac714a8e026fef63a64f3b580e1d"
+  },
+  {
+    "path": "Assets/Skrip/Editor/AlatPenataan/BubbleArthurScene.cs",
+    "sha256": "9a390e0573abd2072894eec1c9fec3856bd6d3ae7cfacd61a551e95282910c0c"
+  },
+  {
+    "path": "Assets/Skrip/Editor/AlatPenataan/DaftarJalurArthur.cs",
+    "sha256": "30a5fb47729718d2ccb6e613e637f7b6f358276e41cd877561af9764fc3f0af9"
+  },
+  {
+    "path": "Assets/Skrip/Editor/AlatPenataan/KameraSemuaJalurArthur.cs",
+    "sha256": "0791bd83c87d8c090767eb22640ede0f3a443e41c37463a444996c3325a63898"
+  },
+  {
+    "path": "Assets/Skrip/Editor/AlatPenataan/PanelWorldKampus.cs",
+    "sha256": "bae331e34a5880af0b2d1d809089304bcc0c70f61f8ab7a5914a8ce8072d8810"
+  },
+  {
+    "path": "Assets/Skrip/Editor/AlatPenataan/PeriksaAksesRuanganGK1.cs",
+    "sha256": "1ec067eeb047933d9175f402ea43209bc506a84a60db58f71bd329b85c4b23f4"
+  },
+  {
+    "path": "Assets/Skrip/Editor/AlatPenataan/PertemuanHewanEditor.cs",
+    "sha256": "fb0fe80f4654d7deb243e562a5876153c5a34522aba10a21287754f7a97addca"
+  },
+  {
+    "path": "Assets/Skrip/Editor/AlatPenataan/TambahTempatArthur.cs",
+    "sha256": "5882cd28819b0cbde517e2b66db6c8f2afc656e30c350ac6829219b136b723c4"
+  },
+  {
+    "path": "Assets/Skrip/Editor/AlatPenataan/TempatArthurEditor.cs",
+    "sha256": "6cc5a48baecb1fa4f742c080f05317ba9c5ea59bb7c0d85585785227e473081d"
+  },
+  {
+    "path": "Assets/Skrip/Editor/AturMalamGAMenu.cs",
+    "sha256": "0f2f90d4fd43d43ceef724e497df5ee9a56ec4d791cbd33ce09edce2e52a3147"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusCheckpoint10.cs",
+    "sha256": "ddceb1f4ec6b7045630d4fba3bf54f71058a601752c566b8fbc705cc8eeac733"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusCheckpoint11.cs",
+    "sha256": "4fe58ad17e46841bbce6ca6b83684bf4af25316ff7c6490ca478f8cff9b98502"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusCheckpoint12.cs",
+    "sha256": "ec15e8b8fedf5411e1ad9ecf606a78ff20305685d2d4c47eb70083ee98f7a012"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusCheckpoint13.cs",
+    "sha256": "714c5f114b4e14c7bd2dfc1e619f0942f2c00fc14a5a4430039d783a1b045e49"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusCheckpoint14.cs",
+    "sha256": "c8998491bcbe17d2d067e498610c87cf761714006c3b3f357cd7155d50c2d9ae"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusCheckpoint15.cs",
+    "sha256": "b57346334722500375d90c85492c9c843997833e3be80a922c782ab66d11600c"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusCheckpoint16.cs",
+    "sha256": "c75d64ff17b92596d2715d1e0720827baf9e55ce605fd227daa2a879ed6ae96a"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusCheckpoint17.cs",
+    "sha256": "c2896da22f4b6b6008be0393f526d35a5d62b6242d970c2c02c6ac9c06c56d97"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusCheckpoint18.cs",
+    "sha256": "c3db4f59d64859b2d79ac844016c6b5310514e107b890c2db54ad0dc19cf5da9"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusCheckpoint19.cs",
+    "sha256": "a047f383e4f2031c14616b9756334ddb45ab9e0b3d60400e78e8d097d4aab807"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusCheckpoint20.cs",
+    "sha256": "607fa4ef3ead6cf65924c27f21aa1b3979b1bed39cb6d44b61dae3570ce23f33"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusCheckpoint22.cs",
+    "sha256": "bbc11ecf33b559893edb76a4d4eed5c151a338f6eea6a989953d99205854e98c"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusCheckpoint5Revision.cs",
+    "sha256": "0db905b5a64398b01c99d5c4b028eea761062fb32abf2c7c218ef7a29762cabc"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusCheckpoint7.cs",
+    "sha256": "dc51c962b618da31f0350643bc5835186bf09cf040a08e55f52bc0755c22dd5d"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusCheckpoint7Preview.cs",
+    "sha256": "a34406236ffe620c3550396ddeca285c3e513b535d4c6154262b00eed20d970d"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusCheckpoint8.cs",
+    "sha256": "3fe372d664ab478f6ff18bd58966feac7394d83987a9a0194f899b05565959ce"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusCheckpoint9.cs",
+    "sha256": "942bf2bd7ef3c3d0f7d93ac1019248ce43c7f0c827e01d048ea86a4eb9c5899f"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Checkpoint/CampusRevision26.cs",
+    "sha256": "d8b7cc9f2770d765c28f2d94d0bc57afc8558cc93a2d8c00d9f4a19d9d3cb34d"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Impor_dan_Pendukung/ChapelPioneer/ChapelCursorRecovery.cs",
+    "sha256": "7f55e0abd220594a4adbaaa9ade2b0a581f2dd5b7e2ec3db55076c42902b1def"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Impor_dan_Pendukung/ChapelPioneer/ChapelPreviewAutoOpen.cs",
+    "sha256": "8cda1863fe79c5080b4fe53038521e3ed69ee473367a50651da7237d5f043c8a"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Impor_dan_Pendukung/ChapelPioneer/PioneerChapelChecks.cs",
+    "sha256": "cebc5823e6c9550252ba94fc64f20e05c5ce1e236f9fd36976ead5b2bda24ef4"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Impor_dan_Pendukung/ChapelPioneer/PioneerChapelImporter.cs",
+    "sha256": "edc52726357ca9a7300a4f94cbe4d2f7fcf3e0a78cfd9eea604607f4c6ae4d08"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Impor_dan_Pendukung/NPC_Dosen/PasangDosenDariPdf.cs",
+    "sha256": "c881ba37269c772dfcba465d555a1b339e38ce90e8b9e8f92764d3e80bd6370d"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Impor_dan_Pendukung/NPC_Dosen/TataDosenBilik.cs",
+    "sha256": "f3cdeb4ade73461ddefbf67869c1c5fe67b7ab71697aec328f0c808385381259"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Impor_dan_Pendukung/Ruangan_Dekan/AturRuanganGK1.cs",
+    "sha256": "42d98f87fdf18b6cf0cfdcf90738c47ba83a7e0a44bbe4f20671e4706d7566d1"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Impor_dan_Pendukung/Ruangan_Dekan/PasangRuanganGK1.cs",
+    "sha256": "2cf12285ccec4b3f12891dbc15d24c938a8481809dd5e7211fca19f3193a319b"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Impor_dan_Pendukung/Ruangan_Dekan/RapikanTampilanRuanganGK1.cs",
+    "sha256": "dea7f29130732c783ad835e601ebb653a8cec49c728005e3b9e428bebe272692"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Impor_dan_Pendukung/Ruangan_Dekan/RuanganDekanImporter.cs",
+    "sha256": "96f136aa84f68042eaec7c24c8ddd2960ca679d80be97b4d61892bd719b905b6"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Impor_dan_Pendukung/Ruangan_Dekan/RuanganDekanPendingBuild.cs",
+    "sha256": "0f7a0ffb28728e77119bb65e1875a2abf1a16686b53eb5a9c1e3f75abd2d1c17"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Impor_dan_Pendukung/Ruangan_Dekan/RuanganGK1Probe.cs",
+    "sha256": "190f6d4f2ffba8a6cae18dcbc09d9596300eb634b2e0761e2849d9e22de24229"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Impor_dan_Pendukung/Ruangan_Dosen/RuangBilikPendingBuild.cs",
+    "sha256": "52cf62e16deac623e6e82c4416f3f8b547c1b34ccf29a7bec6eadfc88e2a69c0"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Impor_dan_Pendukung/Ruangan_Dosen/RuangBilikReferensiImporter.cs",
+    "sha256": "7f022120415ae2591b92c6b27026307ac83269fcf1342f501e1bdfbc8d50e5b1"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Impor_dan_Pendukung/TutorialInfo/ReadmeEditor.cs",
+    "sha256": "5540392cbd295087d848c6ddb53033091e6883be40f9ae45e97dc8672654ff65"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusCheckpoint10Checks.cs",
+    "sha256": "5e566f70a7e92d2e41a494e4f2977e830a00f7ea4bba3c03037adbf91ec18080"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusCheckpoint11Checks.cs",
+    "sha256": "f2c59f32373399a0fcc1ebfc8a9e95d2b103726e982b4dbe7e0e19dcda4619f6"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusCheckpoint12Checks.cs",
+    "sha256": "bef4ba7ce7749b21e8d8f34488c8b2d04d3738dc2ef0331cf7bb12589e8bc50d"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusCheckpoint13Checks.cs",
+    "sha256": "ea2c129960125a7d4684775261c3c1fbb96731b2f03da749471cd512be9d3cff"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusCheckpoint14Checks.cs",
+    "sha256": "9ffee984441ad1ffda8140c385c2fdc736eaef63fc6acf9e06d63ad9fdebcc74"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusCheckpoint15Checks.cs",
+    "sha256": "926525d77fddcdc794c73e8c2ac1354e91bb8dd723760a84fd040fb8cbc174e1"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusCheckpoint17Checks.cs",
+    "sha256": "546ede021f00a5a084b38be8b361d358bb2ae254a6ba7a133c4a10d201bfb1e8"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusCheckpoint18Checks.cs",
+    "sha256": "f140e92e33851fcc593641f747ed6e47ee1ffebd55094dcccccc40170ced00f6"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusCheckpoint19Checks.cs",
+    "sha256": "0d6ab8ec8fcb1560d07cfabaaebb2c093c26c18ceae6107ec07362f86a74e15e"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusCheckpoint20Checks.cs",
+    "sha256": "f3437824c17372197a1dd20f6a982898439479716213cf3a6c8e0b52487fc560"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusCheckpoint21Checks.cs",
+    "sha256": "27522349f5afd996b82ee76b927262277ff60405fd02b1a854b8b3897c72e1c8"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusCheckpoint22Checks.cs",
+    "sha256": "637e3b54368c3bb247e95510b8411c9de3981d83ff23edcbeaef37e9f9757a2e"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusCheckpoint23Checks.cs",
+    "sha256": "3f9d0cde0c26947637fa6076f61ff0de2c605c2ca47a15b458035285848ff103"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusCheckpoint7Checks.cs",
+    "sha256": "0d6560d061fc70c8405a4bea96d35c462f45f9576f4a9ec01f9649c80ef64ef3"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusCheckpoint8Checks.cs",
+    "sha256": "4c4b07f95e9e832fd450193268232a042a18d31f12c04e6cd9f50a2e4f08038d"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusCheckpoint9Checks.cs",
+    "sha256": "9d2d15bd9a2193ac33cd3ed610f5e3c8dea595f26c204eeaaf8df12adaa8b950"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusExplorerChecks.cs",
+    "sha256": "b84013f42b9e5f725d8ca64092a592a3194af85186b2762c46b7b4fa60c59659"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusGAChecks.cs",
+    "sha256": "a7f7468f519486bf429bfb05caf59b228add35c65c0d863cf700720a6531c4f8"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusGAHorizontalChecks.cs",
+    "sha256": "521fa75922d3c47a9624c6873c0fd01cf223058cb1d7cf962686cbd3d589d382"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusGALobbyChecks.cs",
+    "sha256": "8d4c4446e46ea4e442a4bcbc7e448746823d6a287262a7d40d24e3dacfd7cf5d"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusGameplayChecks.cs",
+    "sha256": "90f63d237a0a11d1abb938ecc06e51cc0c09d600a1cda3e53e01929623b9dd56"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusGAUpperLobbyChecks.cs",
+    "sha256": "1d9091429db39092b3444e94f05b02a3920402a10aca1307c8e3f22617dc47b8"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusGlitchChecks.cs",
+    "sha256": "c3fdd3c3449a280e83c525337060873b8ae03b6c199bff69c2a6ca9cc1d6b92a"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusLatarTeksRegressionChecks.cs",
+    "sha256": "20ff4656a16b67449f2d61ab82b07a5a42c0926f93671b546213e46fdeaf31bc"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusMinorChecks.cs",
+    "sha256": "4add66f95e09331d2f9887cc458c10d319928f84158d1b904c6255f670216de3"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusPhoneAppsChecks.cs",
+    "sha256": "2740c0ecc0fff457066f01b4ce797bde22aed0e7cee7666e07609ea8bc942c25"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusRapidTapChecks.cs",
+    "sha256": "4b3963b3024a18322eb2d9ea8d0508cbd2ef01aaa6ddfe9709c420d9fd024086"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusRevisi13Checks.cs",
+    "sha256": "620b3abe253d98dbdb38bad5365a2c640599e05d788b2e607530cde6c51f82bc"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusRevision26Checks.cs",
+    "sha256": "eaef1305ec483d11fd8f08d961b0d3a4c6cbe5c0b0ad257ac2500b066b26ff81"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusRevision27Checks.cs",
+    "sha256": "38bc3600e9c2f94e0e66d927627b5e60d82981f84214b6aa45941e03333b748e"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusRhythmChecks.cs",
+    "sha256": "830a1199ed322b658ad271371b2fd9b524cce5d83f99e3873a7fd2785ddf85af"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusRitsletingOpeningChecks.cs",
+    "sha256": "edb06ea87f1dce279cd2cb3320aed69f97b2c24411cd39c63f62b46ed21a34f6"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusRuteKampusAudit.cs",
+    "sha256": "5a90f342c7368f9c70d3853bfedb8a1c1cdae954e9844a92e56f866fc948d859"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/CampusRuteKampusChecks.cs",
+    "sha256": "91e95dbe4330953bfc84215af536cfb98e224f31a8932ecf5dbdb9b8ca362f56"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/JedaEditorSaatTidakAktif.cs",
+    "sha256": "42c7702015be00bd85b763e0374a526b8581d1c632cd787d05f7a350a781a07d"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/JejakGerakKamera.cs",
+    "sha256": "624b6fe6337e0af3bb5f706ce99128ba3d57d3397394616a7bf63bffab9f537b"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/ManifestLandscapeAndroid.cs",
+    "sha256": "2663e00ff4e1df72fe3efb4f07e8ae406dbbd33aeb86eb8f9894863b0e1011ec"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/SambunganExplorerSementara.cs",
+    "sha256": "f865bb4908794657fd22a4b744a0e51e59ec3e5a069c03ee884cb2c8810b777d"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Pemeriksaan/ValidasiBuildChapter1.cs",
+    "sha256": "1b4432dd253e2a355897868d970917584d40cb55ec4565591ab9d4c4f8657f9c"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Penutup/AturPenutupArthurWindow.cs",
+    "sha256": "b487e4983ab1374baf73284a415669213c4e94c10da80d7c068254c7645a32e1"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Profiling/AndroidSceneRenderSettings.cs",
+    "sha256": "7e7dbc11fd98d01c4c53fb2a35ce3973b92b70a7fde8305565f67ccbb23b9d90"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Profiling/AndroidSmoothRevision.cs",
+    "sha256": "13b6e8883798352e391cce91b3c5d24d057c30bdd350b7dc0a9bc306ce4cf3c6"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Profiling/AuditChunkDanQuiz.cs",
+    "sha256": "e2260d9c4e9d31c797be14b280eb1a2c65cac194c6d2285434f8b94a2dbc013e"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Profiling/CampusPerformance9.cs",
+    "sha256": "1e5063ae1a4ced6e4ed0b06dfe370fd4b565c50e46f9ea122f7658a9f0ae4453"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Profiling/FinalChunkRelease.cs",
+    "sha256": "c3f5bce9996911f7403f968c20fe3c3309dd5592849257d1bfaa0cf8285c1eca"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Profiling/PasangChunkDanQuiz.cs",
+    "sha256": "cc11bf684185c83d812d303e051b827cd86cc4df5deb945ae380fa03cb593851"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Profiling/PrecheckChunkArthur.cs",
+    "sha256": "8b56be9d1b6df33d0e85a9944d2406d88593b2dee7c5d1c4ae250080e938ebad"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Profiling/RenderWorldGK2Android.cs",
+    "sha256": "0b6b0c5c7334625ee676441a391a0c945339cd1726a52bba3d7c90c8e4eea390"
+  },
+  {
+    "path": "Assets/Skrip/Editor/Profiling/Revision60Checks.cs",
+    "sha256": "8fc6beb9f169c16caaf48bbc7b12d22d5149a6fa37e4ded2790e064dcb476847"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/AksesCrystalDanKameraGA.cs",
+    "sha256": "22a856c232222e6665aee4053aacc0c49d416ec82ea37dd8f1a7bccfb8cfa930"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/AktifkanKelasGK2.cs",
+    "sha256": "4ae056c76abfd04f243c405174eb9a2afc206b0e632d5f9388298ce240850828"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/AsramaCrystalEdelLantaiSatu.cs",
+    "sha256": "771549db403d961f53696c317c490b5ef22047de7b7b54ff3f30ad696f9fb735"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/BoFinanceRevision.cs",
+    "sha256": "893b84321ce1c63c98b3f1af0b71f3d017652ceb621685230b3169b5b6552df7"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/BuildApkTerpisah20261121.cs",
+    "sha256": "e4d3105303930d68fcf926420c1797306557b69af8f28d1d2a478687b5288e8c"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/BuildMod20261127.cs",
+    "sha256": "4b019e58da94f78b5c87db68cc1a206b0252ee8e0ee3b2d425102204673a0605"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/BuildUtamaQuizza20261126.cs",
+    "sha256": "262dcc598fa6c2a3c2920cb1ee1d12ae333ae205d9dbff655ed8afeeba380234"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/CampusArthurWalkStyle.cs",
+    "sha256": "04b887ccfae1244a90b203c80c7685cb5a1f625ecce3403b2fd9369515a56302"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/CampusBubbleRevision.cs",
+    "sha256": "bc161d2ec25fafbcff056462c2af72171f4537faeea1a23ad814fb7ea2efa8e5"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/CampusCharacterLifeRevision.cs",
+    "sha256": "329c61b8c20421daf833a58f24a9ad6054738da60bc636eba6b718f7c6120241"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/CampusExplorerSetup.cs",
+    "sha256": "a6f680878d61360525f470485b5e995aa365b7f5b00a0bac7413cdd7a14125e1"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/CampusGameplayRevision.cs",
+    "sha256": "f7492c8cb4117afbfb3581fd4267a4705cac480e999a89715d5d9c2060fe681f"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/CampusKampus3Import.cs",
+    "sha256": "335e8fd37100c15a12ccd8a9060ea310d2bcd05c9124e3d2baef7053395678ce"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/CampusNPCFacingRevision.cs",
+    "sha256": "6e6f0f19942e2dcd095346c3fccd23c81f5532207a11be02beb0711f45d20abc"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/CampusPhoneAppsRevision.cs",
+    "sha256": "4a10d3b4c639c1cc57c1fe75fea5554b2d0a8a133d85eea7d6976c5ae346fdd6"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/CampusRapidTapSetup.cs",
+    "sha256": "270acf786253c2bc5d053ad8641afe66a697e8652de9dfa0a4d712fe05ec8ff4"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/CampusRhythmRevision.cs",
+    "sha256": "f6b273768ec81f802b34fe2e8556a072da38c9373f213247cf5cf676d98430ee"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/CampusRitsletingOpening.cs",
+    "sha256": "2d49c955dc7c27c9788a830363be406b42cb214474b5a1bb7adb3727d841af10"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/CampusSettingsRevision.cs",
+    "sha256": "df5cc59b2eb3f98c0153b8a3baebe34b9cffbd3f0e79768a92dc697b19c5305d"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/CampusWalkRevision.cs",
+    "sha256": "2f0da6bba57cdf9b13f6081d7f5410062754f11f542b59284b87f9e6afb065ea"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/CrystalLantaiDua.cs",
+    "sha256": "8cb023fb42a17ef1c6abf060f1d255acab792aaa13f23244b7f77808c59c89d5"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/GayaMinigameBayanganEditor.cs",
+    "sha256": "be9830787b9d289a03cb65e33e6e9048bd283c0fbb9883e486e4c44d972c184f"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/IntegrasiCrystalDanKelas.cs",
+    "sha256": "9ff0b859715b0933cf233afb5cf399c24ceffa72fab244047824976e93b63fd5"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/KameraDanUkuranCrystal.cs",
+    "sha256": "38ecdde3626643e44f7daba331e0c25ac19cc46f40903712de228abde4d46617"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/KelasReferensiVideo.cs",
+    "sha256": "e5c3622afceb1089df762fc5be1e14ca68f1054197b198ab7256c763b5a7dd20"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/KenanganPembukaSetup.cs",
+    "sha256": "6b4b3c6b67cd383eba1b27ba2a3cc014489f2f1090f20fdb15ef1271d035a320"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/PasangCeritaFotoArthur.cs",
+    "sha256": "5b3c9e97a13ce6aa835cbb555c64d242a31eb64aa350b14dde96f627ef2fdf92"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/PasangCutsceneLanjutan20261123.cs",
+    "sha256": "1e80bad48e7771c4a73a445df2027917c492bda052fb276379ddca6f1bed84bb"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/PasangDeveloperArthur.cs",
+    "sha256": "42819f4a44b4d31228e8c1c8d203d8f0e01a50989a27741dc9df6182f4d161a9"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/PasangJasmineDanMod20261120.cs",
+    "sha256": "c997193b972252dbde36901f71a5e9d3c6abdb6b09dc11d3eef4bd2de76d26aa"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/PasangMrQuizo.cs",
+    "sha256": "bf5110d8b8c298d66e982c1a1e7ee556c42e61ea58795615c6b3105d0fc2fc95"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/PasangQuizzaDanKuisGK2.cs",
+    "sha256": "729ff92c929f74efe996acbbbdf74a63940c27b33f59d01b95978b00b02e90e3"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/PasangTantanganArthur.cs",
+    "sha256": "5bf3d04a1e7045135da1cb4eb6b371c1d130acf864ea37b605d4af94926ac6e5"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/PratinjauMinigameBayanganEditor.cs",
+    "sha256": "36b45f5f0fcefbb507209e2ee169a50531807640d7e31508eabbb7fc6f674a6e"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/RevisiAksesDanKeselarasan.cs",
+    "sha256": "f277fd1e6f232f41d89213277b7e5f16e65028cf45090b589c41f3add8641d4c"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/RevisiGK2Dining.cs",
+    "sha256": "78839faa6cd4589790ef6cdf2dbf26a580ec07f689b16923b732b59a99e56520"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/RevisiLayarKamarArthur.cs",
+    "sha256": "48d63ea58b5b66fbcd62288871242c85286924155a3e8c723847d19c8a5e39ca"
+  },
+  {
+    "path": "Assets/Skrip/Editor/SetupDanRevisi/RevisiNarasiDanKelas.cs",
+    "sha256": "f6555b689550ca87d0573fbe51f3fb9e13477b37aa51b813e79247324de80031"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/AdeganMakanDiningArthur.cs",
+    "sha256": "5808f09cff4391d6050f871f0e2acd5abfa8c565e033b8bff6de55cc2159694b"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/AdeganRhythmPembukaArthur.cs",
+    "sha256": "8ba6c656caf7a7b44c833e965c66a98e35b0d14a8e788cc19ffd3ef79a08f978"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/AnimasiLoading.cs",
+    "sha256": "0e4f6921289c7dfbf3b3e7f6726f0352fa4b07a33cbc58a7b671df836f39e617"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/BahanDuniaAndroidArthur.cs",
+    "sha256": "0e165c96e18548cd2cda4ba0844432abdb3047287af5878593e6e6418d9646c6"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/BatasMalamChapter1.cs",
+    "sha256": "10db076fff1d5c8bf1b8ec6acca75f02cf02f201e21b62798ae358697a6c19de"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/BubbleWorshipPembukaArthur.cs",
+    "sha256": "994e377e6879274e9c5391c71b464820c47bd33949ce7885225b84ad8844902b"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/CascadeTransiton.cs",
+    "sha256": "ffb4957a91976447d3f0cf5d3de90d69fb0e59dffb5f67fd353f9de9b1c348ea"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/CelahHardiskKamar201.cs",
+    "sha256": "42320ab832d48f8d5a56d5d2562c8c280b68b4d14783b36e6ee1c20850bf692e"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/CeritaKamar201Arthur.cs",
+    "sha256": "6322737471b9f601ddd7e580d7a0cb16f19f5c78744e45f4f4bedf8d6b686503"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/CutsceneLanjutanArthur.cs",
+    "sha256": "e30edbe978556736d8a76f56b63bf3b942e0739ba1da64cbb97839fa480d7f2b"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/FigurChapelCerita.cs",
+    "sha256": "dbb60643cbb573925599adfed6a9393cae2ca1876800bc05c93def2c2044c515"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/IntroTitle.cs",
+    "sha256": "92ee7d7aabc112c07c750103e6115d9671235a72c86ca5e2ee02ac1a5aa99afe"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/IntroVideo.cs",
+    "sha256": "3dcf9262bd979e8a9cad8e4b3926f394ae589980dbcfb63eb01807e1684390b1"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/JariMengetikLaptop.cs",
+    "sha256": "a0e82bbd37650352a4c429e0233978acaa75a528d06ef4f17ec31d45889760d3"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/JedaSaatTidakAktif.cs",
+    "sha256": "529d3ad6dbffbcc868fa3350ba233aaa4b3f7fde1951b1ccd9cd38005de711bc"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/JemaatChapelCerita.cs",
+    "sha256": "82bf9c44a4f11b961ab11c4e1b1401d16bff648cedc9a35ed118de1039db171f"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/KenanganPembukaArthur.cs",
+    "sha256": "fb080eabc1e38c91e54f8b4af7af48a22ad165d6498fe459444d16cc3edd13b3"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/KepergianDandi.cs",
+    "sha256": "2e85068c5618902f9cec1ecb27a11c0c50eeac731ef41b5452235bfab6c3e2e8"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/LampuMalamChapter1.cs",
+    "sha256": "282e6f7538a03d0b40b90a66c49520d3b2ff58537319ffcf245dee4269c0edde"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/LanjutKeKamar201.cs",
+    "sha256": "04b0715f37f3cf02ab307f1a42830df35d8c450527f9fe9c916795eed93617af"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/LewatiCutsceneArthur.cs",
+    "sha256": "a1e20685ac9ee0b8e1f398670536016cfb1a105db0b27d522566096273ee9a4f"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/LoadingManager.cs",
+    "sha256": "c1c19fcc418e9aa158f3e9d2ebab98c0746d0ac4638b0408b0370ba9f2ae25e5"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/MalamGAChapter1.cs",
+    "sha256": "622a9192307539a3afd98e59f842978373aa3d71d0b41346aab85c989136b269"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/MenuModeUjiArthur.cs",
+    "sha256": "1b3f4496004dc43ffdbacbbf6c508e37e73a37b666ff74bbf5c353ec57e957e6"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/ModeUjiArthur.cs",
+    "sha256": "019a7d66f07c12678f8d1b9ee0fd19fcd7ccc58ba6d1058366d113b27d70943c"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/MrQuizoChapter1.cs",
+    "sha256": "581a5824c6910bf79526145fc50c62409874bc0ac93a17bdf15ea4594f07c78d"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/NotifikasiMomenTerekam.cs",
+    "sha256": "5744911e4afd2392346eb0e0f00d370c152e1d454ac3a432ed5d6bdabff1f6fc"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/OrientasiAndroidArthur.cs",
+    "sha256": "8c50aa18d0ad3d953b75e7bb0c22c8bddc532b58dc09c8c7738a24eac8b80428"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/PengaturanModeUjiArthur.cs",
+    "sha256": "06007a17da5840fbc481a29b672d0ab9d589faaaa86b66d38cf559299cf85d9f"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/PenghargaanDemoArthur.cs",
+    "sha256": "439563b2610dd3432594831f63c1de94020c24ce3c08deba349b872b5233844a"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/PenutupChapter1Arthur.cs",
+    "sha256": "d5445ab5b23315f7ddbc3c4a864afe0435cb5c48002c9252232f0e4813438136"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/PerformaAndroidArthur.cs",
+    "sha256": "772a3f4ec3c917cd5ead862fb77cf2e35551459157acc5c1fc7294c8bfb6c662"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/PerjalananChapelChapter1.cs",
+    "sha256": "d390fb515cfe4f930e7e8e2139796729bed489495b402203b7012864e9dee4ea"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/PerjalananDandiChapter1.cs",
+    "sha256": "2cfc5da2a47e1e064ace8a39433a5e5d7068f6949d034e918357c518ac675a16"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/PerjalananDiningChapter1.cs",
+    "sha256": "6d35906ddd8279aeed72b69b1ca2e508b9e2a254b4ac9b4c8ab9f63b0a9262a4"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/PetunjukQuestUtamaArthur.cs",
+    "sha256": "731eb2ce873acd995d53c67386cf1f520819d1228191168301d210320143e3a5"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/PratinjauArthurMengetik.cs",
+    "sha256": "a6e636dbe81efca78e3528c5033871a6f4da79f78f3deefe651e22153257074e"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/ProgresSampingArthur.cs",
+    "sha256": "7080c0815b5864b0e927022cde237712a24845ab4410d9b810b59abe983d1fc2"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/SuasanaIbadahChapel.cs",
+    "sha256": "18621964d10b7a5a8cc8e421c2cd533a69b92674200069f4d5a668917d1149f9"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/Sutradara Transisi.cs",
+    "sha256": "1491f116db7f949b6570220d147906721d0d237b07565841b8e6317b72065136"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/TeksAmanLayarArthur.cs",
+    "sha256": "bb318a5c5fa9aa4256845529dec2e684d31b628c53a0aff7f9a9aacee24de5e7"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/TemanSekamarChapter1.cs",
+    "sha256": "0e8ec1cb1a1551d7265f6f41011cb18ac5d3effc14ccc1c0225b8196913186eb"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/TitleMenuManager.cs",
+    "sha256": "cc777c6623db68e826bae43ad01c087d4b938f241f49d9436c918cf081432522"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/AlurDanMenu/UkurPerformaPerangkatArthur.cs",
+    "sha256": "4884dbb15bfb8a469c9488286a95b7e850598069ef1bef64df577e2079a2f472"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/AdeganNpcTaman.cs",
+    "sha256": "4d6ac8f5361fcb6604751f6ebadf58242306a167f460c6e20e2669f0d1434efe"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/AksesArenaKoleksiArthur.cs",
+    "sha256": "59652a8fe6d6817a75287a46e7b23aa5363ba1b6b1be5fb7927e81c6a59f8385"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/AksesAsramaJasmine.cs",
+    "sha256": "e6a8b4ee8793ffa7534bb651fd7c47a2b7fb82e93675537206adfb42f5463eb7"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/ArthurMenungguTubuh.cs",
+    "sha256": "ca9406dc261016221a20da3c04aea9a999ea913fdc0c2d044388e490e1cb8371"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/AwanKampus.cs",
+    "sha256": "730a39849d84bd1e69bf9a9ebe3fa6777dd16d8fa3a2ac47f775774eb100ce82"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/BarangLepasArthur.cs",
+    "sha256": "0ba64d91b94bdb2bb1d550d5dddb8d0880cedf7597b4ec3b57e0ce44adeb81b0"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/BurungTerbang.cs",
+    "sha256": "a937f13fcf7023845ce4293f1205b4947e3c903ba2cde3df51d618d6b4705a5e"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/DosenBerjalanKampus.cs",
+    "sha256": "e2f3e696acc504bf71aeeb735c949da85010ea1529171694516dedee0847dc5c"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/EmoteBergantianNpc.cs",
+    "sha256": "709c91aaae3f11b9178101ea87507ea6b38a7e7f46193dd2a06ea273856c5fb3"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/GerbangSatuArahJalur.cs",
+    "sha256": "40192b46e55ee468a5be51e10d39d27a70769a30c7179317ea09860c8663d6b5"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/HewanKampus.cs",
+    "sha256": "f6a166a88a376a566bea9a847f127d4ff95f269a12a56f1583560f6d905bcc0b"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/HujanKampusArthur.cs",
+    "sha256": "cd713ed5fc211de6e3f7e8f5ba47499b282d30e2faf250f5084e779198c289af"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/InteraksiJalurKampus.cs",
+    "sha256": "e0b780e4d75fa2463642577c4978676fb31d802bf38a75da83db9f6cad29483c"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/JalurKampus.cs",
+    "sha256": "369e7e00346182dc5e3280c786828e10cfbba3fa4c0ca29258926f7ca28a3d40"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/KameraGK1Bertahap.cs",
+    "sha256": "e976dbf6a92a22989c7e58cca6c7b7cbb796ed2faa55c431a4828cb4f8082a2a"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/KameraPilihanPemilik.cs",
+    "sha256": "7eb5c1bc205879557d93bd760abb0f16a7f408c95b23819d40f1eca86a484985"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/KawananBurungKampus.cs",
+    "sha256": "a17f3bc64e9cef16b2c6aada98c130e6093e3e821a38c389392b3e886341583b"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/KawasanKampus.cs",
+    "sha256": "3fac91e549aba3b1d9b6cba1d3663855b583224ecf554c0443219da9afa3be5d"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/KelompokNpcManual.cs",
+    "sha256": "7ca67ffc23ea46cf21224ef5cc784d03b5568f7b203c62bab2d36a699f043446"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/KeramaianDining.cs",
+    "sha256": "350681f670517e119fa94e5f005d6937cce2b433f35b452cf4d1953a650b9a70"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/KodokTaman.cs",
+    "sha256": "2164e017e0cc680f8458fd627ff4e45aef8cc1183b4e7ec9ee4cfbaa9bf2e6f1"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/KupuKupuKampus.cs",
+    "sha256": "36f2b7a246f8bba596b72a4c15ebceeac0f0f32b782d3e4a3bc3cf98914e2119"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/LintasanKameraKampus.cs",
+    "sha256": "7718e68994a4e54ee25281a2081dd65668dc4bc2125ef4035560fec49f1c68d8"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/MalamEksplorasiArthur.cs",
+    "sha256": "61c0c2b8b4625e5a106315ca0814c09ece200c4a33aacd00a32476230ab89ffc"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/MateriKuliahNpc.cs",
+    "sha256": "d12b67dec56f0445689bf2cff98999f27f7ffc7f3ac25de829ea66636a0f76ac"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/MobilCampus.cs",
+    "sha256": "4d12cd9cb401eae7492c6aacf4ad37c3f48e8688b26ec7774aee2b197ce27756"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/NpcKampusHidup.cs",
+    "sha256": "3e88baa88361fc3d1568b09828aed4747a089f7ca1d69ec7f8513c96fb6fd246"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/NpcKunciMotor.cs",
+    "sha256": "e3fcea2ed5085c01faeae5b44356d263800f89e45725db860a3e1f2634291f53"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/NpcPenyanyiKampus.cs",
+    "sha256": "e9389b2c61b5215c446a8b7a33fae3c435f9bab9ef851f5aac9a1f6477f37b06"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/NpcYangBisaDiatur.cs",
+    "sha256": "3b93faa3d0b7084f7868b62a4c4598e299a8d386055b6bb159adc3bea344cb9d"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/PeganganWorldKampus.cs",
+    "sha256": "f221434009c3154c3e02255969b8eeedd4689750a70e78b86490853f668502c9"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/PelariSekilasNpc.cs",
+    "sha256": "70ff957776f9cea749cd6e11c36e5ea31588c35e45818b4e266f95cb88bc8015"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/PenandaBatasKampus.cs",
+    "sha256": "d84ab555abc444bf6694ad1a0036fd50621573416ede2ed4ef13910f02925e08"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/PengaturCabangKampus.cs",
+    "sha256": "4e13930a45101b62af7c8efa6c7549b2e7685d19d407c7e5e756a648f5dc0fae"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/PenghuniKampus.cs",
+    "sha256": "ba65f3429bbc3520ccca7bf07d07650010dcaadda1dc9bfa04811191bdd8705e"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/PerlengkapanHujanArthur.cs",
+    "sha256": "76239efbd6ead7820ccc7b5a2777f84bf0825fc690f8e522574213753d1994c1"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/PertemuanHewanKampus.cs",
+    "sha256": "7562989fbf0df044e7055ed927477d500dbc00178bcb53b4f714b09d246d07e9"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/PertukaranTubuhArthur.cs",
+    "sha256": "39a6e14ea2c52cb97032c0fb64e034b59def2e7fc23caf4348f4d766256282ab"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/PolaIdleArthurNpc.cs",
+    "sha256": "9317543cb4cba8bafeaf42c597d73ef4dfa40dce9722168a3785a1482585cda7"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/QuestKontakArthur.cs",
+    "sha256": "95933f6e2ad6496fefdb0ffccd61a8d255f65a0ad1893d482e8014e795885a45"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/QuestTitipanArthur.cs",
+    "sha256": "bb15af0e0796c6df4fc914363b26a4c4ea7f9b7d620d839b40ada45d3f6ab7fe"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/SiklusWaktuKampus.cs",
+    "sha256": "fe5a7d0c7f4365827cef3fc5d71ec9e8ff971f58ee648604f86272158a5d6cfd"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/SimpananEksplorasiArthur.cs",
+    "sha256": "21a3fc767462058100fe89566f61c478f5f37cba3fab31909c45ceedccd6b8e9"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/SuasanaKampus.cs",
+    "sha256": "6cd00eb8854b38fc634b81cc29af33b03b21de6cf5e71fbc577cb38c20efcbc9"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/TampilanNpcPerempuan.cs",
+    "sha256": "75daefd197f9c5b47ef793cf3f634806f36dfeaddc336079158e8426f410f735"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/TeguranAsramaArthur.cs",
+    "sha256": "f4d64a3a0b8ca9c8864cbb8e4a0ec998a5780c591742b4467fcddbbf66f4881b"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/TitikQuestTitipanArthur.cs",
+    "sha256": "f2372449ccc047e2d77d3a854b9cd697db4acafda097f4df551f94e554afc187"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/TujuanJalurKampus.cs",
+    "sha256": "18d4f86acb2eebea86a469f13e9f34c3a20205f64a80811513115f87b2b2ce89"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Dunia/WigglyBubbleInteraksi.cs",
+    "sha256": "e36d840b6b0eed331f7ab4baac5058c42912a9c62969af912cc799d80e07b821"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/EfekUI/BunyiTombolUI.cs",
+    "sha256": "4742345edf17dd4d177b6fda9ff96b7a8a203618fb7424e1db9524831f80ab4f"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/EfekUI/EfekPilihanUI.cs",
+    "sha256": "5e3bb6ed71f4813322a6da99500ba2d8b9f2188f7725667c67e194412b3493c7"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/EfekUI/FramePlayer.cs",
+    "sha256": "b30a0a064428d6c72f20bfc753b9bdd876fdc54c5da00f295256a220d1fb8488"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/EfekUI/WigglyBox.cs",
+    "sha256": "508275c922c9d57463a1fd11422635806d6bd077860e3d2eda6d7689c72e91c9"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/EfekUI/WigglyContainer.cs",
+    "sha256": "34f5428299b2e91700c2f2cd804dd88335abb90d4a14b9a7e9668e228f743417"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/EfekUI/WigglyText.cs",
+    "sha256": "6b713cc671f9fe4aa5d5e1c9a42007e9e422e3a94b13ba413aa9efa68ab33864"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/EfekUI/WigglyTMP.cs",
+    "sha256": "2d29c9119c2cf798addc98248ee33554aeedcbdeafe16cfe78e655274df8ceff"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Kamera/BingkaiKameraTetap.cs",
+    "sha256": "298c632da0f566ff926cd33baf3ecf6f5242ffdc11c51c99aacfc2f7134b16eb"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Kamera/KameraGoyang.cs",
+    "sha256": "62f20e9e86f65aed8fd199b9af385c10d37d15658b1a9d4acaadc1dc7f9cb8f6"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Kamera/KameraNgekor.cs",
+    "sha256": "acaa0269c7ba92365c891303f968e5d088e1fd2fb55e0085659f32ff4e8ba641"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Kamera/ZoomKameraArthur.cs",
+    "sha256": "53a23dcfe8b42b70ce0abf5ac5b340e8cb5bd81abf79f73d8e1eea4c4542e19c"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Karakter/AksesoriDadaSejajar.cs",
+    "sha256": "e6698e3ac4e6a6c990000679c572d640151490c88b763de621a6d87217d4da6a"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Karakter/ArthurJalanVertikal.cs",
+    "sha256": "d296cbdaace5ccc728491d14d98b9483c00c2e821873d9f8657b79cb03daa494"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Karakter/ArthurJalurKampus.cs",
+    "sha256": "fa6338e10ccd1ec90850378c02a9ab5d86be48fbff71aa33f11dfad73fed4e21"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Karakter/BayanganKontakArthur.cs",
+    "sha256": "a4c0966eec066e4c52868f8c2824f40aebadea078e21b83ec211ead294bc7477"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Karakter/EkspresiWajah2D.cs",
+    "sha256": "1462cc892a754f4e5b81108c16869d5f131a6cf1d78245ea1648785e9e73a20a"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Karakter/KarakterController.cs",
+    "sha256": "33a31276f7aae66146453f977f8146b6d849dc619b13acd94958d43b7241b05f"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Karakter/KetukKepalaArthur.cs",
+    "sha256": "4a86d20bf5c4e6ca53d30b61d5b5192df552c6668e8afbb70bd8f24566f4ead4"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Karakter/PijakanAnimasiArthur.cs",
+    "sha256": "d654667377ef532ded41012724cd39da4b3158990a8b501a8df0169ebdc86068"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Karakter/PijakanTanggaArthur.cs",
+    "sha256": "6ed5adb2f7dfdb437a88309d970a954c635b502f934c8b2ec84dfb04195042c8"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Karakter/PoseMemegangHP.cs",
+    "sha256": "8ca85787274e8f4b566cd358718225bb5760d3fc703112eeef57091ef6b93d8f"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Karakter/UkuranArthurPadaJalur.cs",
+    "sha256": "6c0073aae1a9b2b6ce98797cb7e038d6b5320f9daeca8d083604c3eef21aabba"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/MiniGame/GayaMinigameBayangan.cs",
+    "sha256": "1f5d12e5a31f16893c829ac115f5315fd3e95cc45256cb8116f753f202296c00"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/MiniGame/LayarTantanganArthur.cs",
+    "sha256": "93cf58afdaad812fa719678181c978debfd7cc52f7546271e94d02c421a150b6"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/MiniGame/MusikMinigameArthur.cs",
+    "sha256": "de4f4fb802d595ba5f42b820a69f764d935e1c3094070617f816508bc7c001ab"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/MiniGame/PotonganJigsawArthur.cs",
+    "sha256": "3e76840db0a87f6a71e19a5911e6cbacfe1ca70c157db9b5e4a53c5828fd0674"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/MiniGame/PratinjauMinigameBayangan.cs",
+    "sha256": "beac48f1bd54df93a2b77c352f299b5b762b736d340ff2dbc3f59f90ad12ccef"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/MiniGame/RapidTap/BulatanKataMekar.cs",
+    "sha256": "ff1b0cfc942d66d5c04f9f867db785b00b77b78cbe972f928ffc9f75559bc891"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/MiniGame/RapidTap/BungaMekarArthur.cs",
+    "sha256": "ab9f4a9e3476ca9b1024c1de719bda9365afb8b2b3a4c5d3cb9e3ab1fd273e1e"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/MiniGame/RapidTap/EfekFearMekar.cs",
+    "sha256": "a485ec7f5d060faed7f4df6278e41a000299ff4bb7571871c24b676fd3f71bb5"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/MiniGame/RapidTap/RapidTapArthur.cs",
+    "sha256": "afc1f63c894e8744658845947c9bd70be631e8857cd2f39607adecd2878c3a6d"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/MiniGame/RapidTap/TapTapMekarArthur.cs",
+    "sha256": "d93841b6ae75adf6059eba74de72c5e4174e2d85d8decfbc48984fc4b2b3351a"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/MiniGame/RapidTap/TapTapPembukaArthur.cs",
+    "sha256": "f7f1d9f89810c2b9304ff620d8dd516a967851101b5198b12218189bd1f87f29"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/MiniGame/Rhythm/ArthurRhythmAudio.cs",
+    "sha256": "7c9365d1ac390f35aa00be6ef92f7a06ebcefe8602dafecb2a59b555fa42875c"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/MiniGame/Rhythm/ArthurRhythmRound.cs",
+    "sha256": "db2c75edb84babb5f86e0916e880cc0cfa39da2b37181284af42896094c2f66a"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/MiniGame/Rhythm/PapanRhythmArthur.cs",
+    "sha256": "fff1c54d56aa18255c8fefbb5a65934ac2858378dd323d383ae91f3b5cf86230"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/MiniGame/Rhythm/RhythmArthur.cs",
+    "sha256": "10ed9368edf4338cd21e708a436e92fe1e2286e70ffd4217448bc4bbb6d5c0a7"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/MiniGame/Rhythm/RhythmJalurInput.cs",
+    "sha256": "de0fdd1af9473ab997d49df9d2c2189e7e678afd34e68ac55c839a31cc916c76"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/MiniGame/TantanganSampingArthur.cs",
+    "sha256": "860ff02b60412fbdc53c8b5fe3a4f78b9677ef2f5fb7ec4857196ba98519f523"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/NPCDanDialog/AreaIInteraksi.cs",
+    "sha256": "7d770e6c732c127eba915d808ea7bcf9c799efebe3006590eed2f0d8e6cfb88b"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/NPCDanDialog/DialogManager.cs",
+    "sha256": "1d70c9d21abfb715f30bedf9b146e21c9e103c81269478cf72fcca38dfa57d02"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/NPCDanDialog/DialogTeriakGoofy.cs",
+    "sha256": "c79f223c178837926c71bd613292830a59fc390df486bf654cd5a97cc3c84557"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/NPCDanDialog/EfekMunculDialog.cs",
+    "sha256": "dd7960866e5c351ec946a2285d94bf7057b1d779fa801d75d90e93387d0c120e"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/NPCDanDialog/JedaTandaBacaArthur.cs",
+    "sha256": "c3c04182ad62ec11a4b3b36d492e1ab53d063fa49aa293e537009f2233c6d529"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/NPCDanDialog/NPCBubbleTrigger.cs",
+    "sha256": "dedf4dac20ffb743f20cc6c8a1861af3dfbc265bb0315069b365319b31abc2e6"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/NPCDanDialog/NPCJogetGoofy.cs",
+    "sha256": "51ac1ab0c976a239440548435acd23c200eb4549419efd9c13db4c1c8d2a7915"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/NPCDanDialog/NPCMenghadapArthur.cs",
+    "sha256": "46045f7404bf3fd909d4039fd9e1041dd2976f994189120efdfeb58a9eb8a281"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/NPCDanDialog/OpsiInteraksi.cs",
+    "sha256": "ea7a8b6a90f2deba847f8747670b6e14ed45443fc70ea081262b6b3146d09e1a"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/NPCDanDialog/ProfilSuaraKertas.cs",
+    "sha256": "e5450381421a858b3dd1375483f55577af7ad983ec75efa99c6e140f3f686b92"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/NPCDanDialog/SistemPilihan.cs",
+    "sha256": "9e4ed9681025126e4db2e177ff418eca562eb0ec7488523bc8ad6a4825965bc8"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/NPCDanDialog/SuaraDialogKertas.cs",
+    "sha256": "189e4631267793f0d80e195f4767ddb94413413a54a4c1b5771a7a7a0ea64179"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/NPCDanDialog/TempatBubbleTrigger.cs",
+    "sha256": "cfb841287393ae295f7f9d9bc9ec036f14a785c92ce30f19076bedb72009a28c"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/ParameterDanGlitch/EfekGlitchLayar.cs",
+    "sha256": "bb6774a092671e02427a94da1f22ba5931ba9e3a2cfa62d83bb7da778eb54933"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/ParameterDanGlitch/KotakGlitchUI.cs",
+    "sha256": "aacc81714311a606bf10a9beba66268731b3cd08d48d02219791bb6c17b8f67e"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/ParameterDanGlitch/LazyBarParameterArthur.cs",
+    "sha256": "a64eac95737428b89cad87cbafc7ffa5ee183a6630a356cb8357f88474f25e97"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Pendukung_Template/ChapelPioneer/PioneerChapelView.cs",
+    "sha256": "0b2ec0dc3605d37b91045c601c4852590fafd5402ae2e05f19e1f0749459eeea"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Pendukung_Template/TutorialInfo/Readme.cs",
+    "sha256": "c09c93844f93eb252a6fb39c222d169c63a63e96008fd040b9e7628c3e7ccc2e"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Pengaturan/FilterKecerahan.cs",
+    "sha256": "c5793fbee15f32c678845b571bc303e46cfaa93f23e8ea8b993847d1ff2b1ca6"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Pengaturan/JangkauanChunkArthur.cs",
+    "sha256": "bf163cc07ac4403371623edf0434a0f68997b138f7b83fa9baed1d09230c3681"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Pengaturan/PengaturanGameplay.cs",
+    "sha256": "4ce92bcdd95e0159897c305cf10a44a54d5f6af29e0fdb1abb0795cca68bd0b6"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Pengaturan/PengaturanManager.cs",
+    "sha256": "1110bd698bdb423afd12937d66df86bb27b5753e761114c74dd392b6f91cc997"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/CatatanDanPesan/AplikasiCatatanHP.cs",
+    "sha256": "3e1017319434f4743fc050529d40fa27d079fa55ccf772729b9fc08a960197ca"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/CatatanDanPesan/AvatarKontakUI.cs",
+    "sha256": "ca7e4306008a066299d7d3b15ed9aefb4bdbf58f9699c1f7e1a1f0cc6c388ff3"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/CatatanDanPesan/BukuArthur.cs",
+    "sha256": "cb31268114945e162da6d4e1db5d704e4dc34387c886599cbe73ffd52082b430"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/CatatanDanPesan/NotifikasiBukuHP.cs",
+    "sha256": "d82abe4959c8df987db15d6de5ec86e898be1d229f3288f64803bc0a8a5451e1"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Musik/AplikasiMusikHP.cs",
+    "sha256": "bcf10c573fcbe4557580c7bb583f725f1b7a6db4d594418fcc3cfbfc192384e6"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Musik/KasetCoretanUI.cs",
+    "sha256": "e363e0d88b3b4fccead2d1794230f166210331d51d79349037d6f09d16d6d388"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Musik/MusikArthur.cs",
+    "sha256": "ddbbf1eef044f9d3bd5ef80ae3f8dc69e31c1ceb7146e8f3f4e8a4dfa719a0a5"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Musik/PemutarMusikUI.cs",
+    "sha256": "c71faae8e20beae4109d6019d4a32d16ba3961992263d3587b3761000a27f259"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Musik/PlaylistArthur.cs",
+    "sha256": "3a65973829d3acc99eb6541d4f34b0df8d2266131704a2b6c1d0976b9cef5ee1"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Peta/GeserPetaHP.cs",
+    "sha256": "29bb5dc061afc851ca5b39d33ca213f26bfa9da8b5fe90d4fc599f0347aa88ba"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Peta/LingkaranPeta.cs",
+    "sha256": "a23d056101282e1873bd5f72baacb07567bfdec5039f2ce7d2fcd07aaee60674"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Peta/PanahYouPeta.cs",
+    "sha256": "0a8cf22ad52dd97011f59280012605eb42080544108c56d0c4132444c8437e75"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Peta/PetaKampusHP.cs",
+    "sha256": "b240a21e41475210f87c8454d0a27d9a1614456d2e9872c7af17d9009a56e957"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Peta/PosisiArthurDiPeta.cs",
+    "sha256": "b436df75a8c435ca603553420885d238b7b8df3c60dd1deaa9ddb681c95040fc"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Sistem/SistemHP.cs",
+    "sha256": "03102e05f459748b3985d0725ce39e0ed0bc257a79eac32a872f0ed33cc3e6c0"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Tampilan/BingkaiAplikasiHP.cs",
+    "sha256": "ea3f2dc4d084cf62bcbc519dd6495b396f5c3e2b4b643c2ceef5bf8a18d5e013"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Tampilan/BingkaiPonselUI.cs",
+    "sha256": "dab3d0f20cfa6fb11cfd5c9fc08e5b04425eaf0a7a2cad16ff7178f613993b05"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Tampilan/IkonGameCoretan.cs",
+    "sha256": "c108bfcfd29bed57d7be7a78e494f47e666f64a0c76430c1496d643222636e28"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Tampilan/JamKampusHP.cs",
+    "sha256": "c7ab94164d1adfd4fc0d0daf04549dbee477e44d294cc45cf612c6c7ed54c0e5"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Tampilan/LatarTeksPasHP.cs",
+    "sha256": "d5b1c8ebc624804a4be659da0311ee83b98f1d5ea88caabff5e692a5e39c7e15"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Tampilan/PonselAplikasiBersama.cs",
+    "sha256": "c1c5d2fefbc2346096bcb70e5ea08d3b7672eec62761eb3837b1c3c0c83c3272"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Tampilan/TransformasiLayarHP.cs",
+    "sha256": "982f1b50a2b3af04cad298a7eddb0a63baca15b705ee43e1ef04d3ea3b59afe8"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Tampilan/TransisiAplikasiTV.cs",
+    "sha256": "e5583376d568f589e73351c15537bfb067caa3dd84320459e46aea754b898c7c"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Tas/BentukTasUI.cs",
+    "sha256": "01122add3bd6b3489e11e936abda22dcc3547ccda4e8d7f279845b2b0fe44ff7"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Tas/BukaanRitsletingUI.cs",
+    "sha256": "fb71577abdb1d480485086f9170caecd1431d8bd5aaae5a8eb5d797b996d0c79"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Tas/ContohIsiTasHP.cs",
+    "sha256": "7abf19985ea34e8f7035f359fe57eafc0ceccbb5365a39ca302bd26dc9396d40"
+  },
+  {
+    "path": "Assets/Skrip/Runtime/Ponsel/Tas/RitsletingTasUI.cs",
+    "sha256": "02955cfc1f030a8a9bdfd59eaa2b260b68b65b36761d26886668f8ca05884d03"
+  }
+]

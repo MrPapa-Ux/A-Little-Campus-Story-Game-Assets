@@ -2,6 +2,16 @@
 
 Arsip pengembangan untuk penelitian pengenalan lingkungan Universitas Klabat melalui permainan berbasis cerita. Snapshot ini mencakup kode permainan, scene, prefab, model, tekstur, audio, dan konfigurasi proyek yang tersedia untuk publikasi. [Website proyek](https://alittlecampusstorywebsite.vercel.app/) dikelola terpisah.
 
+## Rilis terbaru 27 November 2026
+
+[Unduh MOD dan GDD terbaru](https://github.com/MrPapa-Ux/A-Little-Campus-Story-Game-Assets/releases/tag/v2026.11.27).
+
+MOD dibangun ulang dengan identitas terpisah dan pembaruan chunk serta Quizzo. Versi utama tetap terpisah. GDD baru mencakup 325 halaman, 36 gambar dan katalog 312 skrip, dengan cerita serta diagram lama dipertahankan. Manifest dan bukti pemeriksaan ada pada `Pengujian/2026-11-27-release-manifest.json` dan laporan precheck.
+
+Build MOD: 0 error; uji singkat realme mengonfirmasi pemasangan berdampingan dan tombol MOD saat peluncuran. Belum merupakan pengujian seluruh fitur atau benchmark FPS MOD. Pengaturan input Android sekarang memakai Input Manager lama yang sesuai kontrol proyek. Posisi final Mr. Quizzo hanya di depan jalan Jasmine, tanpa titik atau penghalang di dalam GK2.
+
+Sumber dan aset terkini disertakan pada commit/tag baru; rilis lama di bawah tetap dipertahankan sebagai catatan historis.
+
 ## Meninjau proyek
 
 1. Pasang Git LFS dan jalankan `git lfs install` sebelum clone. Setelah clone, jalankan `git lfs pull` untuk memastikan aset besar tersedia.

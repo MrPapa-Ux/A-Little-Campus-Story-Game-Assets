@@ -1,0 +1,41 @@
+LAPORAN PRECHECK CHUNK DAN QUIZZO - 27 NOVEMBER 2026
+
+SELESAI
+- Jangkauan Chunk pada Pengaturan, bersama volume dan kecerahan.
+- Empat pilihan tersimpan: Dekat 32m / Sedang 64m / Jauh 96m / Utuh.
+- Tulisan judul dan nilai diperbesar dan ditebalkan; screenshot HP diperiksa.
+- Pengaturan hanya membatasi gambar lingkungan jauh. Collider, jalur, NPC, tekstur dan cahaya tidak dikurangi. Resolusi khusus GK2 yang sebelumnya 540p dikembalikan ke rentang umum aplikasi (minimum 720p).
+- Mr. Quizzo hanya SATU TITIK di depan jalan Jasmine. Titik dan penghalang di dalam GK2 dihapus. Berlaku di Cerita dan Explorer. Menu pemasangan historis GK2 dinonaktifkan agar tidak memasang ulang titik lama.
+
+PRECHECK
+24 pemeriksaan Editor lulus pada scene Cerita dan Explorer.
+HP: kontrol chunk tersedia, pilihan Dekat/Utuh tersimpan, volume dan cahaya tetap terhubung.
+HP final: Quizzo aktif, satu titik, jarak Arthur 1,3m, berada dalam jangkauan interaksi. Screenshot posisi depan Jasmine diperiksa.
+Build APK utama tanpa MOD berhasil dengan 0 error. APK akhir dipasang di realme RMX3491.
+
+FPS TERUKUR PADA REALME, SAMPEL 3x10 DETIK PER KONDISI
+Lokasi                   Utuh            Dekat 32m
+GK2 jalur utama          23,8/28,0/29,8   59,8/59,5/59,6 (41,4-41,8 C pasangan tes)
+Guest House lantai 1     29,0/30,0/29,9   59,8/59,7/59,8
+Guest House lantai 2     27,4/28,5/29,1   39,4/39,9/39,6 (uji Dekat lebih hangat, sekitar 45,5 C)
+Uji GK2 Dekat saat lebih panas juga menghasilkan 57,1/45,1/39,5 FPS, sehingga 60 FPS terus-menerus tidak dijanjikan.
+Mode Utuh menggambar 1633 renderer lingkungan. Dekat pada GK2 sekitar 118-125 renderer; Guest House sekitar 46-47 renderer.
+Validasi menolak sesi bila jalur/kawasan berpindah. Sesi lama yang sempat berpindah ke GA, serta sesi terjeda notifikasi yang hanya memiliki dua sampel, TIDAK dipakai.
+Perbandingan chunk dilakukan pada APK dengan pengaturan gambar yang sama; ini bukan speedrun seluruh quest atau jaminan bebas seluruh bug.
+
+SUHU DAN BATAS
+Panas berpengaruh terhadap kinerja, tetapi suhu baterai sendiri tidak membuktikan tingkat throttling CPU/GPU. HP sempat menampilkan peringatan panas/hotspot. Tes berat dihentikan; game terakhir diistirahatkan setelah cek posisi singkat.
+Pada Dekat, lingkungan jauh muncul lebih dekat. Pilih Utuh untuk menampilkan seluruh kawasan; konsekuensinya beban render lebih besar.
+Rujukan: https://developer.android.com/games/optimize/power
+
+Berkas bukti:
+work/chunk-20261126/precheck-editor.txt
+work/chunk-20261126/quizzo-phone-final.txt
+work/chunk-20261126/quizzo-jasmine-final.png
+work/quizo-quizza-20261126/hp-verifikasi-chunk-3/
+work/quizo-quizza-20261126/hp-verifikasi-chunk-0/
+work/quizo-quizza-20261126/hp-final-chunk/
+work/quizo-quizza-20261126/hp-final-jasmine-valid/
+APK: C:\Users\Hp\Downloads\ProjectSkripsi\Untuk Google Drive\A Little Campus Story.apk
+SHA256: C769823CB1D95428DBD8B07842B42738E6F1A657CBA5CBB99C4C162A0520E374
+

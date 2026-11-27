@@ -29,7 +29,7 @@ public sealed class UkurPerformaPerangkatArthur : MonoBehaviour
 
     IEnumerator Start()
     {
-        bool paksaHujan, ukurTidur;
+        bool paksaHujan, ukurTidur, ukurCerita, lihatQuizzo;
         // Opsi diagnosis untuk membandingkan jalur render pada driver perangkat,
         // hanya pada peluncuran pengukuran yang memakai extra ADB.
         using (var player = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
@@ -38,13 +38,37 @@ public sealed class UkurPerformaPerangkatArthur : MonoBehaviour
         {
             paksaHujan = intent.Call<bool>("getBooleanExtra", "arthur_ukur_hujan", false);
             ukurTidur = intent.Call<bool>("getBooleanExtra", "arthur_ukur_tidur", false);
+            ukurCerita = intent.Call<bool>("getBooleanExtra", "arthur_ukur_cerita", false);
+            lihatQuizzo=intent.Call<bool>("getBooleanExtra","arthur_lihat_quizzo",false);
+            int chunk=intent.Call<int>("getIntExtra","arthur_ukur_chunk",-1);if(chunk>=0)JangkauanChunkArthur.PaksaUji=Mathf.Clamp(chunk,0,3);
             var rp = GraphicsSettings.currentRenderPipeline as UniversalRenderPipelineAsset;
             if (rp != null && intent.Call<bool>("getBooleanExtra", "arthur_srp_off", false)) rp.useSRPBatcher = false;
             if (rp != null && intent.Call<bool>("getBooleanExtra", "arthur_msaa_off", false)) rp.msaaSampleCount = 1;
         }
         // Jalur pengujian tidak mengubah titik awal maupun scene cerita yang tersimpan.
-        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "Explorer")
-            yield return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("Explorer");
+        string sceneUji = ukurCerita ? "Penataan Kampus - Jalur NPC dan Bubble" : "Explorer";
+        // Sesi ukur tidak menimpa lokasi eksplorasi milik pemain. Tutorial hanya
+        // disembunyikan pada peluncuran ADB ini agar tidak menutupi pengukuran.
+        UnityEngine.Events.UnityAction<UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode> siapkan = (scene, mode) => {
+            foreach(var root in scene.GetRootGameObjects()) {
+                foreach(var save in root.GetComponentsInChildren<SimpananEksplorasiArthur>(true))save.enabled=false;
+                if(!ukurCerita)continue;
+                foreach(var story in root.GetComponentsInChildren<CeritaKamar201Arthur>(true)) {
+                    story.StopAllCoroutines();story.enabled=false;
+                    if(story.panel!=null)story.panel.SetActive(false);
+                    if(story.timer!=null)story.timer.gameObject.SetActive(false);
+                }
+                foreach(var bar in root.GetComponentsInChildren<LazyBarArthur>(true))bar.tanpaBatasWaktu=true;
+                foreach(var story in root.GetComponentsInChildren<PerjalananChapelChapter1>(true)){story.StopAllCoroutines();story.enabled=false;}
+                foreach(var story in root.GetComponentsInChildren<MalamGAChapter1>(true)){story.StopAllCoroutines();story.enabled=false;}
+            }
+        };
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded += siapkan;
+        try {
+            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != sceneUji)
+                yield return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneUji);
+            else siapkan(UnityEngine.SceneManagement.SceneManager.GetActiveScene(),UnityEngine.SceneManagement.LoadSceneMode.Single);
+        } finally { UnityEngine.SceneManagement.SceneManager.sceneLoaded -= siapkan; }
         float batas = Time.realtimeSinceStartup + 90;
         while ((KawasanKampus.Instance == null || !KawasanKampus.Instance.Siap) && Time.realtimeSinceStartup < batas)
             yield return null;
@@ -61,12 +85,18 @@ public sealed class UkurPerformaPerangkatArthur : MonoBehaviour
         tujuan.jalur = jalur;
         yield return KawasanKampus.Instance.Pindahkan(tujuan.transform, () => arthur.PindahKe(tujuan.transform));
         var cuaca = SiklusWaktuKampus.Instance;
+        if(!ukurTidur&&cuaca!=null){cuaca.berjalanOtomatis=false;cuaca.AturJam(9);}
         if (paksaHujan && cuaca != null)
         {
             cuaca.berjalanOtomatis = false;
             cuaca.PratinjauHujan(true);
         }
         yield return new WaitForSecondsRealtime(8);
+        if(ukurCerita) {
+            var quizzes=FindObjectsByType<MrQuizoChapter1>(FindObjectsInactive.Include,FindObjectsSortMode.None);
+            int titikQuizza=0;foreach(var q in quizzes)if(q.namaPenjaga=="Mrs. Quizza")titikQuizza=q.posisiJaga!=null?q.posisiJaga.Length:0;
+            Debug.Log("ARTHUR_KUIS scene="+sceneUji+" penjaga="+quizzes.Length+" titikQuizza="+titikQuizza);
+        }
         if(ukurTidur)
         {
             yield return UjiTidur(arthur,cuaca);
@@ -84,15 +114,23 @@ public sealed class UkurPerformaPerangkatArthur : MonoBehaviour
                 + " payung=" + (payung != null && payung.gameObject.activeInHierarchy) + " suara=" + suara);
         }
         var kontrol = arthur.GetComponent<KarakterController>();
-        for (int putaran = 0; putaran < 3; putaran++)
+        kontrol.BerhentiBergerak();
+        for (int putaran = 0; putaran < (lihatQuizzo?0:3); putaran++)
         {
+            kontrol.BerhentiBergerak();jalur.Sampel(jalur.Panjang*.5f,out var tengahUji,out _,out _);tujuan.transform.position=tengahUji;arthur.PindahKe(tujuan.transform);yield return new WaitForSecondsRealtime(1);
             waktu.Clear(); gcAwal = GC.CollectionCount(0);
             // Diam, berjalan kiri, lalu berjalan kanan; kamera mengikuti seperti saat bermain.
             if (putaran == 1) kontrol.JalanKeKiri();
             if (putaran == 2) kontrol.JalanKeKanan();
             float selesai = Time.realtimeSinceStartup + 10;
             while (Time.realtimeSinceStartup < selesai)
-            { yield return null; waktu.Add(Time.unscaledDeltaTime * 1000); }
+            {
+                if(putaran>0){float kiri=Mathf.Max(.5f,jalur.Panjang*.5f-6),kanan=Mathf.Min(jalur.Panjang-.5f,jalur.Panjang*.5f+6);if(arthur.JarakDiJalur<=kiri)kontrol.JalanKeKanan();else if(arthur.JarakDiJalur>=kanan)kontrol.JalanKeKiri();}
+                if(arthur.JalurAktif!=jalur || KawasanKampus.Instance.KawasanAktif!=KawasanKampus.IdUntuk(jalur)){
+                    kontrol.BerhentiBergerak();Debug.LogError("ARTHUR_PERF gagal rute berpindah: "+(arthur.JalurAktif!=null?arthur.JalurAktif.name:"null")+" di "+KawasanKampus.Instance.KawasanAktif+", diharapkan "+namaJalur);Destroy(gameObject);yield break;
+                }
+                yield return null; waktu.Add(Time.unscaledDeltaTime * 1000);
+            }
             kontrol.BerhentiBergerak();
             waktu.Sort(); float jumlah = 0; int lambat = 0;
             foreach (float ms in waktu) { jumlah += ms; if (ms > 33.5f) lambat++; }
@@ -104,6 +142,21 @@ public sealed class UkurPerformaPerangkatArthur : MonoBehaviour
                 + " over33ms=" + lambat + " gc=" + (GC.CollectionCount(0) - gcAwal)
                 + " scale=" + (rp != null ? rp.renderScale : 1) + " target=" + Application.targetFrameRate
                 + " screen=" + Screen.width + "x" + Screen.height);
+            Debug.Log("ARTHUR_CHUNK pilihan="+JangkauanChunkArthur.Pilihan+" jarak="+JangkauanChunkArthur.Jarak+" terlihat="+JangkauanChunkArthur.Terlihat+" total="+JangkauanChunkArthur.Total);
+        }
+        if(namaJalur=="GK2_JalurUtama_BelokOtomatis"){
+            foreach(var q in FindObjectsByType<MrQuizoChapter1>(FindObjectsInactive.Include,FindObjectsSortMode.None))if(q.namaPenjaga=="Mr. Quizzo"){
+                if(q.posisiJaga.Length==1){var pilih=FindFirstObjectByType<SistemPilihan>();if(pilih!=null){if(pilih.grupFisikDepan!=null)pilih.grupFisikDepan.SetActive(true);if(pilih.grupFisikBelakang!=null)pilih.grupFisikBelakang.SetActive(false);if(pilih.grupFisikRuangan!=null)pilih.grupFisikRuangan.SetActive(false);}tujuan.jalur=null;tujuan.transform.position=q.posisiJaga[0].position+Vector3.up*ArthurJalurKampus.JarakKaki+Vector3.left*1.3f;yield return KawasanKampus.Instance.Pindahkan(tujuan.transform,()=>arthur.PindahKe(tujuan.transform));yield return new WaitForSecondsRealtime(1);}
+                var n=q.GetComponent<NpcYangBisaDiatur>();float jarak=Vector3.Distance(arthur.transform.position-Vector3.up*ArthurJalurKampus.JarakKaki,q.transform.position);
+                Debug.Log("ARTHUR_QUIZZO aktif="+q.isActiveAndEnabled+" jarak="+jarak+" dalamJangkauan="+(jarak<n.jarakInteraksi)+" route="+(n.jalurInteraksi==arthur.JalurAktif)+" titik="+q.posisiJaga.Length);
+            }
+        }
+        var hpUji=FindFirstObjectByType<SistemHP>();
+        if(lihatQuizzo){Debug.Log("ARTHUR_PRECHECK fotoQuizzo=siap");Destroy(tujuan.gameObject);Destroy(gameObject);yield break;}
+        if(hpUji!=null){hpUji.BukaHPDefault();yield return new WaitForSecondsRealtime(2);hpUji.BukaPengaturan();yield return new WaitForSecondsRealtime(2);
+            var pm=hpUji.panelPengaturan.GetComponent<PengaturanManager>();int saved=PlayerPrefs.GetInt(JangkauanChunkArthur.Kunci,1);var paksa=JangkauanChunkArthur.PaksaUji;
+            bool ada=pm!=null&&pm.sliderChunk!=null&&pm.teksChunk!=null;
+            if(ada){pm.UbahChunk(0);bool dekat=PlayerPrefs.GetInt(JangkauanChunkArthur.Kunci,-1)==0;pm.UbahChunk(3);bool utuh=PlayerPrefs.GetInt(JangkauanChunkArthur.Kunci,-1)==3;pm.UbahChunk(saved);pm.SinkronkanPengaturan();JangkauanChunkArthur.PaksaUji=paksa;Debug.Log("ARTHUR_PRECHECK pengaturan="+ada+" simpanDekat="+dekat+" simpanUtuh="+utuh+" volume="+(pm.sliderVolume!=null)+" cahaya="+(pm.sliderCahaya!=null));}
         }
         Destroy(tujuan.gameObject);
         Destroy(gameObject);
